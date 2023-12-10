@@ -1,4 +1,6 @@
 
+using Microsoft.EntityFrameworkCore;
+
 namespace E_CommerceSystemV2.API
 {
     public class Program
@@ -6,17 +8,32 @@ namespace E_CommerceSystemV2.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            #region ConnectionString
+            var ConnectionString = builder.Configuration.GetConnectionString("E-CommerceSystemV2");
+            builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(ConnectionString));
+            #endregion
 
-            // Add services to the container.
-
+            #region DefaultServices
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            #endregion
+
+            #region CORS Policy
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllDomains", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
+            #endregion
 
             var app = builder.Build();
+            #region MiddleWares
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -26,9 +43,11 @@ namespace E_CommerceSystemV2.API
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+            app.UseCors("AllowAllDomains");
 
 
             app.MapControllers();
+            #endregion
 
             app.Run();
         }

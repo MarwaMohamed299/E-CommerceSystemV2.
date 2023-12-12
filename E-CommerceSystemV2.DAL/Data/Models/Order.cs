@@ -11,6 +11,6 @@ namespace E_CommerceSystemV2.DAL.Data.Models
         public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
         //nav prop
-        public ICollection<User> Users { get; set; } = new HashSet<User>();
+        public ICollection<UserOrders> UserOrders = new HashSet<UserOrders>();
     }
 }

@@ -1,4 +1,6 @@
 
+using E_CommerceSystemV2.BL.Managers.Products;
+using E_CommerceSystemV2.DAL.Repos.Products;
 using Microsoft.EntityFrameworkCore;
 
 namespace E_CommerceSystemV2.API
@@ -29,6 +31,14 @@ namespace E_CommerceSystemV2.API
                           .AllowAnyMethod();
                 });
             });
+            #endregion
+
+            #region Custom Services
+
+
+            builder.Services.AddScoped<IProductRepo, ProductRepo>();
+            builder.Services.AddScoped<IProductsManager, ProductsManager>();
+
             #endregion
 
             var app = builder.Build();

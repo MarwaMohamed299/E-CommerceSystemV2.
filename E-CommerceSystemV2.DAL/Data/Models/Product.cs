@@ -19,7 +19,7 @@ namespace E_CommerceSystemV2.DAL.Data.Models
 
         public Category? Category { get; set; }
 
-        public ICollection<Tag> Products { get; set; } = new HashSet<Tag>();
+        public ICollection<Tag> Tags { get; set; } = new HashSet<Tag>();
 
     }
 }

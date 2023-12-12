@@ -15,7 +15,7 @@ namespace E_CommerceSystemV2.DAL.Data.Models
         public DateTime CreationDate { get; set; } = DateTime.Now;
 
         //navprop
-        public ICollection<Order> Order { get; set; } = new HashSet<Order>();
+        public ICollection<UserOrders> UserOrders { get; set; } = new HashSet<UserOrders>();
 
 
 

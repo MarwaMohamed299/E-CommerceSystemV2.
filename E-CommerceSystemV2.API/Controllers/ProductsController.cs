@@ -15,7 +15,7 @@ namespace E_CommerceSystemV2.API.Controllers
         {
             _productsManager = productsManager ?? throw new ArgumentNullException(nameof(productsManager));
         }
-        [HttpGet]
+        [HttpGet("{page}/{countPerPage}")]
         public async Task<ActionResult<IEnumerable<ProductPagintationDto>>> GetAll(int page , int pagePerCount)
         {
             try

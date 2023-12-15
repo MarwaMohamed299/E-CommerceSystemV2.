@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using E_CommerceSystemV2.DAL.Data.Types;
 
 namespace E_CommerceSystemV2.DAL.Data.Models
 {
-   public class Product
+    public class Product
     {
-        public int ProductId { get; set; }
+        public Guid ProductId { get; set; }
         public string? Name { get; set; }
+        public CategoryType CategoryType { get; set; }
 
         public decimal Price { get; set; }
 
         //NavProp
 
-        public int CategoryId { get; set; }
 
         public Category? Category { get; set; }
 
-        public ICollection<Tag> Tags { get; set; } = new HashSet<Tag>();
+        public ICollection<TagProducts> TagProducts { get; set; } = new HashSet<TagProducts>();
 
     }
 }

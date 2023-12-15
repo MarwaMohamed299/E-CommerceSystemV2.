@@ -2,11 +2,6 @@
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace E_CommerceSystemV2.BL.Managers.Products
 {
@@ -34,13 +29,13 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                     Price = e.Price
                 }).ToList();
 
-                return new List<ProductPagintationDto>
-        {
-            new ProductPagintationDto
-            {
-                TotalCount = totalCount,
-                Items = items.ToList() // Convert to a list if necessary
-            }
+                return new List<ProductPagintationDto> { 
+                
+                    new ProductPagintationDto
+                    {
+                        TotalCount = totalCount,
+                        Items = items.ToList()
+                    }
         };
 
             }
@@ -52,7 +47,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
         }
 
-        public async Task<ProductReadDto?> GetById(int productId)                 /*GetById*/
+        public async Task<ProductReadDto?> GetById(Guid productId)                 /*GetById*/
         {
             try
             {
@@ -86,7 +81,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 {
                     Name = productAddDto.Name,
                     Price = productAddDto.Price,
-                    CategoryId = productAddDto.CategoryId
+       
                 };
 
                 await _productsRepo.Add(product);
@@ -129,9 +124,9 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
         }
 
-            public async  Task <bool> Delete(int productId)
+        public async Task<bool> Delete(Guid productId)
 
-            {
+        {
             try
             {
                 Product? product = await _productsRepo.GetById(productId);
@@ -139,7 +134,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 {
                     return false;
                 }
-               await _productsRepo.Delete(product);
+                await _productsRepo.Delete(product);
 
                 _productsRepo.SaveChangesAsync();
                 return true;
@@ -149,6 +144,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 _logger.LogError(ex, "Error occurred while deleting a Product.");
                 throw new InvalidOperationException("Product not found");
             }
-            }
+        }
     }
 }

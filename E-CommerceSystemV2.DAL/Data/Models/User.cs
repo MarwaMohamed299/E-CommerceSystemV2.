@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace E_CommerceSystemV2.DAL.Data.Models
 {
-    public class User
+    public class User : IdentityUser
     {
-        public int UserId { get; set; }
-        public string E_mail { get; set; } = string.Empty;
-        public string PasswordHashSet { get; set; } = string.Empty;
+       
+      //  public string Password { get; set; } = string.Empty;
 
         public DateTime CreationDate { get; set; } = DateTime.Now;
 

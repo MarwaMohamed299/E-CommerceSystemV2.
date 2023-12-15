@@ -1,9 +1,8 @@
 ﻿using E_CommerceSystemV2.BL.DTOs.Products;
 using E_CommerceSystemV2.BL.Managers.Products;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace E_CommerceSystemV2.API.Controllers
+namespace E_CommerceSystemV2.API.Controllers.Products
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -16,11 +15,11 @@ namespace E_CommerceSystemV2.API.Controllers
             _productsManager = productsManager ?? throw new ArgumentNullException(nameof(productsManager));
         }
         [HttpGet("{page}/{countPerPage}")]
-        public async Task<ActionResult<IEnumerable<ProductPagintationDto>>> GetAll(int page , int pagePerCount)
+        public async Task<ActionResult<IEnumerable<ProductPagintationDto>>> GetAll(int page, int countPerPage)
         {
             try
             {
-                var products = await _productsManager.GetAll(page,pagePerCount);
+                var products = await _productsManager.GetAll(page, countPerPage);
                 return Ok(products);
             }
             catch (Exception ex)
@@ -30,7 +29,7 @@ namespace E_CommerceSystemV2.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductReadDto>> GetById(int id)
+        public async Task<ActionResult<ProductReadDto>> GetById(Guid id)
         {
             try
             {
@@ -77,7 +76,7 @@ namespace E_CommerceSystemV2.API.Controllers
                 if (result != null)
                     return Ok("Product is Updated Successfully ");
                 else
-                    return BadRequest("Failed to update eProduct");
+                    return BadRequest("Failed to update Product");
             }
             catch (Exception ex)
             {
@@ -85,20 +84,20 @@ namespace E_CommerceSystemV2.API.Controllers
             }
         }
 
-        [HttpDelete ("{id}")]
-        public async Task <ActionResult> Delete(int id)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(Guid id)
         {
             try
             {
                 var isFound = await _productsManager.Delete(id);
-                if (!isFound )
+                if (!isFound)
                 {
                     return NotFound();
 
                 }
-                return NoContent();
+                return Ok("Product is Deleted Successfully !!");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
             }

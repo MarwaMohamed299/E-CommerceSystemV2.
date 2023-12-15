@@ -8,6 +8,8 @@ F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\E-Com
 F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Azure.Core.dll
 F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Azure.Identity.dll
 F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Humanizer.dll
+F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 F:\github 2\E-CommerceSystemV2.API\E-CommerceSystemV2.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll

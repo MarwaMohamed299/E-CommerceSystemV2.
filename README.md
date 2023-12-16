@@ -1,7 +1,7 @@
 # E-Commerce System
 
 Welcome to the E-Commerce System project! This .NET Core application provides a robust foundation for building an e-commerce platform with CRUD operations,
-user authentication using Identity, logging, pagination, and search functionality.
+user authentication using JWT, logging, pagination, and search functionality.
 
 
 

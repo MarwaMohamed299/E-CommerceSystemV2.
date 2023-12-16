@@ -12,8 +12,24 @@ namespace E_CommerceSystemV2.API.Controllers.Products
 
         public ProductsController(IProductsManager productsManager)
         {
-            _productsManager = productsManager ?? throw new ArgumentNullException(nameof(productsManager));
+            _productsManager = productsManager ;
         }
+
+        [HttpGet("{tag}")]
+        public async Task<ActionResult<IEnumerable<ProductReadDto>>>SearchWithTag(string tag)
+        {
+            try
+            {
+                var searchedProducts = await _productsManager.SearchWithTag(tag);
+                return Ok(searchedProducts);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
+
+            }
+        }
+
         [HttpGet("{page}/{countPerPage}")]
         public async Task<ActionResult<IEnumerable<ProductPagintationDto>>> GetAll(int page, int countPerPage)
         {
@@ -28,7 +44,7 @@ namespace E_CommerceSystemV2.API.Controllers.Products
             }
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<ProductReadDto>> GetById(Guid id)
         {
             try

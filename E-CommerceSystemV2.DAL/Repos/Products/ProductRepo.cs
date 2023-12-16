@@ -1,4 +1,5 @@
-﻿using E_CommerceSystemV2.API;
+﻿using Azure;
+using E_CommerceSystemV2.API;
 using E_CommerceSystemV2.DAL.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -60,8 +61,19 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
             return _ecommerceContext.SaveChanges();
         }
 
+        async Task<IEnumerable<Product>> IProductRepo.SearchWithTag(string tag)
+        {
+
+            return await _ecommerceContext.Products
+                   .Where(p => p.TagProducts
+                   .Select(t => t.Tag.Name.ToLower()).Contains(tag.ToLower()))
+                   .ToListAsync();
 
 
+
+
+        }
 
     }
-}
+    }
+

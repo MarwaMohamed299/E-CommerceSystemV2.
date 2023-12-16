@@ -86,9 +86,7 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
             var jwt = new JwtSecurityToken
                 (
                     claims: userClaims,
-                    notBefore: DateTime.Now,
-                    issuer: "BackendTeam",
-                    audience: "users",
+                    notBefore: DateTime.Now,               
                     expires: DateTime.Now.AddMinutes(10),
                     signingCredentials: generatingToken
                 );

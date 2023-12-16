@@ -12,7 +12,7 @@ namespace E_CommerceSystemV2.API
         public DbSet<Product> Products => Set<Product>();
         public DbSet<Tag> Tags => Set<Tag>();
         public DbSet<TagProducts> TagProducts => Set<TagProducts>();
-        public DbSet<User?> Users => Set<User>();
+        public override DbSet<User> Users => Set<User>();
         public DbSet<UserOrders> UserOrders => Set<UserOrders>();
 
         public ECommerceContext(DbContextOptions<ECommerceContext> options) : base(options)
@@ -127,6 +127,13 @@ namespace E_CommerceSystemV2.API
                 {
                     new TagProducts { TagId = tags[1].TagId, ProductId = products[1].ProductId },
                     new TagProducts { TagId = tags[2].TagId, ProductId = products[2].ProductId },
+                    new TagProducts { TagId = tags[2].TagId, ProductId = products[3].ProductId },
+                    new TagProducts { TagId = tags[2].TagId, ProductId = products[4].ProductId },
+                    new TagProducts { TagId = tags[2].TagId, ProductId = products[5].ProductId },
+                    new TagProducts { TagId = tags[2].TagId, ProductId = products[6].ProductId },
+                    new TagProducts { TagId = tags[2].TagId, ProductId = products[7].ProductId },
+
+
                 };
 
             var userOrders = new List<UserOrders>

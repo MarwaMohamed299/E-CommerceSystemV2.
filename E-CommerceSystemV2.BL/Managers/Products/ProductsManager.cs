@@ -2,6 +2,7 @@
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 
 namespace E_CommerceSystemV2.BL.Managers.Products
 {
@@ -13,11 +14,11 @@ namespace E_CommerceSystemV2.BL.Managers.Products
         public ProductsManager(IProductRepo productsRepo, ILogger<Product> logger)
         {
             _productsRepo = productsRepo;
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _logger = logger;
 
         }
 
-        public async Task<IEnumerable<ProductPagintationDto>> GetAll(int page, int countPerPage)         /*GetAll*/ //??????????????????????????????? 
+        public async Task<IEnumerable<ProductPagintationDto>> GetAll(int page, int countPerPage)         /*GetAll*/ 
         {
             try
             {
@@ -28,6 +29,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                     Name = e.Name,
                     Price = e.Price
                 }).ToList();
+
 
                 return new List<ProductPagintationDto> { 
                 
@@ -105,7 +107,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
                 if (existingProduct == null)
                 {
-                    _logger.LogWarning($"Employee with ID {product.ProductId} not found.");
+                    _logger.LogWarning($"Product with ID {product.ProductId} not found.");
                     return null;
                 }
 
@@ -124,7 +126,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
         }
 
-        public async Task<bool> Delete(Guid productId)
+        public async Task<bool> Delete(Guid productId)                      /*Delete*/
 
         {
             try
@@ -145,5 +147,45 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 throw new InvalidOperationException("Product not found");
             }
         }
+
+        public async Task<IEnumerable<ProductReadDto>>SearchWithTag(string tag)                /*Search*/
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(tag))
+                {
+                    _logger.LogWarning($" Search string is not valid.");
+                    throw new ArgumentException("Search string is not valid.");
+
+                }
+
+                var searchedProducts = await _productsRepo.SearchWithTag(tag);
+
+                if (searchedProducts == null)
+                {
+                    _logger.LogWarning($"No products found for search term: {tag}");
+                    throw new ArgumentException($"No products found for search term: {tag}");
+
+
+                }
+                var productReadDto = searchedProducts.Select(p => new ProductReadDto
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Price = p.Price,
+                });
+
+                return productReadDto;
+            }
+            catch(Exception ex)
+            {
+                 _logger.LogError(ex, "Error occurred while deleting a Product.");
+                throw;
+
+            }
+
+        }
+
+    
     }
 }

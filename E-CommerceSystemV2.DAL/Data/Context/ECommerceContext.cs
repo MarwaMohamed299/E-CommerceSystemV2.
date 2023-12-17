@@ -16,53 +16,71 @@ namespace E_CommerceSystemV2.API
         public DbSet<UserOrders> UserOrders => Set<UserOrders>();
 
         public ECommerceContext(DbContextOptions<ECommerceContext> options) : base(options)
+        { }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-
+            builder.LogTo((query) =>
+            {
+                File.AppendAllText("Queries.sql", $"\n{query}");
+            }).EnableSensitiveDataLogging();
         }
-
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
             base.OnModelCreating(modelBuilder);
 
             //order
-
-            modelBuilder.Entity<Order>().HasKey(o => o.OrderId);
-            modelBuilder.Entity<Order>().HasMany(u => u.UserOrders).WithOne(o => o.Order).HasForeignKey(K => K.OrderId)
+            //TODO: Why many to many?
+            modelBuilder.Entity<Order>()
+                .HasMany(u => u.UserOrders)
+                .WithOne(o => o.Order)
+                .HasForeignKey(K => K.OrderId)
                 .OnDelete(DeleteBehavior.NoAction);
 
             //category
-
-            modelBuilder.Entity<Category>().HasKey(c => c.CategoryId);
-            modelBuilder.Entity<Category>().HasMany(p => p.Products).WithOne(c => c.Category)
+            modelBuilder.Entity<Category>()
+                .HasMany(p => p.Products)
+                .WithOne(c => c.Category)
+            //TODO: No need to restrict delete behavior here
                 .OnDelete(DeleteBehavior.Restrict);
 
             //product
-            modelBuilder.Entity<Product>().HasKey(p => p.ProductId);
-            modelBuilder.Entity<Product>().HasOne(c => c.Category).WithMany(p => p.Products)
+            modelBuilder.Entity<Product>()
+                .HasOne(c => c.Category)
+                .WithMany(p => p.Products)
                 .OnDelete(DeleteBehavior.NoAction);
-            modelBuilder.Entity<Product>().HasMany(t => t.TagProducts).WithOne(p => p.Product).HasForeignKey(T=>T.ProductId)
+
+            modelBuilder.Entity<Product>()
+                .HasMany(t => t.TagProducts)
+                .WithOne(p => p.Product)
+                .HasForeignKey(T => T.ProductId)
                 .OnDelete(DeleteBehavior.NoAction);
-            modelBuilder.Entity<Product>().Property(p => p.Price).HasColumnType("decimal(18,2)");
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
 
             //tag
-            modelBuilder.Entity<Tag>().HasKey(t => t.TagId);
-            modelBuilder.Entity<Tag>().HasMany(p => p.TagProducts).WithOne(t => t.Tag).HasForeignKey(p=>p.TagId)
-                                .OnDelete(DeleteBehavior.NoAction);
-
+            modelBuilder.Entity<Tag>()
+                .HasMany(p => p.TagProducts)
+                .WithOne(t => t.Tag)
+                .HasForeignKey(p => p.TagId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             ////TagProduct
+            modelBuilder.Entity<TagProducts>()
+                .HasKey(tp => new { tp.ProductId, tp.TagId });
 
-
-            modelBuilder.Entity<TagProducts>().HasKey(tp => new { tp.ProductId, tp.TagId });
             //user
-            modelBuilder.Entity<User>().HasKey(u => u.Id);
-            modelBuilder.Entity<User>().HasMany(o => o.UserOrders).WithOne(U => U.User).HasForeignKey(U => U.Id)
+            //TODO: Why many to many?
+            modelBuilder.Entity<User>()
+                .HasMany(o => o.UserOrders)
+                .WithOne(U => U.User)
+                .HasForeignKey(U => U.Id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             //UserOrders
-            modelBuilder.Entity<UserOrders>().HasKey(k => new { k.Id, k.OrderId });
+            modelBuilder.Entity<UserOrders>()
+                .HasKey(k => new { k.Id, k.OrderId });
 
             #region Seeding
 
@@ -144,19 +162,14 @@ namespace E_CommerceSystemV2.API
 
             #endregion
 
-
             modelBuilder.Entity<User>().HasData(users);
             modelBuilder.Entity<Order>().HasData(orders);
-              modelBuilder.Entity<Product>().HasData(products);
-              modelBuilder.Entity<Tag>().HasData(tags);
-              modelBuilder.Entity<TagProducts>().HasData(productTags);
-             modelBuilder.Entity<Category>().HasData(categories);
-             modelBuilder.Entity<UserOrders>().HasData(userOrders);
-            }
-
-
-
-
+            modelBuilder.Entity<Product>().HasData(products);
+            modelBuilder.Entity<Tag>().HasData(tags);
+            modelBuilder.Entity<TagProducts>().HasData(productTags);
+            modelBuilder.Entity<Category>().HasData(categories);
+            modelBuilder.Entity<UserOrders>().HasData(userOrders);
         }
     }
+}
 

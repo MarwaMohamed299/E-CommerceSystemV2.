@@ -12,17 +12,18 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
         public ProductRepo(ECommerceContext EcommerceContext)
         {
             _ecommerceContext = EcommerceContext;
+            _ecommerceContext.Dispose();
         }
 
         public async Task<IEnumerable<Product>> GetAll(int page, int countPerPage)
         {
 
 
-            return await _ecommerceContext.Products
+            return  _ecommerceContext.Products
                  .OrderBy(P => P.Price)
                  .Skip((page - 1) * countPerPage)
                  .Take(countPerPage)
-                 .ToListAsync();
+                 .ToList();
         }
 
         public async Task<int> GetCount()
@@ -61,19 +62,27 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
             return _ecommerceContext.SaveChanges();
         }
 
-        async Task<IEnumerable<Product>> IProductRepo.SearchWithTag(string tag)
+        public async Task<IEnumerable<Product>> SearchWithTag(Guid tagId)
         {
+            // TODO: don't ignore warnings
+            // TODO: not efficient
+            // TODO: don't use ToLower()
+            // TODO: don't search by name, search by id, because name is not unique and id is indexed (faster)
+            var q1 = await _ecommerceContext.Set<TagProducts>()
+                .TagWith("Marwa")
+                .Where(tp => tp.TagId == tagId)
+                .Select(tp => tp.Product!)
+                .ToListAsync();
 
-            return await _ecommerceContext.Products
+            var q2 = await _ecommerceContext.Products
+                   .TagWith("Jamal")
                    .Where(p => p.TagProducts
-                   .Select(t => t.Tag.Name.ToLower()).Contains(tag.ToLower()))
+                        .Select(t => t.Tag!.TagId)
+                        .Contains(tagId))
                    .ToListAsync();
 
-
-
-
+            return q2;
         }
-
     }
-    }
+}
 

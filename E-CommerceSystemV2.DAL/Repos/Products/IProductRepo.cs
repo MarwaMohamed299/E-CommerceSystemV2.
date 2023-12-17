@@ -4,7 +4,7 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
 {
     public interface IProductRepo
     {
-        Task<IEnumerable<Product>> SearchWithTag(string tag);
+        Task<IEnumerable<Product>> SearchWithTag(Guid tagId);
         Task<IEnumerable<Product>> GetAll(int page, int CountPerPage);
         Task<int> GetCount();
         Task<Product?> GetById(Guid productId);

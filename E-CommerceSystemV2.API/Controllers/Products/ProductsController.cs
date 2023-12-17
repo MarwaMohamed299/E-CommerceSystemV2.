@@ -12,15 +12,15 @@ namespace E_CommerceSystemV2.API.Controllers.Products
 
         public ProductsController(IProductsManager productsManager)
         {
-            _productsManager = productsManager ;
+            _productsManager = productsManager;
         }
 
-        [HttpGet("{tag}")]
-        public async Task<ActionResult<IEnumerable<ProductReadDto>>>SearchWithTag(string tag)
+        [HttpGet("{tagId}")]
+        public async Task<ActionResult<IEnumerable<ProductReadDto>>> SearchWithTag(Guid tagId)
         {
             try
             {
-                var searchedProducts = await _productsManager.SearchWithTag(tag);
+                var searchedProducts = await _productsManager.SearchWithTag(tagId);
                 return Ok(searchedProducts);
             }
             catch (Exception ex)

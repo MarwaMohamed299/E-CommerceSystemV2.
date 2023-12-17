@@ -7,6 +7,7 @@ using E_CommerceSystemV2.DAL.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.IO;
 using System.Text;
 
 namespace E_CommerceSystemV2.API
@@ -45,7 +46,7 @@ namespace E_CommerceSystemV2.API
                 //GenerateKey
 
                 var secretKey = builder.Configuration.GetValue<string>("SecretKey");
-                var secretKeyInBytes = Encoding.ASCII.GetBytes(secretKey);
+                var secretKeyInBytes = Encoding.ASCII.GetBytes(secretKey!);
                 var Key = new SymmetricSecurityKey(secretKeyInBytes);
 
                 options.TokenValidationParameters = new TokenValidationParameters

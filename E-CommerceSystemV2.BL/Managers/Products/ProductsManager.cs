@@ -18,7 +18,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
         }
 
-        public async Task<IEnumerable<ProductPagintationDto>> GetAll(int page, int countPerPage)         /*GetAll*/ 
+        public async Task<IEnumerable<ProductPagintationDto>> GetAll(int page, int countPerPage)         /*GetAll*/
         {
             try
             {
@@ -30,15 +30,15 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                     Price = e.Price
                 }).ToList();
 
+                return new List<ProductPagintationDto>
+                {
 
-                return new List<ProductPagintationDto> { 
-                
                     new ProductPagintationDto
                     {
                         TotalCount = totalCount,
                         Items = items.ToList()
                     }
-        };
+                 };
 
             }
             catch (Exception ex)
@@ -83,7 +83,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 {
                     Name = productAddDto.Name,
                     Price = productAddDto.Price,
-       
+
                 };
 
                 await _productsRepo.Add(product);
@@ -101,8 +101,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
         {
             try
             {
-
-
                 var existingProduct = await _productsRepo.GetById(product.ProductId);
 
                 if (existingProduct == null)
@@ -148,23 +146,22 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
         }
 
-        public async Task<IEnumerable<ProductReadDto>>SearchWithTag(string tag)                /*Search*/
+        public async Task<IEnumerable<ProductReadDto>> SearchWithTag(Guid tagId)                /*Search*/
         {
             try
             {
-                if (string.IsNullOrEmpty(tag))
+                if (tagId == default)
                 {
                     _logger.LogWarning($" Search string is not valid.");
                     throw new ArgumentException("Search string is not valid.");
-
                 }
 
-                var searchedProducts = await _productsRepo.SearchWithTag(tag);
+                var searchedProducts = await _productsRepo.SearchWithTag(tagId);
 
                 if (searchedProducts == null)
                 {
-                    _logger.LogWarning($"No products found for search term: {tag}");
-                    throw new ArgumentException($"No products found for search term: {tag}");
+                    _logger.LogWarning($"No products found for search term: {tagId}");
+                    throw new ArgumentException($"No products found for search term: {tagId}");
 
 
                 }
@@ -177,15 +174,12 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
                 return productReadDto;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                 _logger.LogError(ex, "Error occurred while deleting a Product.");
+                _logger.LogError(ex, "Error occurred while deleting a Product.");
                 throw;
 
             }
-
         }
-
-    
     }
 }

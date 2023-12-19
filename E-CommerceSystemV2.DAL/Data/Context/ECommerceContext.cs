@@ -13,7 +13,6 @@ namespace E_CommerceSystemV2.API
         public DbSet<Tag> Tags => Set<Tag>();
         public DbSet<TagProducts> TagProducts => Set<TagProducts>();
         public override DbSet<User> Users => Set<User>();
-        public DbSet<UserOrders> UserOrders => Set<UserOrders>();
 
         public ECommerceContext(DbContextOptions<ECommerceContext> options) : base(options)
         { }
@@ -26,61 +25,45 @@ namespace E_CommerceSystemV2.API
             }).EnableSensitiveDataLogging();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        { 
             base.OnModelCreating(modelBuilder);
 
-            //order
-            //TODO: Why many to many?
-            modelBuilder.Entity<Order>()
-                .HasMany(u => u.UserOrders)
-                .WithOne(o => o.Order)
-                .HasForeignKey(K => K.OrderId)
-                .OnDelete(DeleteBehavior.NoAction);
 
-            //category
-            modelBuilder.Entity<Category>()
-                .HasMany(p => p.Products)
-                .WithOne(c => c.Category)
-            //TODO: No need to restrict delete behavior here
-                .OnDelete(DeleteBehavior.Restrict);
+            //Order
+             modelBuilder.Entity<Order>()
+               .HasMany(o => o.Products)
+               .WithOne(p => p.Order)
+               .HasForeignKey(p => p.OrderId)
+               .OnDelete(DeleteBehavior.NoAction);
 
-            //product
-            modelBuilder.Entity<Product>()
-                .HasOne(c => c.Category)
-                .WithMany(p => p.Products)
-                .OnDelete(DeleteBehavior.NoAction);
+            // User
+               modelBuilder.Entity<User>()
+                .HasMany(u => u.Orders)
+                .WithOne(o => o.User)
+                .HasForeignKey(o => o.UserId);
+             
+                //category
+                modelBuilder.Entity<Category>()
+                    .HasMany(p => p.Products)
+                    .WithOne(c => c.Category)
+                    .OnDelete(DeleteBehavior.NoAction);
 
-            modelBuilder.Entity<Product>()
-                .HasMany(t => t.TagProducts)
-                .WithOne(p => p.Product)
-                .HasForeignKey(T => T.ProductId)
-                .OnDelete(DeleteBehavior.NoAction);
-            modelBuilder.Entity<Product>()
-                .Property(p => p.Price)
-                .HasColumnType("decimal(18,2)");
+                //product
+                modelBuilder.Entity<Product>()
+                    .Property(P => P.Price)
+                    .HasColumnType("decimal(18,2)");
 
-            //tag
-            modelBuilder.Entity<Tag>()
-                .HasMany(p => p.TagProducts)
-                .WithOne(t => t.Tag)
-                .HasForeignKey(p => p.TagId)
-                .OnDelete(DeleteBehavior.NoAction);
+                //tag
+                modelBuilder.Entity<Tag>()
+                    .HasMany(p => p.TagProducts)
+                    .WithOne(t => t.Tag)
+                    .HasForeignKey(p => p.TagId)
+                    .OnDelete(DeleteBehavior.NoAction);
+            
+                ////TagProduct
+                modelBuilder.Entity<TagProducts>()
+                    .HasKey(tp => new { tp.ProductId, tp.TagId });
 
-            ////TagProduct
-            modelBuilder.Entity<TagProducts>()
-                .HasKey(tp => new { tp.ProductId, tp.TagId });
-
-            //user
-            //TODO: Why many to many?
-            modelBuilder.Entity<User>()
-                .HasMany(o => o.UserOrders)
-                .WithOne(U => U.User)
-                .HasForeignKey(U => U.Id)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            //UserOrders
-            modelBuilder.Entity<UserOrders>()
-                .HasKey(k => new { k.Id, k.OrderId });
 
             #region Seeding
 
@@ -94,8 +77,14 @@ namespace E_CommerceSystemV2.API
 
             var orders = new List<Order>
             {
-                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now },
-                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now,UserId =users[1].Id },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now ,UserId =users[0].Id },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now ,UserId =users[1].Id },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now,UserId =users[2].Id  },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now ,UserId =users[1].Id },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now ,UserId =users[3].Id },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now ,UserId =users[2].Id },
+                new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now ,UserId =users[1].Id  },
             };
             var categories = new List<Category>
             {
@@ -115,21 +104,21 @@ namespace E_CommerceSystemV2.API
             var products = new List<Product>
                   {
 
-                new Product { ProductId = Guid.NewGuid(), Name = "Samsung Galaxy S21", Price = 799.99m, CategoryType = CategoryType.Mobiles },
-                new Product { ProductId = Guid.NewGuid(), Name = "Sony Smart TV", Price = 1299.99m, CategoryType = CategoryType.Electronics },
-                new Product { ProductId = Guid.NewGuid(), Name = "Canon EOS Rebel T7", Price = 499.99m, CategoryType = CategoryType.Electronics },
-                new Product { ProductId = Guid.NewGuid(), Name = "Nike Running Shoes", Price = 89.99m, CategoryType = CategoryType.Fashion },
-                new Product { ProductId = Guid.NewGuid(), Name = "KitchenAid Stand Mixer", Price = 349.99m, CategoryType = CategoryType.Appliances },
-                new Product { ProductId = Guid.NewGuid(), Name = "HP Printer", Price = 149.99m, CategoryType = CategoryType.Electronics },
-                new Product { ProductId = Guid.NewGuid(), Name = "Levi's Jeans", Price = 59.99m, CategoryType = CategoryType .Fashion   },
-                new Product { ProductId = Guid.NewGuid(), Name = "Bose Noise-Canceling Headphones", Price = 299.99m, CategoryType=CategoryType.Electronics},
-                new Product { ProductId = Guid.NewGuid(), Name = "Fitbit Charge 5", Price = 149.99m,CategoryType=CategoryType.Gaming},
-                new Product { ProductId = Guid.NewGuid(), Name = "Cuisinart Coffee Maker", Price = 79.99m, CategoryType = CategoryType.Appliances },
-                new Product { ProductId = Guid.NewGuid(), Name = "Adidas Running Shoes", Price = 109.99m, CategoryType = CategoryType.Fashion  },
-                new Product { ProductId = Guid.NewGuid(), Name = "Amazon Echo Dot", Price = 39.99m, CategoryType = CategoryType.SmartDevices },
-                new Product { ProductId = Guid.NewGuid(), Name = "Razer Gaming Mouse", Price = 69.99m, CategoryType = CategoryType.Gaming },
-                new Product { ProductId = Guid.NewGuid(), Name = "Calvin Klein Watch", Price = 199.99m, CategoryType = CategoryType.Fashion  },
-                new Product { ProductId = Guid.NewGuid(), Name = "Fossil Smartwatch", Price = 149.99m, CategoryType = CategoryType.Fashion},
+                new Product { ProductId = Guid.NewGuid(), Name = "Samsung Galaxy S21", Price = 799.99m, CategoryType = CategoryType.Mobiles ,OrderId =orders[0].OrderId},
+                new Product { ProductId = Guid.NewGuid(), Name = "Sony Smart TV", Price = 1299.99m, CategoryType = CategoryType.Electronics ,OrderId =orders[1].OrderId },
+                new Product { ProductId = Guid.NewGuid(), Name = "Canon EOS Rebel T7", Price = 499.99m, CategoryType = CategoryType.Electronics,OrderId =orders[2].OrderId },
+                new Product { ProductId = Guid.NewGuid(), Name = "Nike Running Shoes", Price = 89.99m, CategoryType = CategoryType.Fashion,OrderId =orders[1].OrderId },
+                new Product { ProductId = Guid.NewGuid(), Name = "KitchenAid Stand Mixer", Price = 349.99m, CategoryType = CategoryType.Appliances,OrderId =orders[3].OrderId },
+                new Product { ProductId = Guid.NewGuid(), Name = "HP Printer", Price = 149.99m, CategoryType = CategoryType.Electronics ,OrderId =orders[1].OrderId},
+                new Product { ProductId = Guid.NewGuid(), Name = "Levi's Jeans", Price = 59.99m, CategoryType = CategoryType .Fashion ,OrderId =orders[1].OrderId },
+                new Product { ProductId = Guid.NewGuid(), Name = "Bose Noise-Canceling Headphones", Price = 299.99m, CategoryType=CategoryType.Electronics,OrderId =orders[1].OrderId},
+                new Product { ProductId = Guid.NewGuid(), Name = "Fitbit Charge 5", Price = 149.99m,CategoryType=CategoryType.Gaming ,OrderId =orders[1].OrderId},
+                new Product { ProductId = Guid.NewGuid(), Name = "Cuisinart Coffee Maker", Price = 79.99m, CategoryType = CategoryType.Appliances,OrderId =orders[0].OrderId },
+                new Product { ProductId = Guid.NewGuid(), Name = "Adidas Running Shoes", Price = 109.99m, CategoryType = CategoryType.Fashion ,OrderId =orders[2].OrderId},
+                new Product { ProductId = Guid.NewGuid(), Name = "Amazon Echo Dot", Price = 39.99m, CategoryType = CategoryType.SmartDevices ,OrderId =orders[1].OrderId},
+                new Product { ProductId = Guid.NewGuid(), Name = "Razer Gaming Mouse", Price = 69.99m, CategoryType = CategoryType.Gaming ,OrderId =orders[1].OrderId },
+                new Product { ProductId = Guid.NewGuid(), Name = "Calvin Klein Watch", Price = 199.99m, CategoryType = CategoryType.Fashion ,OrderId =orders[1].OrderId},
+                new Product { ProductId = Guid.NewGuid(), Name = "Fossil Smartwatch", Price = 149.99m, CategoryType = CategoryType.Fashion ,OrderId =orders[0].OrderId},
                   };
 
             var tags = new List<Tag>
@@ -139,8 +128,6 @@ namespace E_CommerceSystemV2.API
                 new Tag { TagId = Guid.NewGuid(), Name = "Tech" },
 
             };
-
-
             var productTags = new List<TagProducts>
                 {
                     new TagProducts { TagId = tags[1].TagId, ProductId = products[1].ProductId },
@@ -151,15 +138,7 @@ namespace E_CommerceSystemV2.API
                     new TagProducts { TagId = tags[2].TagId, ProductId = products[6].ProductId },
                     new TagProducts { TagId = tags[2].TagId, ProductId = products[7].ProductId },
 
-
                 };
-
-            var userOrders = new List<UserOrders>
-            {
-                new UserOrders { Id = users[1].Id.ToString(), OrderId = orders[1].OrderId},
-                new UserOrders { Id = users[2].Id.ToString(), OrderId = orders[1].OrderId },
-            };
-
             #endregion
 
             modelBuilder.Entity<User>().HasData(users);
@@ -168,7 +147,6 @@ namespace E_CommerceSystemV2.API
             modelBuilder.Entity<Tag>().HasData(tags);
             modelBuilder.Entity<TagProducts>().HasData(productTags);
             modelBuilder.Entity<Category>().HasData(categories);
-            modelBuilder.Entity<UserOrders>().HasData(userOrders);
         }
     }
 }

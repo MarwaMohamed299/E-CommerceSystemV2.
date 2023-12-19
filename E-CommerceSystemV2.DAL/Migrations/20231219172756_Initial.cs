@@ -66,23 +66,11 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Orders",
-                columns: table => new
-                {
-                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Orders", x => x.OrderId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Tags",
                 columns: table => new
                 {
                     TagId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -196,6 +184,25 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.OrderId);
+                    table.ForeignKey(
+                        name: "FK_Orders_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -203,7 +210,9 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CategoryType = table.Column<int>(type: "int", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TagId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -213,29 +222,16 @@ namespace E_CommerceSystemV2.DAL.Migrations
                         column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "CategoryId");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "UserOrders",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserOrders", x => new { x.Id, x.OrderId });
                     table.ForeignKey(
-                        name: "FK_UserOrders_AspNetUsers_Id",
-                        column: x => x.Id,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_UserOrders_Orders_OrderId",
+                        name: "FK_Products_Orders_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders",
                         principalColumn: "OrderId");
+                    table.ForeignKey(
+                        name: "FK_Products_Tags_TagId",
+                        column: x => x.TagId,
+                        principalTable: "Tags",
+                        principalColumn: "TagId");
                 });
 
             migrationBuilder.CreateTable(
@@ -252,7 +248,8 @@ namespace E_CommerceSystemV2.DAL.Migrations
                         name: "FK_TagProducts_Products_ProductId",
                         column: x => x.ProductId,
                         principalTable: "Products",
-                        principalColumn: "ProductId");
+                        principalColumn: "ProductId",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TagProducts_Tags_TagId",
                         column: x => x.TagId,
@@ -265,10 +262,10 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "CreationDate", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "6fc57450-b171-416f-a5ee-7ce7aa1e88e4", 0, "600415d0-b9c4-45bf-aaf3-f16b21dd7391", new DateTime(2023, 12, 15, 15, 48, 38, 610, DateTimeKind.Local).AddTicks(1237), "john.doe@example.com", false, false, null, null, null, "password123", null, false, "3173bf8d-84c6-4539-a593-d6f0a4ae5ad2", false, "john doe" },
-                    { "817dea1a-128e-4561-bf70-02a61ebb28ea", 0, "6277c217-fdc9-471e-93ad-aba16f7b5c1c", new DateTime(2023, 12, 15, 15, 48, 38, 610, DateTimeKind.Local).AddTicks(1270), "Sandy.Jakson@example.com", false, false, null, null, null, "password123", null, false, "ba5f87ee-157e-407f-b1b9-ba73f181f17c", false, "Sandy Jakson" },
-                    { "8f8be606-1b6a-4fc0-9eb4-64cbdeb572db", 0, "224ecd06-efce-4a3d-ab97-4822281bb46b", new DateTime(2023, 12, 15, 15, 48, 38, 610, DateTimeKind.Local).AddTicks(1259), "jane.doe@example.com", false, false, null, null, null, "password123", null, false, "3a9f18ab-5192-4b93-9aaf-6d3a87b383ec", false, "jane doe" },
-                    { "911ff057-c661-4236-a00e-67252e78797c", 0, "e1ea3ea7-fb2c-48aa-bf23-99a5a97af942", new DateTime(2023, 12, 15, 15, 48, 38, 610, DateTimeKind.Local).AddTicks(1264), "Sara.doe@example.com", false, false, null, null, null, "password123", null, false, "3415b4ed-c0ce-45c8-adde-9aa3cf52f056", false, "Sara doe" }
+                    { "5e542efa-8217-4855-93d7-7c47a56c98f7", 0, "2eec0103-b47a-4d67-a071-16f0f3e6ac86", new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1021), "Sara.doe@example.com", false, false, null, null, null, "password123", null, false, "76d3d2e8-4f48-4ee9-a49d-4bfff2003a69", false, "Sara doe" },
+                    { "7517cc9e-ced0-48ce-b404-ace27e6e2c9d", 0, "4fb8f04c-1532-4a06-9f6c-70947b15b274", new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(995), "john.doe@example.com", false, false, null, null, null, "password123", null, false, "8afa9aee-b694-4f5f-ba9b-9b60919c5d0e", false, "john doe" },
+                    { "c6a48572-1d1c-47bc-8082-97369cb152fe", 0, "04ed1d37-8e38-4b3a-bab7-da9c0d6b1458", new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1029), "Sandy.Jakson@example.com", false, false, null, null, null, "password123", null, false, "7f27fa9b-67c4-41e5-9b96-9c4cba002de7", false, "Sandy Jakson" },
+                    { "f86a79f0-0680-41f5-a2d8-8bf2d1c04081", 0, "a232040e-2f38-4bcd-8a72-15df79e8ff93", new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1010), "jane.doe@example.com", false, false, null, null, null, "password123", null, false, "892a66a2-be15-4cea-a391-95464787d676", false, "jane doe" }
                 });
 
             migrationBuilder.InsertData(
@@ -276,45 +273,14 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 columns: new[] { "CategoryId", "Name" },
                 values: new object[,]
                 {
-                    { new Guid("1e3ac85b-8875-49ba-99ba-018ddcf25602"), "Clothing" },
-                    { new Guid("2467a93b-c3c7-42e2-bba2-fa67e50d41f8"), "Gaming" },
-                    { new Guid("24e47f0b-447c-4d66-aee9-c7be948e0747"), "Electronics" },
-                    { new Guid("291fae8e-8fea-4c4e-be1b-74af2c2551a4"), "Mobiles" },
-                    { new Guid("73e32f3a-91b2-4047-95c1-d2262bdb0bdd"), "Fashion" },
-                    { new Guid("8b7dc28e-cac6-480e-b5fd-24c099a113bb"), "Tablets" },
-                    { new Guid("952f2248-1949-4152-8e7b-7ae413f16299"), "SmartDevices" },
-                    { new Guid("f6cc9ecd-c88c-42ea-92c3-26f790196617"), "Appliances" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Orders",
-                columns: new[] { "OrderId", "OrderDate" },
-                values: new object[,]
-                {
-                    { new Guid("518d50b3-64f1-4856-9bdd-dc711ced2e74"), new DateTime(2023, 12, 15, 15, 48, 38, 610, DateTimeKind.Local).AddTicks(1280) },
-                    { new Guid("f1d148a2-8dd8-4315-a227-41f8830ec2df"), new DateTime(2023, 12, 15, 15, 48, 38, 610, DateTimeKind.Local).AddTicks(1282) }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Products",
-                columns: new[] { "ProductId", "CategoryId", "CategoryType", "Name", "Price" },
-                values: new object[,]
-                {
-                    { new Guid("1657f280-8380-471a-baa6-4eb846aeaeba"), null, 4, "Cuisinart Coffee Maker", 79.99m },
-                    { new Guid("4788ead3-d312-4464-9c24-179513960799"), null, 1, "Sony Smart TV", 1299.99m },
-                    { new Guid("4fc22b6d-a00d-4bd7-bd0d-0064ca56d9e8"), null, 2, "Samsung Galaxy S21", 799.99m },
-                    { new Guid("6736ffa4-502a-40b9-9c50-04296dbcf4ac"), null, 1, "Canon EOS Rebel T7", 499.99m },
-                    { new Guid("748b16c7-0d6b-4ea4-9e44-60b926830a80"), null, 1, "HP Printer", 149.99m },
-                    { new Guid("7684c781-877f-4510-bdd9-f02e93ef6d84"), null, 3, "Calvin Klein Watch", 199.99m },
-                    { new Guid("7f2bbfb7-2086-4413-b8b6-80765518e7d8"), null, 3, "Adidas Running Shoes", 109.99m },
-                    { new Guid("90cfddf2-2827-4ae3-8014-a454a1caf113"), null, 3, "Nike Running Shoes", 89.99m },
-                    { new Guid("94a78685-ee6d-4ba1-9f7a-89754ea63625"), null, 1, "Bose Noise-Canceling Headphones", 299.99m },
-                    { new Guid("a3bec710-ecf9-4351-9bd4-27c3b245a378"), null, 3, "Levi's Jeans", 59.99m },
-                    { new Guid("ba7306fa-9228-4e20-8f9d-2d6160f13938"), null, 5, "Amazon Echo Dot", 39.99m },
-                    { new Guid("c6e72622-1cb0-468c-b459-558ddf96c98e"), null, 6, "Fitbit Charge 5", 149.99m },
-                    { new Guid("d780117e-5d00-4738-9d40-451366845386"), null, 4, "KitchenAid Stand Mixer", 349.99m },
-                    { new Guid("deaf8252-e940-4e15-a060-2ff721484b91"), null, 3, "Fossil Smartwatch", 149.99m },
-                    { new Guid("e3a13aec-4b03-4e57-bd01-30ae111f39ef"), null, 6, "Razer Gaming Mouse", 69.99m }
+                    { new Guid("0397150e-05b3-4fc2-8e6b-9a53b1da359f"), "Fashion" },
+                    { new Guid("40b5538a-5108-43ab-98d8-154909d27980"), "SmartDevices" },
+                    { new Guid("5a59f5a4-d059-4155-8b72-d8e9db8d6237"), "Mobiles" },
+                    { new Guid("9b7b88c5-162c-4712-b414-c0f1002bbe82"), "Tablets" },
+                    { new Guid("a3e7cffc-f47a-46cb-9233-927aa8e42e07"), "Electronics" },
+                    { new Guid("e20fcb32-e66b-4f39-bcc4-17093bd305b9"), "Clothing" },
+                    { new Guid("e8776dd9-f129-4696-9e2e-1f44d71b0293"), "Appliances" },
+                    { new Guid("f404369a-5578-4593-93aa-8817a630f639"), "Gaming" }
                 });
 
             migrationBuilder.InsertData(
@@ -322,9 +288,46 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 columns: new[] { "TagId", "Name" },
                 values: new object[,]
                 {
-                    { new Guid("43e42810-d632-4245-bbc1-112b905e562a"), "Tech" },
-                    { new Guid("499ff470-510c-4250-8a57-60e43c9552e3"), "FlagShip Mobiles" },
-                    { new Guid("966023cd-9348-47e5-a06f-b95767e2ae3a"), "Fashion 2024" }
+                    { new Guid("6613d20b-76c4-4d60-9f2c-b4f4d33a11c7"), "FlagShip Mobiles" },
+                    { new Guid("ce580732-35a9-41b8-96af-116518cef9f1"), "Fashion 2024" },
+                    { new Guid("f1c0a02b-b9e0-4155-b618-1e316f486fd6"), "Tech" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Orders",
+                columns: new[] { "OrderId", "OrderDate", "UserId" },
+                values: new object[,]
+                {
+                    { new Guid("20dd7cb7-5440-41fd-bf00-65e47a056d0c"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1039), "f86a79f0-0680-41f5-a2d8-8bf2d1c04081" },
+                    { new Guid("46307b76-03aa-4329-9216-1ad02d7f3ce5"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1070), "5e542efa-8217-4855-93d7-7c47a56c98f7" },
+                    { new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1045), "7517cc9e-ced0-48ce-b404-ace27e6e2c9d" },
+                    { new Guid("5d0bfb29-1d96-448c-942a-cbb084cf32a5"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1067), "c6a48572-1d1c-47bc-8082-97369cb152fe" },
+                    { new Guid("8d6ed240-c801-4b55-a881-58827c28fb06"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1048), "f86a79f0-0680-41f5-a2d8-8bf2d1c04081" },
+                    { new Guid("9f1db7cb-46dc-4b3b-80f1-113ab1c10a2f"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1073), "f86a79f0-0680-41f5-a2d8-8bf2d1c04081" },
+                    { new Guid("e5dd0a36-65f0-49fb-9f16-75c279dbc6c3"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1052), "5e542efa-8217-4855-93d7-7c47a56c98f7" },
+                    { new Guid("e6a023f6-99c0-4a34-9ecb-0b49d367dc50"), new DateTime(2023, 12, 19, 20, 27, 55, 374, DateTimeKind.Local).AddTicks(1058), "f86a79f0-0680-41f5-a2d8-8bf2d1c04081" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Products",
+                columns: new[] { "ProductId", "CategoryId", "CategoryType", "Name", "OrderId", "Price", "TagId" },
+                values: new object[,]
+                {
+                    { new Guid("04ef4f41-6446-4dd9-9173-1fd64e651444"), null, 3, "Adidas Running Shoes", new Guid("8d6ed240-c801-4b55-a881-58827c28fb06"), 109.99m, null },
+                    { new Guid("064fd01a-bf9f-4889-9200-60b295613c54"), null, 3, "Levi's Jeans", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 59.99m, null },
+                    { new Guid("103fc9a8-64ee-4e1a-ae9e-ac26a3974109"), null, 3, "Fossil Smartwatch", new Guid("20dd7cb7-5440-41fd-bf00-65e47a056d0c"), 149.99m, null },
+                    { new Guid("3935c87e-2954-44cc-a95f-7f67a902291b"), null, 1, "Bose Noise-Canceling Headphones", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 299.99m, null },
+                    { new Guid("399acc92-7aaa-4f05-aae2-d07e88e83ebb"), null, 1, "HP Printer", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 149.99m, null },
+                    { new Guid("3bef8d04-44fe-4b64-9919-400029667621"), null, 4, "KitchenAid Stand Mixer", new Guid("e5dd0a36-65f0-49fb-9f16-75c279dbc6c3"), 349.99m, null },
+                    { new Guid("3d12a097-ae94-4bd1-8aa6-9bc40128a7f8"), null, 2, "Samsung Galaxy S21", new Guid("20dd7cb7-5440-41fd-bf00-65e47a056d0c"), 799.99m, null },
+                    { new Guid("55b572f5-374d-4ecc-81a4-b242ba6a5ea1"), null, 5, "Amazon Echo Dot", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 39.99m, null },
+                    { new Guid("ae170701-a04d-476e-8bd9-3f9bb12bf79f"), null, 1, "Sony Smart TV", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 1299.99m, null },
+                    { new Guid("b243621f-e966-476e-acfb-6dabb89cd8a7"), null, 3, "Nike Running Shoes", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 89.99m, null },
+                    { new Guid("c75be557-8fd5-4e3b-9725-61b3a97142bd"), null, 6, "Razer Gaming Mouse", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 69.99m, null },
+                    { new Guid("c79c163e-ca39-42d6-980e-981e97d2fe5f"), null, 1, "Canon EOS Rebel T7", new Guid("8d6ed240-c801-4b55-a881-58827c28fb06"), 499.99m, null },
+                    { new Guid("d82730ad-c898-48fb-bc7a-7d0ab50cd6a4"), null, 6, "Fitbit Charge 5", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 149.99m, null },
+                    { new Guid("dda0b29c-14c9-40c2-872d-e0f7fec49d7a"), null, 3, "Calvin Klein Watch", new Guid("5a3081d7-7565-4335-a199-c5fc4ccc8096"), 199.99m, null },
+                    { new Guid("f2332187-7456-4e9c-a3fa-db3621091cf6"), null, 4, "Cuisinart Coffee Maker", new Guid("20dd7cb7-5440-41fd-bf00-65e47a056d0c"), 79.99m, null }
                 });
 
             migrationBuilder.InsertData(
@@ -332,17 +335,13 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 columns: new[] { "ProductId", "TagId" },
                 values: new object[,]
                 {
-                    { new Guid("4788ead3-d312-4464-9c24-179513960799"), new Guid("499ff470-510c-4250-8a57-60e43c9552e3") },
-                    { new Guid("6736ffa4-502a-40b9-9c50-04296dbcf4ac"), new Guid("43e42810-d632-4245-bbc1-112b905e562a") }
-                });
-
-            migrationBuilder.InsertData(
-                table: "UserOrders",
-                columns: new[] { "Id", "OrderId" },
-                values: new object[,]
-                {
-                    { "8f8be606-1b6a-4fc0-9eb4-64cbdeb572db", new Guid("f1d148a2-8dd8-4315-a227-41f8830ec2df") },
-                    { "911ff057-c661-4236-a00e-67252e78797c", new Guid("f1d148a2-8dd8-4315-a227-41f8830ec2df") }
+                    { new Guid("064fd01a-bf9f-4889-9200-60b295613c54"), new Guid("f1c0a02b-b9e0-4155-b618-1e316f486fd6") },
+                    { new Guid("3935c87e-2954-44cc-a95f-7f67a902291b"), new Guid("f1c0a02b-b9e0-4155-b618-1e316f486fd6") },
+                    { new Guid("399acc92-7aaa-4f05-aae2-d07e88e83ebb"), new Guid("f1c0a02b-b9e0-4155-b618-1e316f486fd6") },
+                    { new Guid("3bef8d04-44fe-4b64-9919-400029667621"), new Guid("f1c0a02b-b9e0-4155-b618-1e316f486fd6") },
+                    { new Guid("ae170701-a04d-476e-8bd9-3f9bb12bf79f"), new Guid("6613d20b-76c4-4d60-9f2c-b4f4d33a11c7") },
+                    { new Guid("b243621f-e966-476e-acfb-6dabb89cd8a7"), new Guid("f1c0a02b-b9e0-4155-b618-1e316f486fd6") },
+                    { new Guid("c79c163e-ca39-42d6-980e-981e97d2fe5f"), new Guid("f1c0a02b-b9e0-4155-b618-1e316f486fd6") }
                 });
 
             migrationBuilder.CreateIndex(
@@ -385,19 +384,29 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Orders_UserId",
+                table: "Orders",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_CategoryId",
                 table: "Products",
                 column: "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TagProducts_TagId",
-                table: "TagProducts",
+                name: "IX_Products_OrderId",
+                table: "Products",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Products_TagId",
+                table: "Products",
                 column: "TagId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserOrders_OrderId",
-                table: "UserOrders",
-                column: "OrderId");
+                name: "IX_TagProducts_TagId",
+                table: "TagProducts",
+                column: "TagId");
         }
 
         /// <inheritdoc />
@@ -422,25 +431,22 @@ namespace E_CommerceSystemV2.DAL.Migrations
                 name: "TagProducts");
 
             migrationBuilder.DropTable(
-                name: "UserOrders");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "Products");
 
             migrationBuilder.DropTable(
-                name: "Tags");
-
-            migrationBuilder.DropTable(
-                name: "AspNetUsers");
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "Orders");
 
             migrationBuilder.DropTable(
-                name: "Categories");
+                name: "Tags");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
         }
     }
 }

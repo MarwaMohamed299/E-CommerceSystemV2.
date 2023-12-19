@@ -5,6 +5,9 @@
         public Guid OrderId { get; set; }
         public DateTime OrderDate { get; set; }
         //nav prop
-        public ICollection<UserOrders> UserOrders { get; set; } = new HashSet<UserOrders>();
+        public string UserId { get; set; } = string.Empty;
+        public User? User { get; set; }
+        public ICollection<Product> Products = new HashSet<Product>();
+    
     }
 }

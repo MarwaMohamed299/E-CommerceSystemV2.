@@ -6,7 +6,6 @@
         public string Name { get; set; } = string.Empty;
 
         //NavProp
-
         public ICollection<Product> Products { get; set; } = new HashSet<Product>();
     }
 }

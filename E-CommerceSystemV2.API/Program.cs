@@ -1,4 +1,3 @@
-
 using E_CommerceSystemV2.BL.Managers.Identity;
 using E_CommerceSystemV2.BL.Managers.Products;
 using E_CommerceSystemV2.DAL.Data.Models;
@@ -7,7 +6,6 @@ using E_CommerceSystemV2.DAL.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using System.IO;
 using System.Text;
 
 namespace E_CommerceSystemV2.API
@@ -82,9 +80,9 @@ namespace E_CommerceSystemV2.API
 
             builder.Services.AddScoped<IProductRepo, ProductRepo>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+
             builder.Services.AddScoped<IUserManager, UserManager>();
-
-
             builder.Services.AddScoped<IProductsManager, ProductsManager>();
 
             #endregion

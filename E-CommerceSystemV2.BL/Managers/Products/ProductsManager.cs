@@ -15,10 +15,8 @@ namespace E_CommerceSystemV2.BL.Managers.Products
         {
             _productsRepo = productsRepo;
             _logger = logger;
-
         }
-
-        public async Task<IEnumerable<ProductPagintationDto>> GetAll(int page, int countPerPage)         /*GetAll*/
+        public async Task<ProductPagintationDto> GetAll(int page, int countPerPage)         /*GetAll*/
         {
             try
             {
@@ -30,25 +28,27 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                     Price = e.Price
                 }).ToList();
 
-                return new List<ProductPagintationDto>
+                //return new List<ProductPagintationDto>
+                //{
+
+                //    new ProductPagintationDto
+                //    {
+                //        TotalCount = totalCount,
+                //        Items = items.ToList()
+                //    }
+                // };
+                return new ProductPagintationDto
                 {
-
-                    new ProductPagintationDto
-                    {
-                        TotalCount = totalCount,
-                        Items = items.ToList()
-                    }
-                 };
-
+                    TotalCount = totalCount,
+                    Items = items
+                };
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error occurred while getting all Products.");
                 throw;
             }
-
         }
-
         public async Task<ProductReadDto?> GetById(Guid productId)                 /*GetById*/
         {
             try
@@ -60,11 +60,9 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 }
                 return new ProductReadDto
                 {
-
                     ProductId = product.ProductId,
                     Name = product.Name,
                     Price = product.Price
-
                 };
             }
             catch (Exception ex)
@@ -74,7 +72,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
 
         }
-
         public async Task<string> Add(ProductAddDto productAddDto)                          /*Add*/
         {
             try
@@ -176,7 +173,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error occurred while deleting a Product.");
+                _logger.LogError(ex, "Error occurred while Searchig a Product.");
                 throw;
 
             }

@@ -44,7 +44,7 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
                     new Claim("Nationality", "Egyptian"),
                 };
                 await _userManager.AddClaimsAsync(user, userClaims);
-                return null;
+                return null!;
             }
         }
         public async Task<LogInResultDto> LogIn(LogInDto credentials)
@@ -75,7 +75,7 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
             //Key Generation
 
             var SecretKey = _config["SecretKey"];
-            var secretKeyInBytes = Encoding.ASCII.GetBytes(SecretKey);      
+            var secretKeyInBytes = Encoding.ASCII.GetBytes(SecretKey!);      
 
            var Key = new SymmetricSecurityKey(secretKeyInBytes);
             //Hashing 

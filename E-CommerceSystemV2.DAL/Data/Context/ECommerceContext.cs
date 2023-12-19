@@ -29,14 +29,14 @@ namespace E_CommerceSystemV2.API
             base.OnModelCreating(modelBuilder);
 
 
-            //Order
+             //Order
              modelBuilder.Entity<Order>()
                .HasMany(o => o.Products)
                .WithOne(p => p.Order)
                .HasForeignKey(p => p.OrderId)
                .OnDelete(DeleteBehavior.NoAction);
 
-            // User
+              // User
                modelBuilder.Entity<User>()
                 .HasMany(u => u.Orders)
                 .WithOne(o => o.User)
@@ -63,7 +63,6 @@ namespace E_CommerceSystemV2.API
                 ////TagProduct
                 modelBuilder.Entity<TagProducts>()
                     .HasKey(tp => new { tp.ProductId, tp.TagId });
-
 
             #region Seeding
 
@@ -97,13 +96,9 @@ namespace E_CommerceSystemV2.API
                 new Category { CategoryId = Guid.NewGuid(), Name = "SmartDevices" },
                 new Category { CategoryId = Guid.NewGuid(), Name = "Gaming" },
 
-
-
             };
-
             var products = new List<Product>
                   {
-
                 new Product { ProductId = Guid.NewGuid(), Name = "Samsung Galaxy S21", Price = 799.99m, CategoryType = CategoryType.Mobiles ,OrderId =orders[0].OrderId},
                 new Product { ProductId = Guid.NewGuid(), Name = "Sony Smart TV", Price = 1299.99m, CategoryType = CategoryType.Electronics ,OrderId =orders[1].OrderId },
                 new Product { ProductId = Guid.NewGuid(), Name = "Canon EOS Rebel T7", Price = 499.99m, CategoryType = CategoryType.Electronics,OrderId =orders[2].OrderId },
@@ -140,7 +135,6 @@ namespace E_CommerceSystemV2.API
 
                 };
             #endregion
-
             modelBuilder.Entity<User>().HasData(users);
             modelBuilder.Entity<Order>().HasData(orders);
             modelBuilder.Entity<Product>().HasData(products);

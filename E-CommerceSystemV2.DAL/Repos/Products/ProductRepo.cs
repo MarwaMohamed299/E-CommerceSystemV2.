@@ -12,18 +12,15 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
         public ProductRepo(ECommerceContext EcommerceContext)
         {
             _ecommerceContext = EcommerceContext;
-            _ecommerceContext.Dispose();
+          //  _ecommerceContext.Dispose();
         }
-
         public async Task<IEnumerable<Product>> GetAll(int page, int countPerPage)
         {
-
-
-            return  _ecommerceContext.Products
+            return await _ecommerceContext.Products
                  .OrderBy(P => P.Price)
                  .Skip((page - 1) * countPerPage)
                  .Take(countPerPage)
-                 .ToList();
+                 .ToListAsync();
         }
 
         public async Task<int> GetCount()

@@ -43,7 +43,6 @@ namespace E_CommerceSystemV2.API.Controllers.Products
 
             }
         }
-
         [HttpGet("{page}/{countPerPage}")]
         public async Task<ActionResult<IEnumerable<ProductPagintationDto>>> GetAll(int page, int countPerPage)
         {
@@ -75,7 +74,6 @@ namespace E_CommerceSystemV2.API.Controllers.Products
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
             }
         }
-
 
         [HttpPost]
         public async Task<ActionResult<string>> Add([FromBody] ProductAddDto productDto)

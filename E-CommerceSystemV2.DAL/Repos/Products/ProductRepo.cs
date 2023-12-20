@@ -79,9 +79,13 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
 
         public async Task<IEnumerable<Product>> SearchWithManyTags(List<Guid>tagIds)
         {
-            return await _ecommerceContext.Products
-                   .Where(p => p.TagProducts.Any(tp => tagIds.Contains(tp.Tag!.TagId)))
-                   .ToListAsync();
+            //return await _ecommerceContext.Products
+            //       .Where(p => p.TagProducts.Any(tp => tagIds.Contains(tp.Tag!.TagId)))
+            //       .ToListAsync();
+            return await _ecommerceContext.TagProducts
+                  .Where(tp => tagIds.Contains(tp.TagId))
+                  .Select(tp => tp.Product)  
+                  .ToListAsync();
 
         }
 

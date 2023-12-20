@@ -15,6 +15,20 @@ namespace E_CommerceSystemV2.API.Controllers.Products
             _productsManager = productsManager;
         }
 
+        [HttpGet("SearchWithManyTag")]
+        public async Task<ActionResult<IEnumerable<ProductReadDto>>> SearchWithManyTag([FromQuery] List<Guid> tagIds)
+        {
+            try
+            {
+                var searchedProducts = await _productsManager.SearchWithManyTags(tagIds);
+                return Ok(searchedProducts);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
+
+            }
+        }
         [HttpGet("{tagId}")]
         public async Task<ActionResult<IEnumerable<ProductReadDto>>> SearchWithTag(Guid tagId)
         {

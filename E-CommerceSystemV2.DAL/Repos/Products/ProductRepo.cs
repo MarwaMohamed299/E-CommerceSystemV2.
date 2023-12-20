@@ -12,7 +12,6 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
         public ProductRepo(ECommerceContext EcommerceContext)
         {
             _ecommerceContext = EcommerceContext;
-          //  _ecommerceContext.Dispose();
         }
         public async Task<IEnumerable<Product>> GetAll(int page, int countPerPage)
         {
@@ -61,10 +60,7 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
 
         public async Task<IEnumerable<Product>> SearchWithTag(Guid tagId)
         {
-            // TODO: don't ignore warnings
-            // TODO: not efficient
-            // TODO: don't use ToLower()
-            // TODO: don't search by name, search by id, because name is not unique and id is indexed (faster)
+        
             var q1 = await _ecommerceContext.Set<TagProducts>()
                 .TagWith("Marwa")
                 .Where(tp => tp.TagId == tagId)
@@ -80,6 +76,15 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
 
             return q2;
         }
+
+        public async Task<IEnumerable<Product>> SearchWithManyTags(List<Guid>tagIds)
+        {
+            return await _ecommerceContext.Products
+                   .Where(p => p.TagProducts.Any(tp => tagIds.Contains(tp.Tag!.TagId)))
+                   .ToListAsync();
+
+        }
+
     }
 }
 

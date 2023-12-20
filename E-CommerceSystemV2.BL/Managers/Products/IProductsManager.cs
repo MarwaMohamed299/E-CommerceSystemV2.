@@ -6,6 +6,8 @@ namespace E_CommerceSystemV2.BL.Managers.Products
     {
         Task<ProductPagintationDto> GetAll(int page, int countPerPage);
         Task<IEnumerable<ProductReadDto>> SearchWithTag(Guid tagId);
+        Task<IEnumerable<ProductReadDto>> SearchWithManyTags(List<Guid>tagIds);
+
 
         Task<ProductReadDto?> GetById(Guid productId);
         Task<string> Add(ProductAddDto productAddDto);

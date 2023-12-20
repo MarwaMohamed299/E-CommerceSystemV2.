@@ -6,9 +6,9 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
     {
         Task<IEnumerable<Product>> SearchWithTag(Guid tagId);
         Task<IEnumerable<Product>> GetAll(int page, int CountPerPage);
+        Task<IEnumerable<Product>> SearchWithManyTags(List<Guid> tagIds);
         Task<int> GetCount();
         Task<Product?> GetById(Guid productId);
-
         Task Add(Product Product);
         Task Update(Product product);
         Task Delete(Product product);

@@ -3,6 +3,7 @@ using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using System.Collections.Generic;
 
 namespace E_CommerceSystemV2.BL.Managers.Products
 {
@@ -28,15 +29,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                     Price = e.Price
                 }).ToList();
 
-                //return new List<ProductPagintationDto>
-                //{
-
-                //    new ProductPagintationDto
-                //    {
-                //        TotalCount = totalCount,
-                //        Items = items.ToList()
-                //    }
-                // };
                 return new ProductPagintationDto
                 {
                     TotalCount = totalCount,
@@ -70,7 +62,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 _logger.LogError(ex, $"Error occurred while getting employee with ID {productId}.");
                 throw;
             }
-
         }
         public async Task<string> Add(ProductAddDto productAddDto)                          /*Add*/
         {
@@ -173,7 +164,37 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error occurred while Searchig a Product.");
+                _logger.LogError(ex, "Error occurred while Searching a Product.");
+                throw;
+
+            }
+        }
+
+        public async Task<IEnumerable<ProductReadDto>> SearchWithManyTags(List<Guid> tagIds)
+        {
+            try
+            {
+                var searchedProducts = await _productsRepo.SearchWithManyTags(tagIds);
+
+                if (searchedProducts == null)
+                {
+                    _logger.LogWarning($"No products found for search term: {tagIds}");
+                    throw new ArgumentException($"No products found for search term: {tagIds}");
+
+                }
+                var productReadDto = searchedProducts.Select(p => new ProductReadDto
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Price = p.Price,
+                });
+
+                return productReadDto;
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while Searching a Product.");
                 throw;
 
             }

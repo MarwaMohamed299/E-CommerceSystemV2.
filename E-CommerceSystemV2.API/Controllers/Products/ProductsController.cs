@@ -15,6 +15,20 @@ namespace E_CommerceSystemV2.API.Controllers.Products
             _productsManager = productsManager;
         }
 
+        [HttpPut("UpdateProductTags")]
+        public async Task<ActionResult<ProductUpdateDto>> UpdateProductTags(Guid productId,List<Guid> tagIds)
+        {
+            try
+            {
+                var UpdatedProductTags = await _productsManager.UpdateProductTag(productId, tagIds);
+                    return Ok(UpdatedProductTags);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error:{ex.Message}");
+            }
+        }
+
         [HttpGet("SearchWithManyTag")]
         public async Task<ActionResult<IEnumerable<ProductReadDto>>> SearchWithManyTag([FromQuery] List<Guid> tagIds)
         {
@@ -57,7 +71,7 @@ namespace E_CommerceSystemV2.API.Controllers.Products
             }
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:Guid}")]
         public async Task<ActionResult<ProductReadDto>> GetById(Guid id)
         {
             try

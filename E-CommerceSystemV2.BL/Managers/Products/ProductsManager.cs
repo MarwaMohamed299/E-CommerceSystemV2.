@@ -2,8 +2,6 @@
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
-using System.Collections.Generic;
 
 namespace E_CommerceSystemV2.BL.Managers.Products
 {
@@ -112,7 +110,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
         }
 
-        public async Task<bool> Delete(Guid productId)                      /*Delete*/
+        public async Task<bool> Delete(Guid productId)                                    /*Delete*/
 
         {
             try
@@ -134,7 +132,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
         }
 
-        public async Task<IEnumerable<ProductReadDto>> SearchWithTag(Guid tagId)                /*Search*/
+        public async Task<IEnumerable<ProductReadDto>> SearchWithTag(Guid tagId)                /*SearchWithTag*/
         {
             try
             {
@@ -150,9 +148,8 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 {
                     _logger.LogWarning($"No products found for search term: {tagId}");
                     throw new ArgumentException($"No products found for search term: {tagId}");
-
-
                 }
+
                 var productReadDto = searchedProducts.Select(p => new ProductReadDto
                 {
                     ProductId = p.ProductId,
@@ -170,7 +167,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
         }
 
-        public async Task<IEnumerable<ProductReadDto>> SearchWithManyTags(List<Guid> tagIds)
+        public async Task<IEnumerable<ProductReadDto>> SearchWithManyTags(List<Guid> tagIds)     /*SearchWithManyTag*/
         {
             try
             {
@@ -197,6 +194,31 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 _logger.LogError(ex, "Error occurred while Searching a Product.");
                 throw;
 
+            }
+        }
+        public async Task<ProductUpdateDto>UpdateProductTag(Guid productId,List<Guid>tagIds)        /*UpdateProductTags*/
+        {
+            try
+            {
+                var productToUpdate = await _productsRepo.UpdateProductTag(productId, tagIds);
+
+                if (productToUpdate == null)
+                {
+                    _logger.LogWarning($"No products found for search term: {productId}");
+                    throw new ArgumentException($"No products found for search term: {productId}");
+                }
+
+                var productUpdateDto = new ProductUpdateDto
+                {
+                    ProductId = productId,
+                    TagIds = tagIds
+                };
+                return productUpdateDto;
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, " Error occurred while Updating a Product.");
+                throw;
             }
         }
     }

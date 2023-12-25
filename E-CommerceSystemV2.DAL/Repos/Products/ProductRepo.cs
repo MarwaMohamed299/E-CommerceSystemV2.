@@ -102,6 +102,14 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
                 .Select(tp => tp.Tag!)
                 .ToListAsync();
         }
+
+        public async Task<IEnumerable<TagProducts>>GetProductTags()
+        {
+            return await _ecommerceContext.TagProducts
+                   .Include(t=>t.Tag)
+                   .ThenInclude(p=>p!.Products)
+                   .ToListAsync();
+        }
     }
 }
 

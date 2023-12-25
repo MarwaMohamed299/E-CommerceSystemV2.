@@ -217,9 +217,31 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             }
             catch(Exception ex)
             {
-                _logger.LogError(ex, " Error occurred while Updating a Product.");
+                _logger.LogError(ex, " Error occurred while Updating a Product Tags.");
                 throw;
             }
         }
+        public async Task<ProductTagsReadDto> GetProductTags()
+        {
+            try
+            {
+                var ProductsTags = await _productsRepo.GetProductTags();
+
+                var products = ProductsTags.Select(p => new ProductTagsReadDto
+                {
+                    ProductId = p.ProductId,
+                    TagIds = p.Tag?.TagProducts?.Select(t => t.TagId).ToList() ?? new List<Guid>()
+                }).FirstOrDefault();
+
+                return products!;
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, " Error occurred while Retrieving Product Tags.");
+                throw;
+            }
+
+        }
+
     }
 }

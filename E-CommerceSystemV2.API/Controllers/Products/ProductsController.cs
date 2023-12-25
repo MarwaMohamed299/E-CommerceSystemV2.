@@ -14,6 +14,20 @@ namespace E_CommerceSystemV2.API.Controllers.Products
         {
             _productsManager = productsManager;
         }
+        [HttpGet("GetProductTags")]
+        public async Task<ActionResult<ProductTagsReadDto>>GetProductTags()
+        {
+            try
+            {
+                var ProductTags = await _productsManager.GetProductTags();
+                return Ok();
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error:{ex.Message}");
+
+            }
+        }
 
         [HttpPut("UpdateProductTags")]
         public async Task<ActionResult<ProductUpdateDto>> UpdateProductTags(Guid productId,List<Guid> tagIds)

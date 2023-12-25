@@ -55,11 +55,11 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
 
         public int SaveChangesAsync()
         {
-            return  _ecommerceContext.SaveChanges();
+            return _ecommerceContext.SaveChanges();
         }
         public async Task<IEnumerable<Product>> SearchWithTag(Guid tagId)
         {
-        
+
             var q1 = await _ecommerceContext.Set<TagProducts>()
                 .TagWith("Marwa")
                 .Where(tp => tp.TagId == tagId)
@@ -75,15 +75,15 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
 
             return q2;
         }
-        public async Task<IEnumerable<Product>> SearchWithManyTags(List<Guid>tagIds)
+        public async Task<IEnumerable<Product>> SearchWithManyTags(List<Guid> tagIds)
         {
-                  return await _ecommerceContext.TagProducts
-                    .Where(tp => tagIds.Contains(tp.TagId))
-                    .Select(tp => tp.Product!)
-                    .ToListAsync();
+            return await _ecommerceContext.TagProducts
+              .Where(tp => tagIds.Contains(tp.TagId))
+              .Select(tp => tp.Product!)
+              .ToListAsync();
 
         }
-        public async Task<IEnumerable<Tag>> UpdateProductTag (Guid productId ,List<Guid>tagIds )
+        public async Task<IEnumerable<Tag>> UpdateProductTag(Guid productId, List<Guid> tagIds)
         {
 
             var TagsToRemove = await _ecommerceContext.TagProducts
@@ -102,15 +102,18 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
                 .Select(tp => tp.Tag!)
                 .ToListAsync();
         }
-
-        public async Task<IEnumerable<TagProducts>>GetProductTags()
+        public async Task<IEnumerable<TagProducts>> GetProductTags()
         {
-            return await _ecommerceContext.TagProducts
-                   .Include(t=>t.Tag)
-                   .ThenInclude(p=>p!.Products)
-                   .ToListAsync();
+            return await _ecommerceContext.TagProducts 
+                .Include(p => p.Product)
+                .ThenInclude(t => t!.TagProducts)
+                .ThenInclude(t=>t.Tag)
+                 .ToListAsync();
         }
     }
 }
+
+
+
 
 

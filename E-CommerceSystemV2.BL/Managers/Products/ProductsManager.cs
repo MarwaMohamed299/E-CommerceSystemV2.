@@ -221,7 +221,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 throw;
             }
         }
-        public async Task<ProductTagsReadDto> GetProductTags()
+        public async Task<IEnumerable<ProductTagsReadDto>> GetProductTags()
         {
             try
             {
@@ -230,17 +230,17 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 var products = ProductsTags.Select(p => new ProductTagsReadDto
                 {
                     ProductId = p.ProductId,
-                    TagIds = p.Tag?.TagProducts?.Select(t => t.TagId).ToList() ?? new List<Guid>()
-                }).FirstOrDefault();
+                    Name = p.Product!.Name!,
+                    TagIds = (p.Tag!.TagProducts.Select(t => t.TagId)).ToList()
+                }).ToList();
 
-                return products!;
+                return products;
             }
             catch(Exception ex)
             {
                 _logger.LogError(ex, " Error occurred while Retrieving Product Tags.");
                 throw;
             }
-
         }
 
     }

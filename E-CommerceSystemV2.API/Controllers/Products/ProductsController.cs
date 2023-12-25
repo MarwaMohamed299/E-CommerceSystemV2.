@@ -20,7 +20,7 @@ namespace E_CommerceSystemV2.API.Controllers.Products
             try
             {
                 var ProductTags = await _productsManager.GetProductTags();
-                return Ok();
+                return Ok(ProductTags);
             }
             catch(Exception ex)
             {

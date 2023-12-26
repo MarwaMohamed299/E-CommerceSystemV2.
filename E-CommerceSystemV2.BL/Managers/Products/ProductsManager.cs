@@ -227,13 +227,22 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             {
                 var ProductsTags = await _productsRepo.GetProductTags();
 
-                var products = ProductsTags.Select(p => new ProductTagsReadDto
-                {
-                    ProductId = p.ProductId,
-                    Name = p.Product!.Name!,
-                    TagIds = (p.Tag!.TagProducts.Select(t => t.TagId)).ToList()
-                }).ToList();
+                //var products = ProductsTags.Select(p => new ProductTagsReadDto
+                //{
+                //    ProductId = p.ProductId,
+                //    Name = p.Product!.Name!,
+                //    TagIds = (p.Tag!.TagProducts.Select(t => t.TagId)).ToList()
+                //}).ToList();
 
+                var products = ProductsTags
+                    .GroupBy(p => new { p.ProductId, p.Product?.Name })
+                    .Select(p => new ProductTagsReadDto
+                    {
+                        ProductId = p.Key.ProductId,
+                        Name = p.Key.Name!,
+                        TagIds = p.Select(t => t.TagId).ToList()
+                    })
+                    .ToList();
                 return products;
             }
             catch(Exception ex)

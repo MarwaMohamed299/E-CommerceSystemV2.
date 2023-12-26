@@ -106,8 +106,7 @@ namespace E_CommerceSystemV2.DAL.Repos.Products
         {
             return await _ecommerceContext.TagProducts 
                 .Include(p => p.Product)
-                .ThenInclude(t => t!.TagProducts)
-                .ThenInclude(t=>t.Tag)
+                .Include(t=>t.Tag)
                  .ToListAsync();
         }
     }

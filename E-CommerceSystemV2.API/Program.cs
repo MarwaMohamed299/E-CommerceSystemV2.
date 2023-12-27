@@ -3,6 +3,7 @@ using E_CommerceSystemV2.BL.Managers.Products;
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using E_CommerceSystemV2.DAL.UnitOfWork;
+using Hangfire;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -61,7 +62,6 @@ namespace E_CommerceSystemV2.API
             });
             #endregion
 
-
             #region DefaultServices
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -76,6 +76,11 @@ namespace E_CommerceSystemV2.API
                 .CreateLogger();
             builder.Host.UseSerilog();
 
+            #endregion
+
+            #region Hang Fire Config
+            builder.Services.AddHangfire(x => x.UseSqlServerStorage(ConnectionString));
+            builder.Services.AddHangfireServer();
             #endregion
 
             #region CORS Policy
@@ -114,6 +119,7 @@ namespace E_CommerceSystemV2.API
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseHangfireDashboard("/dashboard");
             app.UseCors("AllowAllDomains");
 
 

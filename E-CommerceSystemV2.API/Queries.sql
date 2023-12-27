@@ -24033,3 +24033,175 @@ dbug: 12/27/2023 08:24:37.484 RelationalEventId.ConnectionDisposing[20007] (Micr
       Disposing connection to database 'E-Commerce' on server '.'.
 dbug: 12/27/2023 08:24:37.486 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Disposed connection to database '' on server '' (2ms).
+warn: 12/27/2023 10:55:49.494 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 10:55:49.863 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 10:55:49.863 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 10:55:50.144 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 10:55:50.201 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<Product>()
+          .Include(p => p.TagProducts)
+          .ThenInclude(t => t.Tag)'
+dbug: 12/27/2023 10:55:52.577 CoreEventId.NavigationBaseIncluded[10112] (Microsoft.EntityFrameworkCore.Query) 
+      Including navigation: 'Product.TagProducts'.
+dbug: 12/27/2023 10:55:52.615 CoreEventId.NavigationBaseIncluded[10112] (Microsoft.EntityFrameworkCore.Query) 
+      Including navigation: 'TagProducts.Tag'.
+dbug: 12/27/2023 10:55:52.881 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<Product>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Client Projections:
+                  0 -> Dictionary<IProperty, int> { [Property: Product.ProductId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Product.CategoryId (no field, Guid?) Shadow FK Index, 1], [Property: Product.CategoryType (CategoryType) Required, 2], [Property: Product.Name (string), 3], [Property: Product.OrderId (Guid) Required FK Index, 4], [Property: Product.Price (decimal) Required, 5], [Property: Product.TagId (no field, Guid?) Shadow FK Index, 6] }
+                  1 -> 0
+                  2 -> Dictionary<IProperty, int> { [Property: TagProducts.ProductId (Guid) Required PK FK AfterSave:Throw, 7], [Property: TagProducts.TagId (Guid) Required PK FK Index AfterSave:Throw, 8] }
+                  3 -> Dictionary<IProperty, int> { [Property: Tag.TagId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: Tag.Name (string) Required, 10] }
+                  4 -> 7
+                  5 -> 8
+                  6 -> 9
+              SELECT p.ProductId, p.CategoryId, p.CategoryType, p.Name, p.OrderId, p.Price, p.TagId, t1.ProductId, t1.TagId, t1.TagId0, t1.Name
+              FROM Products AS p
+              LEFT JOIN 
+              (
+                  SELECT t.ProductId, t.TagId, t0.TagId AS TagId0, t0.Name
+                  FROM TagProducts AS t
+                  INNER JOIN Tags AS t0 ON t.TagId == t0.TagId
+              ) AS t1 ON p.ProductId == t1.ProductId
+              ORDER BY p.ProductId ASC, t1.ProductId ASC, t1.TagId ASC), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Product>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 10:55:52.922 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 10:55:52.926 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (4ms).
+dbug: 12/27/2023 10:55:52.930 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 10:55:52.932 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 10:55:52.935 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 10:55:52.938 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 10:55:52.940 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (5ms).
+dbug: 12/27/2023 10:55:52.944 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId], [t1].[ProductId], [t1].[TagId], [t1].[TagId0], [t1].[Name]
+      FROM [Products] AS [p]
+      LEFT JOIN (
+          SELECT [t].[ProductId], [t].[TagId], [t0].[TagId] AS [TagId0], [t0].[Name]
+          FROM [TagProducts] AS [t]
+          INNER JOIN [Tags] AS [t0] ON [t].[TagId] = [t0].[TagId]
+      ) AS [t1] ON [p].[ProductId] = [t1].[ProductId]
+      ORDER BY [p].[ProductId], [t1].[ProductId], [t1].[TagId]
+info: 12/27/2023 10:55:54.914 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1,958ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId], [t1].[ProductId], [t1].[TagId], [t1].[TagId0], [t1].[Name]
+      FROM [Products] AS [p]
+      LEFT JOIN (
+          SELECT [t].[ProductId], [t].[TagId], [t0].[TagId] AS [TagId0], [t0].[Name]
+          FROM [TagProducts] AS [t]
+          INNER JOIN [Tags] AS [t0] ON [t].[TagId] = [t0].[TagId]
+      ) AS [t1] ON [p].[ProductId] = [t1].[ProductId]
+      ORDER BY [p].[ProductId], [t1].[ProductId], [t1].[TagId]
+dbug: 12/27/2023 10:55:54.969 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 04ef4f41-6446-4dd9-9173-1fd64e651444}'.
+dbug: 12/27/2023 10:55:55.022 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: 04ef4f41-6446-4dd9-9173-1fd64e651444, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.036 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: 04ef4f41-6446-4dd9-9173-1fd64e651444, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}' was detected as changed.
+dbug: 12/27/2023 10:55:55.042 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Tag' entity with key '{TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.046 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: 04ef4f41-6446-4dd9-9173-1fd64e651444, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}'.
+dbug: 12/27/2023 10:55:55.047 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: 04ef4f41-6446-4dd9-9173-1fd64e651444, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}' was detected as changed.
+dbug: 12/27/2023 10:55:55.048 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Tag' entity with key '{TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}'.
+dbug: 12/27/2023 10:55:55.050 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: ae170701-a04d-476e-8bd9-3f9bb12bf79f}'.
+dbug: 12/27/2023 10:55:55.052 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: ae170701-a04d-476e-8bd9-3f9bb12bf79f, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}' was detected as changed.
+dbug: 12/27/2023 10:55:55.052 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: ae170701-a04d-476e-8bd9-3f9bb12bf79f, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}'.
+dbug: 12/27/2023 10:55:55.053 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 3bef8d04-44fe-4b64-9919-400029667621}'.
+dbug: 12/27/2023 10:55:55.054 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: 3bef8d04-44fe-4b64-9919-400029667621, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}' was detected as changed.
+dbug: 12/27/2023 10:55:55.054 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: 3bef8d04-44fe-4b64-9919-400029667621, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.055 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 064fd01a-bf9f-4889-9200-60b295613c54}'.
+dbug: 12/27/2023 10:55:55.056 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: 064fd01a-bf9f-4889-9200-60b295613c54, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}' was detected as changed.
+dbug: 12/27/2023 10:55:55.056 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: 064fd01a-bf9f-4889-9200-60b295613c54, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.057 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: c75be557-8fd5-4e3b-9725-61b3a97142bd}'.
+dbug: 12/27/2023 10:55:55.058 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: b243621f-e966-476e-acfb-6dabb89cd8a7}'.
+dbug: 12/27/2023 10:55:55.059 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: b243621f-e966-476e-acfb-6dabb89cd8a7, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}' was detected as changed.
+dbug: 12/27/2023 10:55:55.059 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: b243621f-e966-476e-acfb-6dabb89cd8a7, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.060 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: b243621f-e966-476e-acfb-6dabb89cd8a7, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}' was detected as changed.
+dbug: 12/27/2023 10:55:55.060 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: b243621f-e966-476e-acfb-6dabb89cd8a7, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}'.
+dbug: 12/27/2023 10:55:55.061 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: d82730ad-c898-48fb-bc7a-7d0ab50cd6a4}'.
+dbug: 12/27/2023 10:55:55.062 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 3935c87e-2954-44cc-a95f-7f67a902291b}'.
+dbug: 12/27/2023 10:55:55.062 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: 3935c87e-2954-44cc-a95f-7f67a902291b, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}' was detected as changed.
+dbug: 12/27/2023 10:55:55.063 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: 3935c87e-2954-44cc-a95f-7f67a902291b, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.063 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: c79c163e-ca39-42d6-980e-981e97d2fe5f}'.
+dbug: 12/27/2023 10:55:55.064 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: c79c163e-ca39-42d6-980e-981e97d2fe5f, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}' was detected as changed.
+dbug: 12/27/2023 10:55:55.065 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: c79c163e-ca39-42d6-980e-981e97d2fe5f, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.065 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 3d12a097-ae94-4bd1-8aa6-9bc40128a7f8}'.
+dbug: 12/27/2023 10:55:55.066 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 103fc9a8-64ee-4e1a-ae9e-ac26a3974109}'.
+dbug: 12/27/2023 10:55:55.066 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 55b572f5-374d-4ecc-81a4-b242ba6a5ea1}'.
+dbug: 12/27/2023 10:55:55.067 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: 399acc92-7aaa-4f05-aae2-d07e88e83ebb}'.
+dbug: 12/27/2023 10:55:55.068 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: 399acc92-7aaa-4f05-aae2-d07e88e83ebb, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}' was detected as changed.
+dbug: 12/27/2023 10:55:55.069 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: 399acc92-7aaa-4f05-aae2-d07e88e83ebb, TagId: f1c0a02b-b9e0-4155-b618-1e316f486fd6}'.
+dbug: 12/27/2023 10:55:55.069 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'TagProducts.Tag' for entity with key '{ProductId: 399acc92-7aaa-4f05-aae2-d07e88e83ebb, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}' was detected as changed.
+dbug: 12/27/2023 10:55:55.070 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'TagProducts' entity with key '{ProductId: 399acc92-7aaa-4f05-aae2-d07e88e83ebb, TagId: 6613d20b-76c4-4d60-9f2c-b4f4d33a11c7}'.
+dbug: 12/27/2023 10:55:55.070 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: f2332187-7456-4e9c-a3fa-db3621091cf6}'.
+dbug: 12/27/2023 10:55:55.071 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'ECommerceContext' started tracking 'Product' entity with key '{ProductId: dda0b29c-14c9-40c2-872d-e0f7fec49d7a}'.
+dbug: 12/27/2023 10:55:55.076 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 10:55:55.080 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 160ms reading results.
+dbug: 12/27/2023 10:55:55.085 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 10:55:55.087 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 10:55:55.149 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 10:55:55.157 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 10:55:55.159 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).

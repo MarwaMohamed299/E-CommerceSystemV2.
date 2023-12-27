@@ -22,7 +22,6 @@ namespace E_CommerceSystemV2.API
             builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(ConnectionString));
             #endregion
 
-
             #region Identity
 
             builder.Services.AddIdentity<User, IdentityRole>(options =>
@@ -72,7 +71,7 @@ namespace E_CommerceSystemV2.API
 
             #region SerilogConfig
             Log.Logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(new ConfigurationBuilder().AddJsonFile("appsettings.json").Build())
+                .ReadFrom.Configuration(builder.Configuration)
                 .CreateLogger();
             builder.Host.UseSerilog();
 

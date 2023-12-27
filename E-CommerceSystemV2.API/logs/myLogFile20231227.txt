@@ -3875,3 +3875,173 @@ INNER JOIN [Tags] AS [t0] ON [t].[TagId] = [t0].[TagId]
 2023-12-27 09:13:09.359 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
 2023-12-27 09:13:09.370 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 10.8708 ms
 2023-12-27 09:13:09.370 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 11.2302ms
+2023-12-27 09:13:11.399 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:11.418 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 18.6483 ms
+2023-12-27 09:13:11.418 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 19.1887ms
+2023-12-27 09:13:13.424 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:13.445 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 20.8761 ms
+2023-12-27 09:13:13.445 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 21.1006ms
+2023-12-27 09:13:15.450 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:15.463 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 13.1717 ms
+2023-12-27 09:13:15.463 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 13.6403ms
+2023-12-27 09:13:17.470 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:17.481 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 10.4908 ms
+2023-12-27 09:13:17.481 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 11.7638ms
+2023-12-27 09:13:19.485 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:19.492 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 6.5601 ms
+2023-12-27 09:13:19.492 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 7.0013ms
+2023-12-27 09:13:21.504 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:21.512 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 6.8238 ms
+2023-12-27 09:13:21.512 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 7.754ms
+2023-12-27 09:13:23.516 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:23.525 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 8.6813 ms
+2023-12-27 09:13:23.525 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 9.265ms
+2023-12-27 09:13:25.531 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:25.538 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 7.2938 ms
+2023-12-27 09:13:25.538 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 7.9418ms
+2023-12-27 09:13:27.544 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:27.589 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 45.0867 ms
+2023-12-27 09:13:27.589 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 45.3097ms
+2023-12-27 09:13:29.595 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:29.605 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 9.6630 ms
+2023-12-27 09:13:29.605 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 10.2068ms
+2023-12-27 09:13:31.611 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:31.623 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 12.3588 ms
+2023-12-27 09:13:31.623 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 12.963ms
+2023-12-27 09:13:33.629 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:33.646 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 16.5970 ms
+2023-12-27 09:13:33.646 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 16.8065ms
+2023-12-27 09:13:35.651 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:35.662 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 11.1994 ms
+2023-12-27 09:13:35.663 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 11.6194ms
+2023-12-27 09:13:37.667 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:37.678 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 10.1268 ms
+2023-12-27 09:13:37.678 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 10.7396ms
+2023-12-27 09:13:39.746 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:39.756 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 10.2245 ms
+2023-12-27 09:13:39.757 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 10.446ms
+2023-12-27 09:13:41.764 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:41.779 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 14.3335 ms
+2023-12-27 09:13:41.779 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 14.6136ms
+2023-12-27 09:13:43.782 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:43.789 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 6.4239 ms
+2023-12-27 09:13:43.789 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 6.9687ms
+2023-12-27 09:13:45.796 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:45.805 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 8.5459 ms
+2023-12-27 09:13:45.805 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 9.1596ms
+2023-12-27 09:13:47.809 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:47.819 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 10.0900 ms
+2023-12-27 09:13:47.819 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 10.6974ms
+2023-12-27 09:13:49.835 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:49.845 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 9.4551 ms
+2023-12-27 09:13:49.845 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 9.9641ms
+2023-12-27 09:13:51.849 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:51.858 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 8.4789 ms
+2023-12-27 09:13:51.858 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 8.9452ms
+2023-12-27 09:13:53.866 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:53.883 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 17.1047 ms
+2023-12-27 09:13:53.883 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 17.3674ms
+2023-12-27 09:13:55.888 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:55.902 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 13.7911 ms
+2023-12-27 09:13:55.902 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 14.429ms
+2023-12-27 09:13:57.908 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:57.920 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 11.5237 ms
+2023-12-27 09:13:57.920 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 12.1299ms
+2023-12-27 09:13:59.938 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:13:59.954 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 15.3424 ms
+2023-12-27 09:13:59.954 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 15.6952ms
+2023-12-27 09:14:01.959 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:01.969 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 9.8193 ms
+2023-12-27 09:14:01.993 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 10.3743ms
+2023-12-27 09:14:03.973 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:03.983 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 8.8672 ms
+2023-12-27 09:14:03.983 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 9.3784ms
+2023-12-27 09:14:05.988 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:06.002 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 13.3829 ms
+2023-12-27 09:14:06.002 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 13.7779ms
+2023-12-27 09:14:08.006 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:08.019 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 12.5684 ms
+2023-12-27 09:14:08.019 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 13.016ms
+2023-12-27 09:14:10.061 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:10.073 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 12.0322 ms
+2023-12-27 09:14:10.073 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 12.6864ms
+2023-12-27 09:14:12.079 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:12.088 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 8.7380 ms
+2023-12-27 09:14:12.088 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 9.1788ms
+2023-12-27 09:14:14.092 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:14.101 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 8.2831 ms
+2023-12-27 09:14:14.101 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 8.6989ms
+2023-12-27 09:14:16.106 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:16.121 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 14.3741 ms
+2023-12-27 09:14:16.121 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 14.5607ms
+2023-12-27 09:14:18.126 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:18.138 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 12.3144 ms
+2023-12-27 09:14:18.139 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 12.5365ms
+2023-12-27 09:14:20.153 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:20.188 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 35.0389 ms
+2023-12-27 09:14:20.189 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 35.4647ms
+2023-12-27 09:14:22.193 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:22.204 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 10.4953 ms
+2023-12-27 09:14:22.204 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 11.0098ms
+2023-12-27 09:14:24.208 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:24.217 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 8.5702 ms
+2023-12-27 09:14:24.217 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 8.9027ms
+2023-12-27 09:14:26.222 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:26.236 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 13.8747 ms
+2023-12-27 09:14:26.236 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 14.5444ms
+2023-12-27 09:14:28.243 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:28.252 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 9.3063 ms
+2023-12-27 09:14:28.253 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 9.9716ms
+2023-12-27 09:14:29.936 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-12-27 09:14:29.941 +03:00 [INF] Server desktop-eni7p6d:4636:4a81b12e caught stopping signal...
+2023-12-27 09:14:30.089 +03:00 [INF] Server desktop-eni7p6d:4636:4a81b12e caught stopped signal...
+2023-12-27 09:14:30.089 +03:00 [WRN] Server desktop-eni7p6d:4636:4a81b12e caught shutdown signal...
+2023-12-27 09:14:31.342 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/dashboard/stats - application/x-www-form-urlencoded; charset=UTF-8 167
+2023-12-27 09:14:31.352 +03:00 [INF] HTTP POST /dashboard/stats responded 200 in 10.1768 ms
+2023-12-27 09:14:31.352 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/dashboard/stats - 200 null application/json 10.618ms
+2023-12-27 10:55:00.442 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-12-27 10:55:14.855 +03:00 [INF] Hangfire SQL objects installed.
+2023-12-27 10:55:16.180 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-27 10:55:17.920 +03:00 [INF] Now listening on: https://localhost:7175
+2023-12-27 10:55:17.921 +03:00 [INF] Now listening on: http://localhost:5117
+2023-12-27 10:55:17.933 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2023-12-27 10:55:17.935 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-12-27 10:55:17.936 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-12-27 10:55:17.972 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 10:55:17.972 +03:00 [INF] Hosting environment: Development
+2023-12-27 10:55:17.972 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2023-12-27 10:55:18.948 +03:00 [INF] Server desktop-eni7p6d:12364:99ffaa86 successfully announced in 976.0701 ms
+2023-12-27 10:55:18.956 +03:00 [INF] Server desktop-eni7p6d:12364:99ffaa86 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-12-27 10:55:19.129 +03:00 [INF] 1 servers were removed due to timeout
+2023-12-27 10:55:19.132 +03:00 [INF] Server desktop-eni7p6d:12364:99ffaa86 all the dispatchers started
+2023-12-27 10:55:35.256 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2023-12-27 10:55:38.897 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 3648.7546ms
+2023-12-27 10:55:39.109 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-27 10:55:39.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 7.9291ms
+2023-12-27 10:55:39.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2023-12-27 10:55:39.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 816.3063ms
+2023-12-27 10:55:40.272 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2023-12-27 10:55:40.537 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 265.5684ms
+2023-12-27 10:55:47.766 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/GetProductTags - null null
+2023-12-27 10:55:48.024 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API)'
+2023-12-27 10:55:48.070 +03:00 [INF] Route matched with {action = "GetProductTags", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Products.ProductTagsReadDto]] GetProductTags() on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-27 10:55:49.466 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-12-27 10:55:54.910 +03:00 [INF] Executed DbCommand (1,958ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId], [t1].[ProductId], [t1].[TagId], [t1].[TagId0], [t1].[Name]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [t].[ProductId], [t].[TagId], [t0].[TagId] AS [TagId0], [t0].[Name]
+    FROM [TagProducts] AS [t]
+    INNER JOIN [Tags] AS [t0] ON [t].[TagId] = [t0].[TagId]
+) AS [t1] ON [p].[ProductId] = [t1].[ProductId]
+ORDER BY [p].[ProductId], [t1].[ProductId], [t1].[TagId]
+2023-12-27 10:55:55.093 +03:00 [INF] Product tags => [{"ProductId":"04ef4f41-6446-4dd9-9173-1fd64e651444","Name":"Adidas Running Shoes","TagIds":["f1c0a02b-b9e0-4155-b618-1e316f486fd6","6613d20b-76c4-4d60-9f2c-b4f4d33a11c7"],"$type":"ProductTagsReadDto"},{"ProductId":"ae170701-a04d-476e-8bd9-3f9bb12bf79f","Name":"Sony Smart TV","TagIds":["6613d20b-76c4-4d60-9f2c-b4f4d33a11c7"],"$type":"ProductTagsReadDto"},{"ProductId":"3bef8d04-44fe-4b64-9919-400029667621","Name":"KitchenAid Stand Mixer","TagIds":["f1c0a02b-b9e0-4155-b618-1e316f486fd6"],"$type":"ProductTagsReadDto"},{"ProductId":"064fd01a-bf9f-4889-9200-60b295613c54","Name":"Levi's Jeans","TagIds":["f1c0a02b-b9e0-4155-b618-1e316f486fd6"],"$type":"ProductTagsReadDto"},{"ProductId":"c75be557-8fd5-4e3b-9725-61b3a97142bd","Name":"Razer Gaming Mouse","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"b243621f-e966-476e-acfb-6dabb89cd8a7","Name":"Nike Running Shoes","TagIds":["f1c0a02b-b9e0-4155-b618-1e316f486fd6","6613d20b-76c4-4d60-9f2c-b4f4d33a11c7"],"$type":"ProductTagsReadDto"},{"ProductId":"d82730ad-c898-48fb-bc7a-7d0ab50cd6a4","Name":"Fitbit Charge 5","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"3935c87e-2954-44cc-a95f-7f67a902291b","Name":"Bose Noise-Canceling Headphones","TagIds":["f1c0a02b-b9e0-4155-b618-1e316f486fd6"],"$type":"ProductTagsReadDto"},{"ProductId":"c79c163e-ca39-42d6-980e-981e97d2fe5f","Name":"Canon EOS Rebel T7","TagIds":["f1c0a02b-b9e0-4155-b618-1e316f486fd6"],"$type":"ProductTagsReadDto"},{"ProductId":"3d12a097-ae94-4bd1-8aa6-9bc40128a7f8","Name":"Samsung Galaxy S21","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"103fc9a8-64ee-4e1a-ae9e-ac26a3974109","Name":"Fossil Smartwatch","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"55b572f5-374d-4ecc-81a4-b242ba6a5ea1","Name":"Amazon Echo Dot","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"399acc92-7aaa-4f05-aae2-d07e88e83ebb","Name":"HP Printer","TagIds":["f1c0a02b-b9e0-4155-b618-1e316f486fd6","6613d20b-76c4-4d60-9f2c-b4f4d33a11c7"],"$type":"ProductTagsReadDto"},{"ProductId":"f2332187-7456-4e9c-a3fa-db3621091cf6","Name":"Cuisinart Coffee Maker","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"dda0b29c-14c9-40c2-872d-e0f7fec49d7a","Name":"Calvin Klein Watch","TagIds":[],"$type":"ProductTagsReadDto"}]
+2023-12-27 10:55:55.114 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[E_CommerceSystemV2.BL.DTOs.Products.ProductTagsReadDto, E-CommerceSystemV2.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-27 10:55:55.139 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API) in 7060.7687ms
+2023-12-27 10:55:55.139 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API)'
+2023-12-27 10:55:55.145 +03:00 [INF] HTTP GET /api/Products/GetProductTags responded 200 in 7370.8320 ms
+2023-12-27 10:55:55.160 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/GetProductTags - 200 null application/json; charset=utf-8 7393.9192ms

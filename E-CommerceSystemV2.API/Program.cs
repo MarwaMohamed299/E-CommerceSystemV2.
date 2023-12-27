@@ -6,6 +6,7 @@ using E_CommerceSystemV2.DAL.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System.Text;
 
 namespace E_CommerceSystemV2.API
@@ -19,6 +20,9 @@ namespace E_CommerceSystemV2.API
             var ConnectionString = builder.Configuration.GetConnectionString("E-CommerceSystemV2");
             builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(ConnectionString));
             #endregion
+
+
+            #region Identity
 
             builder.Services.AddIdentity<User, IdentityRole>(options =>
             {
@@ -55,12 +59,23 @@ namespace E_CommerceSystemV2.API
 
                 };
             });
+            #endregion
 
 
             #region DefaultServices
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+
+            #endregion
+
+            #region SerilogConfig
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(new ConfigurationBuilder().AddJsonFile("appsettings.json").Build())
+                .CreateLogger();
+            builder.Host.UseSerilog();
+
             #endregion
 
             #region CORS Policy
@@ -86,7 +101,6 @@ namespace E_CommerceSystemV2.API
             builder.Services.AddScoped<IProductsManager, ProductsManager>();
 
             #endregion
-
             var app = builder.Build();
             #region MiddleWares
 
@@ -96,6 +110,7 @@ namespace E_CommerceSystemV2.API
                 app.UseSwaggerUI();
             }
 
+            app.UseSerilogRequestLogging(); 
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

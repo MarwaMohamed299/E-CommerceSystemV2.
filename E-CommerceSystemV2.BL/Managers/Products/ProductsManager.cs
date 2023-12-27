@@ -2,6 +2,7 @@
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace E_CommerceSystemV2.BL.Managers.Products
 {
@@ -243,7 +244,11 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                         TagIds = p.Select(t => t.TagId).ToList()
                     })
                     .ToList();
+
+                 Log.Information("Product tags => {@products}",products);
                 return products;
+
+              
             }
             catch(Exception ex)
             {

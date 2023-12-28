@@ -24205,3 +24205,8085 @@ dbug: 12/27/2023 10:55:55.157 RelationalEventId.ConnectionDisposing[20007] (Micr
       Disposing connection to database 'E-Commerce' on server '.'.
 dbug: 12/27/2023 10:55:55.159 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Disposed connection to database '' on server '' (2ms).
+warn: 12/27/2023 20:22:17.392 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 20:22:17.555 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:22:17.556 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:22:17.766 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 20:22:17.844 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:22:17.844 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:22:19.204 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+warn: 12/27/2023 20:22:44.027 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 20:22:44.198 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:22:44.199 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:22:44.447 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 20:22:44.473 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 20:22:44.552 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (73ms).
+dbug: 12/27/2023 20:22:44.553 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:44.568 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.068 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.075 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:45.083 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (6ms).
+dbug: 12/27/2023 20:22:45.086 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (12ms).
+dbug: 12/27/2023 20:22:45.093 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 12/27/2023 20:22:45.139 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 12/27/2023 20:22:45.141 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.150 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (5ms).
+dbug: 12/27/2023 20:22:45.154 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/27/2023 20:22:45.154 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/27/2023 20:22:45.155 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (1ms).
+dbug: 12/27/2023 20:22:45.155 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.157 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.158 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 12/27/2023 20:22:45.463 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (305ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 12/27/2023 20:22:45.464 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.465 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 20:22:45.466 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.467 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.468 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:45.468 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:45.468 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:45.469 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 12/27/2023 20:22:45.471 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 12/27/2023 20:22:45.471 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.472 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 20:22:45.473 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/27/2023 20:22:45.473 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/27/2023 20:22:45.473 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/27/2023 20:22:45.474 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.474 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.475 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 12/27/2023 20:22:45.476 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 12/27/2023 20:22:45.476 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.477 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 20:22:45.491 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.492 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.493 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 20:22:45.493 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 20:22:45.493 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 20:22:45.494 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 12/27/2023 20:22:45.928 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (434ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 12/27/2023 20:22:45.932 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.933 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 3ms reading results.
+dbug: 12/27/2023 20:22:45.934 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:45.936 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+info: 12/27/2023 20:22:45.950 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231227172219_AddingCampaignCustomers'.
+dbug: 12/27/2023 20:22:46.077 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 4 update commands as a batch.
+dbug: 12/27/2023 20:22:46.088 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 8 update commands as a batch.
+dbug: 12/27/2023 20:22:46.089 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 3 update commands as a batch.
+dbug: 12/27/2023 20:22:46.090 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 8 update commands as a batch.
+dbug: 12/27/2023 20:22:46.092 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 15 update commands as a batch.
+dbug: 12/27/2023 20:22:46.096 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 7 update commands as a batch.
+dbug: 12/27/2023 20:22:46.098 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:46.099 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:46.102 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/27/2023 20:22:46.116 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 12/27/2023 20:22:46.117 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.118 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.120 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 12/27/2023 20:22:46.120 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '0397150e-05b3-4fc2-8e6b-9a53b1da359f';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.617 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (497ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '0397150e-05b3-4fc2-8e6b-9a53b1da359f';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.619 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.619 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.620 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:46.620 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '40b5538a-5108-43ab-98d8-154909d27980';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.654 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '40b5538a-5108-43ab-98d8-154909d27980';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.654 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.655 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.655 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.655 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '5a59f5a4-d059-4155-8b72-d8e9db8d6237';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.664 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '5a59f5a4-d059-4155-8b72-d8e9db8d6237';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.664 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.664 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.665 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.665 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '9b7b88c5-162c-4712-b414-c0f1002bbe82';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.669 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '9b7b88c5-162c-4712-b414-c0f1002bbe82';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.669 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.670 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.670 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.670 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'a3e7cffc-f47a-46cb-9233-927aa8e42e07';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.683 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'a3e7cffc-f47a-46cb-9233-927aa8e42e07';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.683 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.684 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.684 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.684 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'e20fcb32-e66b-4f39-bcc4-17093bd305b9';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.694 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'e20fcb32-e66b-4f39-bcc4-17093bd305b9';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.694 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.695 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.695 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.695 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'e8776dd9-f129-4696-9e2e-1f44d71b0293';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.697 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'e8776dd9-f129-4696-9e2e-1f44d71b0293';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.697 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.697 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.698 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.698 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'f404369a-5578-4593-93aa-8817a630f639';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.715 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'f404369a-5578-4593-93aa-8817a630f639';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.715 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.716 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.716 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.716 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '46307b76-03aa-4329-9216-1ad02d7f3ce5';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.798 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '46307b76-03aa-4329-9216-1ad02d7f3ce5';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.799 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.800 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.800 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.800 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5d0bfb29-1d96-448c-942a-cbb084cf32a5';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.802 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5d0bfb29-1d96-448c-942a-cbb084cf32a5';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.802 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.803 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.803 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.804 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '9f1db7cb-46dc-4b3b-80f1-113ab1c10a2f';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.833 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '9f1db7cb-46dc-4b3b-80f1-113ab1c10a2f';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.834 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.834 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.834 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.835 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'e6a023f6-99c0-4a34-9ecb-0b49d367dc50';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.852 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'e6a023f6-99c0-4a34-9ecb-0b49d367dc50';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.853 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.853 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.854 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.854 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '04ef4f41-6446-4dd9-9173-1fd64e651444';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:46.979 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (124ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '04ef4f41-6446-4dd9-9173-1fd64e651444';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:46.979 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:46.980 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:46.981 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:46.981 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '103fc9a8-64ee-4e1a-ae9e-ac26a3974109';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.021 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '103fc9a8-64ee-4e1a-ae9e-ac26a3974109';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.021 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.022 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.022 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:47.023 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3d12a097-ae94-4bd1-8aa6-9bc40128a7f8';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.043 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3d12a097-ae94-4bd1-8aa6-9bc40128a7f8';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.044 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.045 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.045 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:47.046 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '55b572f5-374d-4ecc-81a4-b242ba6a5ea1';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.071 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '55b572f5-374d-4ecc-81a4-b242ba6a5ea1';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.071 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.072 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.072 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.072 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'c75be557-8fd5-4e3b-9725-61b3a97142bd';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.094 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'c75be557-8fd5-4e3b-9725-61b3a97142bd';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.095 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.095 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.096 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.096 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'd82730ad-c898-48fb-bc7a-7d0ab50cd6a4';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.172 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (76ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'd82730ad-c898-48fb-bc7a-7d0ab50cd6a4';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.172 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.173 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.173 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.174 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'dda0b29c-14c9-40c2-872d-e0f7fec49d7a';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.223 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'dda0b29c-14c9-40c2-872d-e0f7fec49d7a';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.224 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.224 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.225 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.225 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'f2332187-7456-4e9c-a3fa-db3621091cf6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.241 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'f2332187-7456-4e9c-a3fa-db3621091cf6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.242 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.242 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.243 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.243 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '064fd01a-bf9f-4889-9200-60b295613c54' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.245 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '064fd01a-bf9f-4889-9200-60b295613c54' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.245 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.246 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.246 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.246 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '3935c87e-2954-44cc-a95f-7f67a902291b' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.268 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '3935c87e-2954-44cc-a95f-7f67a902291b' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.269 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.270 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:47.270 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:47.271 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '399acc92-7aaa-4f05-aae2-d07e88e83ebb' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.294 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '399acc92-7aaa-4f05-aae2-d07e88e83ebb' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.294 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.295 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.295 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.296 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '3bef8d04-44fe-4b64-9919-400029667621' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.297 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '3bef8d04-44fe-4b64-9919-400029667621' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.297 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.298 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.298 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.299 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'ae170701-a04d-476e-8bd9-3f9bb12bf79f' AND [TagId] = '6613d20b-76c4-4d60-9f2c-b4f4d33a11c7';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.309 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'ae170701-a04d-476e-8bd9-3f9bb12bf79f' AND [TagId] = '6613d20b-76c4-4d60-9f2c-b4f4d33a11c7';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.309 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.310 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.310 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:47.311 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'b243621f-e966-476e-acfb-6dabb89cd8a7' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.318 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'b243621f-e966-476e-acfb-6dabb89cd8a7' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.319 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.319 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.319 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.320 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'c79c163e-ca39-42d6-980e-981e97d2fe5f' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.331 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'c79c163e-ca39-42d6-980e-981e97d2fe5f' AND [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.332 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.332 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.333 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.333 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = 'ce580732-35a9-41b8-96af-116518cef9f1';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.338 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = 'ce580732-35a9-41b8-96af-116518cef9f1';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.338 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.339 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.339 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.339 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'c6a48572-1d1c-47bc-8082-97369cb152fe';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.972 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (632ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'c6a48572-1d1c-47bc-8082-97369cb152fe';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.973 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.973 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.974 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:47.974 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '20dd7cb7-5440-41fd-bf00-65e47a056d0c';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.978 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '20dd7cb7-5440-41fd-bf00-65e47a056d0c';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.979 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.979 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.979 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.980 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '064fd01a-bf9f-4889-9200-60b295613c54';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:47.983 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '064fd01a-bf9f-4889-9200-60b295613c54';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:47.984 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:47.984 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.984 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:47.985 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3935c87e-2954-44cc-a95f-7f67a902291b';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.000 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3935c87e-2954-44cc-a95f-7f67a902291b';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.001 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.002 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.002 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.003 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '399acc92-7aaa-4f05-aae2-d07e88e83ebb';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.006 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '399acc92-7aaa-4f05-aae2-d07e88e83ebb';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.006 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.007 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.007 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:48.008 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3bef8d04-44fe-4b64-9919-400029667621';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.031 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3bef8d04-44fe-4b64-9919-400029667621';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.031 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.032 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.033 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:48.033 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'ae170701-a04d-476e-8bd9-3f9bb12bf79f';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.037 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'ae170701-a04d-476e-8bd9-3f9bb12bf79f';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.038 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.038 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.039 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.039 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b243621f-e966-476e-acfb-6dabb89cd8a7';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.043 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b243621f-e966-476e-acfb-6dabb89cd8a7';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.044 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.044 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.045 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:48.045 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'c79c163e-ca39-42d6-980e-981e97d2fe5f';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.055 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'c79c163e-ca39-42d6-980e-981e97d2fe5f';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.056 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.056 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.057 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.057 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = '6613d20b-76c4-4d60-9f2c-b4f4d33a11c7';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.072 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = '6613d20b-76c4-4d60-9f2c-b4f4d33a11c7';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.073 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.074 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:48.074 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:48.075 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.077 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = 'f1c0a02b-b9e0-4155-b618-1e316f486fd6';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.078 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.078 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.078 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.079 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5a3081d7-7565-4335-a199-c5fc4ccc8096';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.095 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5a3081d7-7565-4335-a199-c5fc4ccc8096';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.096 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.096 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.097 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.097 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '8d6ed240-c801-4b55-a881-58827c28fb06';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.121 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '8d6ed240-c801-4b55-a881-58827c28fb06';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.121 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.121 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.122 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.122 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'e5dd0a36-65f0-49fb-9f16-75c279dbc6c3';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.132 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'e5dd0a36-65f0-49fb-9f16-75c279dbc6c3';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.133 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.133 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.133 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.134 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'5e542efa-8217-4855-93d7-7c47a56c98f7';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.140 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'5e542efa-8217-4855-93d7-7c47a56c98f7';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.141 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.141 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.141 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.142 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'7517cc9e-ced0-48ce-b404-ace27e6e2c9d';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.148 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'7517cc9e-ced0-48ce-b404-ace27e6e2c9d';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.148 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.149 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.149 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.150 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'f86a79f0-0680-41f5-a2d8-8bf2d1c04081';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:22:48.166 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'f86a79f0-0680-41f5-a2d8-8bf2d1c04081';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:22:48.166 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.167 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.167 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.168 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CampaignCustomers] (
+          [Id] uniqueidentifier NOT NULL,
+          [Name] nvarchar(max) NOT NULL,
+          [Email] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_CampaignCustomers] PRIMARY KEY ([Id])
+      );
+info: 12/27/2023 20:22:48.344 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (176ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CampaignCustomers] (
+          [Id] uniqueidentifier NOT NULL,
+          [Name] nvarchar(max) NOT NULL,
+          [Email] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_CampaignCustomers] PRIMARY KEY ([Id])
+      );
+dbug: 12/27/2023 20:22:48.356 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.364 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (8ms).
+dbug: 12/27/2023 20:22:48.367 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (11ms).
+dbug: 12/27/2023 20:22:48.373 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] ON;
+      INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+      VALUES (N'14258c70-cad6-4a55-8327-a9fa0bee6682', 0, N'26810a59-db66-4a57-84e6-fdb1f94521d0', '2023-12-27T20:22:17.8092265+03:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'eb6e95be-2df0-440e-89c0-45a05541b1f9', CAST(0 AS bit), N'john doe'),
+      (N'76034889-5c66-4785-bdc2-8a0d18644f7f', 0, N'93fb0ccf-e00d-4283-81e0-b31494aabdf3', '2023-12-27T20:22:17.8092293+03:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'bf46d382-6853-4b35-9e47-f724fe92046a', CAST(0 AS bit), N'Sandy Jakson'),
+      (N'a14a27cd-493f-47ca-bced-e3adb51cf376', 0, N'80bb158d-6573-4f5a-95b4-12ada4a027b3', '2023-12-27T20:22:17.8092287+03:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'f8d547a0-b24a-483a-8de9-e53f4d444939', CAST(0 AS bit), N'Sara doe'),
+      (N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7', 0, N'9f9818d2-d6dd-48ad-bc56-366c5117f479', '2023-12-27T20:22:17.8092272+03:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'a8fa800e-912e-4fdf-b325-88e1060ab482', CAST(0 AS bit), N'jane doe');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] OFF;
+info: 12/27/2023 20:22:48.501 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (128ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] ON;
+      INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+      VALUES (N'14258c70-cad6-4a55-8327-a9fa0bee6682', 0, N'26810a59-db66-4a57-84e6-fdb1f94521d0', '2023-12-27T20:22:17.8092265+03:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'eb6e95be-2df0-440e-89c0-45a05541b1f9', CAST(0 AS bit), N'john doe'),
+      (N'76034889-5c66-4785-bdc2-8a0d18644f7f', 0, N'93fb0ccf-e00d-4283-81e0-b31494aabdf3', '2023-12-27T20:22:17.8092293+03:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'bf46d382-6853-4b35-9e47-f724fe92046a', CAST(0 AS bit), N'Sandy Jakson'),
+      (N'a14a27cd-493f-47ca-bced-e3adb51cf376', 0, N'80bb158d-6573-4f5a-95b4-12ada4a027b3', '2023-12-27T20:22:17.8092287+03:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'f8d547a0-b24a-483a-8de9-e53f4d444939', CAST(0 AS bit), N'Sara doe'),
+      (N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7', 0, N'9f9818d2-d6dd-48ad-bc56-366c5117f479', '2023-12-27T20:22:17.8092272+03:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'a8fa800e-912e-4fdf-b325-88e1060ab482', CAST(0 AS bit), N'jane doe');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] OFF;
+dbug: 12/27/2023 20:22:48.501 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.502 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.502 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.503 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] ON;
+      INSERT INTO [Categories] ([CategoryId], [Name])
+      VALUES ('28280a96-f2e8-41b8-9105-871030a88892', N'SmartDevices'),
+      ('2cfb589a-7d17-446a-9b5d-0102c4a8105b', N'Fashion'),
+      ('652c0564-99c4-46a6-80ef-ec1e46505617', N'Electronics'),
+      ('847da3ec-7920-4717-b340-9d42e9768866', N'Mobiles'),
+      ('99ce44f7-aa4b-45db-ae00-f594c6a1015b', N'Gaming'),
+      ('bccd5635-cd23-42dd-aad8-89536fc60da4', N'Appliances'),
+      ('d0980572-7070-4166-badc-e84cba75beaf', N'Tablets'),
+      ('dcaefc59-ed9f-43ad-8bdc-a7278fc1d90e', N'Clothing');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] OFF;
+info: 12/27/2023 20:22:48.521 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] ON;
+      INSERT INTO [Categories] ([CategoryId], [Name])
+      VALUES ('28280a96-f2e8-41b8-9105-871030a88892', N'SmartDevices'),
+      ('2cfb589a-7d17-446a-9b5d-0102c4a8105b', N'Fashion'),
+      ('652c0564-99c4-46a6-80ef-ec1e46505617', N'Electronics'),
+      ('847da3ec-7920-4717-b340-9d42e9768866', N'Mobiles'),
+      ('99ce44f7-aa4b-45db-ae00-f594c6a1015b', N'Gaming'),
+      ('bccd5635-cd23-42dd-aad8-89536fc60da4', N'Appliances'),
+      ('d0980572-7070-4166-badc-e84cba75beaf', N'Tablets'),
+      ('dcaefc59-ed9f-43ad-8bdc-a7278fc1d90e', N'Clothing');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] OFF;
+dbug: 12/27/2023 20:22:48.522 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.522 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.523 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.523 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] ON;
+      INSERT INTO [Tags] ([TagId], [Name])
+      VALUES ('19439fe2-b120-4923-8a89-24b47b790d6f', N'FlagShip Mobiles'),
+      ('318e4a94-026e-4834-8974-6950eb887e6b', N'Fashion 2024'),
+      ('fdae1f84-b417-420f-a275-5438de4fe8ec', N'Tech');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] OFF;
+info: 12/27/2023 20:22:48.549 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] ON;
+      INSERT INTO [Tags] ([TagId], [Name])
+      VALUES ('19439fe2-b120-4923-8a89-24b47b790d6f', N'FlagShip Mobiles'),
+      ('318e4a94-026e-4834-8974-6950eb887e6b', N'Fashion 2024'),
+      ('fdae1f84-b417-420f-a275-5438de4fe8ec', N'Tech');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] OFF;
+dbug: 12/27/2023 20:22:48.549 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.550 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.550 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:22:48.551 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] ON;
+      INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+      VALUES ('18371255-84f5-4b35-a9df-47c09ac8a5e1', '2023-12-27T20:22:17.8092320+03:00', N'76034889-5c66-4785-bdc2-8a0d18644f7f'),
+      ('34057720-f9c6-41f6-a6c8-73c57b566317', '2023-12-27T20:22:17.8092322+03:00', N'a14a27cd-493f-47ca-bced-e3adb51cf376'),
+      ('43923a75-be2d-4ee8-af79-919a3c402805', '2023-12-27T20:22:17.8092306+03:00', N'14258c70-cad6-4a55-8327-a9fa0bee6682'),
+      ('5a5b3e05-0618-4a5a-a2fd-4af296933a48', '2023-12-27T20:22:17.8092302+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7'),
+      ('5e89a538-2c6a-47ce-ae56-fe1328da3819', '2023-12-27T20:22:17.8092313+03:00', N'a14a27cd-493f-47ca-bced-e3adb51cf376'),
+      ('6889c2c3-a9bf-47b7-bf40-64a3ef0fac91', '2023-12-27T20:22:17.8092326+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7'),
+      ('cb0a6c9a-b074-4665-95f5-f6d95ef51f1d', '2023-12-27T20:22:17.8092316+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7'),
+      ('f3a5e79b-00bc-4e46-abfc-ff8f72a42c38', '2023-12-27T20:22:17.8092308+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] OFF;
+info: 12/27/2023 20:22:48.615 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] ON;
+      INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+      VALUES ('18371255-84f5-4b35-a9df-47c09ac8a5e1', '2023-12-27T20:22:17.8092320+03:00', N'76034889-5c66-4785-bdc2-8a0d18644f7f'),
+      ('34057720-f9c6-41f6-a6c8-73c57b566317', '2023-12-27T20:22:17.8092322+03:00', N'a14a27cd-493f-47ca-bced-e3adb51cf376'),
+      ('43923a75-be2d-4ee8-af79-919a3c402805', '2023-12-27T20:22:17.8092306+03:00', N'14258c70-cad6-4a55-8327-a9fa0bee6682'),
+      ('5a5b3e05-0618-4a5a-a2fd-4af296933a48', '2023-12-27T20:22:17.8092302+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7'),
+      ('5e89a538-2c6a-47ce-ae56-fe1328da3819', '2023-12-27T20:22:17.8092313+03:00', N'a14a27cd-493f-47ca-bced-e3adb51cf376'),
+      ('6889c2c3-a9bf-47b7-bf40-64a3ef0fac91', '2023-12-27T20:22:17.8092326+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7'),
+      ('cb0a6c9a-b074-4665-95f5-f6d95ef51f1d', '2023-12-27T20:22:17.8092316+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7'),
+      ('f3a5e79b-00bc-4e46-abfc-ff8f72a42c38', '2023-12-27T20:22:17.8092308+03:00', N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] OFF;
+dbug: 12/27/2023 20:22:48.615 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.616 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.616 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.617 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] ON;
+      INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+      VALUES ('10b1fa31-cad6-4bda-aa53-f3e86cebc4d5', NULL, 4, N'KitchenAid Stand Mixer', '5e89a538-2c6a-47ce-ae56-fe1328da3819', 349.99, NULL),
+      ('12ab3925-dc14-4a9a-ace4-efb56e038942', NULL, 6, N'Razer Gaming Mouse', '43923a75-be2d-4ee8-af79-919a3c402805', 69.99, NULL),
+      ('18bf1839-4e71-419b-81db-6f0ab0298956', NULL, 5, N'Amazon Echo Dot', '43923a75-be2d-4ee8-af79-919a3c402805', 39.99, NULL),
+      ('2e5c100c-72cc-485c-a702-8c85b04ad2f2', NULL, 1, N'Sony Smart TV', '43923a75-be2d-4ee8-af79-919a3c402805', 1299.99, NULL),
+      ('3b1b2bb8-2cfa-4bb2-937b-850683637f44', NULL, 6, N'Fitbit Charge 5', '43923a75-be2d-4ee8-af79-919a3c402805', 149.99, NULL),
+      ('b2d8d64d-f203-4577-9f4d-239ae6164842', NULL, 1, N'Canon EOS Rebel T7', 'f3a5e79b-00bc-4e46-abfc-ff8f72a42c38', 499.99, NULL),
+      ('b5bd6d48-cb31-4269-8f35-8fc6da0adc7e', NULL, 1, N'HP Printer', '43923a75-be2d-4ee8-af79-919a3c402805', 149.99, NULL),
+      ('b915f98b-9250-4c20-b043-a06d90bc4f7e', NULL, 3, N'Adidas Running Shoes', 'f3a5e79b-00bc-4e46-abfc-ff8f72a42c38', 109.99, NULL),
+      ('cba94cbd-c55e-44f0-925e-b76e093c25c0', NULL, 3, N'Calvin Klein Watch', '43923a75-be2d-4ee8-af79-919a3c402805', 199.99, NULL),
+      ('d76a9078-b0a5-4a5f-8f67-a898aad2feb8', NULL, 2, N'Samsung Galaxy S21', '5a5b3e05-0618-4a5a-a2fd-4af296933a48', 799.99, NULL),
+      ('db2ef700-401a-4b91-b6ed-3cf234f91ade', NULL, 3, N'Nike Running Shoes', '43923a75-be2d-4ee8-af79-919a3c402805', 89.99, NULL),
+      ('eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4', NULL, 3, N'Levi''s Jeans', '43923a75-be2d-4ee8-af79-919a3c402805', 59.99, NULL),
+      ('ec1b630a-8c60-477f-8c95-bacbfec2518e', NULL, 3, N'Fossil Smartwatch', '5a5b3e05-0618-4a5a-a2fd-4af296933a48', 149.99, NULL),
+      ('f06074dc-4eb2-4aba-aa56-b4bd28b10908', NULL, 4, N'Cuisinart Coffee Maker', '5a5b3e05-0618-4a5a-a2fd-4af296933a48', 79.99, NULL),
+      ('f23d8d74-7264-4ae8-9dec-78946e7809ac', NULL, 1, N'Bose Noise-Canceling Headphones', '43923a75-be2d-4ee8-af79-919a3c402805', 299.99, NULL);
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] OFF;
+info: 12/27/2023 20:22:48.652 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] ON;
+      INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+      VALUES ('10b1fa31-cad6-4bda-aa53-f3e86cebc4d5', NULL, 4, N'KitchenAid Stand Mixer', '5e89a538-2c6a-47ce-ae56-fe1328da3819', 349.99, NULL),
+      ('12ab3925-dc14-4a9a-ace4-efb56e038942', NULL, 6, N'Razer Gaming Mouse', '43923a75-be2d-4ee8-af79-919a3c402805', 69.99, NULL),
+      ('18bf1839-4e71-419b-81db-6f0ab0298956', NULL, 5, N'Amazon Echo Dot', '43923a75-be2d-4ee8-af79-919a3c402805', 39.99, NULL),
+      ('2e5c100c-72cc-485c-a702-8c85b04ad2f2', NULL, 1, N'Sony Smart TV', '43923a75-be2d-4ee8-af79-919a3c402805', 1299.99, NULL),
+      ('3b1b2bb8-2cfa-4bb2-937b-850683637f44', NULL, 6, N'Fitbit Charge 5', '43923a75-be2d-4ee8-af79-919a3c402805', 149.99, NULL),
+      ('b2d8d64d-f203-4577-9f4d-239ae6164842', NULL, 1, N'Canon EOS Rebel T7', 'f3a5e79b-00bc-4e46-abfc-ff8f72a42c38', 499.99, NULL),
+      ('b5bd6d48-cb31-4269-8f35-8fc6da0adc7e', NULL, 1, N'HP Printer', '43923a75-be2d-4ee8-af79-919a3c402805', 149.99, NULL),
+      ('b915f98b-9250-4c20-b043-a06d90bc4f7e', NULL, 3, N'Adidas Running Shoes', 'f3a5e79b-00bc-4e46-abfc-ff8f72a42c38', 109.99, NULL),
+      ('cba94cbd-c55e-44f0-925e-b76e093c25c0', NULL, 3, N'Calvin Klein Watch', '43923a75-be2d-4ee8-af79-919a3c402805', 199.99, NULL),
+      ('d76a9078-b0a5-4a5f-8f67-a898aad2feb8', NULL, 2, N'Samsung Galaxy S21', '5a5b3e05-0618-4a5a-a2fd-4af296933a48', 799.99, NULL),
+      ('db2ef700-401a-4b91-b6ed-3cf234f91ade', NULL, 3, N'Nike Running Shoes', '43923a75-be2d-4ee8-af79-919a3c402805', 89.99, NULL),
+      ('eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4', NULL, 3, N'Levi''s Jeans', '43923a75-be2d-4ee8-af79-919a3c402805', 59.99, NULL),
+      ('ec1b630a-8c60-477f-8c95-bacbfec2518e', NULL, 3, N'Fossil Smartwatch', '5a5b3e05-0618-4a5a-a2fd-4af296933a48', 149.99, NULL),
+      ('f06074dc-4eb2-4aba-aa56-b4bd28b10908', NULL, 4, N'Cuisinart Coffee Maker', '5a5b3e05-0618-4a5a-a2fd-4af296933a48', 79.99, NULL),
+      ('f23d8d74-7264-4ae8-9dec-78946e7809ac', NULL, 1, N'Bose Noise-Canceling Headphones', '43923a75-be2d-4ee8-af79-919a3c402805', 299.99, NULL);
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] OFF;
+dbug: 12/27/2023 20:22:48.653 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.653 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.653 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.654 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] ON;
+      INSERT INTO [TagProducts] ([ProductId], [TagId])
+      VALUES ('10b1fa31-cad6-4bda-aa53-f3e86cebc4d5', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('2e5c100c-72cc-485c-a702-8c85b04ad2f2', '19439fe2-b120-4923-8a89-24b47b790d6f'),
+      ('b2d8d64d-f203-4577-9f4d-239ae6164842', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('b5bd6d48-cb31-4269-8f35-8fc6da0adc7e', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('db2ef700-401a-4b91-b6ed-3cf234f91ade', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('f23d8d74-7264-4ae8-9dec-78946e7809ac', 'fdae1f84-b417-420f-a275-5438de4fe8ec');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] OFF;
+info: 12/27/2023 20:22:48.685 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] ON;
+      INSERT INTO [TagProducts] ([ProductId], [TagId])
+      VALUES ('10b1fa31-cad6-4bda-aa53-f3e86cebc4d5', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('2e5c100c-72cc-485c-a702-8c85b04ad2f2', '19439fe2-b120-4923-8a89-24b47b790d6f'),
+      ('b2d8d64d-f203-4577-9f4d-239ae6164842', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('b5bd6d48-cb31-4269-8f35-8fc6da0adc7e', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('db2ef700-401a-4b91-b6ed-3cf234f91ade', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4', 'fdae1f84-b417-420f-a275-5438de4fe8ec'),
+      ('f23d8d74-7264-4ae8-9dec-78946e7809ac', 'fdae1f84-b417-420f-a275-5438de4fe8ec');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] OFF;
+dbug: 12/27/2023 20:22:48.686 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:22:48.687 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.687 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:22:48.687 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20231227172219_AddingCampaignCustomers', N'8.0.0');
+info: 12/27/2023 20:22:48.692 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20231227172219_AddingCampaignCustomers', N'8.0.0');
+dbug: 12/27/2023 20:22:48.695 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committing transaction.
+dbug: 12/27/2023 20:22:48.701 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committed transaction.
+dbug: 12/27/2023 20:22:48.703 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 12/27/2023 20:22:48.704 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:48.705 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 20:22:48.708 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 20:22:48.712 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:22:48.714 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+warn: 12/27/2023 20:23:21.211 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 20:23:21.358 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:23:21.358 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:23:21.560 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 20:23:21.693 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:23:21.694 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:23:22.710 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+warn: 12/27/2023 20:23:41.805 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 20:23:41.922 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:23:41.923 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 20:23:42.276 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 20:23:42.320 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 20:23:42.493 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (170ms).
+dbug: 12/27/2023 20:23:42.495 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:42.504 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.596 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.620 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:43.635 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (9ms).
+dbug: 12/27/2023 20:23:43.640 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (19ms).
+dbug: 12/27/2023 20:23:43.653 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 12/27/2023 20:23:43.776 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (113ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 12/27/2023 20:23:43.779 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.792 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (8ms).
+dbug: 12/27/2023 20:23:43.797 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/27/2023 20:23:43.797 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/27/2023 20:23:43.798 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (1ms).
+dbug: 12/27/2023 20:23:43.799 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.800 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.801 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 12/27/2023 20:23:43.828 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 12/27/2023 20:23:43.828 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.829 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 20:23:43.831 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.832 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.832 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:43.833 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:43.833 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:43.834 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 12/27/2023 20:23:43.835 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 12/27/2023 20:23:43.836 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.837 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 20:23:43.837 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/27/2023 20:23:43.838 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/27/2023 20:23:43.838 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/27/2023 20:23:43.838 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.839 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.839 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: 12/27/2023 20:23:43.841 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: 12/27/2023 20:23:43.842 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.842 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 20:23:43.857 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.857 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.858 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 20:23:43.858 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 20:23:43.859 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 20:23:43.860 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: 12/27/2023 20:23:43.865 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: 12/27/2023 20:23:43.869 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.871 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 4ms reading results.
+dbug: 12/27/2023 20:23:43.873 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:43.874 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+info: 12/27/2023 20:23:43.898 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231227172322_AddingCampaignCustomersSeeding'.
+dbug: 12/27/2023 20:23:44.049 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 4 update commands as a batch.
+dbug: 12/27/2023 20:23:44.066 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 2 update commands as a batch.
+dbug: 12/27/2023 20:23:44.067 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 8 update commands as a batch.
+dbug: 12/27/2023 20:23:44.068 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 3 update commands as a batch.
+dbug: 12/27/2023 20:23:44.070 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 8 update commands as a batch.
+dbug: 12/27/2023 20:23:44.072 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 15 update commands as a batch.
+dbug: 12/27/2023 20:23:44.076 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 7 update commands as a batch.
+dbug: 12/27/2023 20:23:44.080 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:44.081 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:44.086 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/27/2023 20:23:44.094 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 12/27/2023 20:23:44.096 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.096 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.098 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 12/27/2023 20:23:44.099 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '28280a96-f2e8-41b8-9105-871030a88892';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.132 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '28280a96-f2e8-41b8-9105-871030a88892';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.134 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.134 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.134 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.135 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '2cfb589a-7d17-446a-9b5d-0102c4a8105b';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.143 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '2cfb589a-7d17-446a-9b5d-0102c4a8105b';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.144 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.144 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.145 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.145 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '652c0564-99c4-46a6-80ef-ec1e46505617';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.166 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '652c0564-99c4-46a6-80ef-ec1e46505617';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.166 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.167 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.168 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.169 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '847da3ec-7920-4717-b340-9d42e9768866';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.193 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '847da3ec-7920-4717-b340-9d42e9768866';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.194 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.194 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.195 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.195 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '99ce44f7-aa4b-45db-ae00-f594c6a1015b';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.210 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = '99ce44f7-aa4b-45db-ae00-f594c6a1015b';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.211 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.211 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.212 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.212 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'bccd5635-cd23-42dd-aad8-89536fc60da4';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.227 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'bccd5635-cd23-42dd-aad8-89536fc60da4';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.228 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.229 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.230 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.230 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'd0980572-7070-4166-badc-e84cba75beaf';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.246 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'd0980572-7070-4166-badc-e84cba75beaf';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.248 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.248 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.249 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.249 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'dcaefc59-ed9f-43ad-8bdc-a7278fc1d90e';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.267 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Categories]
+      WHERE [CategoryId] = 'dcaefc59-ed9f-43ad-8bdc-a7278fc1d90e';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.268 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.269 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.269 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.270 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '18371255-84f5-4b35-a9df-47c09ac8a5e1';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.287 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '18371255-84f5-4b35-a9df-47c09ac8a5e1';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.287 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.288 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.289 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.289 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '34057720-f9c6-41f6-a6c8-73c57b566317';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.294 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '34057720-f9c6-41f6-a6c8-73c57b566317';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.294 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.295 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.295 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.296 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '6889c2c3-a9bf-47b7-bf40-64a3ef0fac91';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.316 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '6889c2c3-a9bf-47b7-bf40-64a3ef0fac91';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.318 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.318 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.319 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.319 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'cb0a6c9a-b074-4665-95f5-f6d95ef51f1d';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.336 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'cb0a6c9a-b074-4665-95f5-f6d95ef51f1d';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.336 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.337 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.337 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.338 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '12ab3925-dc14-4a9a-ace4-efb56e038942';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.799 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (461ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '12ab3925-dc14-4a9a-ace4-efb56e038942';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.801 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.801 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.802 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.802 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '18bf1839-4e71-419b-81db-6f0ab0298956';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.825 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '18bf1839-4e71-419b-81db-6f0ab0298956';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.826 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.826 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.827 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.827 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3b1b2bb8-2cfa-4bb2-937b-850683637f44';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.847 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '3b1b2bb8-2cfa-4bb2-937b-850683637f44';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.849 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.850 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.851 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 12/27/2023 20:23:44.852 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b915f98b-9250-4c20-b043-a06d90bc4f7e';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.871 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b915f98b-9250-4c20-b043-a06d90bc4f7e';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.872 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.872 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.873 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.874 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'cba94cbd-c55e-44f0-925e-b76e093c25c0';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.879 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'cba94cbd-c55e-44f0-925e-b76e093c25c0';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.880 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.880 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.880 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.882 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'd76a9078-b0a5-4a5f-8f67-a898aad2feb8';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.911 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'd76a9078-b0a5-4a5f-8f67-a898aad2feb8';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.913 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.915 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 12/27/2023 20:23:44.916 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+dbug: 12/27/2023 20:23:44.917 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'ec1b630a-8c60-477f-8c95-bacbfec2518e';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.925 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'ec1b630a-8c60-477f-8c95-bacbfec2518e';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.925 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.926 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.927 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.928 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'f06074dc-4eb2-4aba-aa56-b4bd28b10908';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.937 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'f06074dc-4eb2-4aba-aa56-b4bd28b10908';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.938 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.939 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.940 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.944 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '10b1fa31-cad6-4bda-aa53-f3e86cebc4d5' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.948 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '10b1fa31-cad6-4bda-aa53-f3e86cebc4d5' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.948 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.949 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.949 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.949 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '2e5c100c-72cc-485c-a702-8c85b04ad2f2' AND [TagId] = '19439fe2-b120-4923-8a89-24b47b790d6f';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.951 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = '2e5c100c-72cc-485c-a702-8c85b04ad2f2' AND [TagId] = '19439fe2-b120-4923-8a89-24b47b790d6f';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.952 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.952 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.952 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.953 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'b2d8d64d-f203-4577-9f4d-239ae6164842' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.955 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'b2d8d64d-f203-4577-9f4d-239ae6164842' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.956 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.956 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.956 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.960 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'b5bd6d48-cb31-4269-8f35-8fc6da0adc7e' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.961 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'b5bd6d48-cb31-4269-8f35-8fc6da0adc7e' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.962 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.963 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.964 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.964 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'db2ef700-401a-4b91-b6ed-3cf234f91ade' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.970 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'db2ef700-401a-4b91-b6ed-3cf234f91ade' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.970 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.971 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.971 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.971 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:44.991 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:44.993 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:44.993 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:44.994 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:44.995 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'f23d8d74-7264-4ae8-9dec-78946e7809ac' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.029 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [TagProducts]
+      WHERE [ProductId] = 'f23d8d74-7264-4ae8-9dec-78946e7809ac' AND [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.029 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.030 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.030 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.031 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = '318e4a94-026e-4834-8974-6950eb887e6b';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.105 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (74ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = '318e4a94-026e-4834-8974-6950eb887e6b';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.106 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.106 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.107 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.107 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'76034889-5c66-4785-bdc2-8a0d18644f7f';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.147 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'76034889-5c66-4785-bdc2-8a0d18644f7f';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.152 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.152 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.153 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.154 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5a5b3e05-0618-4a5a-a2fd-4af296933a48';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.157 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5a5b3e05-0618-4a5a-a2fd-4af296933a48';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.158 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.158 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.159 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.159 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '10b1fa31-cad6-4bda-aa53-f3e86cebc4d5';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.179 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '10b1fa31-cad6-4bda-aa53-f3e86cebc4d5';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.180 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.180 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.181 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.183 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '2e5c100c-72cc-485c-a702-8c85b04ad2f2';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.194 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = '2e5c100c-72cc-485c-a702-8c85b04ad2f2';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.194 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.195 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.196 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.196 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b2d8d64d-f203-4577-9f4d-239ae6164842';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.210 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b2d8d64d-f203-4577-9f4d-239ae6164842';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.211 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.211 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.211 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.212 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b5bd6d48-cb31-4269-8f35-8fc6da0adc7e';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.215 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'b5bd6d48-cb31-4269-8f35-8fc6da0adc7e';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.216 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.216 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.216 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.217 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'db2ef700-401a-4b91-b6ed-3cf234f91ade';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.228 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'db2ef700-401a-4b91-b6ed-3cf234f91ade';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.229 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.229 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.230 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.230 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.234 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.235 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.235 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.235 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.236 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'f23d8d74-7264-4ae8-9dec-78946e7809ac';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.240 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Products]
+      WHERE [ProductId] = 'f23d8d74-7264-4ae8-9dec-78946e7809ac';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.241 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.241 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.241 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.242 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = '19439fe2-b120-4923-8a89-24b47b790d6f';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.247 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = '19439fe2-b120-4923-8a89-24b47b790d6f';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.247 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.247 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.248 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.248 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.251 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Tags]
+      WHERE [TagId] = 'fdae1f84-b417-420f-a275-5438de4fe8ec';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.251 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.251 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.252 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.252 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '43923a75-be2d-4ee8-af79-919a3c402805';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.255 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '43923a75-be2d-4ee8-af79-919a3c402805';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.255 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.255 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.256 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.256 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5e89a538-2c6a-47ce-ae56-fe1328da3819';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.257 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = '5e89a538-2c6a-47ce-ae56-fe1328da3819';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.258 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.259 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.260 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.260 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'f3a5e79b-00bc-4e46-abfc-ff8f72a42c38';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.275 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [Orders]
+      WHERE [OrderId] = 'f3a5e79b-00bc-4e46-abfc-ff8f72a42c38';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.276 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.276 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.277 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.277 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'14258c70-cad6-4a55-8327-a9fa0bee6682';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.285 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'14258c70-cad6-4a55-8327-a9fa0bee6682';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.286 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.286 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.286 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.287 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'a14a27cd-493f-47ca-bced-e3adb51cf376';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.295 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'a14a27cd-493f-47ca-bced-e3adb51cf376';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.296 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.296 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.296 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.297 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7';
+      SELECT @@ROWCOUNT;
+info: 12/27/2023 20:23:45.306 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM [AspNetUsers]
+      WHERE [Id] = N'ffd6b2bb-e580-4609-b00d-b54ee95e1ee7';
+      SELECT @@ROWCOUNT;
+dbug: 12/27/2023 20:23:45.307 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.307 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.308 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.308 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] ON;
+      INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+      VALUES (N'4c16ac30-078f-450c-abcb-75d434cb5e83', 0, N'2acfe452-7a6c-484b-b682-34a007df0b01', '2023-12-27T20:23:21.6380561+03:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'c28e42dc-59e6-417d-bda8-25560bf5df8e', CAST(0 AS bit), N'jane doe'),
+      (N'6caab355-b595-4915-9432-4aa53e2d3eb1', 0, N'38f20a04-991f-4f66-8a5d-92b0a961c1f6', '2023-12-27T20:23:21.6380599+03:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'f96c5044-afef-4719-80f4-bb724641dd74', CAST(0 AS bit), N'Sara doe'),
+      (N'74321f15-29aa-4057-ba32-e9243bc47560', 0, N'473fcff2-3fb2-41e5-9f5c-5954e8d8717d', '2023-12-27T20:23:21.6380613+03:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'a88aa63a-27b0-4035-8bb8-d08ea0c8345b', CAST(0 AS bit), N'Sandy Jakson'),
+      (N'7d66e6e8-9fd9-4375-bd6f-83f0e4f9e792', 0, N'c2c4e98b-0d0e-4bb6-b0d9-3420b02a883d', '2023-12-27T20:23:21.6380533+03:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'ec38523c-9c27-4ce0-a6d6-a8fcf0a13773', CAST(0 AS bit), N'john doe');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] OFF;
+info: 12/27/2023 20:23:45.338 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] ON;
+      INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+      VALUES (N'4c16ac30-078f-450c-abcb-75d434cb5e83', 0, N'2acfe452-7a6c-484b-b682-34a007df0b01', '2023-12-27T20:23:21.6380561+03:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'c28e42dc-59e6-417d-bda8-25560bf5df8e', CAST(0 AS bit), N'jane doe'),
+      (N'6caab355-b595-4915-9432-4aa53e2d3eb1', 0, N'38f20a04-991f-4f66-8a5d-92b0a961c1f6', '2023-12-27T20:23:21.6380599+03:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'f96c5044-afef-4719-80f4-bb724641dd74', CAST(0 AS bit), N'Sara doe'),
+      (N'74321f15-29aa-4057-ba32-e9243bc47560', 0, N'473fcff2-3fb2-41e5-9f5c-5954e8d8717d', '2023-12-27T20:23:21.6380613+03:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'a88aa63a-27b0-4035-8bb8-d08ea0c8345b', CAST(0 AS bit), N'Sandy Jakson'),
+      (N'7d66e6e8-9fd9-4375-bd6f-83f0e4f9e792', 0, N'c2c4e98b-0d0e-4bb6-b0d9-3420b02a883d', '2023-12-27T20:23:21.6380533+03:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'ec38523c-9c27-4ce0-a6d6-a8fcf0a13773', CAST(0 AS bit), N'john doe');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+          SET IDENTITY_INSERT [AspNetUsers] OFF;
+dbug: 12/27/2023 20:23:45.338 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.338 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.339 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.339 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+          SET IDENTITY_INSERT [CampaignCustomers] ON;
+      INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+      VALUES ('349b906f-8f29-4412-a594-4796edd397bf', N'Jamal_Ali@outlook.com', N'Jamal'),
+      ('9f3d448e-9734-4d59-a780-e63ade3600e7', N'marwaghonem29@gmail.com', N'Marwa');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+          SET IDENTITY_INSERT [CampaignCustomers] OFF;
+info: 12/27/2023 20:23:45.361 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+          SET IDENTITY_INSERT [CampaignCustomers] ON;
+      INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+      VALUES ('349b906f-8f29-4412-a594-4796edd397bf', N'Jamal_Ali@outlook.com', N'Jamal'),
+      ('9f3d448e-9734-4d59-a780-e63ade3600e7', N'marwaghonem29@gmail.com', N'Marwa');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+          SET IDENTITY_INSERT [CampaignCustomers] OFF;
+dbug: 12/27/2023 20:23:45.361 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.366 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (4ms).
+dbug: 12/27/2023 20:23:45.366 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (5ms).
+dbug: 12/27/2023 20:23:45.367 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] ON;
+      INSERT INTO [Categories] ([CategoryId], [Name])
+      VALUES ('19c1f306-3959-472e-865c-5ed14b24d2df', N'Gaming'),
+      ('29bfa61d-84eb-4c61-ae2e-0d5a68286042', N'Clothing'),
+      ('673cc6f5-7784-4cd0-ac93-fd79bb6742e2', N'Tablets'),
+      ('821920b1-0f52-4035-bf04-b7fb05659252', N'SmartDevices'),
+      ('c6b3d01c-c24a-43d5-927f-10810e131c7f', N'Electronics'),
+      ('efe957dc-252d-49e9-b1a0-f65c3a181388', N'Mobiles'),
+      ('f0ed63d2-39c5-44ff-9322-8d0817b9a050', N'Appliances'),
+      ('f5dbea74-8d31-4825-87c6-63bb4b4e8dc5', N'Fashion');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] OFF;
+info: 12/27/2023 20:23:45.384 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] ON;
+      INSERT INTO [Categories] ([CategoryId], [Name])
+      VALUES ('19c1f306-3959-472e-865c-5ed14b24d2df', N'Gaming'),
+      ('29bfa61d-84eb-4c61-ae2e-0d5a68286042', N'Clothing'),
+      ('673cc6f5-7784-4cd0-ac93-fd79bb6742e2', N'Tablets'),
+      ('821920b1-0f52-4035-bf04-b7fb05659252', N'SmartDevices'),
+      ('c6b3d01c-c24a-43d5-927f-10810e131c7f', N'Electronics'),
+      ('efe957dc-252d-49e9-b1a0-f65c3a181388', N'Mobiles'),
+      ('f0ed63d2-39c5-44ff-9322-8d0817b9a050', N'Appliances'),
+      ('f5dbea74-8d31-4825-87c6-63bb4b4e8dc5', N'Fashion');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+          SET IDENTITY_INSERT [Categories] OFF;
+dbug: 12/27/2023 20:23:45.384 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.384 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.385 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.385 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] ON;
+      INSERT INTO [Tags] ([TagId], [Name])
+      VALUES ('87a7a403-675e-4d5c-81dc-06c886571428', N'Fashion 2024'),
+      ('925ee134-dbfb-4da2-9344-995e988190be', N'FlagShip Mobiles'),
+      ('bdf4dbb3-2547-44d9-8b1b-aad90df928e3', N'Tech');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] OFF;
+info: 12/27/2023 20:23:45.393 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] ON;
+      INSERT INTO [Tags] ([TagId], [Name])
+      VALUES ('87a7a403-675e-4d5c-81dc-06c886571428', N'Fashion 2024'),
+      ('925ee134-dbfb-4da2-9344-995e988190be', N'FlagShip Mobiles'),
+      ('bdf4dbb3-2547-44d9-8b1b-aad90df928e3', N'Tech');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+          SET IDENTITY_INSERT [Tags] OFF;
+dbug: 12/27/2023 20:23:45.393 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.394 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.394 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.394 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] ON;
+      INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+      VALUES ('05dfada3-f0af-4155-a517-ce80bcc0dc67', '2023-12-27T20:23:21.6380634+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83'),
+      ('23b4a2b6-927d-40cd-b2e9-31d97a298f26', '2023-12-27T20:23:21.6380658+03:00', N'74321f15-29aa-4057-ba32-e9243bc47560'),
+      ('28d31885-acbd-4704-bd43-3701a7ebf62d', '2023-12-27T20:23:21.6380669+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83'),
+      ('5df48ca5-d095-405e-bd2a-7ed28d98e3d5', '2023-12-27T20:23:21.6380663+03:00', N'6caab355-b595-4915-9432-4aa53e2d3eb1'),
+      ('687f65d7-ea8a-45ed-9ffd-44b347769eb3', '2023-12-27T20:23:21.6380640+03:00', N'7d66e6e8-9fd9-4375-bd6f-83f0e4f9e792'),
+      ('876a7ad1-ab14-4323-a235-48df92efd880', '2023-12-27T20:23:21.6380645+03:00', N'6caab355-b595-4915-9432-4aa53e2d3eb1'),
+      ('8e246e43-2327-4f3b-a819-37b64716851b', '2023-12-27T20:23:21.6380643+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83'),
+      ('9033cf11-fa84-44e4-9730-1ffaa7f23756', '2023-12-27T20:23:21.6380648+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] OFF;
+info: 12/27/2023 20:23:45.404 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] ON;
+      INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+      VALUES ('05dfada3-f0af-4155-a517-ce80bcc0dc67', '2023-12-27T20:23:21.6380634+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83'),
+      ('23b4a2b6-927d-40cd-b2e9-31d97a298f26', '2023-12-27T20:23:21.6380658+03:00', N'74321f15-29aa-4057-ba32-e9243bc47560'),
+      ('28d31885-acbd-4704-bd43-3701a7ebf62d', '2023-12-27T20:23:21.6380669+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83'),
+      ('5df48ca5-d095-405e-bd2a-7ed28d98e3d5', '2023-12-27T20:23:21.6380663+03:00', N'6caab355-b595-4915-9432-4aa53e2d3eb1'),
+      ('687f65d7-ea8a-45ed-9ffd-44b347769eb3', '2023-12-27T20:23:21.6380640+03:00', N'7d66e6e8-9fd9-4375-bd6f-83f0e4f9e792'),
+      ('876a7ad1-ab14-4323-a235-48df92efd880', '2023-12-27T20:23:21.6380645+03:00', N'6caab355-b595-4915-9432-4aa53e2d3eb1'),
+      ('8e246e43-2327-4f3b-a819-37b64716851b', '2023-12-27T20:23:21.6380643+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83'),
+      ('9033cf11-fa84-44e4-9730-1ffaa7f23756', '2023-12-27T20:23:21.6380648+03:00', N'4c16ac30-078f-450c-abcb-75d434cb5e83');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+          SET IDENTITY_INSERT [Orders] OFF;
+dbug: 12/27/2023 20:23:45.404 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.405 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.405 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.406 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] ON;
+      INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+      VALUES ('0273038d-cb11-4f16-9830-1368dcd45a9d', NULL, 5, N'Amazon Echo Dot', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 39.99, NULL),
+      ('1afc6bc9-c4a9-468c-a091-bcf71876a16c', NULL, 1, N'Bose Noise-Canceling Headphones', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 299.99, NULL),
+      ('74e37db8-5f17-40cd-b972-a2516192119d', NULL, 3, N'Fossil Smartwatch', '05dfada3-f0af-4155-a517-ce80bcc0dc67', 149.99, NULL),
+      ('7845c623-9053-4bbc-b763-6a29ff33a43d', NULL, 6, N'Fitbit Charge 5', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 149.99, NULL),
+      ('83dd8132-2eed-45b8-bfef-604f0975b5f0', NULL, 4, N'KitchenAid Stand Mixer', '876a7ad1-ab14-4323-a235-48df92efd880', 349.99, NULL),
+      ('8bdc926b-53da-41b3-ad0c-ed6dc00b4c40', NULL, 2, N'Samsung Galaxy S21', '05dfada3-f0af-4155-a517-ce80bcc0dc67', 799.99, NULL),
+      ('96a86cbf-1d2c-4925-8b86-0bab35fd5c08', NULL, 1, N'Sony Smart TV', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 1299.99, NULL),
+      ('a07bcdaf-81b6-4a85-a681-e617c2fe82a3', NULL, 3, N'Calvin Klein Watch', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 199.99, NULL),
+      ('c0f557d9-699f-44cb-85ea-cef38a9248e8', NULL, 3, N'Nike Running Shoes', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 89.99, NULL),
+      ('cb8bb99f-29ee-40db-977a-fe6e63e49369', NULL, 4, N'Cuisinart Coffee Maker', '05dfada3-f0af-4155-a517-ce80bcc0dc67', 79.99, NULL),
+      ('cb9f30a5-cf43-41c1-9b09-7c187a998504', NULL, 1, N'Canon EOS Rebel T7', '8e246e43-2327-4f3b-a819-37b64716851b', 499.99, NULL),
+      ('d0f2cedb-2585-4354-b596-2b26ca68b760', NULL, 3, N'Levi''s Jeans', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 59.99, NULL),
+      ('d1638cc7-8622-453e-973d-320441808656', NULL, 3, N'Adidas Running Shoes', '8e246e43-2327-4f3b-a819-37b64716851b', 109.99, NULL),
+      ('e5dcb228-8db8-4f5d-9337-21417896f046', NULL, 6, N'Razer Gaming Mouse', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 69.99, NULL),
+      ('f2c1dac1-c987-4d16-815f-1142eb264212', NULL, 1, N'HP Printer', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 149.99, NULL);
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] OFF;
+info: 12/27/2023 20:23:45.491 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (85ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] ON;
+      INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+      VALUES ('0273038d-cb11-4f16-9830-1368dcd45a9d', NULL, 5, N'Amazon Echo Dot', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 39.99, NULL),
+      ('1afc6bc9-c4a9-468c-a091-bcf71876a16c', NULL, 1, N'Bose Noise-Canceling Headphones', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 299.99, NULL),
+      ('74e37db8-5f17-40cd-b972-a2516192119d', NULL, 3, N'Fossil Smartwatch', '05dfada3-f0af-4155-a517-ce80bcc0dc67', 149.99, NULL),
+      ('7845c623-9053-4bbc-b763-6a29ff33a43d', NULL, 6, N'Fitbit Charge 5', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 149.99, NULL),
+      ('83dd8132-2eed-45b8-bfef-604f0975b5f0', NULL, 4, N'KitchenAid Stand Mixer', '876a7ad1-ab14-4323-a235-48df92efd880', 349.99, NULL),
+      ('8bdc926b-53da-41b3-ad0c-ed6dc00b4c40', NULL, 2, N'Samsung Galaxy S21', '05dfada3-f0af-4155-a517-ce80bcc0dc67', 799.99, NULL),
+      ('96a86cbf-1d2c-4925-8b86-0bab35fd5c08', NULL, 1, N'Sony Smart TV', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 1299.99, NULL),
+      ('a07bcdaf-81b6-4a85-a681-e617c2fe82a3', NULL, 3, N'Calvin Klein Watch', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 199.99, NULL),
+      ('c0f557d9-699f-44cb-85ea-cef38a9248e8', NULL, 3, N'Nike Running Shoes', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 89.99, NULL),
+      ('cb8bb99f-29ee-40db-977a-fe6e63e49369', NULL, 4, N'Cuisinart Coffee Maker', '05dfada3-f0af-4155-a517-ce80bcc0dc67', 79.99, NULL),
+      ('cb9f30a5-cf43-41c1-9b09-7c187a998504', NULL, 1, N'Canon EOS Rebel T7', '8e246e43-2327-4f3b-a819-37b64716851b', 499.99, NULL),
+      ('d0f2cedb-2585-4354-b596-2b26ca68b760', NULL, 3, N'Levi''s Jeans', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 59.99, NULL),
+      ('d1638cc7-8622-453e-973d-320441808656', NULL, 3, N'Adidas Running Shoes', '8e246e43-2327-4f3b-a819-37b64716851b', 109.99, NULL),
+      ('e5dcb228-8db8-4f5d-9337-21417896f046', NULL, 6, N'Razer Gaming Mouse', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 69.99, NULL),
+      ('f2c1dac1-c987-4d16-815f-1142eb264212', NULL, 1, N'HP Printer', '687f65d7-ea8a-45ed-9ffd-44b347769eb3', 149.99, NULL);
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+          SET IDENTITY_INSERT [Products] OFF;
+dbug: 12/27/2023 20:23:45.495 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.497 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.498 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+dbug: 12/27/2023 20:23:45.498 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] ON;
+      INSERT INTO [TagProducts] ([ProductId], [TagId])
+      VALUES ('1afc6bc9-c4a9-468c-a091-bcf71876a16c', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('83dd8132-2eed-45b8-bfef-604f0975b5f0', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('96a86cbf-1d2c-4925-8b86-0bab35fd5c08', '925ee134-dbfb-4da2-9344-995e988190be'),
+      ('c0f557d9-699f-44cb-85ea-cef38a9248e8', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('cb9f30a5-cf43-41c1-9b09-7c187a998504', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('d0f2cedb-2585-4354-b596-2b26ca68b760', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('f2c1dac1-c987-4d16-815f-1142eb264212', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] OFF;
+info: 12/27/2023 20:23:45.526 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] ON;
+      INSERT INTO [TagProducts] ([ProductId], [TagId])
+      VALUES ('1afc6bc9-c4a9-468c-a091-bcf71876a16c', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('83dd8132-2eed-45b8-bfef-604f0975b5f0', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('96a86cbf-1d2c-4925-8b86-0bab35fd5c08', '925ee134-dbfb-4da2-9344-995e988190be'),
+      ('c0f557d9-699f-44cb-85ea-cef38a9248e8', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('cb9f30a5-cf43-41c1-9b09-7c187a998504', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('d0f2cedb-2585-4354-b596-2b26ca68b760', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3'),
+      ('f2c1dac1-c987-4d16-815f-1142eb264212', 'bdf4dbb3-2547-44d9-8b1b-aad90df928e3');
+      IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+          SET IDENTITY_INSERT [TagProducts] OFF;
+dbug: 12/27/2023 20:23:45.527 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/27/2023 20:23:45.528 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/27/2023 20:23:45.528 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/27/2023 20:23:45.530 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20231227172322_AddingCampaignCustomersSeeding', N'8.0.0');
+info: 12/27/2023 20:23:45.533 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20231227172322_AddingCampaignCustomersSeeding', N'8.0.0');
+dbug: 12/27/2023 20:23:45.536 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committing transaction.
+dbug: 12/27/2023 20:23:45.556 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committed transaction.
+dbug: 12/27/2023 20:23:45.558 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 12/27/2023 20:23:45.559 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:45.560 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 20:23:45.562 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 20:23:45.565 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 20:23:45.568 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+warn: 12/27/2023 23:12:50.800 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:12:51.017 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:12:51.018 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:12:51.392 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:12:51.458 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:12:51.843 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:12:51.915 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:12:51.924 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (5ms).
+dbug: 12/27/2023 23:12:51.930 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:12:51.936 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:12:51.942 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:12:51.949 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/27/2023 23:12:51.951 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (11ms).
+dbug: 12/27/2023 23:12:51.960 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:12:52.020 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:12:52.348 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:12:52.435 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (74ms).
+dbug: 12/27/2023 23:12:52.446 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:12:52.447 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:12:52.449 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (481ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:12:52.704 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.InvalidOperationException: Invalid operation. The connection is closed.
+         at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+         at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:13:13.113 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:13:13.122 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:13:13.123 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:13:13.125 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:13:13.132 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:13:13.143 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:13:13.143 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/27/2023 23:13:13.144 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/27/2023 23:13:13.144 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:13:13.155 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:13:13.173 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:13:13.175 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 16ms reading results.
+dbug: 12/27/2023 23:13:13.178 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:13:13.180 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 23:13:14.580 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:13:14.581 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:13:14.581 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:14:13.708 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:14:13.711 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:14:13.711 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:14:13.712 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:14:13.712 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:14:13.712 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:14:13.713 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:14:13.713 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:14:13.714 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:14:13.724 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:14:13.725 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:14:13.727 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:14:13.728 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:14:13.730 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:14:13.960 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:14:13.960 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:14:13.961 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:15:14.098 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:15:14.100 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:15:14.101 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:15:14.102 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:15:14.104 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:15:14.105 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:15:14.106 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:15:14.107 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:15:14.108 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:15:14.112 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:15:14.113 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:15:14.114 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:15:14.115 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:15:14.116 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:15:14.373 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:15:14.374 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:15:14.408 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (34ms).
+dbug: 12/27/2023 23:16:14.572 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:16:14.573 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:16:14.573 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:16:14.574 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:16:14.574 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:16:14.575 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:16:14.575 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:16:14.576 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:16:14.576 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:16:14.599 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:16:14.599 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:16:14.599 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:16:14.600 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:16:14.600 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:16:14.962 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:16:14.963 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:16:14.963 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:17:14.851 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:17:14.852 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:17:14.852 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:17:14.852 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:17:14.853 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:17:14.853 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:17:14.853 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:17:14.854 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:17:14.854 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:17:14.868 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:17:14.869 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:17:14.882 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 13ms reading results.
+dbug: 12/27/2023 23:17:14.883 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:17:14.883 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:17:15.141 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:17:15.142 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:17:15.142 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:18:14.976 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:18:14.979 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:18:14.980 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:18:14.982 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:14.983 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:14.984 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:18:14.985 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:18:14.985 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:18:14.986 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:18:14.988 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:18:14.989 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:14.990 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:18:14.991 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:14.991 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:18:15.222 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:18:15.223 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:15.224 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/27/2023 23:18:56.889 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:18:57.022 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:18:57.023 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:18:57.244 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:18:57.276 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:18:57.420 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:18:57.455 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:18:57.459 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (3ms).
+dbug: 12/27/2023 23:18:57.463 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:57.467 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:57.470 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:18:57.473 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:18:57.475 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (5ms).
+dbug: 12/27/2023 23:18:57.481 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:18:57.500 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:18:57.510 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:18:57.514 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:57.518 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:18:57.518 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 13ms reading results.
+dbug: 12/27/2023 23:18:57.521 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (3ms).
+dbug: 12/27/2023 23:19:08.137 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:19:08.142 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:19:08.143 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:19:08.143 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.144 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.147 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:19:08.148 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:19:08.149 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:19:08.150 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:19:08.152 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:19:08.154 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.155 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:19:08.159 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.172 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (11ms).
+dbug: 12/27/2023 23:19:08.924 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:19:08.925 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:19:08.926 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:19:08.926 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.927 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.927 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:19:08.927 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:19:08.928 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:19:08.930 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:19:08.932 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:19:08.932 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:19:08.933 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.934 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:19:08.934 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:08.935 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:19:12.431 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:19:12.432 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:19:12.433 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:19:12.433 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:12.433 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:12.434 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:19:12.434 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:19:12.435 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:19:12.435 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:19:12.436 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:19:12.437 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:12.438 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:19:12.438 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:12.439 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:19:12.441 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:19:12.441 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:19:12.441 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:20:12.461 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:20:12.462 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:20:12.463 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:20:12.463 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:20:12.463 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:20:12.464 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:20:12.464 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:20:12.464 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:20:12.465 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:20:12.467 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:20:12.468 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:20:12.469 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:20:12.470 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:20:12.471 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:20:12.473 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:20:12.473 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:20:12.474 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:21:12.551 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:21:12.553 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:21:12.553 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:21:12.554 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:21:12.554 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:21:12.554 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:21:12.555 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:21:12.555 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:21:12.555 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:21:12.558 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:21:12.559 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:21:12.560 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:21:12.560 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:21:12.561 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:21:12.563 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:21:12.564 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:21:12.565 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/27/2023 23:22:09.105 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:22:09.389 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:22:09.394 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:22:09.760 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:22:10.006 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:22:10.459 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:22:10.615 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:22:10.625 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (5ms).
+dbug: 12/27/2023 23:22:10.631 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:10.775 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:10.781 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:22:10.786 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/27/2023 23:22:10.789 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 12/27/2023 23:22:10.899 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:22:11.994 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1,061ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:22:12.122 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:12.127 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 126ms reading results.
+dbug: 12/27/2023 23:22:12.131 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:12.162 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (30ms).
+dbug: 12/27/2023 23:22:12.843 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:22:12.857 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:12.860 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:22:21.320 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:22:21.327 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:22:21.328 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:22:21.330 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:21.331 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:21.332 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:22:21.333 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:22:21.334 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:22:21.335 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:22:21.338 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:22:21.339 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:21.340 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:22:21.341 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:21.342 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:22:21.626 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:22:21.627 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:22:21.628 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:23:07.884 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:23:07.886 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:23:07.887 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:23:07.887 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:23:07.887 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:23:07.888 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:23:07.888 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:23:07.889 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:23:07.889 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:23:07.893 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:23:07.893 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:23:07.894 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:23:07.894 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:23:07.894 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:23:08.137 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:23:08.138 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:23:08.138 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:24:08.000 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:24:08.001 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:24:08.001 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:24:08.002 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:24:08.002 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:24:08.002 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:24:08.003 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:24:08.003 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:24:08.003 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:24:08.006 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:24:08.007 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:24:08.007 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:24:08.008 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:24:08.008 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:24:08.297 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:24:08.298 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:24:08.298 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:25:08.154 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:25:08.155 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:25:08.155 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:25:08.155 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:25:08.156 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:25:08.156 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:25:08.156 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:25:08.157 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:25:08.157 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:25:08.160 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:25:08.161 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:25:08.163 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:25:08.164 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:25:08.164 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:25:08.375 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:25:08.376 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:25:08.376 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:26:08.354 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:26:08.355 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:26:08.356 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:26:08.356 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:26:08.356 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:26:08.357 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:26:08.357 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:26:08.357 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:26:08.358 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:26:08.360 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:26:08.361 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:26:08.362 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:26:08.363 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:26:08.364 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:26:08.589 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:26:08.590 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:26:08.590 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:27:09.101 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:27:09.103 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:27:09.104 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:27:09.104 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:27:09.104 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:27:09.105 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:27:09.105 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:27:09.105 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:27:09.106 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:27:09.116 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:27:09.116 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:27:09.117 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:27:09.117 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:27:09.117 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:27:09.544 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:27:09.545 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:27:09.545 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:28:09.611 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:28:09.612 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:28:09.613 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:28:09.613 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:09.614 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:09.614 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:28:09.614 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:28:09.615 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:28:09.615 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:28:09.618 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:28:09.620 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:09.622 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 2ms reading results.
+dbug: 12/27/2023 23:28:09.623 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:09.624 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:28:09.827 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:28:09.828 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:09.828 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:28:27.470 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:28:27.471 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:28:27.471 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:28:27.472 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:27.472 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:27.472 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:28:27.473 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:28:27.473 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:28:27.473 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:28:27.476 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:28:27.477 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:27.477 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:28:27.477 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:27.478 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:28:27.848 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:28:27.850 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:28:27.860 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (10ms).
+dbug: 12/27/2023 23:29:09.844 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:29:09.845 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:29:09.848 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2ms).
+dbug: 12/27/2023 23:29:09.850 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:29:09.853 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:29:09.854 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:29:09.856 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:29:09.856 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:29:09.858 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:29:09.860 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:29:09.861 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:29:09.861 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:29:09.862 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:29:09.866 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (3ms).
+dbug: 12/27/2023 23:29:10.129 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:29:10.130 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:29:10.132 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:30:09.913 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:30:09.914 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:30:09.915 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:30:09.915 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:30:09.915 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:30:09.916 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:30:09.916 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:30:09.916 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:30:09.916 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:30:09.921 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:30:09.922 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:30:09.923 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:30:09.924 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:30:09.925 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:30:10.206 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:30:10.207 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:30:10.207 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:31:10.121 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:31:10.122 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:31:10.122 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:31:10.122 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:31:10.123 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:31:10.123 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:31:10.124 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:31:10.124 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:31:10.124 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:31:10.128 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:31:10.129 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:31:10.130 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:31:10.131 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:31:10.132 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:31:10.578 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:31:10.578 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:31:10.579 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:32:10.442 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:32:10.443 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:32:10.443 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:32:10.444 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:32:10.444 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:32:10.444 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:32:10.445 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:32:10.445 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:32:10.445 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:32:10.460 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:32:10.460 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:32:10.461 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:32:10.461 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:32:10.461 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:32:10.831 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:32:10.832 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:32:10.833 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:33:10.673 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:33:10.674 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:33:10.674 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:33:10.675 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:33:10.675 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:33:10.676 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:33:10.676 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:33:10.676 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:33:10.676 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:33:10.679 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:33:10.681 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:33:10.683 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:33:10.683 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:33:10.684 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:33:10.902 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:33:10.902 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:33:10.902 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:34:06.189 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:34:06.190 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:34:06.191 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:34:06.192 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:06.192 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:06.194 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:34:06.194 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:06.195 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:06.195 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:34:06.200 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:34:06.291 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:06.291 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:34:06.355 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:34:06.355 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:34:06.356 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (159ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:34:06.484 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.InvalidOperationException: Invalid operation. The connection is closed.
+         at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+         at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:34:06.965 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:34:06.966 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:34:06.966 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:34:06.967 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:06.967 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:06.968 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:34:06.968 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:06.969 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:06.969 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:34:06.972 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+info: 12/27/2023 23:34:06.972 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:34:06.976 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:06.976 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+fail: 12/27/2023 23:34:07.087 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+      Object name: 'ECommerceContext'.
+         at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+         at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+         at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+         at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+         at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:34:07.149 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to '' on server ''.
+dbug: 12/27/2023 23:34:07.149 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for '' on server '' is being disposed after spending 173ms reading results.
+dbug: 12/27/2023 23:34:07.516 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:34:07.516 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:34:07.517 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:34:07.517 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:07.518 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:07.518 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:34:07.518 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:07.519 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:07.519 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:34:07.523 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:34:07.524 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:07.526 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/27/2023 23:34:07.590 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:34:07.590 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:34:07.591 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (71ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:34:07.701 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.IO.IOException: The process cannot access the file 'C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Queries.sql' because it is being used by another process.
+         at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+         at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+         at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+         at E_CommerceSystemV2.API.ECommerceContext.<>c.<OnConfiguring>b__15_0(String query) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Data\Context\ECommerceContext.cs:line 25
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.FormattingDbContextLogger.Log(EventData eventData)
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.RelationalCommandDiagnosticsLogger.BroadcastCommandExecuted(DbConnection connection, DbCommand command, DbContext context, DbCommandMethod executeMethod, Guid commandId, Guid connectionId, Object methodResult, Boolean async, DateTimeOffset startTime, TimeSpan duration, EventDefinition`6 definition, Boolean diagnosticSourceEnabled, Boolean simpleLogEnabled, CommandSource commandSource)
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.RelationalCommandDiagnosticsLogger.CommandReaderExecutedAsync(IRelationalConnection connection, DbCommand command, DbContext context, Guid commandId, Guid connectionId, DbDataReader methodResult, DateTimeOffset startTime, TimeSpan duration, CommandSource commandSource, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:34:10.868 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:34:10.869 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:34:10.869 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:34:10.870 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:10.870 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:10.870 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:34:10.871 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:10.871 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:34:10.871 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:34:10.873 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:34:10.873 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:10.874 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:34:10.874 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:10.874 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:34:11.137 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:34:11.137 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:34:11.138 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:35:10.995 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:35:10.996 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:35:10.996 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:35:10.996 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:35:10.997 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:35:10.997 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:35:10.997 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:35:10.998 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:35:10.998 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:35:11.001 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:35:11.002 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:35:11.002 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:35:11.003 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:35:11.003 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:35:11.156 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:35:11.157 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:35:11.157 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:36:11.129 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:36:11.132 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:36:11.133 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:36:11.135 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:36:11.139 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:36:11.145 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:36:11.146 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:36:11.155 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 12/27/2023 23:36:11.159 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:36:11.162 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:36:11.163 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:36:11.164 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:36:11.164 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:36:11.165 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:36:11.461 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:36:11.462 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:36:11.462 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/27/2023 23:38:02.809 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:38:02.993 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:38:02.996 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:38:03.478 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:38:03.651 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:38:04.516 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:38:04.602 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:38:04.609 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (6ms).
+dbug: 12/27/2023 23:38:04.613 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:04.618 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:04.622 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:38:04.626 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:38:04.628 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (7ms).
+dbug: 12/27/2023 23:38:04.635 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:38:04.982 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (339ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:38:05.071 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:05.079 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 32ms reading results.
+dbug: 12/27/2023 23:38:05.084 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:05.087 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 23:38:05.665 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:38:05.671 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:05.674 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:38:11.502 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:38:11.513 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:38:11.516 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2ms).
+dbug: 12/27/2023 23:38:11.516 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:11.517 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:11.518 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:38:11.519 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:38:11.519 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:38:11.520 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:38:11.523 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:38:11.524 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:11.525 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:38:11.526 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:11.526 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:38:11.854 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:38:11.855 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:38:11.855 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:39:02.311 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:39:02.314 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:39:02.314 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:39:02.315 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:39:02.315 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:39:02.316 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:39:02.316 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:39:02.316 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:39:02.317 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:39:02.320 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:39:02.330 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:39:02.330 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 3ms reading results.
+dbug: 12/27/2023 23:39:02.331 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:39:02.331 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:39:02.522 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:39:02.523 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:39:02.523 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:40:02.561 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:40:02.562 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:40:02.563 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:40:02.563 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:40:02.564 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:40:02.564 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:40:02.565 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:40:02.565 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:40:02.565 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:40:02.572 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:40:02.573 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:40:02.573 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:40:02.574 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:40:02.574 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:40:02.840 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:40:02.841 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:40:02.841 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:41:02.743 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:41:02.744 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:41:02.744 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:41:02.745 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:41:02.745 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:41:02.745 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:41:02.746 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:41:02.746 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:41:02.746 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:41:02.750 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:41:02.750 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:41:02.751 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:41:02.752 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:41:02.753 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:41:02.933 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:41:02.934 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:41:02.934 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:42:03.109 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:42:03.110 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:42:03.111 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:42:03.111 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:42:03.111 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:42:03.112 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:42:03.112 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:42:03.112 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:42:03.112 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:42:03.118 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:42:03.119 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:42:03.120 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:42:03.122 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:42:03.124 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:42:03.563 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:42:03.563 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:42:03.564 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/27/2023 23:43:46.566 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:43:46.846 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:43:46.847 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:43:47.237 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:43:47.312 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:43:47.613 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:43:47.671 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:43:47.683 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (7ms).
+dbug: 12/27/2023 23:43:47.689 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:47.694 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:47.699 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:43:47.705 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/27/2023 23:43:47.708 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 12/27/2023 23:43:47.717 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:43:47.787 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (62ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:43:47.821 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:47.829 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 32ms reading results.
+dbug: 12/27/2023 23:43:47.835 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:47.837 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (3ms).
+dbug: 12/27/2023 23:43:48.233 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:43:48.238 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:48.240 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:43:54.339 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:43:54.353 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:43:54.354 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:43:54.356 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:54.357 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:54.359 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:43:54.360 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:43:54.361 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:43:54.363 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:43:54.367 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:43:54.370 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:54.371 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:43:54.372 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:54.373 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:43:54.704 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:43:54.705 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:43:54.706 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:44:13.332 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:44:13.335 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:44:13.335 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:44:13.336 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:44:13.336 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:44:13.336 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:44:13.337 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:44:13.337 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:44:13.338 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:44:13.341 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:44:13.342 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:44:13.342 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:44:13.343 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:44:13.343 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:44:13.548 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:44:13.549 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:44:13.549 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:45:13.652 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:45:13.653 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:45:13.654 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:45:13.654 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:45:13.655 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:45:13.655 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:45:13.655 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:45:13.656 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:45:13.700 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:45:13.710 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:45:13.711 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:45:13.711 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:45:13.713 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:45:13.716 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 23:45:14.147 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:45:14.147 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:45:14.148 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:46:13.809 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:46:13.810 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:46:13.810 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:46:13.810 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:46:13.811 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:46:13.811 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:46:13.812 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:46:13.812 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:46:13.812 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:46:13.816 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:46:13.818 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:46:13.819 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:46:13.819 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:46:13.819 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:46:14.075 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:46:14.075 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:46:14.075 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:47:13.965 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:47:13.968 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:47:13.969 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:47:14.001 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:47:14.004 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:47:14.006 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:47:14.007 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:47:14.007 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:47:14.008 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:47:14.014 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:47:14.017 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:47:14.022 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 5ms reading results.
+dbug: 12/27/2023 23:47:14.023 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:47:14.024 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:47:14.343 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:47:14.343 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:47:14.344 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:48:14.427 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:48:14.430 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:48:14.436 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (6ms).
+dbug: 12/27/2023 23:48:14.437 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:48:14.437 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:48:14.437 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:48:14.438 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:48:14.438 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:48:14.439 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:48:14.448 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:48:14.454 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:48:14.457 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 5ms reading results.
+dbug: 12/27/2023 23:48:14.458 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:48:14.459 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:48:14.612 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:48:14.613 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:48:14.613 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:49:14.433 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:49:14.434 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:14.434 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:49:14.435 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:14.435 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:14.435 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:49:14.436 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:14.436 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:14.436 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:49:14.440 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:49:14.440 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:14.441 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:49:14.441 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:14.442 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:49:14.729 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:49:14.729 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:14.730 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:49:20.026 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:49:20.027 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:20.028 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:49:20.028 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:20.028 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:20.029 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:49:20.029 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:20.029 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:20.030 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:49:20.034 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:49:20.159 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:20.160 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:49:20.243 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:20.243 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:49:20.244 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (212ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:49:20.402 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.InvalidOperationException: Invalid operation. The connection is closed.
+         at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+         at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:49:20.892 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:49:20.893 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:20.893 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:49:20.894 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:20.894 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:20.894 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:49:20.895 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:20.895 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:20.895 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:49:20.898 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:49:20.998 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:21.012 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (13ms).
+dbug: 12/27/2023 23:49:21.104 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:21.104 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:49:21.104 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (208ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:49:21.242 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.InvalidOperationException: Invalid operation. The connection is closed.
+         at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+         at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:49:21.692 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:49:21.693 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:21.693 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:49:21.693 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:21.694 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:21.694 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:49:21.694 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:21.695 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:21.695 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:49:21.704 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:49:21.770 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:21.771 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:49:21.944 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:21.945 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:49:21.945 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (249ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:49:22.100 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.InvalidOperationException: Invalid operation. The connection is closed.
+         at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+         at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:49:28.643 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:49:28.644 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:28.645 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:49:28.645 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:28.645 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:28.646 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:49:28.646 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:28.646 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:49:28.647 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:49:28.652 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:49:28.721 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:49:28.722 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:49:28.828 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:49:28.828 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:49:28.828 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (181ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:49:29.114 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.InvalidOperationException: Invalid operation. The connection is closed.
+         at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+         at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+warn: 12/27/2023 23:50:03.205 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:50:03.347 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:50:03.348 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:50:03.491 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:50:03.529 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:50:03.685 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:50:03.717 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:50:03.723 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (4ms).
+dbug: 12/27/2023 23:50:03.727 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:03.730 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:03.734 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:50:03.737 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:50:03.739 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (6ms).
+dbug: 12/27/2023 23:50:03.743 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:50:03.760 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:50:03.771 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:03.774 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 10ms reading results.
+dbug: 12/27/2023 23:50:03.777 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:03.778 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:50:03.794 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:50:03.797 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:03.799 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:50:14.176 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:50:14.181 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:50:14.181 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:50:14.183 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:14.185 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:14.186 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:50:14.187 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:50:14.187 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:50:14.188 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:50:14.191 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:50:14.192 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:14.192 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:50:14.193 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:14.194 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:50:14.204 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:50:14.205 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:50:14.206 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:51:02.341 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:51:02.344 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:51:02.345 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:51:02.345 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:51:02.346 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:51:02.346 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:51:02.346 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:51:02.347 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:51:02.347 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:51:02.350 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:51:02.351 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:51:02.352 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:51:02.354 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:51:02.355 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:51:02.357 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:51:02.358 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:51:02.358 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:52:02.384 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:52:02.385 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:52:02.385 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:52:02.386 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:52:02.386 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:52:02.387 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:52:02.387 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:52:02.388 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:52:02.388 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:52:02.392 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:52:02.392 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:52:02.393 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:52:02.394 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:52:02.395 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:52:02.397 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:52:02.397 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:52:02.398 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/27/2023 23:53:05.768 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:53:06.339 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:53:06.368 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:53:06.986 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:53:07.099 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:53:07.415 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:53:07.474 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:53:07.485 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (12ms).
+dbug: 12/27/2023 23:53:07.490 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:07.495 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:07.501 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:53:07.505 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/27/2023 23:53:07.508 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (7ms).
+dbug: 12/27/2023 23:53:07.517 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:53:07.548 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:53:07.572 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:07.578 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 19ms reading results.
+dbug: 12/27/2023 23:53:07.583 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:07.585 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 23:53:08.584 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:53:08.590 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:08.593 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/27/2023 23:53:43.611 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:53:43.623 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:53:43.624 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:53:43.626 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:43.630 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:43.631 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:53:43.649 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (18ms).
+dbug: 12/27/2023 23:53:43.661 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (30ms).
+dbug: 12/27/2023 23:53:43.662 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:53:43.706 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:53:43.711 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:43.711 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:53:43.712 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:43.714 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:53:43.714 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:53:43.715 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:53:43.716 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:53:43.718 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2ms).
+dbug: 12/27/2023 23:53:43.719 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 23:54:01.398 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:54:01.401 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:54:01.402 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:54:01.402 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:54:01.403 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:54:01.403 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:54:01.404 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:54:01.404 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:54:01.404 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:54:01.407 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:54:01.408 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:54:01.409 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:54:01.410 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:54:01.410 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:54:01.610 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:54:01.611 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:54:01.611 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/27/2023 23:55:07.930 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/27/2023 23:55:08.137 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:55:08.138 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/27/2023 23:55:08.497 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:55:08.569 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/27/2023 23:55:08.911 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/27/2023 23:55:08.990 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:55:08.999 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (4ms).
+dbug: 12/27/2023 23:55:09.007 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:09.012 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:09.018 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:55:09.024 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/27/2023 23:55:09.026 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (10ms).
+dbug: 12/27/2023 23:55:09.034 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:55:09.072 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:55:09.082 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:55:09.090 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:09.092 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to '' on server ''.
+dbug: 12/27/2023 23:55:09.095 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:55:12.033 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:55:12.040 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:55:12.042 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2ms).
+dbug: 12/27/2023 23:55:12.043 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:12.045 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:12.046 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:55:12.047 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:55:12.047 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:55:12.048 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:55:12.058 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:55:12.060 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:12.061 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/27/2023 23:55:12.063 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:12.065 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 23:55:12.304 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:55:12.304 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:55:12.305 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:56:11.976 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:56:11.985 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:56:11.985 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:56:11.986 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:56:11.987 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:56:11.987 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:56:11.988 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:56:11.988 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:56:11.989 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:56:11.991 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:56:11.992 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:56:11.993 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:56:11.994 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:56:11.994 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:56:12.198 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:56:12.199 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:56:12.199 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:57:13.361 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:57:13.370 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:57:13.373 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2ms).
+dbug: 12/27/2023 23:57:13.375 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:57:13.395 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:57:13.429 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:57:13.445 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (16ms).
+dbug: 12/27/2023 23:57:13.468 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (39ms).
+dbug: 12/27/2023 23:57:13.479 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:57:13.531 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:57:13.533 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:57:13.545 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 12ms reading results.
+dbug: 12/27/2023 23:57:13.547 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:57:13.550 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/27/2023 23:57:15.004 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:57:15.005 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:57:15.012 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (6ms).
+dbug: 12/27/2023 23:58:13.381 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:58:13.383 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:58:13.385 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:58:13.386 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:13.387 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:13.393 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:58:13.395 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:58:13.396 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/27/2023 23:58:13.400 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:58:13.408 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:58:13.414 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:13.415 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/27/2023 23:58:13.415 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:13.416 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:58:13.633 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:58:13.634 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:13.635 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/27/2023 23:58:42.414 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:58:42.415 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:58:42.415 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:58:42.416 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:42.416 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:42.416 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:58:42.417 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:58:42.418 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:58:42.419 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:58:42.423 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:58:42.441 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:42.498 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 57ms reading results.
+dbug: 12/27/2023 23:58:42.499 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:42.499 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/27/2023 23:58:45.317 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:58:45.320 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:58:45.320 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/27/2023 23:58:45.321 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:45.321 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:45.322 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:58:45.322 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:58:45.322 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/27/2023 23:58:45.323 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:58:45.327 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:58:45.406 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:58:45.407 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/27/2023 23:58:45.485 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:58:45.485 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+fail: 12/27/2023 23:58:45.486 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (160ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/27/2023 23:58:45.646 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.InvalidOperationException: Invalid operation. The connection is closed.
+         at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+         at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/27/2023 23:59:14.297 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/27/2023 23:59:14.299 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/27/2023 23:59:14.301 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/27/2023 23:59:14.302 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:59:14.304 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:59:14.305 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/27/2023 23:59:14.307 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/27/2023 23:59:14.308 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/27/2023 23:59:14.309 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/27/2023 23:59:14.613 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (303ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/27/2023 23:59:14.626 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:59:14.643 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 17ms reading results.
+dbug: 12/27/2023 23:59:14.646 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:59:14.647 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/27/2023 23:59:15.786 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/27/2023 23:59:15.786 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/27/2023 23:59:15.787 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 00:00:37.986 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 00:00:38.412 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:00:38.417 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:00:38.940 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:00:39.156 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 00:00:40.697 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 00:00:40.829 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:00:40.839 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (6ms).
+dbug: 12/28/2023 00:00:40.846 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:40.852 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:40.894 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:00:40.901 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/28/2023 00:00:40.905 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (12ms).
+dbug: 12/28/2023 00:00:40.914 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:00:41.125 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (183ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:00:41.186 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:41.217 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 67ms reading results.
+dbug: 12/28/2023 00:00:41.223 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:41.236 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 00:00:41.924 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:00:41.931 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:41.934 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/28/2023 00:00:54.590 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:00:54.600 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:00:54.602 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/28/2023 00:00:54.603 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:54.604 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:54.605 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:00:54.606 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:00:54.607 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/28/2023 00:00:54.608 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:00:54.613 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:00:54.614 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:54.615 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:00:54.615 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:54.616 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:00:54.959 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:00:54.960 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:54.961 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:00:56.515 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:00:56.517 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:00:56.518 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:00:56.520 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:56.520 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:56.521 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:00:56.573 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (51ms).
+dbug: 12/28/2023 00:00:56.574 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (52ms).
+dbug: 12/28/2023 00:00:56.575 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:00:56.587 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:00:56.588 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:56.589 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:00:56.589 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:56.589 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:00:56.945 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:00:56.945 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:00:56.946 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:01:04.784 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:01:04.785 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:01:04.785 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:01:04.785 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:01:04.786 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:01:04.786 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:01:04.786 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:01:04.787 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:01:04.787 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:01:04.790 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:01:04.790 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:01:04.791 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:01:04.792 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:01:04.792 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:01:05.028 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:01:05.058 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:01:05.059 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 00:02:04.999 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:02:05.000 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:02:05.001 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:02:05.002 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:02:05.002 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:02:05.003 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:02:05.003 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:02:05.004 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:02:05.004 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:02:05.050 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:02:05.052 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:02:05.053 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 2ms reading results.
+dbug: 12/28/2023 00:02:05.061 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:02:05.062 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:02:05.294 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:02:05.295 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:02:05.320 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (25ms).
+warn: 12/28/2023 00:03:08.926 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 00:03:10.405 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:03:10.416 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:03:11.044 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:03:11.118 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 00:03:11.443 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 00:03:11.498 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:03:11.506 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (5ms).
+dbug: 12/28/2023 00:03:11.511 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:11.516 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:11.521 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:03:11.527 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 00:03:11.530 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 12/28/2023 00:03:11.539 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:03:11.597 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:03:11.616 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:11.621 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 18ms reading results.
+dbug: 12/28/2023 00:03:11.626 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:11.629 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 00:03:11.959 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:03:11.965 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:11.968 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 00:03:43.235 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:03:43.261 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:03:43.262 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:03:43.263 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:43.263 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:43.264 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:03:43.264 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:03:43.265 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:03:43.265 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:03:43.271 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:03:43.273 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:43.274 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 2ms reading results.
+dbug: 12/28/2023 00:03:43.275 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:43.277 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 00:03:43.558 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:03:43.559 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:03:43.560 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 00:04:09.674 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:04:09.682 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:04:09.686 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (3ms).
+dbug: 12/28/2023 00:04:09.693 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:04:09.695 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:04:09.697 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:04:09.699 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:04:09.701 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 00:04:09.702 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:04:09.733 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:04:09.777 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:04:09.779 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 44ms reading results.
+dbug: 12/28/2023 00:04:09.781 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:04:09.782 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 00:04:11.137 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:04:11.139 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:04:11.140 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+warn: 12/28/2023 00:05:22.919 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 00:05:23.327 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:05:23.328 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:05:23.730 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:05:23.822 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 00:05:24.143 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 00:05:24.203 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:05:24.210 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (5ms).
+dbug: 12/28/2023 00:05:24.216 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:24.221 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:24.226 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:05:24.230 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 00:05:24.233 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 00:05:24.240 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:05:24.284 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:05:24.306 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:24.313 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 22ms reading results.
+dbug: 12/28/2023 00:05:24.317 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:24.320 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 00:05:24.807 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:05:24.813 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:24.815 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/28/2023 00:05:35.027 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:05:35.034 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:05:35.036 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2ms).
+dbug: 12/28/2023 00:05:35.037 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:35.038 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:35.039 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:05:35.040 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:05:35.041 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:05:35.042 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:05:35.046 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:05:35.047 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:35.048 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 00:05:35.050 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:35.050 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:05:35.347 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:05:35.348 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:05:35.349 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:06:04.167 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:06:04.170 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:06:04.170 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:06:04.171 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:06:04.171 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:06:04.171 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:06:04.172 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:06:04.172 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:06:04.172 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:06:04.184 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:06:04.184 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:06:04.185 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:06:04.185 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:06:04.186 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:06:04.354 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:06:04.355 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:06:04.356 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 00:07:32.917 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 00:07:33.192 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:07:33.192 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:07:33.615 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:07:33.704 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 00:07:34.116 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 00:07:34.180 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:07:34.190 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (4ms).
+dbug: 12/28/2023 00:07:34.195 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:34.201 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:34.209 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:07:34.216 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/28/2023 00:07:34.220 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (10ms).
+dbug: 12/28/2023 00:07:34.229 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:07:34.274 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:07:34.297 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:34.303 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 22ms reading results.
+dbug: 12/28/2023 00:07:34.308 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:34.310 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 00:07:35.759 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:07:35.765 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:35.768 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 00:07:38.229 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:07:38.245 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:07:38.247 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (2ms).
+dbug: 12/28/2023 00:07:38.249 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:38.251 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:38.253 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:07:38.254 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:07:38.255 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/28/2023 00:07:38.257 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:07:38.449 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (193ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:07:38.451 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:38.454 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 4ms reading results.
+dbug: 12/28/2023 00:07:38.456 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:38.461 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (5ms).
+dbug: 12/28/2023 00:07:38.916 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:07:38.917 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:07:38.917 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:08:14.998 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:08:15.007 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:08:15.007 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:08:15.008 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:08:15.009 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:08:15.009 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:08:15.010 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:08:15.011 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:08:15.012 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:08:15.014 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:08:15.015 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:08:15.016 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:08:15.016 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:08:15.017 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:08:15.237 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:08:15.237 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:08:15.238 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:09:00.273 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:09:00.275 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:09:00.276 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:09:00.291 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:00.291 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:00.292 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:09:00.292 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:09:00.293 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:09:00.294 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:09:00.295 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:09:00.296 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:00.297 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:09:00.297 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:00.298 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:09:00.496 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:09:00.545 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:00.546 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 00:09:42.843 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 00:09:43.046 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:09:43.047 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:09:43.311 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:09:43.357 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 00:09:43.699 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 00:09:43.766 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:09:43.776 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (6ms).
+dbug: 12/28/2023 00:09:43.782 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:43.942 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:43.947 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:09:43.953 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 00:09:43.956 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (10ms).
+dbug: 12/28/2023 00:09:43.964 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:09:44.015 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:09:44.048 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:44.059 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 31ms reading results.
+dbug: 12/28/2023 00:09:44.064 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:44.073 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (5ms).
+dbug: 12/28/2023 00:09:44.572 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:09:44.580 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:09:44.592 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (12ms).
+dbug: 12/28/2023 00:10:01.087 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:10:01.097 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:10:01.098 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:10:01.098 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:01.100 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:01.101 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:10:01.102 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:10:01.102 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:10:01.103 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:10:01.114 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:10:01.116 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:01.118 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 2ms reading results.
+dbug: 12/28/2023 00:10:01.119 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:01.121 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 00:10:01.465 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:10:01.465 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:01.466 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 00:10:50.697 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 00:10:50.868 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:10:50.871 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:10:51.099 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:10:51.157 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 00:10:51.439 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 00:10:51.481 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:10:51.490 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (4ms).
+dbug: 12/28/2023 00:10:51.494 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:51.499 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:51.505 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:10:51.510 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/28/2023 00:10:51.512 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 12/28/2023 00:10:51.517 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:10:51.546 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:10:51.559 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:51.563 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 12ms reading results.
+dbug: 12/28/2023 00:10:51.567 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:51.570 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 00:10:51.611 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:10:51.618 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:10:51.624 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (4ms).
+dbug: 12/28/2023 00:11:12.874 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:11:12.881 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:11:12.881 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:11:12.882 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:11:12.882 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:11:12.883 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:11:12.884 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:11:12.884 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:11:12.885 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:11:12.888 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:11:12.889 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:11:12.889 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:11:12.890 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:11:12.891 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:11:12.893 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:11:12.893 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:11:12.894 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 00:12:12.254 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 00:12:12.441 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:12:12.442 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 00:12:12.725 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:12:12.760 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 00:12:13.031 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 00:12:13.077 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:12:13.084 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (4ms).
+dbug: 12/28/2023 00:12:13.088 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:13.093 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:13.098 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:12:13.103 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 00:12:13.106 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 00:12:13.112 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:12:13.137 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:12:13.154 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:13.160 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 16ms reading results.
+dbug: 12/28/2023 00:12:13.163 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:13.165 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 00:12:13.181 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:12:13.185 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:13.186 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 00:12:32.809 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:12:32.814 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:12:32.815 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:12:32.817 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:32.818 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:32.819 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:12:32.821 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/28/2023 00:12:32.822 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 00:12:32.823 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:12:32.826 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:12:32.827 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:32.828 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 00:12:32.829 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:32.829 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:12:32.849 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:12:32.849 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:12:32.850 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:13:11.758 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:13:11.762 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:13:11.763 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:13:11.764 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:13:11.764 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:13:11.765 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:13:11.766 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:13:11.766 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:13:11.767 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:13:11.770 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:13:11.771 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:13:11.772 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 00:13:11.773 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:13:11.774 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:13:11.776 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:13:11.776 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:13:11.777 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:14:11.886 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:14:11.888 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:14:11.888 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 00:14:11.889 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:14:11.889 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:14:11.890 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:14:11.891 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 00:14:11.891 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 00:14:11.892 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:14:11.894 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:14:11.895 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:14:11.895 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 00:14:11.896 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:14:11.896 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 00:14:11.898 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:14:11.898 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:14:11.899 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 00:15:12.231 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 00:15:12.234 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 00:15:12.235 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/28/2023 00:15:12.237 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:15:12.252 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:15:12.304 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 00:15:12.311 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (7ms).
+dbug: 12/28/2023 00:15:12.315 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (10ms).
+dbug: 12/28/2023 00:15:12.318 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 00:15:12.351 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 00:15:12.357 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:15:12.360 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 3ms reading results.
+dbug: 12/28/2023 00:15:12.367 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:15:12.370 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (3ms).
+dbug: 12/28/2023 00:15:12.386 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 00:15:12.387 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 00:15:12.389 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 03:02:26.823 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:02:27.239 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:02:27.240 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/28/2023 03:02:27.242 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:02:27.243 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:02:27.243 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:02:27.248 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/28/2023 03:02:27.249 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (5ms).
+dbug: 12/28/2023 03:02:27.250 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:02:29.520 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2,269ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:02:29.869 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:02:30.215 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 348ms reading results.
+dbug: 12/28/2023 03:02:31.882 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:02:31.883 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 03:02:31.885 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:02:31.886 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:02:31.887 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 03:03:11.650 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:03:11.651 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:03:11.651 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 03:03:11.652 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:03:11.652 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:03:11.652 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:03:11.653 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:03:11.653 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:03:11.653 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:03:11.656 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:03:11.657 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:03:11.657 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 03:03:11.658 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:03:11.658 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 03:03:11.660 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:03:11.660 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:03:11.661 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 03:33:39.181 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 03:33:39.615 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:33:39.616 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:33:40.001 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:33:40.057 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 03:33:40.344 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 03:33:40.404 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:33:40.413 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (8ms).
+dbug: 12/28/2023 03:33:40.419 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:40.426 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:40.431 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:33:40.439 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 03:33:40.442 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (11ms).
+dbug: 12/28/2023 03:33:40.449 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:33:40.504 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:33:40.521 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:40.527 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 17ms reading results.
+dbug: 12/28/2023 03:33:40.531 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:40.533 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 03:33:40.887 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:33:40.894 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:40.896 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 03:33:47.414 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:33:47.427 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:33:47.428 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 03:33:47.428 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:47.429 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:47.430 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:33:47.432 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/28/2023 03:33:47.434 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 03:33:47.438 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:33:47.442 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:33:47.443 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:47.443 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 03:33:47.444 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:47.445 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 03:33:47.475 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:33:47.475 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:33:47.476 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 03:34:07.109 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:34:07.112 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:34:07.112 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 03:34:07.113 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:34:07.113 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:34:07.114 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:34:07.114 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:34:07.114 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:34:07.115 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:34:07.118 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:34:07.119 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:34:07.120 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 03:34:07.123 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:34:07.124 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 03:34:07.125 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:34:07.126 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:34:07.127 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+warn: 12/28/2023 03:35:29.990 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 03:35:30.324 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:35:30.325 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:35:30.658 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:35:30.736 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 03:35:31.070 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 03:35:31.135 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:35:31.143 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (6ms).
+dbug: 12/28/2023 03:35:31.148 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:35:31.152 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:35:31.156 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:35:31.161 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 03:35:31.163 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 03:35:31.173 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:35:31.237 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (62ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:35:31.256 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:35:31.262 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 17ms reading results.
+dbug: 12/28/2023 03:35:31.267 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:35:31.270 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 03:36:23.989 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:36:23.997 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:36:23.999 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/28/2023 03:36:30.360 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:36:30.374 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:36:30.375 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 03:36:30.376 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:36:30.376 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:36:30.377 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:36:30.378 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:36:30.378 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 03:36:30.379 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:36:30.411 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:36:30.414 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:36:30.417 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 3ms reading results.
+dbug: 12/28/2023 03:36:30.418 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:36:30.419 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+warn: 12/28/2023 03:40:54.697 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 03:40:54.892 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:40:54.893 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:40:55.148 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:40:55.192 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:40:55.250 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 03:40:55.541 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 03:40:55.617 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:40:55.626 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (4ms).
+dbug: 12/28/2023 03:40:55.630 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:40:55.633 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:40:55.640 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:40:55.643 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 03:40:55.645 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (6ms).
+dbug: 12/28/2023 03:40:55.650 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:40:55.674 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:40:55.684 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:40:55.690 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 9ms reading results.
+dbug: 12/28/2023 03:40:55.695 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:40:55.697 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 03:40:57.374 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:40:57.377 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:40:57.379 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 03:41:02.234 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:41:02.245 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:41:02.245 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 03:41:02.246 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:41:02.246 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:41:02.247 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:41:02.248 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:41:02.248 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 03:41:02.249 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:41:02.259 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:41:02.261 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:41:02.262 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 03:41:02.263 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:41:02.264 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 03:41:03.088 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:41:03.089 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:41:03.089 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 03:41:37.679 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 03:41:37.989 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:41:37.990 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:41:38.286 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:42:04.266 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+warn: 12/28/2023 03:48:28.872 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 03:48:29.722 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:48:29.723 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:48:30.138 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:48:30.139 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:48:30.167 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:48:30.236 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 03:48:30.647 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 03:48:30.679 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:48:30.766 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (5ms).
+dbug: 12/28/2023 03:48:31.100 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:48:31.173 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:48:31.205 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:48:31.211 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 03:48:31.213 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 12/28/2023 03:48:31.221 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+fail: 12/28/2023 03:48:31.240 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.IO.IOException: The process cannot access the file 'C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Queries.sql' because it is being used by another process.
+         at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+         at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+         at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+         at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+         at E_CommerceSystemV2.API.ECommerceContext.<>c.<OnConfiguring>b__15_0(String query) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Data\Context\ECommerceContext.cs:line 25
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.FormattingDbContextLogger.Log(EventData eventData)
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.RelationalConnectionDiagnosticsLogger.BroadcastConnectionCreating(DbContext context, String connectionString, Guid connectionId, DateTimeOffset startTime, EventDefinition definition, Boolean diagnosticSourceEnabled, Boolean simpleLogEnabled)
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.RelationalConnectionDiagnosticsLogger.ConnectionCreating(IRelationalConnection connection, DateTimeOffset startTime)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.get_DbConnection()
+         at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+fail: 12/28/2023 03:48:31.261 CoreEventId.QueryIterationFailed[10100] (Microsoft.EntityFrameworkCore.Query) 
+      An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+      System.IO.IOException: The process cannot access the file 'C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Queries.sql' because it is being used by another process.
+         at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+         at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+         at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+         at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+         at E_CommerceSystemV2.API.ECommerceContext.<>c.<OnConfiguring>b__15_0(String query) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Data\Context\ECommerceContext.cs:line 25
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.FormattingDbContextLogger.Log(EventData eventData)
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.RelationalConnectionDiagnosticsLogger.BroadcastConnectionCreating(DbContext context, String connectionString, Guid connectionId, DateTimeOffset startTime, EventDefinition definition, Boolean diagnosticSourceEnabled, Boolean simpleLogEnabled)
+         at Microsoft.EntityFrameworkCore.Diagnostics.Internal.RelationalConnectionDiagnosticsLogger.ConnectionCreating(IRelationalConnection connection, DateTimeOffset startTime)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.get_DbConnection()
+         at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+dbug: 12/28/2023 03:48:31.668 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+info: 12/28/2023 03:48:31.807 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (359ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:48:32.008 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:48:32.013 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 200ms reading results.
+dbug: 12/28/2023 03:48:32.018 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:48:32.020 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 03:48:34.283 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:48:34.288 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:48:34.289 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+warn: 12/28/2023 03:57:32.425 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 03:57:32.709 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:57:32.710 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 03:57:33.110 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:57:33.323 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:57:33.364 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 03:57:33.860 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 03:57:33.930 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:57:33.953 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (17ms).
+dbug: 12/28/2023 03:57:33.958 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:33.963 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:33.970 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:57:33.976 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 03:57:33.990 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (21ms).
+dbug: 12/28/2023 03:57:34.021 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:57:34.332 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:57:34.356 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:34.363 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 24ms reading results.
+dbug: 12/28/2023 03:57:34.369 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:34.372 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 03:57:36.867 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:57:36.872 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:36.874 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/28/2023 03:57:37.290 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:57:37.298 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:57:37.299 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/28/2023 03:57:37.300 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:37.301 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:37.302 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:57:37.302 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:57:37.302 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 03:57:37.303 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:57:37.307 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:57:37.308 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:37.308 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 03:57:37.309 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:37.310 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 03:57:39.301 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:57:39.301 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:57:39.302 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 03:58:15.074 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:58:15.087 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:58:15.088 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 03:58:15.088 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:58:15.088 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:58:15.089 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:58:15.089 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:58:15.089 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:58:15.090 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:58:15.094 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:58:15.098 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:58:15.099 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 03:58:15.099 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:58:15.100 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 03:58:16.627 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:58:16.628 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:58:16.629 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 03:59:00.201 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 03:59:00.203 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 03:59:00.203 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 03:59:00.203 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:59:00.204 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:59:00.204 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 03:59:00.205 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:59:00.205 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 03:59:00.205 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 03:59:00.208 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 03:59:00.209 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:59:00.210 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 03:59:00.210 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:59:00.211 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 03:59:01.334 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 03:59:01.335 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 03:59:01.335 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:00:00.968 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:00:00.969 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:00:00.970 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:00:00.970 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:00:00.971 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:00:00.971 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:00:00.971 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:00:00.972 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:00:00.972 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:00:00.977 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:00:00.978 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:00:00.978 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:00:00.978 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:00:00.979 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:00:03.044 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:00:03.069 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:00:03.070 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:01:01.563 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:01:01.564 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:01:01.564 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:01:01.565 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:01.566 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:01.567 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:01:01.567 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:01.568 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:01.568 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:01:01.583 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:01:01.584 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:01.586 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 04:01:01.587 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:01.587 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:01:03.520 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:01:03.556 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.556 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:01:03.571 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:01:03.572 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:01:03.572 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:01:03.573 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.573 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.573 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:01:03.573 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:03.574 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:03.574 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:01:03.600 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:01:03.627 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.627 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 27ms reading results.
+dbug: 12/28/2023 04:01:03.628 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.628 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:01:03.698 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:01:03.699 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:01:03.700 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:01:03.700 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.700 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.701 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:01:03.701 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:03.701 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:03.701 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:01:03.730 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:01:03.774 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.774 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 43ms reading results.
+dbug: 12/28/2023 04:01:03.774 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.775 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:01:03.874 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:01:03.880 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:01:03.881 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:01:03.881 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.881 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.882 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:01:03.882 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:03.882 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:03.884 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:01:03.894 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:01:03.899 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.899 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:01:03.899 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:03.901 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 04:01:04.163 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:01:04.164 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:01:04.164 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:01:04.164 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:04.164 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:04.165 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:01:04.165 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:04.165 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:01:04.166 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:01:04.175 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:01:04.176 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:04.176 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:01:04.176 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:04.177 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:01:04.698 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:01:04.698 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:04.702 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (3ms).
+dbug: 12/28/2023 04:01:04.826 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:01:04.827 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:04.827 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:01:05.135 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:01:05.135 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:05.137 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 04:01:05.252 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:01:05.252 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:05.252 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 04:01:29.388 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 04:01:29.577 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:01:29.579 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:01:29.852 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:01:29.910 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 04:01:30.230 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 04:01:30.320 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:01:30.328 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (3ms).
+dbug: 12/28/2023 04:01:30.332 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:30.354 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:30.404 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:01:30.408 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/28/2023 04:01:30.411 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (7ms).
+dbug: 12/28/2023 04:01:30.440 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:01:30.732 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (291ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:01:30.758 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:30.762 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 20ms reading results.
+dbug: 12/28/2023 04:01:30.768 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:30.770 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (3ms).
+dbug: 12/28/2023 04:01:31.831 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:01:31.847 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:01:31.852 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (3ms).
+dbug: 12/28/2023 04:02:10.477 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:02:10.485 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:02:10.485 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:02:10.486 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:02:10.488 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:02:10.490 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:02:10.490 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 04:02:10.491 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/28/2023 04:02:10.492 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:02:10.580 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (87ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:02:10.581 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:02:10.581 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:02:10.582 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:02:10.583 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (1ms).
+dbug: 12/28/2023 04:02:11.588 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:02:11.590 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:02:11.590 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:03:10.114 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:03:10.121 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:03:10.129 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (8ms).
+dbug: 12/28/2023 04:03:10.130 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:03:10.131 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:03:10.131 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:03:10.131 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:03:10.132 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:03:10.132 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:03:10.136 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:03:10.137 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:03:10.137 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:03:10.138 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:03:10.138 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:04:23.943 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:04:23.944 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:04:23.945 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:04:23.945 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:04:23.945 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:04:23.946 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:04:23.946 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:04:23.947 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:04:23.947 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:04:23.950 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:04:23.951 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:04:23.951 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:04:23.952 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:04:23.953 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:04:45.651 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:04:45.652 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:04:45.652 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:04:51.087 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:04:51.088 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:04:51.088 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:05:10.757 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:05:10.760 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:05:10.761 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:05:10.761 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:05:10.762 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:05:10.762 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:05:10.762 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:05:10.763 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 04:05:10.764 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:05:10.766 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:05:10.767 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:05:10.767 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:05:10.768 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:05:10.768 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:05:32.711 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:05:32.732 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:05:32.746 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (13ms).
+dbug: 12/28/2023 04:06:01.918 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:06:01.919 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:06:01.920 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:06:01.921 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:06:01.921 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:06:01.922 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:06:01.922 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:06:01.922 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:06:01.923 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:06:01.926 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:06:01.927 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:06:01.928 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 04:06:01.930 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:06:01.931 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:06:21.522 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:06:21.522 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:06:21.525 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+warn: 12/28/2023 04:07:30.510 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 04:07:30.716 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:07:30.716 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:07:31.035 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:07:31.105 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 04:07:31.447 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 04:07:31.501 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:07:31.510 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (6ms).
+dbug: 12/28/2023 04:07:31.515 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:31.521 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:31.527 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:07:31.531 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 04:07:31.534 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 04:07:31.542 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:07:31.622 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:07:31.642 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:31.648 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 20ms reading results.
+dbug: 12/28/2023 04:07:31.654 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:31.657 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (3ms).
+dbug: 12/28/2023 04:07:53.826 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:07:53.837 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:07:53.838 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:07:53.839 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:53.841 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:53.844 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:07:53.851 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 04:07:53.854 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (11ms).
+dbug: 12/28/2023 04:07:53.859 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:07:53.907 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:07:53.966 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:53.969 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 60ms reading results.
+dbug: 12/28/2023 04:07:53.970 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:53.971 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:07:56.193 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:07:56.199 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:07:56.203 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 04:08:13.028 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:08:13.031 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:08:13.031 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:08:13.032 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:08:13.032 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:08:13.033 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:08:13.033 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:08:13.034 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 04:08:13.035 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:08:13.042 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:08:13.044 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:08:13.045 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 04:08:13.046 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:08:13.047 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:08:15.911 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:08:15.912 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:08:15.912 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 04:09:09.249 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 04:09:09.656 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:09:09.656 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:09:10.013 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:09:10.127 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 04:09:10.546 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 04:09:10.614 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:09:10.624 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (7ms).
+dbug: 12/28/2023 04:09:10.629 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:10.634 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:10.662 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:09:10.667 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 04:09:10.671 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (10ms).
+dbug: 12/28/2023 04:09:10.688 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:09:10.790 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:09:10.810 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:10.815 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 19ms reading results.
+dbug: 12/28/2023 04:09:10.819 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:10.823 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 04:09:11.940 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:09:11.959 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:09:11.960 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:09:11.962 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:11.963 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:11.966 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:09:11.974 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 04:09:11.975 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 04:09:11.976 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:09:11.983 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:09:11.994 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:11.996 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 4ms reading results.
+dbug: 12/28/2023 04:09:11.999 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:12.049 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (50ms).
+dbug: 12/28/2023 04:09:35.989 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:09:36.109 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:36.111 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/28/2023 04:09:36.728 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:09:36.729 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:09:36.729 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 12/28/2023 04:10:06.559 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:10:06.569 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:10:06.569 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:10:06.570 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:10:06.570 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:10:06.570 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:10:06.571 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:10:06.571 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:10:06.572 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:10:06.576 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:10:06.579 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:10:06.580 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:10:06.580 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:10:06.582 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:10:26.835 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:10:26.835 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:10:26.836 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 04:11:50.837 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 04:11:50.989 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:11:50.990 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:11:51.227 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:11:51.291 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 04:11:51.577 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 04:11:51.617 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:11:51.626 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (5ms).
+dbug: 12/28/2023 04:11:51.631 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:51.639 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:51.645 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:11:51.649 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 04:11:51.652 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 04:11:51.660 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:11:51.698 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:11:51.716 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:51.723 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 17ms reading results.
+dbug: 12/28/2023 04:11:51.728 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:51.730 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 04:11:53.162 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:11:53.169 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:53.171 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/28/2023 04:11:57.816 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:11:57.829 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:11:57.831 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/28/2023 04:11:57.833 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:57.834 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:57.843 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:11:57.846 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 04:11:57.846 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (4ms).
+dbug: 12/28/2023 04:11:57.847 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:11:57.859 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:11:57.860 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:57.862 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 2ms reading results.
+dbug: 12/28/2023 04:11:57.863 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:57.863 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:11:58.769 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:11:58.771 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:11:58.772 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 04:12:03.900 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:12:03.903 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:12:03.903 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:12:03.903 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:12:03.904 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:12:03.904 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:12:03.905 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:12:03.905 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:12:03.905 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:12:03.911 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:12:03.911 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:12:03.912 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:12:03.912 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:12:03.912 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:12:04.918 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:12:04.929 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:12:04.931 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+warn: 12/28/2023 04:19:39.470 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 04:19:39.667 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:19:39.668 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:19:39.963 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:19:40.525 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 04:19:40.570 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:19:41.326 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 04:19:41.371 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:19:41.379 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (6ms).
+dbug: 12/28/2023 04:19:41.383 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:41.388 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:41.393 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:19:41.399 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 04:19:41.401 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (8ms).
+dbug: 12/28/2023 04:19:41.410 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:19:41.448 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:19:41.470 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:41.530 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 25ms reading results.
+dbug: 12/28/2023 04:19:41.534 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:41.537 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 04:19:44.308 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:19:44.312 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:44.314 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (2ms).
+dbug: 12/28/2023 04:19:51.743 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:19:51.753 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:19:51.754 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (1ms).
+dbug: 12/28/2023 04:19:51.755 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:51.756 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:51.757 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:19:51.758 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:19:51.758 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 04:19:51.759 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:19:51.774 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:19:51.776 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:51.778 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 3ms reading results.
+dbug: 12/28/2023 04:19:51.784 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:51.795 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (11ms).
+dbug: 12/28/2023 04:19:53.118 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:19:53.121 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:19:53.135 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (14ms).
+dbug: 12/28/2023 04:20:08.645 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:20:08.647 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:20:08.647 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:20:08.648 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:20:08.648 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:20:08.648 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:20:08.649 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:20:08.649 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:20:08.649 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:20:08.653 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:20:08.655 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:20:08.656 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:20:08.656 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:20:08.657 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:20:09.390 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:20:09.391 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:20:09.392 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+warn: 12/28/2023 04:21:05.216 CoreEventId.SensitiveDataLoggingEnabledWarning[10400] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+dbug: 12/28/2023 04:21:05.501 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.CategoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:21:05.504 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'Product.TagId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 12/28/2023 04:21:05.802 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:21:05.878 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<CampaignCustomers>()
+          .Select(t => new CampaignCustomers{ Email = t.Email }
+          )'
+dbug: 12/28/2023 04:21:06.144 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CampaignCustomers>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  Email -> 0
+              SELECT c.Email
+              FROM CampaignCustomers AS c), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CampaignCustomers>, 
+          E_CommerceSystemV2.API.ECommerceContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 12/28/2023 04:21:06.190 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:21:06.199 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (5ms).
+dbug: 12/28/2023 04:21:06.205 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:06.210 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:06.216 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:21:06.221 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 12/28/2023 04:21:06.224 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (9ms).
+dbug: 12/28/2023 04:21:06.232 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:21:06.263 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:21:06.280 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:06.284 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 16ms reading results.
+dbug: 12/28/2023 04:21:06.288 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:06.291 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (2ms).
+dbug: 12/28/2023 04:21:07.184 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:21:07.190 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:07.192 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 12/28/2023 04:21:26.891 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:21:26.901 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:21:26.902 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:21:26.905 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:26.907 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:26.908 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:21:26.909 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:21:26.910 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 12/28/2023 04:21:26.911 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:21:26.930 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:21:26.931 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:26.932 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 1ms reading results.
+dbug: 12/28/2023 04:21:26.933 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:26.934 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:21:27.810 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:21:27.817 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:21:27.822 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (5ms).
+dbug: 12/28/2023 04:22:03.168 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.0 initialized 'ECommerceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: SensitiveDataLoggingEnabled 
+dbug: 12/28/2023 04:22:03.170 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 12/28/2023 04:22:03.170 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 12/28/2023 04:22:03.172 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:22:03.173 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:22:03.174 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/28/2023 04:22:03.175 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/28/2023 04:22:03.176 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 12/28/2023 04:22:03.176 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+info: 12/28/2023 04:22:03.179 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Email]
+      FROM [CampaignCustomers] AS [c]
+dbug: 12/28/2023 04:22:03.180 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:22:03.181 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'E-Commerce' on server '.' is being disposed after spending 0ms reading results.
+dbug: 12/28/2023 04:22:03.181 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:22:03.181 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'E-Commerce' on server '.' (0ms).
+dbug: 12/28/2023 04:22:04.032 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ECommerceContext' disposed.
+dbug: 12/28/2023 04:22:04.032 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'E-Commerce' on server '.'.
+dbug: 12/28/2023 04:22:04.034 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).

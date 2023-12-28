@@ -83,7 +83,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 throw new InvalidOperationException("Product not found");
             }
         }
-
         public async Task<string?> Update(ProductUpdateDto product)                       /*Update*/
         {
             try
@@ -110,7 +109,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 throw;
             }
         }
-
         public async Task<bool> Delete(Guid productId)                                    /*Delete*/
 
         {
@@ -164,10 +162,8 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             {
                 _logger.LogError(ex, "Error occurred while Searching a Product.");
                 throw;
-
             }
         }
-
         public async Task<IEnumerable<ProductReadDto>> SearchWithManyTags(List<Guid> tagIds)     /*SearchWithManyTag*/
         {
             try
@@ -194,7 +190,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
             {
                 _logger.LogError(ex, "Error occurred while Searching a Product.");
                 throw;
-
             }
         }
         public async Task<ProductUpdateDto>UpdateProductTag(Guid productId,List<Guid>tagIds)        /*UpdateProductTags*/
@@ -237,7 +232,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
                 Log.Information("Product tags => {@products}",products);
                 return products;
-
               
             }
             catch(Exception ex)

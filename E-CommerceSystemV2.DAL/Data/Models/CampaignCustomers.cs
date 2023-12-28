@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceSystemV2.BL.DTOs.Products
+namespace E_CommerceSystemV2.DAL.Data.Models
 {
-    public class ProductTagsReadDto
+    public class CampaignCustomers
     {
-        public Guid ProductId{get; set;}
+        public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public List<Guid> TagIds { get; set; } = new List<Guid>();
-
+        public string Email { get; set; } = string.Empty;
     }
 }

@@ -13,6 +13,7 @@ namespace E_CommerceSystemV2.API
         public DbSet<Tag> Tags => Set<Tag>();
         public DbSet<TagProducts> TagProducts => Set<TagProducts>();
         public override DbSet<User> Users => Set<User>();
+        public DbSet<CampaignCustomers> CampaignCustomers => Set<CampaignCustomers>();
 
         public ECommerceContext(DbContextOptions<ECommerceContext> options) : base(options)
         { }
@@ -63,6 +64,10 @@ namespace E_CommerceSystemV2.API
                 ////TagProduct
                 modelBuilder.Entity<TagProducts>()
                     .HasKey(tp => new { tp.ProductId, tp.TagId });
+
+            //CampaignCustomerss
+                modelBuilder.Entity<CampaignCustomers>()
+                .HasKey(k => k.Id);
 
             #region Seeding
 
@@ -121,7 +126,6 @@ namespace E_CommerceSystemV2.API
                 new Tag { TagId =Guid.NewGuid() , Name = "Fashion 2024" },
                 new Tag { TagId = Guid.NewGuid(), Name = "FlagShip Mobiles" },
                 new Tag { TagId = Guid.NewGuid(), Name = "Tech" },
-
             };
             var productTags = new List<TagProducts>
                 {
@@ -134,6 +138,11 @@ namespace E_CommerceSystemV2.API
                     new TagProducts { TagId = tags[2].TagId, ProductId = products[7].ProductId },
 
                 };
+            var campaignCustomers = new List<CampaignCustomers>
+            {
+                new CampaignCustomers{Id =Guid.NewGuid(),Name="Marwa",Email="marwaghonem29@gmail.com"},
+                new CampaignCustomers{Id =Guid.NewGuid(),Name="Jamal",Email="Jamal_Ali@outlook.com"}
+            };
             #endregion
             modelBuilder.Entity<User>().HasData(users);
             modelBuilder.Entity<Order>().HasData(orders);
@@ -141,6 +150,7 @@ namespace E_CommerceSystemV2.API
             modelBuilder.Entity<Tag>().HasData(tags);
             modelBuilder.Entity<TagProducts>().HasData(productTags);
             modelBuilder.Entity<Category>().HasData(categories);
+            modelBuilder.Entity<CampaignCustomers>().HasData(campaignCustomers);
         }
     }
 }

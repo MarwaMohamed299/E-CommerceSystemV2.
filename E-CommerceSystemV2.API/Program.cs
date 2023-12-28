@@ -1,6 +1,9 @@
+using E_CommerceSystemV2.BL.Managers.CampaignCustomer;
 using E_CommerceSystemV2.BL.Managers.Identity;
 using E_CommerceSystemV2.BL.Managers.Products;
+using E_CommerceSystemV2.BL.Services.MailService;
 using E_CommerceSystemV2.DAL.Data.Models;
+using E_CommerceSystemV2.DAL.Repos.CampaignsCustomers;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using E_CommerceSystemV2.DAL.UnitOfWork;
 using Hangfire;
@@ -95,14 +98,16 @@ namespace E_CommerceSystemV2.API
             #endregion
 
             #region Custom Services
-
-
+            builder.Services.AddTransient<MailingService>();
             builder.Services.AddScoped<IProductRepo, ProductRepo>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<ICampaignsCustomersRepo, CampaignsCustomersRepo>();
 
 
             builder.Services.AddScoped<IUserManager, UserManager>();
             builder.Services.AddScoped<IProductsManager, ProductsManager>();
+            builder.Services.AddScoped<ICampaignCustomerManager, CampaignCustomersManager>();
+
 
             #endregion
             var app = builder.Build();

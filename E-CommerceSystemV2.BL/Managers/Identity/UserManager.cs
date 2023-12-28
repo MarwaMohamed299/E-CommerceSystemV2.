@@ -25,10 +25,9 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
         {
             User user = new User
             {
-               UserName=userFromRequest.UserName,
+                UserName=userFromRequest.UserName,
                 Email = userFromRequest.Email,
                 CreationDate = userFromRequest.CreationDate
-
             };
             var RegisterResult = await _userManager.CreateAsync(user, userFromRequest.Password);
             if (!RegisterResult.Succeeded)

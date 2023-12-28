@@ -4,6 +4,7 @@ using E_CommerceSystemV2.API;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_CommerceSystemV2.DAL.Migrations
 {
     [DbContext(typeof(ECommerceContext))]
-    partial class ECommerceContextModelSnapshot : ModelSnapshot
+    [Migration("20231227172219_AddingCampaignCustomers")]
+    partial class AddingCampaignCustomers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,20 +42,6 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("CampaignCustomers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("9f3d448e-9734-4d59-a780-e63ade3600e7"),
-                            Email = "marwaghonem29@gmail.com",
-                            Name = "Marwa"
-                        },
-                        new
-                        {
-                            Id = new Guid("349b906f-8f29-4412-a594-4796edd397bf"),
-                            Email = "Jamal_Ali@outlook.com",
-                            Name = "Jamal"
-                        });
                 });
 
             modelBuilder.Entity("E_CommerceSystemV2.DAL.Data.Models.Category", b =>
@@ -72,42 +61,42 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            CategoryId = new Guid("29bfa61d-84eb-4c61-ae2e-0d5a68286042"),
+                            CategoryId = new Guid("dcaefc59-ed9f-43ad-8bdc-a7278fc1d90e"),
                             Name = "Clothing"
                         },
                         new
                         {
-                            CategoryId = new Guid("c6b3d01c-c24a-43d5-927f-10810e131c7f"),
+                            CategoryId = new Guid("652c0564-99c4-46a6-80ef-ec1e46505617"),
                             Name = "Electronics"
                         },
                         new
                         {
-                            CategoryId = new Guid("efe957dc-252d-49e9-b1a0-f65c3a181388"),
+                            CategoryId = new Guid("847da3ec-7920-4717-b340-9d42e9768866"),
                             Name = "Mobiles"
                         },
                         new
                         {
-                            CategoryId = new Guid("673cc6f5-7784-4cd0-ac93-fd79bb6742e2"),
+                            CategoryId = new Guid("d0980572-7070-4166-badc-e84cba75beaf"),
                             Name = "Tablets"
                         },
                         new
                         {
-                            CategoryId = new Guid("f5dbea74-8d31-4825-87c6-63bb4b4e8dc5"),
+                            CategoryId = new Guid("2cfb589a-7d17-446a-9b5d-0102c4a8105b"),
                             Name = "Fashion"
                         },
                         new
                         {
-                            CategoryId = new Guid("f0ed63d2-39c5-44ff-9322-8d0817b9a050"),
+                            CategoryId = new Guid("bccd5635-cd23-42dd-aad8-89536fc60da4"),
                             Name = "Appliances"
                         },
                         new
                         {
-                            CategoryId = new Guid("821920b1-0f52-4035-bf04-b7fb05659252"),
+                            CategoryId = new Guid("28280a96-f2e8-41b8-9105-871030a88892"),
                             Name = "SmartDevices"
                         },
                         new
                         {
-                            CategoryId = new Guid("19c1f306-3959-472e-865c-5ed14b24d2df"),
+                            CategoryId = new Guid("99ce44f7-aa4b-45db-ae00-f594c6a1015b"),
                             Name = "Gaming"
                         });
                 });
@@ -134,51 +123,51 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            OrderId = new Guid("05dfada3-f0af-4155-a517-ce80bcc0dc67"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(634),
-                            UserId = "4c16ac30-078f-450c-abcb-75d434cb5e83"
+                            OrderId = new Guid("5a5b3e05-0618-4a5a-a2fd-4af296933a48"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2302),
+                            UserId = "ffd6b2bb-e580-4609-b00d-b54ee95e1ee7"
                         },
                         new
                         {
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(640),
-                            UserId = "7d66e6e8-9fd9-4375-bd6f-83f0e4f9e792"
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2306),
+                            UserId = "14258c70-cad6-4a55-8327-a9fa0bee6682"
                         },
                         new
                         {
-                            OrderId = new Guid("8e246e43-2327-4f3b-a819-37b64716851b"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(643),
-                            UserId = "4c16ac30-078f-450c-abcb-75d434cb5e83"
+                            OrderId = new Guid("f3a5e79b-00bc-4e46-abfc-ff8f72a42c38"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2308),
+                            UserId = "ffd6b2bb-e580-4609-b00d-b54ee95e1ee7"
                         },
                         new
                         {
-                            OrderId = new Guid("876a7ad1-ab14-4323-a235-48df92efd880"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(645),
-                            UserId = "6caab355-b595-4915-9432-4aa53e2d3eb1"
+                            OrderId = new Guid("5e89a538-2c6a-47ce-ae56-fe1328da3819"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2313),
+                            UserId = "a14a27cd-493f-47ca-bced-e3adb51cf376"
                         },
                         new
                         {
-                            OrderId = new Guid("9033cf11-fa84-44e4-9730-1ffaa7f23756"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(648),
-                            UserId = "4c16ac30-078f-450c-abcb-75d434cb5e83"
+                            OrderId = new Guid("cb0a6c9a-b074-4665-95f5-f6d95ef51f1d"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2316),
+                            UserId = "ffd6b2bb-e580-4609-b00d-b54ee95e1ee7"
                         },
                         new
                         {
-                            OrderId = new Guid("23b4a2b6-927d-40cd-b2e9-31d97a298f26"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(658),
-                            UserId = "74321f15-29aa-4057-ba32-e9243bc47560"
+                            OrderId = new Guid("18371255-84f5-4b35-a9df-47c09ac8a5e1"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2320),
+                            UserId = "76034889-5c66-4785-bdc2-8a0d18644f7f"
                         },
                         new
                         {
-                            OrderId = new Guid("5df48ca5-d095-405e-bd2a-7ed28d98e3d5"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(663),
-                            UserId = "6caab355-b595-4915-9432-4aa53e2d3eb1"
+                            OrderId = new Guid("34057720-f9c6-41f6-a6c8-73c57b566317"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2322),
+                            UserId = "a14a27cd-493f-47ca-bced-e3adb51cf376"
                         },
                         new
                         {
-                            OrderId = new Guid("28d31885-acbd-4704-bd43-3701a7ebf62d"),
-                            OrderDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(669),
-                            UserId = "4c16ac30-078f-450c-abcb-75d434cb5e83"
+                            OrderId = new Guid("6889c2c3-a9bf-47b7-bf40-64a3ef0fac91"),
+                            OrderDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2326),
+                            UserId = "ffd6b2bb-e580-4609-b00d-b54ee95e1ee7"
                         });
                 });
 
@@ -219,122 +208,122 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            ProductId = new Guid("8bdc926b-53da-41b3-ad0c-ed6dc00b4c40"),
+                            ProductId = new Guid("d76a9078-b0a5-4a5f-8f67-a898aad2feb8"),
                             CategoryType = 2,
                             Name = "Samsung Galaxy S21",
-                            OrderId = new Guid("05dfada3-f0af-4155-a517-ce80bcc0dc67"),
+                            OrderId = new Guid("5a5b3e05-0618-4a5a-a2fd-4af296933a48"),
                             Price = 799.99m
                         },
                         new
                         {
-                            ProductId = new Guid("96a86cbf-1d2c-4925-8b86-0bab35fd5c08"),
+                            ProductId = new Guid("2e5c100c-72cc-485c-a702-8c85b04ad2f2"),
                             CategoryType = 1,
                             Name = "Sony Smart TV",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 1299.99m
                         },
                         new
                         {
-                            ProductId = new Guid("cb9f30a5-cf43-41c1-9b09-7c187a998504"),
+                            ProductId = new Guid("b2d8d64d-f203-4577-9f4d-239ae6164842"),
                             CategoryType = 1,
                             Name = "Canon EOS Rebel T7",
-                            OrderId = new Guid("8e246e43-2327-4f3b-a819-37b64716851b"),
+                            OrderId = new Guid("f3a5e79b-00bc-4e46-abfc-ff8f72a42c38"),
                             Price = 499.99m
                         },
                         new
                         {
-                            ProductId = new Guid("c0f557d9-699f-44cb-85ea-cef38a9248e8"),
+                            ProductId = new Guid("db2ef700-401a-4b91-b6ed-3cf234f91ade"),
                             CategoryType = 3,
                             Name = "Nike Running Shoes",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 89.99m
                         },
                         new
                         {
-                            ProductId = new Guid("83dd8132-2eed-45b8-bfef-604f0975b5f0"),
+                            ProductId = new Guid("10b1fa31-cad6-4bda-aa53-f3e86cebc4d5"),
                             CategoryType = 4,
                             Name = "KitchenAid Stand Mixer",
-                            OrderId = new Guid("876a7ad1-ab14-4323-a235-48df92efd880"),
+                            OrderId = new Guid("5e89a538-2c6a-47ce-ae56-fe1328da3819"),
                             Price = 349.99m
                         },
                         new
                         {
-                            ProductId = new Guid("f2c1dac1-c987-4d16-815f-1142eb264212"),
+                            ProductId = new Guid("b5bd6d48-cb31-4269-8f35-8fc6da0adc7e"),
                             CategoryType = 1,
                             Name = "HP Printer",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 149.99m
                         },
                         new
                         {
-                            ProductId = new Guid("d0f2cedb-2585-4354-b596-2b26ca68b760"),
+                            ProductId = new Guid("eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4"),
                             CategoryType = 3,
                             Name = "Levi's Jeans",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 59.99m
                         },
                         new
                         {
-                            ProductId = new Guid("1afc6bc9-c4a9-468c-a091-bcf71876a16c"),
+                            ProductId = new Guid("f23d8d74-7264-4ae8-9dec-78946e7809ac"),
                             CategoryType = 1,
                             Name = "Bose Noise-Canceling Headphones",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 299.99m
                         },
                         new
                         {
-                            ProductId = new Guid("7845c623-9053-4bbc-b763-6a29ff33a43d"),
+                            ProductId = new Guid("3b1b2bb8-2cfa-4bb2-937b-850683637f44"),
                             CategoryType = 6,
                             Name = "Fitbit Charge 5",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 149.99m
                         },
                         new
                         {
-                            ProductId = new Guid("cb8bb99f-29ee-40db-977a-fe6e63e49369"),
+                            ProductId = new Guid("f06074dc-4eb2-4aba-aa56-b4bd28b10908"),
                             CategoryType = 4,
                             Name = "Cuisinart Coffee Maker",
-                            OrderId = new Guid("05dfada3-f0af-4155-a517-ce80bcc0dc67"),
+                            OrderId = new Guid("5a5b3e05-0618-4a5a-a2fd-4af296933a48"),
                             Price = 79.99m
                         },
                         new
                         {
-                            ProductId = new Guid("d1638cc7-8622-453e-973d-320441808656"),
+                            ProductId = new Guid("b915f98b-9250-4c20-b043-a06d90bc4f7e"),
                             CategoryType = 3,
                             Name = "Adidas Running Shoes",
-                            OrderId = new Guid("8e246e43-2327-4f3b-a819-37b64716851b"),
+                            OrderId = new Guid("f3a5e79b-00bc-4e46-abfc-ff8f72a42c38"),
                             Price = 109.99m
                         },
                         new
                         {
-                            ProductId = new Guid("0273038d-cb11-4f16-9830-1368dcd45a9d"),
+                            ProductId = new Guid("18bf1839-4e71-419b-81db-6f0ab0298956"),
                             CategoryType = 5,
                             Name = "Amazon Echo Dot",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 39.99m
                         },
                         new
                         {
-                            ProductId = new Guid("e5dcb228-8db8-4f5d-9337-21417896f046"),
+                            ProductId = new Guid("12ab3925-dc14-4a9a-ace4-efb56e038942"),
                             CategoryType = 6,
                             Name = "Razer Gaming Mouse",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 69.99m
                         },
                         new
                         {
-                            ProductId = new Guid("a07bcdaf-81b6-4a85-a681-e617c2fe82a3"),
+                            ProductId = new Guid("cba94cbd-c55e-44f0-925e-b76e093c25c0"),
                             CategoryType = 3,
                             Name = "Calvin Klein Watch",
-                            OrderId = new Guid("687f65d7-ea8a-45ed-9ffd-44b347769eb3"),
+                            OrderId = new Guid("43923a75-be2d-4ee8-af79-919a3c402805"),
                             Price = 199.99m
                         },
                         new
                         {
-                            ProductId = new Guid("74e37db8-5f17-40cd-b972-a2516192119d"),
+                            ProductId = new Guid("ec1b630a-8c60-477f-8c95-bacbfec2518e"),
                             CategoryType = 3,
                             Name = "Fossil Smartwatch",
-                            OrderId = new Guid("05dfada3-f0af-4155-a517-ce80bcc0dc67"),
+                            OrderId = new Guid("5a5b3e05-0618-4a5a-a2fd-4af296933a48"),
                             Price = 149.99m
                         });
                 });
@@ -356,17 +345,17 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            TagId = new Guid("87a7a403-675e-4d5c-81dc-06c886571428"),
+                            TagId = new Guid("318e4a94-026e-4834-8974-6950eb887e6b"),
                             Name = "Fashion 2024"
                         },
                         new
                         {
-                            TagId = new Guid("925ee134-dbfb-4da2-9344-995e988190be"),
+                            TagId = new Guid("19439fe2-b120-4923-8a89-24b47b790d6f"),
                             Name = "FlagShip Mobiles"
                         },
                         new
                         {
-                            TagId = new Guid("bdf4dbb3-2547-44d9-8b1b-aad90df928e3"),
+                            TagId = new Guid("fdae1f84-b417-420f-a275-5438de4fe8ec"),
                             Name = "Tech"
                         });
                 });
@@ -388,38 +377,38 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            ProductId = new Guid("96a86cbf-1d2c-4925-8b86-0bab35fd5c08"),
-                            TagId = new Guid("925ee134-dbfb-4da2-9344-995e988190be")
+                            ProductId = new Guid("2e5c100c-72cc-485c-a702-8c85b04ad2f2"),
+                            TagId = new Guid("19439fe2-b120-4923-8a89-24b47b790d6f")
                         },
                         new
                         {
-                            ProductId = new Guid("cb9f30a5-cf43-41c1-9b09-7c187a998504"),
-                            TagId = new Guid("bdf4dbb3-2547-44d9-8b1b-aad90df928e3")
+                            ProductId = new Guid("b2d8d64d-f203-4577-9f4d-239ae6164842"),
+                            TagId = new Guid("fdae1f84-b417-420f-a275-5438de4fe8ec")
                         },
                         new
                         {
-                            ProductId = new Guid("c0f557d9-699f-44cb-85ea-cef38a9248e8"),
-                            TagId = new Guid("bdf4dbb3-2547-44d9-8b1b-aad90df928e3")
+                            ProductId = new Guid("db2ef700-401a-4b91-b6ed-3cf234f91ade"),
+                            TagId = new Guid("fdae1f84-b417-420f-a275-5438de4fe8ec")
                         },
                         new
                         {
-                            ProductId = new Guid("83dd8132-2eed-45b8-bfef-604f0975b5f0"),
-                            TagId = new Guid("bdf4dbb3-2547-44d9-8b1b-aad90df928e3")
+                            ProductId = new Guid("10b1fa31-cad6-4bda-aa53-f3e86cebc4d5"),
+                            TagId = new Guid("fdae1f84-b417-420f-a275-5438de4fe8ec")
                         },
                         new
                         {
-                            ProductId = new Guid("f2c1dac1-c987-4d16-815f-1142eb264212"),
-                            TagId = new Guid("bdf4dbb3-2547-44d9-8b1b-aad90df928e3")
+                            ProductId = new Guid("b5bd6d48-cb31-4269-8f35-8fc6da0adc7e"),
+                            TagId = new Guid("fdae1f84-b417-420f-a275-5438de4fe8ec")
                         },
                         new
                         {
-                            ProductId = new Guid("d0f2cedb-2585-4354-b596-2b26ca68b760"),
-                            TagId = new Guid("bdf4dbb3-2547-44d9-8b1b-aad90df928e3")
+                            ProductId = new Guid("eb58dbe8-4d10-4c33-8816-f3ec4f7f39d4"),
+                            TagId = new Guid("fdae1f84-b417-420f-a275-5438de4fe8ec")
                         },
                         new
                         {
-                            ProductId = new Guid("1afc6bc9-c4a9-468c-a091-bcf71876a16c"),
-                            TagId = new Guid("bdf4dbb3-2547-44d9-8b1b-aad90df928e3")
+                            ProductId = new Guid("f23d8d74-7264-4ae8-9dec-78946e7809ac"),
+                            TagId = new Guid("fdae1f84-b417-420f-a275-5438de4fe8ec")
                         });
                 });
 
@@ -493,61 +482,61 @@ namespace E_CommerceSystemV2.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7d66e6e8-9fd9-4375-bd6f-83f0e4f9e792",
+                            Id = "14258c70-cad6-4a55-8327-a9fa0bee6682",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c2c4e98b-0d0e-4bb6-b0d9-3420b02a883d",
-                            CreationDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(533),
+                            ConcurrencyStamp = "26810a59-db66-4a57-84e6-fdb1f94521d0",
+                            CreationDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2265),
                             Email = "john.doe@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PasswordHash = "password123",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ec38523c-9c27-4ce0-a6d6-a8fcf0a13773",
+                            SecurityStamp = "eb6e95be-2df0-440e-89c0-45a05541b1f9",
                             TwoFactorEnabled = false,
                             UserName = "john doe"
                         },
                         new
                         {
-                            Id = "4c16ac30-078f-450c-abcb-75d434cb5e83",
+                            Id = "ffd6b2bb-e580-4609-b00d-b54ee95e1ee7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2acfe452-7a6c-484b-b682-34a007df0b01",
-                            CreationDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(561),
+                            ConcurrencyStamp = "9f9818d2-d6dd-48ad-bc56-366c5117f479",
+                            CreationDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2272),
                             Email = "jane.doe@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PasswordHash = "password123",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c28e42dc-59e6-417d-bda8-25560bf5df8e",
+                            SecurityStamp = "a8fa800e-912e-4fdf-b325-88e1060ab482",
                             TwoFactorEnabled = false,
                             UserName = "jane doe"
                         },
                         new
                         {
-                            Id = "6caab355-b595-4915-9432-4aa53e2d3eb1",
+                            Id = "a14a27cd-493f-47ca-bced-e3adb51cf376",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "38f20a04-991f-4f66-8a5d-92b0a961c1f6",
-                            CreationDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(599),
+                            ConcurrencyStamp = "80bb158d-6573-4f5a-95b4-12ada4a027b3",
+                            CreationDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2287),
                             Email = "Sara.doe@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PasswordHash = "password123",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f96c5044-afef-4719-80f4-bb724641dd74",
+                            SecurityStamp = "f8d547a0-b24a-483a-8de9-e53f4d444939",
                             TwoFactorEnabled = false,
                             UserName = "Sara doe"
                         },
                         new
                         {
-                            Id = "74321f15-29aa-4057-ba32-e9243bc47560",
+                            Id = "76034889-5c66-4785-bdc2-8a0d18644f7f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "473fcff2-3fb2-41e5-9f5c-5954e8d8717d",
-                            CreationDate = new DateTime(2023, 12, 27, 20, 23, 21, 638, DateTimeKind.Local).AddTicks(613),
+                            ConcurrencyStamp = "93fb0ccf-e00d-4283-81e0-b31494aabdf3",
+                            CreationDate = new DateTime(2023, 12, 27, 20, 22, 17, 809, DateTimeKind.Local).AddTicks(2293),
                             Email = "Sandy.Jakson@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PasswordHash = "password123",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a88aa63a-27b0-4035-8bb8-d08ea0c8345b",
+                            SecurityStamp = "bf46d382-6853-4b35-9e47-f724fe92046a",
                             TwoFactorEnabled = false,
                             UserName = "Sandy Jakson"
                         });

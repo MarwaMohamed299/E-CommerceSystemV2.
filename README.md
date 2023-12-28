@@ -7,11 +7,26 @@ user authentication using JWT, logging, pagination, and search functionality.
 
 ## Features
 
-- CRUD operations for managing products, categories, and orders.
-- User authentication and authorization using Identity.
-- Logging to capture application events and errors.
-- Pagination for efficiently managing large data sets.
-- Search functionality to quickly find products.
+- **CRUD Operations:**
+  - Manage products, categories, and orders.
+
+- **User Authentication and Authorization:**
+  - Implemented using Identity for secure access.
+
+- **Logging:**
+  - Utilizes Serilog for capturing application events and errors.
+
+- **Email Notifications:**
+  - SendGrid is integrated for sending emails to users.
+  
+- **Background Jobs:**
+  - Employ Hangfire for handling background jobs efficiently.
+
+- **Pagination:**
+  - Enable pagination for managing large data sets.
+
+- **Search Functionality:**
+  - Quick search functionality to find products.
 
 ## Prerequisites
 

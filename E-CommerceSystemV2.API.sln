@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceSystemV2.API", "E-CommerceSystemV2.API\E-CommerceSystemV2.API.csproj", "{18DE26B6-6064-4B2F-A4BE-E79F43956C68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-CommerceSystemV2.API", "E-CommerceSystemV2.API\E-CommerceSystemV2.API.csproj", "{18DE26B6-6064-4B2F-A4BE-E79F43956C68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceSystemV2.BL", "E-CommerceSystemV2.BL\E-CommerceSystemV2.BL.csproj", "{DFDE2637-E78F-4CA4-8801-885F6DAF331D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-CommerceSystemV2.BL", "E-CommerceSystemV2.BL\E-CommerceSystemV2.BL.csproj", "{DFDE2637-E78F-4CA4-8801-885F6DAF331D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceSystemV2.DAL", "E-CommerceSystemV2.DAL\E-CommerceSystemV2.DAL.csproj", "{12158A9B-EDCD-485C-B6CF-1BF009E7B1B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-CommerceSystemV2.DAL", "E-CommerceSystemV2.DAL\E-CommerceSystemV2.DAL.csproj", "{12158A9B-EDCD-485C-B6CF-1BF009E7B1B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DA3A97CB-BF8F-4B9C-83D3-7986E7B4F763}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{03EB911D-9CCD-4ACA-AB7E-0B0B825320F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceSystemV2.Tests", "E-CommerceSystemV2.Tests\E-CommerceSystemV2.Tests.csproj", "{C28DF61B-3FD2-49EE-8E89-7FD54C5AB8B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +33,19 @@ Global
 		{12158A9B-EDCD-485C-B6CF-1BF009E7B1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12158A9B-EDCD-485C-B6CF-1BF009E7B1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12158A9B-EDCD-485C-B6CF-1BF009E7B1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28DF61B-3FD2-49EE-8E89-7FD54C5AB8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28DF61B-3FD2-49EE-8E89-7FD54C5AB8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28DF61B-3FD2-49EE-8E89-7FD54C5AB8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28DF61B-3FD2-49EE-8E89-7FD54C5AB8B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18DE26B6-6064-4B2F-A4BE-E79F43956C68} = {DA3A97CB-BF8F-4B9C-83D3-7986E7B4F763}
+		{DFDE2637-E78F-4CA4-8801-885F6DAF331D} = {DA3A97CB-BF8F-4B9C-83D3-7986E7B4F763}
+		{12158A9B-EDCD-485C-B6CF-1BF009E7B1B5} = {DA3A97CB-BF8F-4B9C-83D3-7986E7B4F763}
+		{C28DF61B-3FD2-49EE-8E89-7FD54C5AB8B2} = {03EB911D-9CCD-4ACA-AB7E-0B0B825320F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD221FA5-F46F-4F03-A783-3FF3683B418F}

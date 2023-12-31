@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Hangfire" Version="1.8.6" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.3.0" />
     <PackageReference Include="microsoft.aspnetcore.authentication.jwtbearer" Version="8.0.0" />
     <PackageReference Include="microsoft.aspnetcore.identity" Version="2.2.0" />
     <PackageReference Include="microsoft.aspnetcore.identity.EntityFrameworkCore" Version="8.0.0" />

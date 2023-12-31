@@ -1,6 +1,7 @@
 ﻿using E_CommerceSystemV2.BL.DTOs.Products;
 using E_CommerceSystemV2.BL.Managers.Products;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace E_CommerceSystemV2.API.Controllers.Products
 {
@@ -14,6 +15,21 @@ namespace E_CommerceSystemV2.API.Controllers.Products
         {
             _productsManager = productsManager;
         }
+        [HttpGet("TestGlobalErrorHandler")]
+        public ActionResult TestGlobalErrorHandler()
+        {
+            try
+            {
+                throw new ApplicationException("This is a test exception to trigger the global error handler.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Exception occurred in TestGlobalErrorHandler");
+
+                throw;
+            }
+        }
+
         [HttpGet("GetProductTags")]
         public async Task<ActionResult<ProductTagsReadDto>>GetProductTags()
         {
@@ -24,6 +40,7 @@ namespace E_CommerceSystemV2.API.Controllers.Products
             }
             catch(Exception ex)
             {
+
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error:{ex.Message}");
 
             }

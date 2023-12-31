@@ -240,6 +240,5 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 throw;
             }
         }
-
     }
 }

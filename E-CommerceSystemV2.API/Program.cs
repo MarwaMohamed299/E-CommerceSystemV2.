@@ -1,3 +1,4 @@
+using E_CommerceSystemV2.API.CustomGlobalErrorHandler;
 using E_CommerceSystemV2.BL.Managers.CampaignCustomer;
 using E_CommerceSystemV2.BL.Managers.Identity;
 using E_CommerceSystemV2.BL.Managers.Products;
@@ -20,6 +21,7 @@ namespace E_CommerceSystemV2.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
             #region ConnectionString
             var ConnectionString = builder.Configuration.GetConnectionString("E-CommerceSystemV2");
             builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(ConnectionString));
@@ -98,6 +100,7 @@ namespace E_CommerceSystemV2.API
             #endregion
 
             #region Custom Services
+
             builder.Services.AddTransient<MailingService>();
             builder.Services.AddScoped<IProductRepo, ProductRepo>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -108,6 +111,8 @@ namespace E_CommerceSystemV2.API
             builder.Services.AddScoped<IProductsManager, ProductsManager>();
             builder.Services.AddScoped<ICampaignCustomerManager, CampaignCustomersManager>();
 
+            builder.Services.AddExceptionHandler<GlobalErrorHandler>(); //Transient
+            builder.Services.AddProblemDetails();
 
             #endregion
             var app = builder.Build();
@@ -123,6 +128,7 @@ namespace E_CommerceSystemV2.API
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseExceptionHandler();
             app.UseHangfireDashboard("/dashboard");
             app.UseCors("AllowAllDomains");
 

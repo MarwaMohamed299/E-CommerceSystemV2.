@@ -11,6 +11,5 @@ namespace E_CommerceSystemV2.BL.DTOs.Products
         public Guid ProductId{get; set;}
         public string Name { get; set; } = string.Empty;
         public List<Guid> TagIds { get; set; } = new List<Guid>();
-
     }
 }

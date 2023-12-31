@@ -21,13 +21,15 @@ namespace E_CommerceSystemV2.BL.Managers.CampaignCustomer
             _mailingService = mailingService;
             _campaignsCustomersRepo = campaignCustomerRepo;
         }
+        public void SendingMailsRecurrently()
+        {
+            RecurringJob.AddOrUpdate(Guid.NewGuid().ToString(),() => SendingEmailsForNewCustomers(), Cron.Hourly);
 
-        [Obsolete]
+        }
         public async Task SendingEmailsForNewCustomers()
         {
             try
             {
-                RecurringJob.AddOrUpdate(() => SendingEmailsForNewCustomers(), Cron.Minutely);
 
                 var customers = await _campaignsCustomersRepo.GetCustomersEmails();
 

@@ -19,8 +19,6 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
             _userManager = userManager;
             _config = config;
         }
-
-
         public async Task<IEnumerable<IdentityError>> Register(RegisterDto userFromRequest)
         {
             User user = new User

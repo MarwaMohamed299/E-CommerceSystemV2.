@@ -9,9 +9,9 @@ namespace E_CommerceSystemV2.BL.Managers.Products
     public class ProductsManager : IProductsManager
     {
         private readonly IProductRepo _productsRepo;
-        private readonly ILogger<Product> _logger;
+        private readonly ILogger<ProductsManager> _logger;
 
-        public ProductsManager(IProductRepo productsRepo, ILogger<Product> logger)
+        public ProductsManager(IProductRepo productsRepo, ILogger<ProductsManager> logger)
         {
             _productsRepo = productsRepo;
             _logger = logger;

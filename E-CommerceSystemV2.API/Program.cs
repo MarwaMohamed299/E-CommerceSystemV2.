@@ -21,6 +21,7 @@ namespace E_CommerceSystemV2.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            Console.ReadLine();
 
             #region ConnectionString
             var ConnectionString = builder.Configuration.GetConnectionString("E-CommerceSystemV2");

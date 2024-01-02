@@ -1,4 +1,5 @@
-﻿using E_CommerceSystemV2.BL.DTOs.Products;
+﻿using E_CommerceSystemV2.API.Exceptions;
+using E_CommerceSystemV2.BL.DTOs.Products;
 using E_CommerceSystemV2.BL.Managers.Products;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
@@ -18,16 +19,7 @@ namespace E_CommerceSystemV2.API.Controllers.Products
         [HttpGet("TestGlobalErrorHandler")]
         public ActionResult TestGlobalErrorHandler()
         {
-            try
-            {
-                throw new ApplicationException("This is a test exception to trigger the global error handler.");
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex, "Exception occurred in TestGlobalErrorHandler");
-
-                throw;
-            }
+         throw new InternalServerError("This is a test exception to trigger the global error handler for internal server error.");
         }
 
         [HttpGet("GetProductTags")]

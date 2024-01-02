@@ -1176,3 +1176,907 @@ SELECT [c].[Email]
 FROM [CampaignCustomers] AS [c]
 2023-12-31 04:39:03.136 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
 2023-12-31 04:39:03.637 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:40:02.713 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:40:03.217 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:40:03.696 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:41:03.047 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:41:03.645 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:41:04.096 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:42:03.201 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:42:03.702 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:42:04.158 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:43:03.396 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:43:04.052 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:43:04.573 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:43:16.297 +03:00 [INF] 1 servers were removed due to timeout
+2023-12-31 04:44:03.553 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:44:04.078 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:44:04.537 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:45:03.688 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:45:04.362 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:45:04.830 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:46:03.884 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:46:04.365 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:46:04.842 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:47:04.044 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:47:04.619 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:47:05.106 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:48:04.814 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:48:05.305 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:48:05.812 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:49:04.969 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:49:05.585 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:49:06.104 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:50:05.136 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:50:05.630 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:50:06.102 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:51:05.420 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:51:05.974 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:51:06.430 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:52:05.473 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:52:05.944 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:52:06.393 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:53:05.599 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:53:06.183 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:53:06.682 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:54:05.751 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:54:06.250 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:54:06.743 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:55:05.887 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:55:06.473 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:55:06.973 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:56:06.032 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:56:06.519 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:56:07.012 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:57:06.525 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:57:07.104 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:57:07.589 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:58:06.590 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:58:07.064 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:58:07.574 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 04:59:06.844 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 04:59:07.611 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 04:59:08.188 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:00:07.017 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:00:07.522 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:00:08.019 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:01:15.297 +03:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:01:15.915 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:01:16.394 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:02:00.258 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:02:00.726 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:02:01.181 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:03:00.424 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:03:00.999 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:03:01.478 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:04:00.531 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:04:01.027 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:04:01.512 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:05:00.719 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:05:01.300 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:05:01.765 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:06:00.908 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:06:01.394 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:06:01.861 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:07:01.658 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:07:02.221 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:07:02.695 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:08:01.720 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:08:02.217 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:08:02.693 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:09:01.843 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:09:02.409 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:09:02.908 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:10:02.290 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:10:02.767 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:10:03.237 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:11:00.849 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:11:01.437 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:11:01.918 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:12:00.976 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:12:01.481 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:12:01.949 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:13:01.154 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:13:01.708 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:13:02.196 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:14:01.309 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:14:01.789 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:14:02.252 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:15:01.494 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:15:02.054 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:15:02.533 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:16:01.643 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:16:02.122 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:16:02.585 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:17:01.780 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:17:02.345 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:17:02.823 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:18:01.882 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:18:02.367 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:18:02.840 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:19:02.008 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:19:02.572 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:19:03.062 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:20:02.070 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:20:02.580 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:20:03.045 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:21:02.190 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:21:02.737 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:21:03.203 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:22:02.296 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:22:02.837 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:22:03.304 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:23:02.437 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:23:03.054 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:23:03.541 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:24:02.607 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:24:03.090 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:24:03.564 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:25:02.722 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:25:03.299 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:25:03.788 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:26:02.883 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:26:03.382 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:26:03.856 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:27:03.000 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:27:03.570 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:27:04.047 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:28:03.185 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:28:03.678 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:28:04.175 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:29:03.464 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:29:04.041 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:29:04.521 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:30:03.494 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:30:04.033 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:30:04.537 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:31:03.663 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:31:04.217 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:31:04.706 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:32:03.804 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:32:04.285 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:32:04.775 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:33:04.236 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:33:04.763 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:33:05.229 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:34:04.753 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:34:05.220 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:34:05.699 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:35:04.794 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:35:05.350 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:35:05.809 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 05:36:04.664 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 05:36:05.142 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 05:36:05.610 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:13:59.756 +03:00 [INF] Executed DbCommand (1,347ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:14:31.146 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:14:36.144 +03:00 [ERR] Error sending email to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+System.Net.Http.HttpRequestException: No such host is known. (api.sendgrid.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at SendGrid.Helpers.Reliability.RetryDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at SendGrid.BaseClient.MakeRequest(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.RequestAsync(Method method, String requestBody, String queryParams, String urlPath, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.SendEmailAsync(SendGridMessage msg, CancellationToken cancellationToken)
+   at E_CommerceSystemV2.BL.Services.MailService.MailingService.SendEmail(String subject, String toEmail, String userName, String message) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Services\MailService\MailingService.cs:line 45
+2023-12-31 07:14:36.144 +03:00 [ERR] Error sending email to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+System.Net.Http.HttpRequestException: No such host is known. (api.sendgrid.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at SendGrid.Helpers.Reliability.RetryDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at SendGrid.BaseClient.MakeRequest(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.RequestAsync(Method method, String requestBody, String queryParams, String urlPath, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.SendEmailAsync(SendGridMessage msg, CancellationToken cancellationToken)
+   at E_CommerceSystemV2.BL.Services.MailService.MailingService.SendEmail(String subject, String toEmail, String userName, String message) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Services\MailService\MailingService.cs:line 45
+2023-12-31 07:14:37.340 +03:00 [ERR] Error in sending Emails toThe Customers
+System.Net.Http.HttpRequestException: No such host is known. (api.sendgrid.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at SendGrid.Helpers.Reliability.RetryDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at SendGrid.BaseClient.MakeRequest(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.RequestAsync(Method method, String requestBody, String queryParams, String urlPath, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.SendEmailAsync(SendGridMessage msg, CancellationToken cancellationToken)
+   at E_CommerceSystemV2.BL.Services.MailService.MailingService.SendEmail(String subject, String toEmail, String userName, String message) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Services\MailService\MailingService.cs:line 45
+   at E_CommerceSystemV2.BL.Managers.CampaignCustomer.CampaignCustomersManager.SendingEmailsForNewCustomers() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\CampaignCustomer\CampaignCustomersManager.cs:line 42
+2023-12-31 07:14:37.422 +03:00 [ERR] Error in sending Emails toThe Customers
+System.Net.Http.HttpRequestException: No such host is known. (api.sendgrid.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at SendGrid.Helpers.Reliability.RetryDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at SendGrid.BaseClient.MakeRequest(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.RequestAsync(Method method, String requestBody, String queryParams, String urlPath, CancellationToken cancellationToken)
+   at SendGrid.BaseClient.SendEmailAsync(SendGridMessage msg, CancellationToken cancellationToken)
+   at E_CommerceSystemV2.BL.Services.MailService.MailingService.SendEmail(String subject, String toEmail, String userName, String message) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Services\MailService\MailingService.cs:line 45
+   at E_CommerceSystemV2.BL.Managers.CampaignCustomer.CampaignCustomersManager.SendingEmailsForNewCustomers() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\CampaignCustomer\CampaignCustomersManager.cs:line 42
+2023-12-31 07:15:01.373 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:15:02.897 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:15:04.191 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:16:00.907 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:16:28.535 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:16:31.729 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:17:01.331 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:17:04.362 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:17:12.199 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:18:01.351 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:18:10.545 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:18:13.779 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:19:01.459 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:19:13.965 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:19:16.256 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:20:01.559 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:20:03.952 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:20:07.407 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:21:01.962 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:21:07.001 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:21:12.132 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:22:01.732 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:22:03.886 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:22:06.564 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:23:01.815 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:23:05.476 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:23:07.811 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:24:01.907 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:24:02.516 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:24:03.256 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:25:02.021 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:25:02.522 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:25:02.964 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:26:02.131 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:26:02.706 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:26:03.169 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:27:02.195 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:27:05.333 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:27:06.123 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:28:02.282 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 07:28:02.848 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 07:28:03.359 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 07:28:39.181 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-12-31 07:28:39.221 +03:00 [INF] Server desktop-eni7p6d:16452:89623ff2 caught stopping signal...
+2023-12-31 07:28:39.222 +03:00 [INF] Server desktop-eni7p6d:16452:89623ff2 caught stopped signal...
+2023-12-31 07:28:39.223 +03:00 [WRN] Server desktop-eni7p6d:16452:89623ff2 caught shutdown signal...
+2023-12-31 07:28:39.617 +03:00 [WRN] Server desktop-eni7p6d:16452:89623ff2 stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2023-12-31 07:28:40.113 +03:00 [INF] Server desktop-eni7p6d:16452:89623ff2 successfully reported itself as stopped in 51.527 ms
+2023-12-31 07:28:40.113 +03:00 [INF] Server desktop-eni7p6d:16452:89623ff2 has been stopped in total 890.7497 ms
+2023-12-31 08:23:46.170 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-12-31 08:23:47.836 +03:00 [INF] Hangfire SQL objects installed.
+2023-12-31 08:23:48.025 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-31 08:23:48.356 +03:00 [INF] Now listening on: https://localhost:7175
+2023-12-31 08:23:48.356 +03:00 [INF] Now listening on: http://localhost:5117
+2023-12-31 08:23:48.362 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2023-12-31 08:23:48.362 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-12-31 08:23:48.362 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-12-31 08:23:48.386 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-31 08:23:48.386 +03:00 [INF] Hosting environment: Development
+2023-12-31 08:23:48.386 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2023-12-31 08:23:48.566 +03:00 [INF] Server desktop-eni7p6d:14152:1d14f609 successfully announced in 180.4251 ms
+2023-12-31 08:23:48.572 +03:00 [INF] Server desktop-eni7p6d:14152:1d14f609 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-12-31 08:23:48.804 +03:00 [INF] Server desktop-eni7p6d:14152:1d14f609 all the dispatchers started
+2023-12-31 08:23:51.707 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-12-31 08:23:54.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2023-12-31 08:23:54.640 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 559.0728ms
+2023-12-31 08:23:54.856 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-31 08:23:55.173 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 316.4308ms
+2023-12-31 08:23:55.357 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2023-12-31 08:23:55.704 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 346.3986ms
+2023-12-31 08:23:56.456 +03:00 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:23:58.924 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:23:59.466 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:24:04.957 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:24:05.438 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:24:05.914 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:24:18.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/TestGlobalErrorHandler - null null
+2023-12-31 08:24:18.246 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API)'
+2023-12-31 08:24:18.286 +03:00 [INF] Route matched with {action = "TestGlobalErrorHandler", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult TestGlobalErrorHandler() on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-31 08:24:18.450 +03:00 [ERR] Exception occurred in TestGlobalErrorHandler
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+2023-12-31 08:24:18.873 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API) in 583.5462ms
+2023-12-31 08:24:19.051 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API)'
+2023-12-31 08:24:19.101 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+   at lambda_method194(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-12-31 08:24:19.110 +03:00 [ERR] Exception Occurred :This is a test exception to trigger the global error handler.
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+   at lambda_method194(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-12-31 08:24:19.112 +03:00 [ERR] This is a test exception to trigger the global error handler.
+2023-12-31 08:24:19.140 +03:00 [ERR] HTTP GET /api/Products/TestGlobalErrorHandler responded 500 in 1048.0011 ms
+2023-12-31 08:24:19.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/TestGlobalErrorHandler - 500 null application/json; charset=utf-8 1058.0373ms
+2023-12-31 08:25:04.842 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:25:05.330 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:25:05.816 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:26:05.074 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:26:05.653 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:26:06.146 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:26:09.980 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/GetProductTags - null null
+2023-12-31 08:26:10.007 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API)'
+2023-12-31 08:26:10.014 +03:00 [INF] Route matched with {action = "GetProductTags", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Products.ProductTagsReadDto]] GetProductTags() on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-31 08:26:10.342 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId], [t1].[ProductId], [t1].[TagId], [t1].[TagId0], [t1].[Name]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [t].[ProductId], [t].[TagId], [t0].[TagId] AS [TagId0], [t0].[Name]
+    FROM [TagProducts] AS [t]
+    INNER JOIN [Tags] AS [t0] ON [t].[TagId] = [t0].[TagId]
+) AS [t1] ON [p].[ProductId] = [t1].[ProductId]
+ORDER BY [p].[ProductId], [t1].[ProductId], [t1].[TagId]
+2023-12-31 08:26:10.504 +03:00 [INF] Product tags => [{"ProductId":"96a86cbf-1d2c-4925-8b86-0bab35fd5c08","Name":"Sony Smart TV","TagIds":["925ee134-dbfb-4da2-9344-995e988190be"],"$type":"ProductTagsReadDto"},{"ProductId":"f2c1dac1-c987-4d16-815f-1142eb264212","Name":"HP Printer","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"0273038d-cb11-4f16-9830-1368dcd45a9d","Name":"Amazon Echo Dot","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"e5dcb228-8db8-4f5d-9337-21417896f046","Name":"Razer Gaming Mouse","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"d0f2cedb-2585-4354-b596-2b26ca68b760","Name":"Levi's Jeans","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"d1638cc7-8622-453e-973d-320441808656","Name":"Adidas Running Shoes","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"83dd8132-2eed-45b8-bfef-604f0975b5f0","Name":"KitchenAid Stand Mixer","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"7845c623-9053-4bbc-b763-6a29ff33a43d","Name":"Fitbit Charge 5","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"cb9f30a5-cf43-41c1-9b09-7c187a998504","Name":"Canon EOS Rebel T7","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"74e37db8-5f17-40cd-b972-a2516192119d","Name":"Fossil Smartwatch","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"1afc6bc9-c4a9-468c-a091-bcf71876a16c","Name":"Bose Noise-Canceling Headphones","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"c0f557d9-699f-44cb-85ea-cef38a9248e8","Name":"Nike Running Shoes","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"a07bcdaf-81b6-4a85-a681-e617c2fe82a3","Name":"Calvin Klein Watch","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"8bdc926b-53da-41b3-ad0c-ed6dc00b4c40","Name":"Samsung Galaxy S21","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"cb8bb99f-29ee-40db-977a-fe6e63e49369","Name":"Cuisinart Coffee Maker","TagIds":[],"$type":"ProductTagsReadDto"}]
+2023-12-31 08:26:10.523 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[E_CommerceSystemV2.BL.DTOs.Products.ProductTagsReadDto, E-CommerceSystemV2.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-31 08:26:10.538 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API) in 524.0811ms
+2023-12-31 08:26:10.539 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API)'
+2023-12-31 08:26:10.540 +03:00 [INF] HTTP GET /api/Products/GetProductTags responded 200 in 535.1540 ms
+2023-12-31 08:26:10.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/GetProductTags - 200 null application/json; charset=utf-8 562.2327ms
+2023-12-31 08:26:23.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/SearchWithManyTag - null null
+2023-12-31 08:26:23.846 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.SearchWithManyTag (E-CommerceSystemV2.API)'
+2023-12-31 08:26:23.877 +03:00 [INF] Route matched with {action = "SearchWithManyTag", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[E_CommerceSystemV2.BL.DTOs.Products.ProductReadDto]]] SearchWithManyTag(System.Collections.Generic.List`1[System.Guid]) on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-31 08:26:25.150 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[@__tagIds_0='[]' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId]
+FROM [TagProducts] AS [t]
+INNER JOIN [Products] AS [p] ON [t].[ProductId] = [p].[ProductId]
+WHERE [t].[TagId] IN (
+    SELECT [t0].[value]
+    FROM OPENJSON(@__tagIds_0) WITH ([value] uniqueidentifier '$') AS [t0]
+)
+2023-12-31 08:26:25.154 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[E_CommerceSystemV2.DAL.Data.Models.Product, E-CommerceSystemV2.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[E_CommerceSystemV2.BL.DTOs.Products.ProductReadDto, E-CommerceSystemV2.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-31 08:26:25.163 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.SearchWithManyTag (E-CommerceSystemV2.API) in 1285.1925ms
+2023-12-31 08:26:25.163 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.SearchWithManyTag (E-CommerceSystemV2.API)'
+2023-12-31 08:26:25.163 +03:00 [INF] HTTP GET /api/Products/SearchWithManyTag responded 200 in 1321.0090 ms
+2023-12-31 08:26:25.166 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/SearchWithManyTag - 200 null application/json; charset=utf-8 1325.1828ms
+2023-12-31 08:27:05.152 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:27:05.643 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:27:06.132 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:28:05.331 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:28:05.901 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:28:06.492 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:29:05.417 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:29:06.315 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:29:08.024 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:30:05.510 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:30:06.118 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:30:06.618 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:31:05.792 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:31:06.546 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:31:07.126 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:32:06.106 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:32:06.756 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:32:07.219 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:33:06.374 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:33:08.911 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:33:10.419 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:34:06.672 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:34:07.745 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:34:08.401 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:35:06.699 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:35:07.196 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:35:07.666 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:36:06.773 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:36:07.323 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:36:07.782 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:37:06.948 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:37:07.425 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:37:07.905 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:38:07.105 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:38:07.653 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:38:08.127 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:39:07.456 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:39:07.937 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:39:08.429 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:40:07.572 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:40:08.132 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:40:08.599 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:41:07.690 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:41:08.176 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:41:08.649 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:42:07.828 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:42:08.388 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:42:08.848 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:43:07.922 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:43:08.414 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:43:08.889 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:44:08.063 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:44:08.622 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:44:09.095 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:45:08.281 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:45:08.781 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:45:09.257 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:45:11.202 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-12-31 08:45:11.202 +03:00 [INF] Server desktop-eni7p6d:14152:1d14f609 caught stopping signal...
+2023-12-31 08:45:11.485 +03:00 [INF] Server desktop-eni7p6d:14152:1d14f609 caught stopped signal...
+2023-12-31 08:45:11.485 +03:00 [WRN] Server desktop-eni7p6d:14152:1d14f609 caught shutdown signal...
+2023-12-31 08:45:11.706 +03:00 [WRN] Server desktop-eni7p6d:14152:1d14f609 stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2023-12-31 08:45:12.233 +03:00 [INF] Server desktop-eni7p6d:14152:1d14f609 successfully reported itself as stopped in 180.3768 ms
+2023-12-31 08:45:12.233 +03:00 [INF] Server desktop-eni7p6d:14152:1d14f609 has been stopped in total 747.9382 ms
+2023-12-31 08:49:09.214 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-12-31 08:49:10.810 +03:00 [INF] Hangfire SQL objects installed.
+2023-12-31 08:49:11.011 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-31 08:49:11.447 +03:00 [INF] Now listening on: https://localhost:7175
+2023-12-31 08:49:11.447 +03:00 [INF] Now listening on: http://localhost:5117
+2023-12-31 08:49:11.460 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2023-12-31 08:49:11.460 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-12-31 08:49:11.460 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-12-31 08:49:11.504 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-31 08:49:11.505 +03:00 [INF] Hosting environment: Development
+2023-12-31 08:49:11.505 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2023-12-31 08:49:12.247 +03:00 [INF] Server desktop-eni7p6d:23260:2a0f47da successfully announced in 740.6135 ms
+2023-12-31 08:49:12.278 +03:00 [INF] Server desktop-eni7p6d:23260:2a0f47da is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-12-31 08:49:12.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2023-12-31 08:49:12.499 +03:00 [INF] Server desktop-eni7p6d:23260:2a0f47da all the dispatchers started
+2023-12-31 08:49:12.726 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 419.1748ms
+2023-12-31 08:49:12.805 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-31 08:49:12.836 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 30.9141ms
+2023-12-31 08:49:13.079 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2023-12-31 08:49:13.323 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 244.584ms
+2023-12-31 08:49:15.917 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-12-31 08:49:17.754 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:49:18.756 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:49:19.244 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:49:19.306 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/TestGlobalErrorHandler - null null
+2023-12-31 08:49:19.404 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API)'
+2023-12-31 08:49:19.452 +03:00 [INF] Route matched with {action = "TestGlobalErrorHandler", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult TestGlobalErrorHandler() on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-31 08:49:19.478 +03:00 [ERR] Exception occurred in TestGlobalErrorHandler
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+2023-12-31 08:49:19.570 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API) in 107.3092ms
+2023-12-31 08:49:19.572 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API)'
+2023-12-31 08:49:19.574 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+   at lambda_method194(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-12-31 08:49:19.588 +03:00 [ERR] Exception Occurred :This is a test exception to trigger the global error handler.
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+   at lambda_method194(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-12-31 08:49:19.589 +03:00 [ERR] This is a test exception to trigger the global error handler.
+2023-12-31 08:49:19.622 +03:00 [ERR] HTTP GET /api/Products/TestGlobalErrorHandler responded 500 in 299.5923 ms
+2023-12-31 08:49:19.623 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/TestGlobalErrorHandler - 500 null application/json; charset=utf-8 316.7942ms
+2023-12-31 08:49:43.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/GetProductTags - null null
+2023-12-31 08:49:43.176 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API)'
+2023-12-31 08:49:43.188 +03:00 [INF] Route matched with {action = "GetProductTags", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Products.ProductTagsReadDto]] GetProductTags() on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-31 08:49:43.741 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId], [t1].[ProductId], [t1].[TagId], [t1].[TagId0], [t1].[Name]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [t].[ProductId], [t].[TagId], [t0].[TagId] AS [TagId0], [t0].[Name]
+    FROM [TagProducts] AS [t]
+    INNER JOIN [Tags] AS [t0] ON [t].[TagId] = [t0].[TagId]
+) AS [t1] ON [p].[ProductId] = [t1].[ProductId]
+ORDER BY [p].[ProductId], [t1].[ProductId], [t1].[TagId]
+2023-12-31 08:49:43.982 +03:00 [INF] Product tags => [{"ProductId":"96a86cbf-1d2c-4925-8b86-0bab35fd5c08","Name":"Sony Smart TV","TagIds":["925ee134-dbfb-4da2-9344-995e988190be"],"$type":"ProductTagsReadDto"},{"ProductId":"f2c1dac1-c987-4d16-815f-1142eb264212","Name":"HP Printer","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"0273038d-cb11-4f16-9830-1368dcd45a9d","Name":"Amazon Echo Dot","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"e5dcb228-8db8-4f5d-9337-21417896f046","Name":"Razer Gaming Mouse","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"d0f2cedb-2585-4354-b596-2b26ca68b760","Name":"Levi's Jeans","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"d1638cc7-8622-453e-973d-320441808656","Name":"Adidas Running Shoes","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"83dd8132-2eed-45b8-bfef-604f0975b5f0","Name":"KitchenAid Stand Mixer","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"7845c623-9053-4bbc-b763-6a29ff33a43d","Name":"Fitbit Charge 5","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"cb9f30a5-cf43-41c1-9b09-7c187a998504","Name":"Canon EOS Rebel T7","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"74e37db8-5f17-40cd-b972-a2516192119d","Name":"Fossil Smartwatch","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"1afc6bc9-c4a9-468c-a091-bcf71876a16c","Name":"Bose Noise-Canceling Headphones","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"c0f557d9-699f-44cb-85ea-cef38a9248e8","Name":"Nike Running Shoes","TagIds":["bdf4dbb3-2547-44d9-8b1b-aad90df928e3"],"$type":"ProductTagsReadDto"},{"ProductId":"a07bcdaf-81b6-4a85-a681-e617c2fe82a3","Name":"Calvin Klein Watch","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"8bdc926b-53da-41b3-ad0c-ed6dc00b4c40","Name":"Samsung Galaxy S21","TagIds":[],"$type":"ProductTagsReadDto"},{"ProductId":"cb8bb99f-29ee-40db-977a-fe6e63e49369","Name":"Cuisinart Coffee Maker","TagIds":[],"$type":"ProductTagsReadDto"}]
+2023-12-31 08:49:44.012 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[E_CommerceSystemV2.BL.DTOs.Products.ProductTagsReadDto, E-CommerceSystemV2.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-31 08:49:44.036 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API) in 847.1346ms
+2023-12-31 08:49:44.037 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetProductTags (E-CommerceSystemV2.API)'
+2023-12-31 08:49:44.040 +03:00 [INF] HTTP GET /api/Products/GetProductTags responded 200 in 865.9005 ms
+2023-12-31 08:49:44.044 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/GetProductTags - 200 null application/json; charset=utf-8 875.8252ms
+2023-12-31 08:49:54.073 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-12-31 08:49:54.073 +03:00 [INF] Server desktop-eni7p6d:23260:2a0f47da caught stopping signal...
+2023-12-31 08:49:54.074 +03:00 [INF] Server desktop-eni7p6d:23260:2a0f47da caught stopped signal...
+2023-12-31 08:49:54.075 +03:00 [WRN] Server desktop-eni7p6d:23260:2a0f47da caught shutdown signal...
+2023-12-31 08:49:54.076 +03:00 [WRN] Server desktop-eni7p6d:23260:2a0f47da stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2023-12-31 08:49:54.094 +03:00 [INF] Server desktop-eni7p6d:23260:2a0f47da successfully reported itself as stopped in 14.7612 ms
+2023-12-31 08:49:54.094 +03:00 [INF] Server desktop-eni7p6d:23260:2a0f47da has been stopped in total 19.6866 ms
+2023-12-31 08:50:08.693 +03:00 [INF] Start installing Hangfire SQL objects...
+2023-12-31 08:50:10.379 +03:00 [INF] Hangfire SQL objects installed.
+2023-12-31 08:50:10.773 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-31 08:50:11.359 +03:00 [INF] Now listening on: https://localhost:7175
+2023-12-31 08:50:11.359 +03:00 [INF] Now listening on: http://localhost:5117
+2023-12-31 08:50:11.377 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2023-12-31 08:50:11.388 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-12-31 08:50:11.389 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-12-31 08:50:11.461 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-31 08:50:11.462 +03:00 [INF] Hosting environment: Development
+2023-12-31 08:50:11.463 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2023-12-31 08:50:12.231 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 successfully announced in 772.9779 ms
+2023-12-31 08:50:12.242 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-12-31 08:50:12.981 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 all the dispatchers started
+2023-12-31 08:50:18.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2023-12-31 08:50:19.267 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 1069.7626ms
+2023-12-31 08:50:19.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-31 08:50:19.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 34.5269ms
+2023-12-31 08:50:20.301 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2023-12-31 08:50:20.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 492.7514ms
+2023-12-31 08:50:22.448 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2023-12-31 08:50:24.646 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:50:25.631 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:50:26.193 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:50:32.731 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/TestGlobalErrorHandler - null null
+2023-12-31 08:50:33.182 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API)'
+2023-12-31 08:50:33.237 +03:00 [INF] Route matched with {action = "TestGlobalErrorHandler", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult TestGlobalErrorHandler() on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-31 08:50:34.424 +03:00 [ERR] Exception occurred in TestGlobalErrorHandler
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+2023-12-31 08:50:35.962 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API) in 2710.6418ms
+2023-12-31 08:50:36.488 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler (E-CommerceSystemV2.API)'
+2023-12-31 08:50:36.985 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+   at lambda_method194(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-12-31 08:50:37.001 +03:00 [ERR] Exception Occurred :This is a test exception to trigger the global error handler.
+System.ApplicationException: This is a test exception to trigger the global error handler.
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.TestGlobalErrorHandler() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 23
+   at lambda_method194(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-12-31 08:50:37.003 +03:00 [ERR] This is a test exception to trigger the global error handler.
+2023-12-31 08:50:37.051 +03:00 [ERR] HTTP GET /api/Products/TestGlobalErrorHandler responded 500 in 4298.6410 ms
+2023-12-31 08:50:37.053 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/TestGlobalErrorHandler - 500 null application/json; charset=utf-8 4323.3651ms
+2023-12-31 08:51:00.295 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/10 - null null
+2023-12-31 08:51:00.311 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2023-12-31 08:51:00.360 +03:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto]]] GetAll(Int32, Int32) on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2023-12-31 08:51:00.939 +03:00 [INF] Executed DbCommand (130ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2023-12-31 08:51:01.506 +03:00 [INF] Executed DbCommand (330ms) [Parameters=[@__p_0='0', @__p_1='10'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId]
+FROM [Products] AS [p]
+ORDER BY [p].[Price]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-12-31 08:51:01.770 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto'.
+2023-12-31 08:51:01.807 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API) in 1446.1924ms
+2023-12-31 08:51:01.808 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2023-12-31 08:51:01.810 +03:00 [INF] HTTP GET /api/Products/1/10 responded 200 in 1505.2649 ms
+2023-12-31 08:51:01.822 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/10 - 200 null application/json; charset=utf-8 1527.2942ms
+2023-12-31 08:51:14.484 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:51:15.155 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:51:15.649 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:52:15.117 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:52:15.639 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:52:16.183 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:53:15.326 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Email]
+FROM [CampaignCustomers] AS [c]
+2023-12-31 08:53:15.907 +03:00 [INF] Email sent successfully to Jamal_Ali@outlook.com with subject: Welcome to SwiftCart!
+2023-12-31 08:53:16.396 +03:00 [INF] Email sent successfully to marwaghonem299@gmail.com with subject: Welcome to SwiftCart!
+2023-12-31 08:53:44.414 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-12-31 08:53:44.414 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 caught stopping signal...
+2023-12-31 08:53:44.736 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 caught stopped signal...
+2023-12-31 08:53:44.736 +03:00 [WRN] Server desktop-eni7p6d:15164:febac0d1 caught shutdown signal...
+2023-12-31 08:53:45.147 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 All dispatchers stopped
+2023-12-31 08:53:45.239 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 successfully reported itself as stopped in 9.1051 ms
+2023-12-31 08:53:45.239 +03:00 [INF] Server desktop-eni7p6d:15164:febac0d1 has been stopped in total 504.0692 ms

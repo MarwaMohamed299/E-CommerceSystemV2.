@@ -84,5 +84,73 @@ public class ProductsManagerTests
 
         #endregion
     }
+
+    [Fact]
+    public async Task GetById_ShouldReturnExistingProduct_Always()
+    {
+        #region Arrange
+        var productId = Guid.NewGuid();
+
+        // Mock ILogger
+        var loggerMock = Substitute.For<ILogger<ProductsManager>>();
+
+        // Repository Logger
+        var repoMock = Substitute.For<IProductRepo>();
+
+        // Initialize the Manager
+        var manager = new ProductsManager(repoMock, loggerMock);
+
+        var expectedProduct = new Product { ProductId = productId, Name = "Sample Product", Price = 19.99M };
+        repoMock.GetById(productId).Returns(expectedProduct);
+        #endregion
+
+        #region Act
+        var result = await manager.GetById(productId);
+        #endregion
+
+        #region Insert
+
+        await repoMock
+            .Received(1)
+            .GetById(productId);
+
+        #endregion
+    }
+
+    [Fact]
+    public  async Task GetById_ShouldReturnNullWhenNotFound_Always()
+    {
+        #region Arrange
+        var productId = Guid.NewGuid();
+
+        // Mock ILogger
+        var loggerMock = Substitute.For<ILogger<ProductsManager>>();
+
+        // Repository Logger
+        var repoMock = Substitute.For<IProductRepo>();
+
+        // Initialize the Manager
+        var manager = new ProductsManager(repoMock, loggerMock);
+
+        // Set up the repository mock to return null when GetById is called
+        repoMock.GetById(productId).Returns((Product)null!);
+        #endregion
+
+        #region Act
+        var result = await manager.GetById(productId);
+        #endregion
+
+
+        #region Insert
+        await repoMock
+            .Received(1)
+            .GetById(productId);
+
+            Assert.Null(result);
+
+        #endregion
+
+    }
+
 }
 

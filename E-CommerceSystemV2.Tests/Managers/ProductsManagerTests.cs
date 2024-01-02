@@ -154,6 +154,78 @@ public class ProductsManagerTests
 
     }
 
+        [Fact]
+        public async Task Update_ProductExists_ShouldReturnSuccessMessage()
+        {
+        #region Arrange
+
+        var productId = new Guid("F2C1DAC1-C987-4D16-815F-1142EB264212");
+
+        var existingProduct = new Product { ProductId = productId, Name = "OldProduct", Price = 19.99m };
+        var updatedProduct = new ProductUpdateDto { ProductId = productId, Name = "NewProduct", Price = 29.99m };
+
+        // Mock ILogger
+        var loggerMock = Substitute.For<ILogger<ProductsManager>>();
+
+        // Repository Logger
+        var repoMock = Substitute.For<IProductRepo>();
+
+        // Initialize the Manager
+        var manager = new ProductsManager(repoMock, loggerMock);
+
+
+        // Making Sure that an existing product is returned
+        repoMock.GetById(productId).Returns(existingProduct);
+
+        #endregion
+        #region Act
+
+        var result = await manager.Update(updatedProduct);
+
+        #endregion
+
+        #region Assert
+
+        result.ShouldBe("Product is Updated Successfully");
+        existingProduct.Name.ShouldBe(updatedProduct.Name);
+        existingProduct.Price.ShouldBe(updatedProduct.Price);
+        await repoMock.Received(1).Update(existingProduct);
+         repoMock.Received(1).SaveChangesAsync();
+
+        #endregion
+    }
+
+    [Fact]
+    public async Task Update_ProductDoesNotExist_ShouldThrowNotFoundException()
+    {
+        #region Arrange
+
+        var productId = new Guid("F2C1DAC1-C987-4D16-815F-1142EB264212");
+
+        var updatedProduct = new ProductUpdateDto { ProductId = productId, Name = "NewProduct", Price = 29.99m };
+
+        // Mock ILogger
+        var loggerMock = Substitute.For<ILogger<ProductsManager>>();
+
+        // Repository Logger
+        var repoMock = Substitute.For<IProductRepo>();
+
+        // Initialize the Manager
+        var manager = new ProductsManager(repoMock, loggerMock);
+
+        repoMock.GetById(productId).Returns((Product)null!);
+
+        #endregion
+
+        #region Act
+        var result = await manager.GetById(productId);
+        #endregion
+
+        #region Assert
+        await Should.ThrowAsync<NotFoundException>(manager.Update(updatedProduct));
+        #endregion
+    }
+
     [Fact]
     public async Task SearchWithTag_ShouldReturnException_WhenNoProductsFound()
     {
@@ -175,7 +247,7 @@ public class ProductsManagerTests
         #endregion
 
         #region Act
-       // var result = await manager.GetById(tagId);
+        var result = await manager.GetById(tagId);
         #endregion
 
         #region Assert

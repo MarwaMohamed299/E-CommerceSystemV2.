@@ -75,11 +75,12 @@ namespace E_CommerceSystemV2.BL.Managers.Products
              {
                throw new NotFoundException("product is not found");
              }
-             product.Name = product.Name;
-            product.Price = product.Price;
+            
+            existingProduct.Name = product.Name; 
+            existingProduct.Price = product.Price;
 
             await _productsRepo.Update(existingProduct);
-             _productsRepo.SaveChangesAsync();
+                 _productsRepo.SaveChangesAsync();
              return ("Product is Updated Successfully");
 
         }

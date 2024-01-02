@@ -35,17 +35,6 @@ user authentication using JWT, logging, pagination, and search functionality.
 - **Global Error Handling:**
   - Centralized error handling to gracefully manage and log exceptions.
 
-## Unit Testing
-
-- Utilizes NSubstitute for comprehensive, isolated unit tests.
-- Execute tests with your preferred framework.
-
-## Global Error Handling
-
-- Catches and logs exceptions for smooth application execution.
-- Refer to logs for detailed error insights.
-- Contribute, report, or provide feedback to enhance the system.
-
 
 ## Prerequisites
 

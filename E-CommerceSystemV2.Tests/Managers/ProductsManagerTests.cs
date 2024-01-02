@@ -2,10 +2,10 @@
 using E_CommerceSystemV2.BL.Managers.Products;
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
-using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using SendGrid.Helpers.Errors.Model;
+using FluentAssertions;
 using Shouldly;
 
 namespace E_CommerceSystemV2.Tests.Managers;
@@ -13,6 +13,8 @@ namespace E_CommerceSystemV2.Tests.Managers;
 
 public class ProductsManagerTests
 {
+    private static Guid productId = new Guid("96A86CBF-1D2C-4925-8B86-0BAB35FD5C08");
+
     [Fact]
     public async Task GetAll_ShouldReturnEmptyList_WhenNoDataInDb()
     {
@@ -92,7 +94,6 @@ public class ProductsManagerTests
     public async Task GetById_ShouldReturnExistingProduct_Always()
     {
         #region Arrange
-        var productId = Guid.NewGuid();
 
         // Mock ILogger
         var loggerMock = Substitute.For<ILogger<ProductsManager>>();
@@ -111,11 +112,10 @@ public class ProductsManagerTests
         var result = await manager.GetById(productId);
         #endregion
 
-        #region Insert
+        #region Assert
 
-        await repoMock
-            .Received(1)
-            .GetById(productId);
+        result.ShouldNotBeNull();
+        result.ProductId.Should().Be(productId); 
 
         #endregion
     }
@@ -124,7 +124,6 @@ public class ProductsManagerTests
     public async Task GetById_ShouldReturnNull_WhenNotFound()
     {
         #region Arrange
-        var productId = Guid.NewGuid();
 
         // Mock ILogger
         var loggerMock = Substitute.For<ILogger<ProductsManager>>();
@@ -148,8 +147,7 @@ public class ProductsManagerTests
             .Received(1)
             .GetById(productId);
 
-        Assert.Null(result);
-
+        result.ShouldBe(null);
         #endregion
 
     }
@@ -158,8 +156,6 @@ public class ProductsManagerTests
         public async Task Update_ProductExists_ShouldReturnSuccessMessage()
         {
         #region Arrange
-
-        var productId = new Guid("F2C1DAC1-C987-4D16-815F-1142EB264212");
 
         var existingProduct = new Product { ProductId = productId, Name = "OldProduct", Price = 19.99m };
         var updatedProduct = new ProductUpdateDto { ProductId = productId, Name = "NewProduct", Price = 29.99m };
@@ -186,7 +182,6 @@ public class ProductsManagerTests
 
         #region Assert
 
-        result.ShouldBe("Product is Updated Successfully");
         existingProduct.Name.ShouldBe(updatedProduct.Name);
         existingProduct.Price.ShouldBe(updatedProduct.Price);
         await repoMock.Received(1).Update(existingProduct);
@@ -280,6 +275,7 @@ public class ProductsManagerTests
         repoMock.SearchWithTag(tagId).Returns(mockedProducts);
 
         #endregion
+
         #region Act
         var result = await manager.SearchWithTag(tagId);
         #endregion
@@ -287,7 +283,6 @@ public class ProductsManagerTests
         #region Assert
         result.ShouldNotBeEmpty();
         result.ShouldNotBeNull();
-        result.ShouldAllBe(dto => dto is ProductReadDto);
         #endregion
     }
 

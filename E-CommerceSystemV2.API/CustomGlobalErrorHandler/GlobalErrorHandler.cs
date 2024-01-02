@@ -16,12 +16,8 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
         {
             _logger.LogError(exception, "Exception Occurred :{Message}", exception.Message);
 
-            ProblemDetails problems = new ProblemDetails
-            {
-                Title = "Server Error",
-                Status = StatusCodes.Status500InternalServerError
-            };
-
+            ProblemDetails problems = new ProblemDetails();
+          
 
             switch (exception)
             {

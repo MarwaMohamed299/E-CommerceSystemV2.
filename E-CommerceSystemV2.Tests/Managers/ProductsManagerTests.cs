@@ -1,8 +1,11 @@
-﻿using E_CommerceSystemV2.BL.Managers.Products;
+﻿using E_CommerceSystemV2.BL.DTOs.Products;
+using E_CommerceSystemV2.BL.Managers.Products;
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
+using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
+using SendGrid.Helpers.Errors.Model;
 using Shouldly;
 
 namespace E_CommerceSystemV2.Tests.Managers;
@@ -118,7 +121,7 @@ public class ProductsManagerTests
     }
 
     [Fact]
-    public async Task GetById_ShouldReturnNullWhenNotFound_Always()
+    public async Task GetById_ShouldReturnNull_WhenNotFound()
     {
         #region Arrange
         var productId = Guid.NewGuid();
@@ -150,6 +153,72 @@ public class ProductsManagerTests
         #endregion
 
     }
+
+    [Fact]
+    public async Task SearchWithTag_ShouldReturnException_WhenNoProductsFound()
+    {
+        #region Arrange
+        var tagId = new Guid("925EE134-DBFB-4DA2-9344-995E988190BE");
+
+        // Mock ILogger
+        var loggerMock = Substitute.For<ILogger<ProductsManager>>();
+
+        // Repository Logger
+        var repoMock = Substitute.For<IProductRepo>();
+
+        // Initialize the Manager
+        var manager = new ProductsManager(repoMock, loggerMock);
+
+        // Mock the repository's SearchWithTag method to return null, simulating no products found
+        repoMock.SearchWithTag(tagId).Returns((List<Product>)null!);
+
+        #endregion
+
+        #region Act
+       // var result = await manager.GetById(tagId);
+        #endregion
+
+        #region Assert
+        await Should.ThrowAsync<NotFoundException>(manager.SearchWithTag(tagId));
+
+        #endregion
+
+    }
+
+    [Fact]
+    public async Task SearchWithTag_ProductsFound_ReturnsProductReadDtos()
+    {
+        #region Arrange
+        var tagId = new Guid("925EE134-DBFB-4DA2-9344-995E988190BE");
+
+        var mockedProducts = new List<Product>
+        {
+            new Product { ProductId = Guid.NewGuid(), Name = "shoes", Price = 19.99m },
+            new Product { ProductId = Guid.NewGuid(), Name = "mobiles", Price = 29.99m },
+        };
+        // Mock ILogger
+        var loggerMock = Substitute.For<ILogger<ProductsManager>>();
+
+        // Repository Logger
+        var repoMock = Substitute.For<IProductRepo>();
+
+        // Initialize the Manager
+        var manager = new ProductsManager(repoMock, loggerMock);
+
+        repoMock.SearchWithTag(tagId).Returns(mockedProducts);
+
+        #endregion
+        #region Act
+        var result = await manager.SearchWithTag(tagId);
+        #endregion
+
+        #region Assert
+        result.ShouldNotBeEmpty();
+        result.ShouldNotBeNull();
+        result.ShouldAllBe(dto => dto is ProductReadDto);
+        #endregion
+    }
+
 
 }
 

@@ -49,55 +49,41 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 Name = product.Name,
                 Price = product.Price
             };
-        }   
+        }
 
         public async Task<string> Add(ProductAddDto productAddDto)                          /*Add*/
         {
-            try
-            {
-                var product = new Product
-                {
-                    Name = productAddDto.Name,
-                    Price = productAddDto.Price,
 
-                };
-
-                await _productsRepo.Add(product);
-                _productsRepo.SaveChangesAsync();
-                return ("Product is added successfully");
-            }
-            catch (Exception ex)
+            var product = new Product
             {
-                _logger.LogError(ex, "Error occurred while adding a Product.");
-                throw new InvalidOperationException("Product not found");
-            }
+                Name = productAddDto.Name,
+                Price = productAddDto.Price,
+                OrderId = productAddDto.OrderId
+
+            };
+
+            await _productsRepo.Add(product);
+             _productsRepo.SaveChangesAsync();
+            return ("Product is added successfully");
+
         }
         public async Task<string?> Update(ProductUpdateDto product)                       /*Update*/
         {
-            try
-            {
-                var existingProduct = await _productsRepo.GetById(product.ProductId);
+           var existingProduct = await _productsRepo.GetById(product.ProductId);
 
-                if (existingProduct == null)
-                {
-                    _logger.LogWarning($"Product with ID {product.ProductId} not found.");
-                    return null;
-                }
+             if (existingProduct == null)
+             {
+               throw new NotFoundException("product is not found");
+             }
+             product.Name = product.Name;
+            product.Price = product.Price;
 
-                product.Name = product.Name;
-                product.Price = product.Price;
+            await _productsRepo.Update(existingProduct);
+             _productsRepo.SaveChangesAsync();
+             return ("Product is Updated Successfully");
 
-                await _productsRepo.Update(existingProduct);
-                _productsRepo.SaveChangesAsync();
-                return ("Product is Updated Successfully");
-
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error occurred while updating Product with ID {product.ProductId}.");
-                throw;
-            }
         }
+        
         public async Task<bool> Delete(Guid productId)                                    /*Delete*/
 
         {
@@ -122,20 +108,12 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
         public async Task<IEnumerable<ProductReadDto>> SearchWithTag(Guid tagId)                /*SearchWithTag*/
         {
-            try
-            {
-                if (tagId == default)
-                {
-                    _logger.LogWarning($" Search string is not valid.");
-                    throw new ArgumentException("Search string is not valid.");
-                }
-
-                var searchedProducts = await _productsRepo.SearchWithTag(tagId);
+            var searchedProducts = await _productsRepo.SearchWithTag(tagId);
 
                 if (searchedProducts == null)
                 {
-                    _logger.LogWarning($"No products found for search term: {tagId}");
-                    throw new ArgumentException($"No products found for search term: {tagId}");
+                    Log.Warning($"No products found for search term: {tagId}");
+                    throw new NotFoundException($"No products found for search term: {tagId}");
                 }
 
                 var productReadDto = searchedProducts.Select(p => new ProductReadDto
@@ -146,12 +124,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 });
 
                 return productReadDto;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error occurred while Searching a Product.");
-                throw;
-            }
+           
         }
         public async Task<IEnumerable<ProductReadDto>> SearchWithManyTags(List<Guid> tagIds)     /*SearchWithManyTag*/
         {
@@ -161,7 +134,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
                 if (searchedProducts == null)
                 {
-                    _logger.LogWarning($"No products found for search term: {tagIds}");
+                    Log.Warning($"No products found for search term: {tagIds}");
                     throw new ArgumentException($"No products found for search term: {tagIds}");
 
                 }

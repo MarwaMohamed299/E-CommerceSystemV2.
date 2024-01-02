@@ -48,7 +48,7 @@ namespace E_CommerceSystemV2.BL.Services.MailService
                         Log.Error("SendGrid API key is missing or empty.");
                         throw new InvalidOperationException("SendGrid API key is missing or empty.");
                     }
-                    Log.Information("Email sent successfully to {ToEmail} with subject: {Subject}", toEmail, subject);
+                   // Log.Information("Email sent successfully to {ToEmail} with subject: {Subject}", toEmail, subject);
                 }
             }
             catch (Exception ex)

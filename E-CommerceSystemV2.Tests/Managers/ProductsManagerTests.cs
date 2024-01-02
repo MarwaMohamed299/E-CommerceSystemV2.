@@ -118,7 +118,7 @@ public class ProductsManagerTests
     }
 
     [Fact]
-    public  async Task GetById_ShouldReturnNullWhenNotFound_Always()
+    public async Task GetById_ShouldReturnNullWhenNotFound_Always()
     {
         #region Arrange
         var productId = Guid.NewGuid();
@@ -140,13 +140,12 @@ public class ProductsManagerTests
         var result = await manager.GetById(productId);
         #endregion
 
-
         #region Insert
         await repoMock
             .Received(1)
             .GetById(productId);
 
-            Assert.Null(result);
+        Assert.Null(result);
 
         #endregion
 

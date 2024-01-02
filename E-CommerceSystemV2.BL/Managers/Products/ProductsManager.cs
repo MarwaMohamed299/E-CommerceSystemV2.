@@ -2,6 +2,7 @@
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.Products;
 using Microsoft.Extensions.Logging;
+using SendGrid.Helpers.Errors.Model;
 using Serilog;
 
 namespace E_CommerceSystemV2.BL.Managers.Products
@@ -18,50 +19,38 @@ namespace E_CommerceSystemV2.BL.Managers.Products
         }
         public async Task<ProductPagintationDto> GetAll(int page, int countPerPage)         /*GetAll*/
         {
-            try
+            var totalCount = await _productsRepo.GetCount();
+            var items = (await _productsRepo.GetAll(page, countPerPage)).Select(e => new ProductReadDto
             {
-                var totalCount = await _productsRepo.GetCount();
-                var items = (await _productsRepo.GetAll(page, countPerPage)).Select(e => new ProductReadDto
-                {
-                    ProductId = e.ProductId,
-                    Name = e.Name,
-                    Price = e.Price
-                }).ToList();
+                ProductId = e.ProductId,
+                Name = e.Name,
+                Price = e.Price
+                
+            }).ToList();
 
-                return new ProductPagintationDto
-                {
-                    TotalCount = totalCount,
-                    Items = items
-                };
-            }
-            catch (Exception ex)
+            return new ProductPagintationDto
             {
-                _logger.LogError(ex, "Error occurred while getting all Products.");
-                throw;
-            }
+                TotalCount = totalCount,
+                Items = items
+            };
         }
+
         public async Task<ProductReadDto?> GetById(Guid productId)                 /*GetById*/
         {
-            try
+
+            var product = await _productsRepo.GetById(productId);
+            if (product == null)
             {
-                var product = await _productsRepo.GetById(productId);
-                if (product == null)
-                {
-                    return null;
-                }
-                return new ProductReadDto
-                {
-                    ProductId = product.ProductId,
-                    Name = product.Name,
-                    Price = product.Price
-                };
+                return null;
             }
-            catch (Exception ex)
+            return new ProductReadDto
             {
-                _logger.LogError(ex, $"Error occurred while getting employee with ID {productId}.");
-                throw;
-            }
-        }
+                ProductId = product.ProductId,
+                Name = product.Name,
+                Price = product.Price
+            };
+        }   
+
         public async Task<string> Add(ProductAddDto productAddDto)                          /*Add*/
         {
             try
@@ -75,7 +64,7 @@ namespace E_CommerceSystemV2.BL.Managers.Products
 
                 await _productsRepo.Add(product);
                 _productsRepo.SaveChangesAsync();
-                return ("Product is added successfully ");
+                return ("Product is added successfully");
             }
             catch (Exception ex)
             {

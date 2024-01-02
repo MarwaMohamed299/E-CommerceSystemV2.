@@ -1,5 +1,4 @@
-﻿
-using E_CommerceSystemV2.API.Exceptions;
+﻿using E_CommerceSystemV2.API.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SendGrid.Helpers.Errors.Model;
@@ -47,6 +46,7 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
                         Detail = internalServerError.Message
                     };
                     Log.Error(exception.Message, "Internal Server Error Occurred");
+
                     httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
                     break;
 
@@ -57,7 +57,7 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
                         Status = StatusCodes.Status404NotFound,
                         Detail = notFoundException.Message
                     };
-                    Log.Error(exception.Message, "NotFound Error Ocurred");
+                    Log.Error(exception.Message, "NotFound Error Occurred");
 
                     httpContext.Response.StatusCode = StatusCodes.Status404NotFound;
                     break;

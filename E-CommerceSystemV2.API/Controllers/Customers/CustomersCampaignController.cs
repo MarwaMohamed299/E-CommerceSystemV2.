@@ -19,19 +19,11 @@ namespace E_CommerceSystemV2.API.Controllers.Customers
         [HttpPost ("send-Emails")]
         public async Task <IActionResult> SendEmails()
         {
-            try
-            {
+         
                await _campaignsCustomerManager.SendingEmailsForNewCustomers();
 
                 return Ok("Email sending job scheduled successfully.");
-            }
-            catch(Exception ex)
-            {
-                Log.Error(ex,"Error in sending mails in controller.");
-                return StatusCode(500, "Internal Server Error");
-
-
-            }
+           
         }
     }
 }

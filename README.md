@@ -1,9 +1,7 @@
 # E-Commerce System
 
 Welcome to the E-Commerce System project! This .NET Core application provides a robust foundation for building an e-commerce platform with CRUD operations,
-user authentication using JWT, logging, pagination, and search functionality.
-
-
+user authentication using JWT, logging, pagination,  search functionality .
 
 ## Features
 
@@ -11,10 +9,13 @@ user authentication using JWT, logging, pagination, and search functionality.
   - Manage products, categories, and orders.
 
 - **User Authentication and Authorization:**
-  - Implemented using Identity for secure access.
+  - Implemented using Identity for secure access wit Json Web Token(JWT).
 
 - **Logging:**
   - Utilizes Serilog for capturing application events and errors.
+    
+- **LINQ Query Logging:**
+  - Incorporates logging for LINQ queries to provide insights into data retrieval and manipulation processes.
 
 - **Email Notifications:**
   - SendGrid is integrated for sending emails to users.
@@ -26,7 +27,14 @@ user authentication using JWT, logging, pagination, and search functionality.
   - Enable pagination for managing large data sets.
 
 - **Search Functionality:**
-  - Quick search functionality to find products.
+  - Quick search functionality.
+
+- **Unit Testing with NSubstitute:**
+  - Implements unit tests using NSubstitute for effective mocking of dependencies.
+
+- **Global Error Handling:**
+  - Centralized error handling to gracefully manage and log exceptions.
+
 
 ## Prerequisites
 

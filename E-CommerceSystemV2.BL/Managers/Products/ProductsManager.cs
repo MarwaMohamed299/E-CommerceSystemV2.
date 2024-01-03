@@ -129,14 +129,12 @@ namespace E_CommerceSystemV2.BL.Managers.Products
         }
         public async Task<IEnumerable<ProductReadDto>> SearchWithManyTags(List<Guid> tagIds)     /*SearchWithManyTag*/
         {
-            try
-            {
-                var searchedProducts = await _productsRepo.SearchWithManyTags(tagIds);
+           var searchedProducts = await _productsRepo.SearchWithManyTags(tagIds);
 
                 if (searchedProducts == null)
                 {
                     Log.Warning($"No products found for search term: {tagIds}");
-                    throw new ArgumentException($"No products found for search term: {tagIds}");
+                    throw new NotFoundException($"No products found for search term: {tagIds}");
 
                 }
                 var productReadDto = searchedProducts.Select(p => new ProductReadDto
@@ -147,13 +145,6 @@ namespace E_CommerceSystemV2.BL.Managers.Products
                 });
 
                 return productReadDto;
-
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error occurred while Searching a Product.");
-                throw;
-            }
         }
         public async Task<ProductUpdateDto>UpdateProductTag(Guid productId,List<Guid>tagIds)        /*UpdateProductTags*/
         {

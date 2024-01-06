@@ -13,7 +13,7 @@ namespace E_CommerceSystemV2.API.SqlLocalizerProvider
             _ecommerceContext = eCommerceContext;
         }
 
-       public LocalizedString this[string name] => new LocalizedString(name,GetLocalizedString(name,"en")); /*Suitable for basic scenarios where you mainly need to retrieve individual localized strings without much formatting.*/
+       public LocalizedString this[string name] => new LocalizedString(name,GetLocalizedString(name)); /*Suitable for basic scenarios where you mainly need to retrieve individual localized strings without much formatting.*/
 
 
         public LocalizedString this[string name, params object[] arguments] => throw new NotImplementedException(); /*Suitable for projects with a large number of dynamic or frequently changing localized strings*/
@@ -23,40 +23,24 @@ namespace E_CommerceSystemV2.API.SqlLocalizerProvider
             throw new NotImplementedException();
         } /* Suitable for projects with a mix of static and dynamic content */
 
-        public string GetLocalizedString(string key , string language )
+        public string GetLocalizedString(string key )
         {
-
-            string retrievedMessage;
-
-            switch (language)
+           var language = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+            var q1 = _ecommerceContext.Textsss
+                .Where(t => t.TextKey == key);
+            IQueryable<string> messages = language switch
             {
-                case "ar":
-                    retrievedMessage = _ecommerceContext.Textsss
-                        .Where(t => t.TextKey == key)
-                        .Select(t => t.ArabicText)
-                        .FirstOrDefault()!;
-                 break;
+                "en" => q1.Select(a => a.EnglishText),
+                "ar" => q1.Select(a => a.ArabicText),
+                  _=>q1.Select(a=>a.EnglishText)
+            };
 
-                case "en":
-                    retrievedMessage = _ecommerceContext.Textsss
-                        .Where(t => t.TextKey == key)
-                        .Select(t => t.EnglishText)
-                        .FirstOrDefault()!;
-                break;
+            var retrievedMessage = messages.FirstOrDefault();
 
-                default:
-                    retrievedMessage = _ecommerceContext.Textsss
-                        .Where(t => t.TextKey == key)
-                        .Select(t => t.EnglishText)
-                        .FirstOrDefault()!;
-                    break;
-
-            }
             Log.Error($"Key: {key}, Language: {language}, Retrieved Message: {retrievedMessage}");
 
-            return retrievedMessage;
-
+            return retrievedMessage ?? key;
         }
-
+        
     }
 }

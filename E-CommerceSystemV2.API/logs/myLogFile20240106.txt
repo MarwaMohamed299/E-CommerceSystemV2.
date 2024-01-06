@@ -2805,3 +2805,459 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 2024-01-06 05:46:35.725 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.ValuesController.Test (E-CommerceSystemV2.API)'
 2024-01-06 05:46:35.728 +03:00 [INF] HTTP GET /api/Values responded 200 in 14482.8834 ms
 2024-01-06 05:46:35.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Values - 200 0 null 14493.2993ms
+2024-01-06 08:39:51.100 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 08:39:54.235 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 08:39:54.517 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 08:39:55.078 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 08:39:55.078 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 08:39:55.091 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 08:39:55.092 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 08:39:55.092 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 08:39:55.131 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 08:39:55.131 +03:00 [INF] Hosting environment: Development
+2024-01-06 08:39:55.131 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 08:39:55.411 +03:00 [INF] Server desktop-eni7p6d:21284:e6d98594 successfully announced in 279.9423 ms
+2024-01-06 08:39:55.422 +03:00 [INF] Server desktop-eni7p6d:21284:e6d98594 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 08:39:55.457 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-06 08:39:55.690 +03:00 [INF] Server desktop-eni7p6d:21284:e6d98594 all the dispatchers started
+2024-01-06 08:39:57.899 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 08:39:58.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 615.6916ms
+2024-01-06 08:39:58.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 08:39:58.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 08:39:58.596 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 35.3721ms
+2024-01-06 08:39:58.953 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 388.4199ms
+2024-01-06 08:39:59.165 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 08:39:59.441 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 276.7007ms
+2024-01-06 09:49:14.990 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 09:49:20.205 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 09:49:20.628 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 09:49:21.654 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 09:49:21.656 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 09:49:21.671 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 09:49:21.672 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 09:49:21.673 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 09:49:21.742 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 09:49:21.750 +03:00 [INF] Hosting environment: Development
+2024-01-06 09:49:21.766 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 09:49:22.131 +03:00 [INF] Server desktop-eni7p6d:20824:c9202d30 successfully announced in 399.4139 ms
+2024-01-06 09:49:22.143 +03:00 [INF] Server desktop-eni7p6d:20824:c9202d30 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 09:49:22.169 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-06 09:49:22.498 +03:00 [INF] Server desktop-eni7p6d:20824:c9202d30 all the dispatchers started
+2024-01-06 09:49:23.772 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 09:49:24.561 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 797.7777ms
+2024-01-06 09:49:24.786 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 09:49:24.786 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 09:49:24.877 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 91.5234ms
+2024-01-06 09:49:25.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 257.3016ms
+2024-01-06 09:49:25.296 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 09:49:25.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.6108ms
+2024-01-06 09:49:35.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts - null null
+2024-01-06 09:49:35.489 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 09:49:35.530 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 09:49:35.544 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 4.8028ms
+2024-01-06 09:49:35.552 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 09:49:35.558 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Localization.IStringLocalizer`1[E_CommerceSystemV2.API.Controllers.Texts.TextsController]' while attempting to activate 'E_CommerceSystemV2.API.Controllers.Texts.TextsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-06 09:49:35.634 +03:00 [ERR] Exception Occurred :Unable to resolve service for type 'Microsoft.Extensions.Localization.IStringLocalizer`1[E_CommerceSystemV2.API.Controllers.Texts.TextsController]' while attempting to activate 'E_CommerceSystemV2.API.Controllers.Texts.TextsController'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Localization.IStringLocalizer`1[E_CommerceSystemV2.API.Controllers.Texts.TextsController]' while attempting to activate 'E_CommerceSystemV2.API.Controllers.Texts.TextsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-06 09:49:35.685 +03:00 [ERR] HTTP GET /api/Texts responded 500 in 358.6230 ms
+2024-01-06 09:49:35.688 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts - 500 null application/json; charset=utf-8 380.5146ms
+2024-01-06 10:06:38.068 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 10:06:39.799 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 10:06:40.064 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 10:06:40.604 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 10:06:40.605 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 10:06:40.617 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 10:06:40.618 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 10:06:40.620 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 10:06:40.649 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 10:06:40.651 +03:00 [INF] Hosting environment: Development
+2024-01-06 10:06:40.652 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 10:06:40.898 +03:00 [INF] Server desktop-eni7p6d:9488:4483d2b9 successfully announced in 249.5319 ms
+2024-01-06 10:06:40.907 +03:00 [INF] Server desktop-eni7p6d:9488:4483d2b9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 10:06:40.939 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-06 10:06:41.262 +03:00 [INF] Server desktop-eni7p6d:9488:4483d2b9 all the dispatchers started
+2024-01-06 10:06:43.055 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 10:06:43.857 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 812.6667ms
+2024-01-06 10:06:44.010 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 10:06:44.010 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 10:06:44.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 64.586ms
+2024-01-06 10:06:44.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 265.9575ms
+2024-01-06 10:06:44.428 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 10:06:44.734 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 305.2541ms
+2024-01-06 11:52:36.663 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 11:52:37.661 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 11:52:37.827 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 11:52:38.050 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 11:52:38.051 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 11:52:38.061 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 11:52:38.062 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 11:52:38.063 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 11:52:38.079 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 11:52:38.080 +03:00 [INF] Hosting environment: Development
+2024-01-06 11:52:38.081 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 11:52:38.253 +03:00 [INF] Server desktop-eni7p6d:12796:96a43b5a successfully announced in 171.0006 ms
+2024-01-06 11:52:38.258 +03:00 [INF] Server desktop-eni7p6d:12796:96a43b5a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 11:52:38.461 +03:00 [INF] Server desktop-eni7p6d:12796:96a43b5a all the dispatchers started
+2024-01-06 11:52:54.988 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 11:52:56.100 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 11:52:56.340 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 11:52:57.015 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 11:52:57.016 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 11:52:57.027 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 11:52:57.029 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 11:52:57.030 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 11:52:57.062 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 11:52:57.064 +03:00 [INF] Hosting environment: Development
+2024-01-06 11:52:57.065 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 11:52:57.299 +03:00 [INF] Server desktop-eni7p6d:3324:35b2068f successfully announced in 236.5047 ms
+2024-01-06 11:52:57.310 +03:00 [INF] Server desktop-eni7p6d:3324:35b2068f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 11:52:57.669 +03:00 [INF] Server desktop-eni7p6d:3324:35b2068f all the dispatchers started
+2024-01-06 11:52:59.174 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 11:52:59.789 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 622.1984ms
+2024-01-06 11:53:00.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 11:53:00.147 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 11:53:00.174 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 30.8112ms
+2024-01-06 11:53:00.594 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 447.4372ms
+2024-01-06 11:53:00.693 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 11:53:01.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1008.1203ms
+2024-01-06 11:53:11.652 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts - null null
+2024-01-06 11:53:11.818 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 11:53:11.859 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 11:54:14.631 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 62757.6688ms
+2024-01-06 11:54:14.636 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 11:54:14.649 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'ECommerceContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at E_CommerceSystemV2.API.ECommerceContext.get_Textsss() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Data\Context\ECommerceContext.cs:line 19
+   at E_CommerceSystemV2.API.SqlLocalizerProvider.SqlLocalizer.GetLocalizedString(String key, String language) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\SqlLocalizerProvider\SqlLocalizer.cs:line 41
+   at E_CommerceSystemV2.API.SqlLocalizerProvider.SqlLocalizer.get_Item(String name) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\SqlLocalizerProvider\SqlLocalizer.cs:line 16
+   at E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Texts\TextsController.cs:line 20
+   at lambda_method9(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-06 11:54:14.890 +03:00 [ERR] Exception Occurred :Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'ECommerceContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'ECommerceContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at E_CommerceSystemV2.API.ECommerceContext.get_Textsss() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Data\Context\ECommerceContext.cs:line 19
+   at E_CommerceSystemV2.API.SqlLocalizerProvider.SqlLocalizer.GetLocalizedString(String key, String language) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\SqlLocalizerProvider\SqlLocalizer.cs:line 41
+   at E_CommerceSystemV2.API.SqlLocalizerProvider.SqlLocalizer.get_Item(String name) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\SqlLocalizerProvider\SqlLocalizer.cs:line 16
+   at E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage() in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Texts\TextsController.cs:line 20
+   at lambda_method9(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-06 11:54:14.955 +03:00 [ERR] HTTP GET /api/Texts responded 500 in 63288.3906 ms
+2024-01-06 11:54:14.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts - 500 null application/json; charset=utf-8 63305.5051ms
+2024-01-06 11:54:47.506 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-06 11:54:47.508 +03:00 [INF] Server desktop-eni7p6d:3324:35b2068f caught stopping signal...
+2024-01-06 11:54:47.523 +03:00 [INF] Server desktop-eni7p6d:3324:35b2068f caught stopped signal...
+2024-01-06 11:54:47.525 +03:00 [WRN] Server desktop-eni7p6d:3324:35b2068f caught shutdown signal...
+2024-01-06 11:54:47.528 +03:00 [WRN] Server desktop-eni7p6d:3324:35b2068f stopped non-gracefully due to ExpirationManager, Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-06 11:54:47.584 +03:00 [INF] Server desktop-eni7p6d:3324:35b2068f successfully reported itself as stopped in 42.8029 ms
+2024-01-06 11:54:47.585 +03:00 [INF] Server desktop-eni7p6d:3324:35b2068f has been stopped in total 62.7341 ms
+2024-01-06 11:55:08.425 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 11:55:09.513 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 11:55:09.729 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 11:55:10.084 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 11:55:10.089 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 11:55:10.102 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 11:55:10.103 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 11:55:10.104 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 11:55:10.135 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 11:55:10.136 +03:00 [INF] Hosting environment: Development
+2024-01-06 11:55:10.137 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 11:55:10.338 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 successfully announced in 201.4405 ms
+2024-01-06 11:55:10.347 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 11:55:10.617 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 all the dispatchers started
+2024-01-06 11:55:12.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 11:55:13.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 512.8162ms
+2024-01-06 11:55:13.228 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 11:55:13.228 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 11:55:13.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 19.7207ms
+2024-01-06 11:55:13.355 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.6065ms
+2024-01-06 11:55:13.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 11:55:13.691 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 240.368ms
+2024-01-06 11:55:20.880 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts - null null
+2024-01-06 11:55:20.994 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 11:55:21.021 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 11:55:23.287 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-06 11:55:24.829 +03:00 [INF] Executed DbCommand (406ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 11:55:24.858 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 11:55:24.871 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 11:55:24.890 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 3856.4065ms
+2024-01-06 11:55:24.895 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 11:55:24.900 +03:00 [INF] HTTP GET /api/Texts responded 200 in 4006.4874 ms
+2024-01-06 11:55:24.903 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 4022.4588ms
+2024-01-06 12:00:10.381 +03:00 [INF] 2 servers were removed due to timeout
+2024-01-06 12:08:47.990 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-06 12:08:47.991 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 caught stopping signal...
+2024-01-06 12:08:48.013 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 caught stopped signal...
+2024-01-06 12:08:48.015 +03:00 [WRN] Server desktop-eni7p6d:3136:cd2c71d9 caught shutdown signal...
+2024-01-06 12:08:48.016 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 All dispatchers stopped
+2024-01-06 12:08:48.030 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 successfully reported itself as stopped in 9.0821 ms
+2024-01-06 12:08:48.031 +03:00 [INF] Server desktop-eni7p6d:3136:cd2c71d9 has been stopped in total 18.8041 ms
+2024-01-06 12:09:11.715 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 12:09:13.644 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 12:09:13.920 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 12:09:14.578 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 12:09:14.579 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 12:09:14.590 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 12:09:14.592 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 12:09:14.599 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 12:09:14.638 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 12:09:14.639 +03:00 [INF] Hosting environment: Development
+2024-01-06 12:09:14.640 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 12:09:14.944 +03:00 [INF] Server desktop-eni7p6d:20392:c8e45154 successfully announced in 306.1175 ms
+2024-01-06 12:09:14.963 +03:00 [INF] Server desktop-eni7p6d:20392:c8e45154 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 12:09:15.654 +03:00 [INF] Server desktop-eni7p6d:20392:c8e45154 all the dispatchers started
+2024-01-06 12:09:15.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 12:09:16.593 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 703.7495ms
+2024-01-06 12:09:16.717 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 12:09:16.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 12:09:16.853 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 135.8814ms
+2024-01-06 12:09:17.067 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 340.1599ms
+2024-01-06 12:09:17.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 12:09:17.468 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 295.4774ms
+2024-01-06 12:09:27.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:09:29.368 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:09:32.166 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:09:55.600 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-06 12:10:00.893 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:10:00.952 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:10:01.008 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:10:01.051 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 28861.2482ms
+2024-01-06 12:10:01.055 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:10:01.072 +03:00 [INF] HTTP GET /api/Texts responded 200 in 33128.3444 ms
+2024-01-06 12:10:01.085 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 33619.9664ms
+2024-01-06 12:11:14.517 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:11:21.186 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:11:23.040 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:11:27.207 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:11:31.903 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:11:32.633 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:11:35.809 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 10544.9752ms
+2024-01-06 12:11:35.883 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:11:35.938 +03:00 [INF] HTTP GET /api/Texts responded 200 in 14763.0661 ms
+2024-01-06 12:11:36.457 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 21940.6107ms
+2024-01-06 12:22:58.161 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 12:23:05.229 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 12:23:07.494 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 12:23:09.908 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 12:23:09.914 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 12:23:09.925 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 12:23:09.927 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 12:23:09.929 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 12:23:10.456 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 12:23:10.828 +03:00 [INF] Hosting environment: Development
+2024-01-06 12:23:10.838 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 12:23:12.502 +03:00 [INF] Server desktop-eni7p6d:21896:0282f28e successfully announced in 2047.4294 ms
+2024-01-06 12:23:12.968 +03:00 [INF] Server desktop-eni7p6d:21896:0282f28e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 12:23:13.323 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-06 12:23:13.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 12:23:15.553 +03:00 [INF] Server desktop-eni7p6d:21896:0282f28e all the dispatchers started
+2024-01-06 12:23:19.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 6041.2236ms
+2024-01-06 12:23:31.422 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 12:23:31.433 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 12:23:31.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 141.0991ms
+2024-01-06 12:23:31.870 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 447.9129ms
+2024-01-06 12:23:32.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 12:23:34.885 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2258.2516ms
+2024-01-06 12:28:10.261 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-06 12:28:12.821 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-06 12:28:13.172 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-06 12:28:13.601 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-06 12:28:13.718 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-06 12:28:13.767 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-06 12:28:13.824 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-06 12:28:13.828 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-06 12:28:13.983 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-06 12:28:14.301 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-06 12:28:14.457 +03:00 [INF] Hosting environment: Development
+2024-01-06 12:28:14.554 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-06 12:28:14.621 +03:00 [INF] Server desktop-eni7p6d:20436:3d9cdad9 successfully announced in 636.6132 ms
+2024-01-06 12:28:14.633 +03:00 [INF] Server desktop-eni7p6d:20436:3d9cdad9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-06 12:28:15.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 858.7689ms
+2024-01-06 12:28:15.230 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-06 12:28:15.230 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-06 12:28:15.446 +03:00 [INF] Server desktop-eni7p6d:20436:3d9cdad9 all the dispatchers started
+2024-01-06 12:28:15.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 484.2279ms
+2024-01-06 12:28:15.872 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 641.5292ms
+2024-01-06 12:28:15.983 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-06 12:28:16.586 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 602.366ms
+2024-01-06 12:28:25.978 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:28:26.109 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:28:26.371 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:28:29.332 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-06 12:28:32.027 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:28:32.298 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:28:32.316 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:28:32.355 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 5956.3991ms
+2024-01-06 12:28:32.358 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:28:32.371 +03:00 [INF] HTTP GET /api/Texts responded 200 in 6328.0522 ms
+2024-01-06 12:28:32.380 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 6402.8852ms
+2024-01-06 12:28:40.808 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:28:41.365 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:28:41.371 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:28:42.308 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:28:42.331 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:28:42.342 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:28:42.365 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 983.7234ms
+2024-01-06 12:28:42.370 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:28:42.373 +03:00 [INF] HTTP GET /api/Texts responded 200 in 1017.4739 ms
+2024-01-06 12:28:42.375 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 1567.767ms
+2024-01-06 12:28:53.348 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:28:53.459 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:28:53.473 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:28:53.770 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:28:54.091 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:28:54.287 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:28:54.484 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 999.9998ms
+2024-01-06 12:28:55.440 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:28:55.467 +03:00 [INF] HTTP GET /api/Texts responded 200 in 2015.8685 ms
+2024-01-06 12:28:55.570 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 2220.792ms
+2024-01-06 12:29:20.056 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:29:20.063 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:29:20.066 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:29:20.095 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:29:20.101 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:29:20.103 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:29:20.104 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 35.0078ms
+2024-01-06 12:29:20.106 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:29:20.107 +03:00 [INF] HTTP GET /api/Texts responded 200 in 44.0972 ms
+2024-01-06 12:29:20.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 54.0886ms
+2024-01-06 12:29:20.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:29:20.984 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:29:20.986 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:29:21.002 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:29:21.006 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:29:21.008 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:29:21.010 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 20.4077ms
+2024-01-06 12:29:21.013 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:29:21.014 +03:00 [INF] HTTP GET /api/Texts responded 200 in 29.9009 ms
+2024-01-06 12:29:21.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 44.9325ms
+2024-01-06 12:29:24.303 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Texts - null null
+2024-01-06 12:29:24.374 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:29:24.381 +03:00 [INF] Route matched with {action = "GetMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetMessage() on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-06 12:29:24.414 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__key_0='WelcomeMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-06 12:29:24.457 +03:00 [ERR] Key: WelcomeMessage, Language: en, Retrieved Message: Welcome
+2024-01-06 12:29:24.465 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-06 12:29:24.469 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API) in 82.8069ms
+2024-01-06 12:29:24.473 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetMessage (E-CommerceSystemV2.API)'
+2024-01-06 12:29:24.479 +03:00 [INF] HTTP GET /api/Texts responded 200 in 102.7136 ms
+2024-01-06 12:29:24.497 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Texts - 200 null application/json; charset=utf-8 193.3392ms

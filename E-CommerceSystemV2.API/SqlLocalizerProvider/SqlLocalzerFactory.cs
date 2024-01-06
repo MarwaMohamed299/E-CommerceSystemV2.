@@ -18,7 +18,7 @@ namespace E_CommerceSystemV2.API.SqlLocalizerProvider
 
         public IStringLocalizer Create(Type resourcesSource)/*P.S Dependency Injection by a Function*/
         {
-            using (var scope = _serviceScoprFactory.CreateScope())
+            var scope = _serviceScoprFactory.CreateScope();
             {
                 var context = scope.ServiceProvider.GetRequiredService<ECommerceContext>();
                 return new SqlLocalizer(context);
@@ -27,7 +27,7 @@ namespace E_CommerceSystemV2.API.SqlLocalizerProvider
 
         public IStringLocalizer Create(string baseName, string location)
         {
-            using (var scope = _serviceScoprFactory.CreateScope())
+            var scope = _serviceScoprFactory.CreateScope();
             {
                 var context = scope.ServiceProvider.GetRequiredService<ECommerceContext>();
                 return new SqlLocalizer(context);

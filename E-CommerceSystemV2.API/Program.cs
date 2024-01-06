@@ -133,6 +133,7 @@ namespace E_CommerceSystemV2.API
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
             });
+            builder.Services.AddLocalization();
             builder.Services.AddSingleton<IStringLocalizerFactory, SqlLocalzerFactory>();
 
             #endregion

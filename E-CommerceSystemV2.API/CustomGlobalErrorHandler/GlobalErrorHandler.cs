@@ -18,7 +18,6 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
 
             ProblemDetails problems = new ProblemDetails();
           
-
             switch (exception)
             {
                 case BadRequestException badRequestException:

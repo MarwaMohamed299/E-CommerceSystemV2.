@@ -32,19 +32,7 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
 
                     httpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
                 break;
-
-
-                case InternalServerError internalServerError:
-                    problems = new ProblemDetails
-                    {
-                        Title = "Internal Server Error",
-                        Status = StatusCodes.Status500InternalServerError,
-                        Detail = internalServerError.Message
-                    };
-                    Log.Error(exception.Message, "Internal Server Error Occurred");
-
-                    httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
-                break;
+ 
 
                 case NotFoundException notFoundException:
                     problems = new ProblemDetails
@@ -56,6 +44,16 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
                     Log.Error(exception.Message, "NotFound Error Occurred");
 
                     httpContext.Response.StatusCode = StatusCodes.Status404NotFound;
+                break;
+
+                default:
+                    problems = new ProblemDetails()
+                    {
+                        Title = "Request Time Out",
+                        Status = StatusCodes.Status408RequestTimeout,
+                        Detail = " Please try again."
+                    };
+
                 break;
             }
             await httpContext.Response.WriteAsJsonAsync(problems, cancellationToken);

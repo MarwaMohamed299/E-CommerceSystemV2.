@@ -1,4 +1,5 @@
 using E_CommerceSystemV2.API.CustomGlobalErrorHandler;
+using E_CommerceSystemV2.API.SqlLocalizerProvider;
 using E_CommerceSystemV2.BL.Managers.CampaignCustomer;
 using E_CommerceSystemV2.BL.Managers.Identity;
 using E_CommerceSystemV2.BL.Managers.Products;
@@ -9,9 +10,13 @@ using E_CommerceSystemV2.DAL.Repos.Products;
 using E_CommerceSystemV2.DAL.UnitOfWork;
 using Hangfire;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Localization;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Globalization;
 using System.Text;
 
 namespace E_CommerceSystemV2.API
@@ -22,7 +27,7 @@ namespace E_CommerceSystemV2.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            #region ConnectionString
+           #region ConnectionString
             var ConnectionString = builder.Configuration.GetConnectionString("E-CommerceSystemV2");
             builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(ConnectionString));
             #endregion
@@ -115,6 +120,23 @@ namespace E_CommerceSystemV2.API
             builder.Services.AddProblemDetails();
 
             #endregion
+
+            #region Custom Sql Provider
+            builder.Services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new List<CultureInfo>
+                    {
+                        new CultureInfo("en-Us"),
+                        new CultureInfo("ar-EG")
+                    };
+                options.DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "Us");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+            builder.Services.AddSingleton<IStringLocalizerFactory, SqlLocalzerFactory>();
+
+            #endregion
+
             var app = builder.Build();
             #region MiddleWares
 

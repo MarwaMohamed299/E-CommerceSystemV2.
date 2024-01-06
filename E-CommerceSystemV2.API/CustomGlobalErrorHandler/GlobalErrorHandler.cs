@@ -31,7 +31,7 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
                     Log.Error(exception.Message, "Bad Request Error Occurred");
 
                     httpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
-                    break;
+                break;
 
 
                 case InternalServerError internalServerError:
@@ -44,7 +44,7 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
                     Log.Error(exception.Message, "Internal Server Error Occurred");
 
                     httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
-                    break;
+                break;
 
                 case NotFoundException notFoundException:
                     problems = new ProblemDetails
@@ -56,7 +56,7 @@ namespace E_CommerceSystemV2.API.CustomGlobalErrorHandler
                     Log.Error(exception.Message, "NotFound Error Occurred");
 
                     httpContext.Response.StatusCode = StatusCodes.Status404NotFound;
-                    break;
+                break;
             }
             await httpContext.Response.WriteAsJsonAsync(problems, cancellationToken);
             return true;

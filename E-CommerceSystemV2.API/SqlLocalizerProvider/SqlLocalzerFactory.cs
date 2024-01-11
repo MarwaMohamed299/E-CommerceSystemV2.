@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿
 using Microsoft.Extensions.Localization;
 
 namespace E_CommerceSystemV2.API.SqlLocalizerProvider

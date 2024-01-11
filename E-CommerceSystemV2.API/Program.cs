@@ -12,7 +12,6 @@ using Hangfire;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
@@ -139,6 +138,7 @@ namespace E_CommerceSystemV2.API
             #endregion
 
             var app = builder.Build();
+
             #region MiddleWares
 
             if (app.Environment.IsDevelopment())
@@ -146,10 +146,11 @@ namespace E_CommerceSystemV2.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseRequestLocalization();
             app.UseSerilogRequestLogging(); 
             app.UseHttpsRedirection();
             app.UseAuthentication();
+            
             app.UseAuthorization();
             app.UseExceptionHandler();
             app.UseHangfireDashboard("/dashboard");

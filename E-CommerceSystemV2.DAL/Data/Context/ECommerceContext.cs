@@ -2,8 +2,6 @@
 using E_CommerceSystemV2.DAL.Data.Types;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace E_CommerceSystemV2.API
 {
@@ -19,13 +17,11 @@ namespace E_CommerceSystemV2.API
         public DbSet<Text> Textsss => Set<Text>();
         public DbSet<Test> Test => Set<Test>();
 
-
         public ECommerceContext(DbContextOptions<ECommerceContext> options) : base(options)
         { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-
             builder.LogTo((query) =>
             {
                 File.AppendAllText("Queries.sql", $"\n{query}");
@@ -92,7 +88,6 @@ namespace E_CommerceSystemV2.API
                     new User { UserName="Sara doe", Email = "Sara.doe@example.com", PasswordHash = "password123", CreationDate = DateTime.Now },
                     new User { UserName="Sandy Jakson", Email = "Sandy.Jakson@example.com", PasswordHash = "password123", CreationDate = DateTime.Now },
                 };
-
             var orders = new List<Order>
                 {
                     new Order { OrderId = Guid.NewGuid(), OrderDate = DateTime.Now,UserId =users[1].Id },
@@ -159,8 +154,9 @@ namespace E_CommerceSystemV2.API
                 };
 
             var texts = new List<Text>
-                { new Text { Id = Guid.NewGuid(),TextKey="WelcomeMessage",ArabicText="مرحبا",EnglishText="Welcome"}
-                };
+                { new Text { Id = Guid.NewGuid(),TextKey="WelcomeMessage",ArabicText="مرحبا",EnglishText="Welcome"},
+                  new Text {Id=Guid.NewGuid(),TextKey="PasswordRetrievalMessage",EnglishText="Hello {0}, your Password Is {1}.",ArabicText="مرحبا {0} كلمة المرور الخاصة بك هي {1}"}
+                 };
 
             #endregion
             modelBuilder.Entity<User>().HasData(users);
@@ -173,6 +169,6 @@ namespace E_CommerceSystemV2.API
             modelBuilder.Entity<Text>().HasData(texts);
         }
     }
-    }
+}
 
 

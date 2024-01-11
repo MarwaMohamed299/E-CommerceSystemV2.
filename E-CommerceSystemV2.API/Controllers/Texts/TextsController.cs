@@ -19,5 +19,12 @@ namespace E_CommerceSystemV2.API.Controllers.Texts
         {
             return Ok(_localizer["WelcomeMessage"]);
         }
+        [HttpGet]
+        [Route("GetPasswordMessage")]
+        public ActionResult GetUserPasswordMessage(string email)
+        {
+            var localizedMessage = _localizer["PasswordRetrievalMessage",email];
+            return Ok(localizedMessage);
+        }
     }
 }

@@ -1,0 +1,635 @@
+2024-01-11 01:15:38.126 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 01:15:44.023 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 01:15:44.794 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 01:15:46.414 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 01:15:46.416 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 01:15:46.428 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 01:15:46.429 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 01:15:46.430 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 01:15:46.579 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 01:15:46.616 +03:00 [INF] Hosting environment: Development
+2024-01-11 01:15:46.617 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 01:15:47.079 +03:00 [INF] Server desktop-eni7p6d:2664:47da0572 successfully announced in 501.5695 ms
+2024-01-11 01:15:47.086 +03:00 [INF] Server desktop-eni7p6d:2664:47da0572 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 01:15:47.180 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 01:15:47.302 +03:00 [INF] Server desktop-eni7p6d:2664:47da0572 all the dispatchers started
+2024-01-11 01:15:51.622 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 01:15:52.730 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 1115.4925ms
+2024-01-11 01:15:53.002 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 01:15:53.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 12.3882ms
+2024-01-11 01:15:53.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 01:15:53.492 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 463.7276ms
+2024-01-11 01:15:53.574 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 01:15:53.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 139.9372ms
+2024-01-11 01:19:14.891 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - null null
+2024-01-11 01:19:15.331 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:19:15.369 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 01:19:17.035 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 01:19:18.093 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 01:19:18.121 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 01:19:18.137 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 01:19:18.156 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 2778.6573ms
+2024-01-11 01:19:18.162 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:19:18.166 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 2956.3222 ms
+2024-01-11 01:19:18.168 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - 200 null application/json; charset=utf-8 3276.5999ms
+2024-01-11 01:25:56.970 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 01:25:59.008 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 01:25:59.283 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 01:25:59.736 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 01:25:59.737 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 01:25:59.748 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 01:25:59.750 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 01:25:59.752 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 01:25:59.785 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 01:25:59.787 +03:00 [INF] Hosting environment: Development
+2024-01-11 01:25:59.788 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 01:26:00.036 +03:00 [INF] Server desktop-eni7p6d:19192:9ee5d90c successfully announced in 251.2331 ms
+2024-01-11 01:26:00.048 +03:00 [INF] Server desktop-eni7p6d:19192:9ee5d90c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 01:26:00.797 +03:00 [INF] Server desktop-eni7p6d:19192:9ee5d90c all the dispatchers started
+2024-01-11 01:26:00.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 01:26:01.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 732.9368ms
+2024-01-11 01:26:01.690 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 01:26:01.690 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 01:26:01.717 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 32.8333ms
+2024-01-11 01:26:01.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.5517ms
+2024-01-11 01:26:01.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 01:26:02.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 213.1553ms
+2024-01-11 01:26:17.196 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - null null
+2024-01-11 01:26:17.389 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:26:17.434 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 01:26:19.080 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 01:26:20.068 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 01:26:20.096 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 01:26:20.109 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 01:26:20.126 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 2679.4373ms
+2024-01-11 01:26:20.128 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:26:20.132 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 2880.9877 ms
+2024-01-11 01:26:20.135 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - 200 null application/json; charset=utf-8 2939.6137ms
+2024-01-11 01:31:00.081 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 01:32:43.967 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 01:32:45.098 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 01:32:45.289 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 01:32:45.550 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 01:32:45.552 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 01:32:45.559 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 01:32:45.562 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 01:32:45.565 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 01:32:45.680 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 01:32:45.716 +03:00 [INF] Hosting environment: Development
+2024-01-11 01:32:45.717 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 01:32:45.862 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c successfully announced in 183.008 ms
+2024-01-11 01:32:45.869 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 01:32:46.108 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c all the dispatchers started
+2024-01-11 01:32:48.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 01:32:48.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 552.0504ms
+2024-01-11 01:32:48.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 01:32:48.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 01:32:48.849 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 49.6594ms
+2024-01-11 01:32:49.141 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 341.3895ms
+2024-01-11 01:32:49.244 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 01:32:49.507 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 263.4206ms
+2024-01-11 01:32:58.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - null null
+2024-01-11 01:32:58.321 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:32:58.353 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 01:32:59.497 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 01:33:00.472 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 01:33:00.500 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 01:33:00.513 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 01:33:00.529 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 2167.1884ms
+2024-01-11 01:33:00.530 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:33:00.535 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 2325.1684 ms
+2024-01-11 01:33:00.537 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - 200 null application/json; charset=utf-8 2365.9432ms
+2024-01-11 01:37:45.904 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 01:54:23.379 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-11 01:54:23.381 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c caught stopping signal...
+2024-01-11 01:54:23.415 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c caught stopped signal...
+2024-01-11 01:54:23.417 +03:00 [WRN] Server desktop-eni7p6d:12400:ca74782c caught shutdown signal...
+2024-01-11 01:54:23.420 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c All dispatchers stopped
+2024-01-11 01:54:23.456 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c successfully reported itself as stopped in 28.9473 ms
+2024-01-11 01:54:23.457 +03:00 [INF] Server desktop-eni7p6d:12400:ca74782c has been stopped in total 43.3007 ms
+2024-01-11 01:55:50.680 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 01:55:52.211 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 01:55:52.568 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 01:55:53.742 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 01:55:53.749 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 01:55:53.773 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 01:55:53.775 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 01:55:53.777 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 01:55:53.850 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 01:55:53.852 +03:00 [INF] Hosting environment: Development
+2024-01-11 01:55:53.854 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 01:55:54.292 +03:00 [INF] Server desktop-eni7p6d:15876:12ae4ba6 successfully announced in 440.0964 ms
+2024-01-11 01:55:54.308 +03:00 [INF] Server desktop-eni7p6d:15876:12ae4ba6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 01:55:54.818 +03:00 [INF] Server desktop-eni7p6d:15876:12ae4ba6 all the dispatchers started
+2024-01-11 01:55:57.203 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 01:55:58.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 823.7397ms
+2024-01-11 01:55:58.365 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 01:55:58.380 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 01:55:58.409 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 45.2535ms
+2024-01-11 01:55:58.543 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 163.3076ms
+2024-01-11 01:55:58.721 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 01:55:59.196 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 474.3018ms
+2024-01-11 01:56:25.522 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - null null
+2024-01-11 01:56:25.770 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:56:25.847 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 01:56:28.207 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 01:56:30.200 +03:00 [INF] Executed DbCommand (149ms) [Parameters=[@__Email_0='john.doe@example.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__Email_0
+2024-01-11 01:56:30.695 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__name_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__name_0
+2024-01-11 01:56:30.717 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 01:56:30.738 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 4843.8245ms
+2024-01-11 01:56:30.741 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 01:56:30.747 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 5143.4378 ms
+2024-01-11 01:56:30.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - 200 null application/json; charset=utf-8 5254.5394ms
+2024-01-11 01:56:40.642 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-11 01:56:40.644 +03:00 [INF] Server desktop-eni7p6d:15876:12ae4ba6 caught stopping signal...
+2024-01-11 01:56:40.652 +03:00 [INF] Server desktop-eni7p6d:15876:12ae4ba6 caught stopped signal...
+2024-01-11 01:56:40.653 +03:00 [WRN] Server desktop-eni7p6d:15876:12ae4ba6 caught shutdown signal...
+2024-01-11 01:56:40.658 +03:00 [WRN] Server desktop-eni7p6d:15876:12ae4ba6 stopped non-gracefully due to ServerWatchdog, Worker, DelayedJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-11 01:56:40.677 +03:00 [INF] Server desktop-eni7p6d:15876:12ae4ba6 successfully reported itself as stopped in 12.674 ms
+2024-01-11 01:56:40.679 +03:00 [INF] Server desktop-eni7p6d:15876:12ae4ba6 has been stopped in total 26.9474 ms
+2024-01-11 02:45:01.989 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 02:45:05.693 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 02:45:05.847 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 02:45:06.462 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 02:45:06.467 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 02:45:06.476 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 02:45:06.477 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 02:45:06.478 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 02:45:06.507 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 02:45:06.510 +03:00 [INF] Hosting environment: Development
+2024-01-11 02:45:06.511 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 02:45:06.974 +03:00 [INF] Server desktop-eni7p6d:21624:8ffd0551 successfully announced in 468.2698 ms
+2024-01-11 02:45:06.986 +03:00 [INF] Server desktop-eni7p6d:21624:8ffd0551 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 02:45:07.298 +03:00 [INF] Server desktop-eni7p6d:21624:8ffd0551 all the dispatchers started
+2024-01-11 02:45:08.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 02:45:09.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 797.8727ms
+2024-01-11 02:45:09.836 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 02:45:09.885 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 02:45:09.892 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 56.4278ms
+2024-01-11 02:45:10.172 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 286.6045ms
+2024-01-11 02:45:10.259 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 02:45:10.429 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.4813ms
+2024-01-11 02:45:18.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - null null
+2024-01-11 02:45:18.308 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 02:45:18.344 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 02:45:19.737 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 02:45:20.719 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 02:45:20.759 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 02:45:20.773 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 02:45:20.789 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 2437.0838ms
+2024-01-11 02:45:20.791 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 02:45:20.795 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 2605.7346 ms
+2024-01-11 02:45:20.799 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - 200 null application/json; charset=utf-8 2673.7961ms
+2024-01-11 03:53:47.795 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 03:53:50.219 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 03:53:50.418 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 03:53:51.102 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 03:53:51.104 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 03:53:51.114 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 03:53:51.116 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 03:53:51.117 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 03:53:51.206 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 03:53:51.213 +03:00 [INF] Hosting environment: Development
+2024-01-11 03:53:51.216 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 03:53:51.580 +03:00 [INF] Server desktop-eni7p6d:14512:6d4e5572 successfully announced in 373.7994 ms
+2024-01-11 03:53:51.594 +03:00 [INF] Server desktop-eni7p6d:14512:6d4e5572 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 03:53:51.771 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 03:53:51.911 +03:00 [INF] Server desktop-eni7p6d:14512:6d4e5572 all the dispatchers started
+2024-01-11 03:53:53.515 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 03:53:54.146 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 640.3021ms
+2024-01-11 03:53:54.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 03:53:54.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 32.9482ms
+2024-01-11 03:53:54.203 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 03:53:54.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 196.931ms
+2024-01-11 03:53:54.501 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 03:53:54.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 213.368ms
+2024-01-11 03:54:05.330 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - null null
+2024-01-11 03:54:05.498 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 03:54:05.539 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 03:54:06.905 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 03:54:07.870 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 03:54:07.905 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 03:54:07.918 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 03:54:07.932 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 2384.5488ms
+2024-01-11 03:54:07.934 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 03:54:07.937 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 2565.2862 ms
+2024-01-11 03:54:07.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?Email=john.doe%40example.com - 200 null application/json; charset=utf-8 2610.3322ms
+2024-01-11 03:58:41.214 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 03:58:42.145 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 03:58:42.226 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 03:58:42.394 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 03:58:42.395 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 03:58:42.403 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 03:58:42.404 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 03:58:42.405 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 03:58:42.416 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 03:58:42.417 +03:00 [INF] Hosting environment: Development
+2024-01-11 03:58:42.418 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 03:58:42.520 +03:00 [INF] Server desktop-eni7p6d:10312:eedfb89e successfully announced in 102.6503 ms
+2024-01-11 03:58:42.524 +03:00 [INF] Server desktop-eni7p6d:10312:eedfb89e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 03:58:42.686 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 03:58:42.699 +03:00 [INF] Server desktop-eni7p6d:10312:eedfb89e all the dispatchers started
+2024-01-11 03:58:42.931 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 245.0778ms
+2024-01-11 03:58:42.942 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 03:58:42.942 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 03:58:42.961 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 19.2531ms
+2024-01-11 03:58:43.006 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.2986ms
+2024-01-11 03:58:43.090 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 03:58:43.204 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.5183ms
+2024-01-11 03:58:52.563 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=john.doe%40example.com - null null
+2024-01-11 03:58:52.635 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 03:58:52.653 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 03:58:53.680 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 03:58:54.482 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 03:58:54.507 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 03:58:54.753 +03:00 [INF] Executed DbCommand (150ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 03:58:54.759 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 03:58:54.765 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 03:58:54.776 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 2116.4724ms
+2024-01-11 03:58:54.778 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 03:58:54.782 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 2174.9207 ms
+2024-01-11 03:58:54.784 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=john.doe%40example.com - 200 null application/json; charset=utf-8 2221.1326ms
+2024-01-11 04:02:55.637 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 04:02:58.386 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 04:02:58.467 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 04:02:58.570 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 04:02:58.571 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 04:02:58.576 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 04:02:58.578 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 04:02:58.579 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 04:02:58.587 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 04:02:58.589 +03:00 [INF] Hosting environment: Development
+2024-01-11 04:02:58.589 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 04:02:58.672 +03:00 [INF] Server desktop-eni7p6d:17308:ebc9126f successfully announced in 82.1031 ms
+2024-01-11 04:02:58.676 +03:00 [INF] Server desktop-eni7p6d:17308:ebc9126f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 04:02:58.686 +03:00 [INF] Server desktop-eni7p6d:17308:ebc9126f all the dispatchers started
+2024-01-11 04:02:58.752 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 04:02:58.866 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 04:02:59.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 303.2676ms
+2024-01-11 04:02:59.260 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 04:02:59.260 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 04:02:59.267 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 7.7122ms
+2024-01-11 04:02:59.307 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.7612ms
+2024-01-11 04:02:59.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 04:02:59.768 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.5153ms
+2024-01-11 04:04:18.195 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=john.doe%40example.com - null null
+2024-01-11 04:04:18.250 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:04:18.267 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:04:18.824 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 04:04:19.433 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:04:19.454 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:04:19.779 +03:00 [INF] Executed DbCommand (271ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:04:19.786 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 04:04:19.791 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:04:19.803 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 1526.8389ms
+2024-01-11 04:04:19.805 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:04:19.808 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 1577.3416 ms
+2024-01-11 04:04:19.813 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=john.doe%40example.com - 200 null application/json; charset=utf-8 1617.0984ms
+2024-01-11 04:05:49.819 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-11 04:05:49.825 +03:00 [INF] Server desktop-eni7p6d:17308:ebc9126f caught stopping signal...
+2024-01-11 04:05:49.826 +03:00 [INF] Server desktop-eni7p6d:17308:ebc9126f caught stopped signal...
+2024-01-11 04:05:49.827 +03:00 [WRN] Server desktop-eni7p6d:17308:ebc9126f caught shutdown signal...
+2024-01-11 04:05:49.829 +03:00 [WRN] Server desktop-eni7p6d:17308:ebc9126f stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-11 04:05:49.862 +03:00 [INF] Server desktop-eni7p6d:17308:ebc9126f successfully reported itself as stopped in 29.9203 ms
+2024-01-11 04:05:49.864 +03:00 [INF] Server desktop-eni7p6d:17308:ebc9126f has been stopped in total 37.8322 ms
+2024-01-11 04:05:51.896 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 04:05:52.447 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 04:05:52.516 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 04:05:52.653 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 04:05:52.655 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 04:05:52.660 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 04:05:52.662 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 04:05:52.663 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 04:05:52.671 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 04:05:52.672 +03:00 [INF] Hosting environment: Development
+2024-01-11 04:05:52.673 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 04:05:52.751 +03:00 [INF] Server desktop-eni7p6d:10668:2e7d3948 successfully announced in 77.8901 ms
+2024-01-11 04:05:52.754 +03:00 [INF] Server desktop-eni7p6d:10668:2e7d3948 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 04:05:52.768 +03:00 [INF] Server desktop-eni7p6d:10668:2e7d3948 all the dispatchers started
+2024-01-11 04:05:53.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 04:05:53.583 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 241.693ms
+2024-01-11 04:05:53.608 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 04:05:53.614 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 04:05:53.636 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 28.602ms
+2024-01-11 04:05:53.682 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.1359ms
+2024-01-11 04:05:53.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 04:05:54.085 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 164.7866ms
+2024-01-11 04:06:02.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=john.doe%40example.com - null null
+2024-01-11 04:06:02.263 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:06:02.288 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:06:03.437 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 04:06:04.442 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:06:04.464 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:06:04.549 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:06:04.554 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 04:06:04.562 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:06:04.576 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 2280.1669ms
+2024-01-11 04:06:04.578 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:06:04.582 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 2349.8312 ms
+2024-01-11 04:06:04.584 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=john.doe%40example.com - 200 null application/json; charset=utf-8 2376.8347ms
+2024-01-11 04:07:54.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - null null
+2024-01-11 04:07:54.120 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:07:54.122 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:07:54.194 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:07:54.201 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:07:54.208 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:07:54.220 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 04:07:54.221 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:07:54.223 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 100.1093ms
+2024-01-11 04:07:54.226 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:07:54.228 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 109.6653 ms
+2024-01-11 04:07:54.230 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - 200 null application/json; charset=utf-8 115.2601ms
+2024-01-11 04:07:55.095 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - null null
+2024-01-11 04:07:55.102 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:07:55.105 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:07:55.135 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:07:55.144 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:07:55.149 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:07:55.156 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 04:07:55.157 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:07:55.159 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 45.3531ms
+2024-01-11 04:07:55.163 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:07:55.165 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 65.2870 ms
+2024-01-11 04:07:55.166 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - 200 null application/json; charset=utf-8 71.5688ms
+2024-01-11 04:08:02.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 04:08:02.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 41.8561ms
+2024-01-11 04:08:02.395 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 04:08:02.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 04:08:02.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 3.9535ms
+2024-01-11 04:08:02.433 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.8419ms
+2024-01-11 04:08:02.488 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 04:08:02.538 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.0152ms
+2024-01-11 04:08:14.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - null null
+2024-01-11 04:08:14.583 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:08:14.584 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:08:14.598 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:08:14.603 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:08:14.611 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:08:14.616 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 04:08:14.617 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:08:14.618 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 32.1664ms
+2024-01-11 04:08:14.619 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:08:14.620 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 37.2933 ms
+2024-01-11 04:08:14.622 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - 200 null application/json; charset=utf-8 42.7439ms
+2024-01-11 04:09:57.268 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 04:09:58.322 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 04:09:58.546 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 04:09:58.825 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 04:09:58.826 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 04:09:58.837 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 04:09:58.838 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 04:09:58.839 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 04:09:58.868 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 04:09:58.869 +03:00 [INF] Hosting environment: Development
+2024-01-11 04:09:58.870 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 04:09:59.073 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 successfully announced in 205.0003 ms
+2024-01-11 04:09:59.084 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 04:09:59.150 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 04:09:59.551 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 all the dispatchers started
+2024-01-11 04:10:01.436 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 04:10:01.803 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 370.4997ms
+2024-01-11 04:10:01.823 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 04:10:01.823 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 04:10:01.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 22.7343ms
+2024-01-11 04:10:01.944 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 120.7968ms
+2024-01-11 04:10:02.293 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 04:10:02.482 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 189.1433ms
+2024-01-11 04:12:07.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - null null
+2024-01-11 04:12:07.787 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:12:07.832 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:13:12.570 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 04:13:41.205 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:13:41.469 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:15:00.466 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 04:15:00.756 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:15:10.369 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 04:15:15.217 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:15:15.229 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 187387.8151ms
+2024-01-11 04:15:15.231 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:15:15.235 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 187561.6147 ms
+2024-01-11 04:15:15.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - 200 null application/json; charset=utf-8 187607.6446ms
+2024-01-11 04:16:05.755 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-11 04:16:05.756 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 caught stopping signal...
+2024-01-11 04:16:05.768 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 caught stopped signal...
+2024-01-11 04:16:05.769 +03:00 [WRN] Server desktop-eni7p6d:15708:d3ec9882 caught shutdown signal...
+2024-01-11 04:16:05.770 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 All dispatchers stopped
+2024-01-11 04:16:05.782 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 successfully reported itself as stopped in 7.1098 ms
+2024-01-11 04:16:05.783 +03:00 [INF] Server desktop-eni7p6d:15708:d3ec9882 has been stopped in total 16.313 ms
+2024-01-11 04:16:44.821 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 04:16:46.642 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 04:16:46.974 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 04:16:47.576 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 04:16:47.578 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 04:16:47.594 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 04:16:47.596 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 04:16:47.598 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 04:16:47.652 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 04:16:47.668 +03:00 [INF] Hosting environment: Development
+2024-01-11 04:16:47.672 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 04:16:48.058 +03:00 [INF] Server desktop-eni7p6d:7952:28b04ec2 successfully announced in 407.5997 ms
+2024-01-11 04:16:48.066 +03:00 [INF] Server desktop-eni7p6d:7952:28b04ec2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 04:16:48.525 +03:00 [INF] Server desktop-eni7p6d:7952:28b04ec2 all the dispatchers started
+2024-01-11 04:16:50.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 04:16:51.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 811.0431ms
+2024-01-11 04:16:51.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 04:16:51.182 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 04:16:51.218 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 36.4321ms
+2024-01-11 04:16:51.377 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 195.5117ms
+2024-01-11 04:16:51.515 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 04:16:51.794 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 278.2795ms
+2024-01-11 04:17:00.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - null null
+2024-01-11 04:17:01.163 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:17:01.230 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:17:19.497 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 04:17:27.500 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:17:28.291 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:18:20.744 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__email_0='PasswordRetrievalMessage' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:18:39.046 +03:00 [WRN] User not found for email: PasswordRetrievalMessage
+2024-01-11 04:18:42.352 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:18:42.377 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 101133.7209ms
+2024-01-11 04:18:42.403 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:18:42.409 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 101453.3085 ms
+2024-01-11 04:18:42.417 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - 200 null application/json; charset=utf-8 101528.265ms
+2024-01-11 04:21:54.845 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 04:21:56.325 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 04:21:56.588 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 04:21:57.046 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 04:21:57.048 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 04:21:57.061 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 04:21:57.063 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 04:21:57.065 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 04:21:57.101 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 04:21:57.104 +03:00 [INF] Hosting environment: Development
+2024-01-11 04:21:57.105 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 04:21:57.440 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 successfully announced in 338.9058 ms
+2024-01-11 04:21:57.482 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 04:21:57.727 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 all the dispatchers started
+2024-01-11 04:21:58.764 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 04:21:59.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 625.6036ms
+2024-01-11 04:21:59.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 04:21:59.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 04:21:59.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 35.0977ms
+2024-01-11 04:21:59.620 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 182.5437ms
+2024-01-11 04:21:59.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 04:22:00.164 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 315.6817ms
+2024-01-11 04:22:08.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - null null
+2024-01-11 04:22:08.605 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:22:08.634 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:22:20.815 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-11 04:22:25.880 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[EnglishText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:22:26.921 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: en, Retrieved Message: Hello {0}, your Password Is {1}.
+2024-01-11 04:22:40.991 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@__email_0='jane.doe@example.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:22:46.531 +03:00 [INF] Formatted Message: Hello jane doe, your Password Is password123.
+2024-01-11 04:22:51.064 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:22:51.087 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 42440.3686ms
+2024-01-11 04:22:51.094 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:22:51.106 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 42621.7538 ms
+2024-01-11 04:22:51.111 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - 200 null application/json; charset=utf-8 42684.5692ms
+2024-01-11 04:25:18.144 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - null null
+2024-01-11 04:25:18.180 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:25:18.183 +03:00 [INF] Route matched with {action = "GetUserPasswordMessage", controller = "Texts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetUserPasswordMessage(System.String) on controller E_CommerceSystemV2.API.Controllers.Texts.TextsController (E-CommerceSystemV2.API).
+2024-01-11 04:25:39.627 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__key_0='PasswordRetrievalMessage' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[ArabicText]
+FROM [Textsss] AS [t]
+WHERE [t].[TextKey] = @__key_0
+2024-01-11 04:25:40.135 +03:00 [ERR] Key: PasswordRetrievalMessage, Language: ar, Retrieved Message: مرحبا {0} كلمة المرور الخاصة بك هي {1}
+2024-01-11 04:25:44.192 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='jane.doe@example.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2024-01-11 04:25:46.938 +03:00 [INF] Formatted Message: مرحبا jane doe كلمة المرور الخاصة بك هي password123
+2024-01-11 04:25:49.039 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Localization.LocalizedString'.
+2024-01-11 04:25:49.062 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API) in 30869.845ms
+2024-01-11 04:25:49.068 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Texts.TextsController.GetUserPasswordMessage (E-CommerceSystemV2.API)'
+2024-01-11 04:25:49.073 +03:00 [INF] HTTP GET /api/Texts/GetPasswordMessage responded 200 in 30915.0675 ms
+2024-01-11 04:25:49.076 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Texts/GetPasswordMessage?email=jane.doe%40example.com - 200 null application/json; charset=utf-8 30933.0357ms
+2024-01-11 04:26:00.193 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-11 04:26:00.195 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 caught stopping signal...
+2024-01-11 04:26:00.214 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 caught stopped signal...
+2024-01-11 04:26:00.217 +03:00 [WRN] Server desktop-eni7p6d:13140:d95f21a1 caught shutdown signal...
+2024-01-11 04:26:00.220 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 All dispatchers stopped
+2024-01-11 04:26:00.243 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 successfully reported itself as stopped in 17.9847 ms
+2024-01-11 04:26:00.245 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 has been stopped in total 32.5529 ms

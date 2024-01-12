@@ -9,7 +9,7 @@ Welcome to the E-Commerce System project! This .NET Core application provides a 
 
 - **SQL Localizer Provider:**
   - Utilizes SQL Localizer for localizing resources in the application. This allows for dynamic localization and translation of the application's UI based on user preferences.
-  - 
+  
 - **CRUD Operations:**
   - Manage products, categories, and orders.
 

@@ -7,5 +7,6 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
     {
         public Task<IEnumerable<IdentityError>> Register(RegisterDto userFromRequest);
         public Task<LogInResultDto> LogIn(LogInDto credentials);
+        public Task<UserReadDto>GetUserDetailsById(string id);
     }
 }

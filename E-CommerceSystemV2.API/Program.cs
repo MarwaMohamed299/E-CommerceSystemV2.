@@ -7,6 +7,7 @@ using E_CommerceSystemV2.BL.Services.MailService;
 using E_CommerceSystemV2.DAL.Data.Models;
 using E_CommerceSystemV2.DAL.Repos.CampaignsCustomers;
 using E_CommerceSystemV2.DAL.Repos.Products;
+using E_CommerceSystemV2.DAL.Repos.Users;
 using E_CommerceSystemV2.DAL.UnitOfWork;
 using Hangfire;
 using Microsoft.AspNetCore.Identity;
@@ -16,6 +17,7 @@ using Microsoft.Extensions.Localization;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Globalization;
+using System.Security.Claims;
 using System.Text;
 
 namespace E_CommerceSystemV2.API
@@ -68,6 +70,16 @@ namespace E_CommerceSystemV2.API
 
                 };
             });
+
+
+            //builder.Services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("User", policy =>
+            //    {
+            //        policy.RequireClaim(ClaimTypes.Role, "User");
+            //    });
+            //});
+
             #endregion
 
             #region DefaultServices
@@ -109,6 +121,8 @@ namespace E_CommerceSystemV2.API
             builder.Services.AddScoped<IProductRepo, ProductRepo>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<ICampaignsCustomersRepo, CampaignsCustomersRepo>();
+            builder.Services.AddScoped<IUserRepo, UserRepo>();
+
 
 
             builder.Services.AddScoped<IUserManager, UserManager>();

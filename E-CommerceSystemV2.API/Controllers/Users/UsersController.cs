@@ -1,5 +1,6 @@
 ﻿using E_CommerceSystemV2.BL.DTOs.Identity;
 using E_CommerceSystemV2.BL.Managers.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -31,15 +32,19 @@ namespace E_CommerceSystemV2.API.Controllers.Users
             }
         }
         [HttpPost]
-        [Route("Login")]
+        [Route("Account/Login")]
         public async Task<ActionResult<LogInResultDto>> Login(LogInDto credentials)
         {
             var result = await _userManager.LogIn(credentials);
-            if (result.IsSuccess == false)
-            {
-                return BadRequest(result);
-            }
+            return result;
+        }
 
+        [HttpGet]
+        [Route("Account/UserDetails")]
+        [Authorize]
+        public async Task <ActionResult<UserReadDto>>GetUserDetailsById(string id)
+        {
+            var result = await _userManager.GetUserDetailsById(id);
             return result;
         }
     }

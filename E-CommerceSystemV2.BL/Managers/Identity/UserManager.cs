@@ -1,8 +1,10 @@
 ﻿using E_CommerceSystemV2.BL.DTOs.Identity;
 using E_CommerceSystemV2.DAL.Data.Models;
+using E_CommerceSystemV2.DAL.Repos.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using SendGrid.Helpers.Errors.Model;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -13,11 +15,13 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
     {
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _config;
+        private readonly IUserRepo _userRepo;
 
-        public UserManager(UserManager<User> userManager, IConfiguration config)
+        public UserManager(UserManager<User> userManager, IConfiguration config,IUserRepo userRepo)
         {
             _userManager = userManager;
             _config = config;
+            _userRepo = userRepo;
         }
         public async Task<IEnumerable<IdentityError>> Register(RegisterDto userFromRequest)
         {
@@ -98,6 +102,19 @@ namespace E_CommerceSystemV2.BL.Managers.Identity
 
         }
 
+        public async Task<UserReadDto> GetUserDetailsById(string id)
+        {
+            var user = await _userRepo.GetUserDetailsById(id);
+            if (user == null)
+            {
+                throw new NotFoundException("User Not Found");
+            }
+            return new UserReadDto
+            {
+                Email = user.Email ?? string.Empty,
+                UserName = user.UserName ?? string.Empty
+            };
+        }
 
     }
 

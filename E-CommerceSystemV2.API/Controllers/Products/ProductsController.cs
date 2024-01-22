@@ -1,6 +1,7 @@
 ﻿using E_CommerceSystemV2.API.Exceptions;
 using E_CommerceSystemV2.BL.DTOs.Products;
 using E_CommerceSystemV2.BL.Managers.Products;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
 
@@ -53,8 +54,9 @@ namespace E_CommerceSystemV2.API.Controllers.Products
                 return Ok(searchedProducts);
            
         }
-
+        
         [HttpGet("{page}/{countPerPage}")]
+
         public async Task<ActionResult<IEnumerable<ProductPagintationDto>>> GetAll(int page, int countPerPage)
         {
             var products = await _productsManager.GetAll(page, countPerPage);

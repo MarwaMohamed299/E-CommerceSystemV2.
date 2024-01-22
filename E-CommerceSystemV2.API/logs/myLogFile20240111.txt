@@ -633,3 +633,30 @@ WHERE [a].[Email] = @__email_0
 2024-01-11 04:26:00.220 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 All dispatchers stopped
 2024-01-11 04:26:00.243 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 successfully reported itself as stopped in 17.9847 ms
 2024-01-11 04:26:00.245 +03:00 [INF] Server desktop-eni7p6d:13140:d95f21a1 has been stopped in total 32.5529 ms
+2024-01-11 04:32:35.550 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-11 04:32:36.137 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-11 04:32:36.274 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-11 04:32:36.613 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-11 04:32:36.614 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-11 04:32:36.624 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-11 04:32:36.626 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-11 04:32:36.626 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-11 04:32:36.640 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 04:32:36.641 +03:00 [INF] Hosting environment: Development
+2024-01-11 04:32:36.642 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-11 04:32:36.819 +03:00 [INF] Server desktop-eni7p6d:17748:f82398b0 successfully announced in 174.9825 ms
+2024-01-11 04:32:36.823 +03:00 [INF] Server desktop-eni7p6d:17748:f82398b0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-11 04:32:36.832 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-11 04:32:36.923 +03:00 [INF] Server desktop-eni7p6d:17748:f82398b0 all the dispatchers started
+2024-01-11 04:32:37.239 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-11 04:32:37.546 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 307.9287ms
+2024-01-11 04:32:37.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-11 04:32:37.617 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-11 04:32:37.619 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 13.964ms
+2024-01-11 04:32:37.691 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.3623ms
+2024-01-11 04:32:37.803 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-11 04:32:37.987 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 183.2437ms

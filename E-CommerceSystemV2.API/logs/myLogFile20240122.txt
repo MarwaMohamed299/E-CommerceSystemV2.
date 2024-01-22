@@ -1,0 +1,1251 @@
+2024-01-22 06:28:02.082 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 06:28:11.523 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 06:28:12.049 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 06:28:15.415 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 06:28:15.417 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 06:28:15.427 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 06:28:15.428 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 06:28:15.429 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 06:28:15.581 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 06:28:15.584 +03:00 [INF] Hosting environment: Development
+2024-01-22 06:28:15.586 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 06:28:16.430 +03:00 [INF] Server desktop-eni7p6d:7324:03dc4577 successfully announced in 850.7915 ms
+2024-01-22 06:28:16.439 +03:00 [INF] Server desktop-eni7p6d:7324:03dc4577 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 06:28:16.622 +03:00 [INF] Server desktop-eni7p6d:7324:03dc4577 all the dispatchers started
+2024-01-22 06:28:21.173 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:28:23.402 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 2237.3592ms
+2024-01-22 06:28:23.696 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:28:23.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:28:23.761 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 64.8557ms
+2024-01-22 06:28:24.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 400.3692ms
+2024-01-22 06:28:24.261 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:28:24.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.832ms
+2024-01-22 06:32:26.398 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:32:30.837 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:32:30.850 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:32:30.855 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 124.4551 ms
+2024-01-22 06:32:30.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 4460.104ms
+2024-01-22 06:32:30.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:32:30.881 +03:00 [INF] HTTP GET /Account/Login responded 404 in 3.7824 ms
+2024-01-22 06:32:30.890 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 17.4089ms
+2024-01-22 06:32:30.984 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:33:32.987 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:33:34.979 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:33:35.048 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:33:35.125 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 165.7182 ms
+2024-01-22 06:33:35.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 2808.4321ms
+2024-01-22 06:33:35.978 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:33:36.345 +03:00 [INF] HTTP GET /Account/Login responded 404 in 3.8754 ms
+2024-01-22 06:33:36.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 450.369ms
+2024-01-22 06:33:37.214 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:34:00.258 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:34:00.354 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:34:00.359 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:34:00.362 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 11.9388 ms
+2024-01-22 06:34:00.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 106.5034ms
+2024-01-22 06:34:00.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:34:00.604 +03:00 [INF] HTTP GET /Account/Login responded 404 in 1.0365 ms
+2024-01-22 06:34:00.606 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 216.5444ms
+2024-01-22 06:34:00.612 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:02.998 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 88
+2024-01-22 06:35:03.008 +03:00 [INF] CORS policy execution successful.
+2024-01-22 06:35:03.012 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:35:03.058 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 06:35:13.470 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 06:35:17.192 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 06:35:18.107 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 06:35:18.208 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 06:35:18.234 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 15168.5405ms
+2024-01-22 06:35:18.238 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:35:18.242 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 15240.0810 ms
+2024-01-22 06:35:18.273 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 15274.4366ms
+2024-01-22 06:35:22.001 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:22.029 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:22.041 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:22.044 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 15.8679 ms
+2024-01-22 06:35:22.048 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 47.701ms
+2024-01-22 06:35:22.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:22.077 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.1121 ms
+2024-01-22 06:35:22.079 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 13.4431ms
+2024-01-22 06:35:22.082 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:23.296 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:23.300 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:23.301 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:23.304 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 4.1764 ms
+2024-01-22 06:35:23.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 12.4763ms
+2024-01-22 06:35:23.311 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:23.316 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0907 ms
+2024-01-22 06:35:23.318 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 6.6143ms
+2024-01-22 06:35:23.323 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:24.202 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:24.218 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:24.229 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:24.231 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 12.9114 ms
+2024-01-22 06:35:24.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 33.156ms
+2024-01-22 06:35:24.241 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:24.250 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.1335 ms
+2024-01-22 06:35:24.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 10.8486ms
+2024-01-22 06:35:24.258 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:25.002 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.012 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:25.017 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:25.022 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 10.4231 ms
+2024-01-22 06:35:25.027 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 25.1624ms
+2024-01-22 06:35:25.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.043 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0907 ms
+2024-01-22 06:35:25.047 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 16.0684ms
+2024-01-22 06:35:25.051 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:25.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.197 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:25.199 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:25.201 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 4.1057 ms
+2024-01-22 06:35:25.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 14.9105ms
+2024-01-22 06:35:25.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.222 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0843 ms
+2024-01-22 06:35:25.225 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 11.2585ms
+2024-01-22 06:35:25.229 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:25.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.393 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:25.394 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:25.395 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 2.4839 ms
+2024-01-22 06:35:25.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 10.3103ms
+2024-01-22 06:35:25.404 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.411 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0736 ms
+2024-01-22 06:35:25.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 8.5504ms
+2024-01-22 06:35:25.416 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:25.562 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.581 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:25.582 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:25.583 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 2.6342 ms
+2024-01-22 06:35:25.589 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 26.0661ms
+2024-01-22 06:35:25.594 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.600 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.1251 ms
+2024-01-22 06:35:25.602 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 8.2394ms
+2024-01-22 06:35:25.616 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:25.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.691 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:25.693 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:25.694 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 3.3889 ms
+2024-01-22 06:35:25.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 11.6582ms
+2024-01-22 06:35:25.701 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.710 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0883 ms
+2024-01-22 06:35:25.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 11.3809ms
+2024-01-22 06:35:25.790 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:25.865 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.871 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:25.874 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:25.877 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 6.3747 ms
+2024-01-22 06:35:25.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 14.5203ms
+2024-01-22 06:35:25.883 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:25.888 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0949 ms
+2024-01-22 06:35:25.891 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 8.0161ms
+2024-01-22 06:35:25.894 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:35:26.081 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:26.093 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:35:26.096 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:35:26.098 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 5.2937 ms
+2024-01-22 06:35:26.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 20.7369ms
+2024-01-22 06:35:26.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:35:26.118 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0854 ms
+2024-01-22 06:35:26.121 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 10.6818ms
+2024-01-22 06:35:26.126 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:37:38.056 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:37:38.068 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:37:38.073 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:37:38.075 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 7.5828 ms
+2024-01-22 06:37:38.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 21.7162ms
+2024-01-22 06:37:38.083 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:37:38.105 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0821 ms
+2024-01-22 06:37:38.107 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 24.406ms
+2024-01-22 06:37:38.114 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:37:38.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:37:38.587 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:37:38.592 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:37:38.596 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 8.5638 ms
+2024-01-22 06:37:38.599 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 18.0379ms
+2024-01-22 06:37:38.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:37:38.616 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0723 ms
+2024-01-22 06:37:38.618 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 16.2009ms
+2024-01-22 06:37:38.628 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:37:39.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:37:39.084 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:37:39.092 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:37:39.094 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 9.6068 ms
+2024-01-22 06:37:39.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 24.8464ms
+2024-01-22 06:37:39.109 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:37:39.114 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.1818 ms
+2024-01-22 06:37:39.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 8.8003ms
+2024-01-22 06:37:39.129 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:40:46.988 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 06:40:48.124 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 06:40:48.380 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 06:40:48.874 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 06:40:48.875 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 06:40:48.881 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 06:40:48.882 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 06:40:48.883 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 06:40:48.908 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 06:40:48.909 +03:00 [INF] Hosting environment: Development
+2024-01-22 06:40:48.910 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 06:40:49.160 +03:00 [INF] Server desktop-eni7p6d:2652:ef4dee2d successfully announced in 252.6858 ms
+2024-01-22 06:40:49.168 +03:00 [INF] Server desktop-eni7p6d:2652:ef4dee2d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 06:40:49.398 +03:00 [INF] Server desktop-eni7p6d:2652:ef4dee2d all the dispatchers started
+2024-01-22 06:40:51.787 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:40:52.277 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 495.9153ms
+2024-01-22 06:40:52.365 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:40:52.366 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:40:52.388 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 23.795ms
+2024-01-22 06:40:52.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.514ms
+2024-01-22 06:40:52.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:40:52.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 177.1198ms
+2024-01-22 06:41:18.177 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:41:18.320 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:41:18.335 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:41:18.340 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 117.1219 ms
+2024-01-22 06:41:18.344 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 167.201ms
+2024-01-22 06:41:18.350 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:41:18.361 +03:00 [INF] HTTP GET /Account/Login responded 404 in 3.4513 ms
+2024-01-22 06:41:18.364 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 14.0529ms
+2024-01-22 06:41:18.493 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:44:42.743 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 06:44:43.331 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 06:44:43.576 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 06:44:43.799 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 06:44:43.800 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 06:44:43.811 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 06:44:43.812 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 06:44:43.813 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 06:44:43.829 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 06:44:43.831 +03:00 [INF] Hosting environment: Development
+2024-01-22 06:44:43.832 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 06:44:44.017 +03:00 [INF] Server desktop-eni7p6d:7356:59f31ef8 successfully announced in 184.8754 ms
+2024-01-22 06:44:44.026 +03:00 [INF] Server desktop-eni7p6d:7356:59f31ef8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 06:44:44.079 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-22 06:44:44.092 +03:00 [INF] Server desktop-eni7p6d:7356:59f31ef8 all the dispatchers started
+2024-01-22 06:44:44.476 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:44:44.819 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 342.4ms
+2024-01-22 06:44:44.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:44:44.864 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:44:44.905 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 51.8306ms
+2024-01-22 06:44:45.049 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 185.0356ms
+2024-01-22 06:44:45.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:44:45.546 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 264.7661ms
+2024-01-22 06:45:11.876 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 88
+2024-01-22 06:45:11.941 +03:00 [INF] CORS policy execution successful.
+2024-01-22 06:45:11.945 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:45:11.980 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 06:45:13.757 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 06:45:15.029 +03:00 [INF] Executed DbCommand (66ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 06:45:15.507 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 06:45:15.626 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 06:45:15.662 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 3659.1764ms
+2024-01-22 06:45:15.670 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:45:15.680 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 3774.8136 ms
+2024-01-22 06:45:15.851 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 3974.6109ms
+2024-01-22 06:45:28.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:45:28.049 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:45:28.055 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:45:28.057 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 12.6962 ms
+2024-01-22 06:45:28.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 24.2495ms
+2024-01-22 06:45:28.063 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:45:28.068 +03:00 [INF] HTTP GET /Account/Login responded 404 in 1.2183 ms
+2024-01-22 06:45:28.070 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 6.8652ms
+2024-01-22 06:45:28.075 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:48:56.094 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 06:48:58.330 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 06:48:58.792 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 06:48:59.444 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 06:48:59.485 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 06:48:59.545 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 06:48:59.570 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 06:48:59.576 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 06:48:59.616 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 06:48:59.620 +03:00 [INF] Hosting environment: Development
+2024-01-22 06:48:59.625 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 06:49:00.075 +03:00 [INF] Server desktop-eni7p6d:7204:eb2e5204 successfully announced in 452.5637 ms
+2024-01-22 06:49:00.094 +03:00 [INF] Server desktop-eni7p6d:7204:eb2e5204 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 06:49:00.304 +03:00 [INF] Server desktop-eni7p6d:7204:eb2e5204 all the dispatchers started
+2024-01-22 06:49:01.108 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:49:02.066 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 955.0353ms
+2024-01-22 06:49:05.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:49:05.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:49:05.643 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 15.9948ms
+2024-01-22 06:49:05.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.1047ms
+2024-01-22 06:49:11.587 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:49:12.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 957.6149ms
+2024-01-22 06:49:32.310 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 06:49:32.352 +03:00 [INF] CORS policy execution successful.
+2024-01-22 06:49:32.356 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:49:32.387 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 06:49:33.207 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 06:49:34.000 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 06:49:34.381 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 06:49:34.683 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 06:49:36.622 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 4060.9182ms
+2024-01-22 06:49:37.799 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:49:37.808 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 5479.5841 ms
+2024-01-22 06:49:37.827 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 5516.4676ms
+2024-01-22 06:49:52.278 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:49:52.295 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:49:52.301 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:49:52.302 +03:00 [INF] HTTP GET /api/Users/UserDetails responded 302 in 14.7160 ms
+2024-01-22 06:49:52.304 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 26.3829ms
+2024-01-22 06:49:52.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 06:49:52.314 +03:00 [INF] HTTP GET /Account/Login responded 404 in 1.2028 ms
+2024-01-22 06:49:52.317 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 8.2404ms
+2024-01-22 06:49:52.323 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:51:56.598 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/https://localhost:7175/Account/Login - null null
+2024-01-22 06:51:56.634 +03:00 [INF] HTTP GET /Account/https://localhost:7175/Account/Login responded 404 in 1.1583 ms
+2024-01-22 06:51:56.637 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/https://localhost:7175/Account/Login - 404 0 null 38.7039ms
+2024-01-22 06:51:56.737 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:54:00.148 +03:00 [INF] 2 servers were removed due to timeout
+2024-01-22 06:54:38.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/10 - null null
+2024-01-22 06:54:38.281 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-01-22 06:54:38.289 +03:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto]]] GetAll(Int32, Int32) on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2024-01-22 06:54:38.533 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-01-22 06:54:38.632 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__p_0='0', @__p_1='10'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId]
+FROM [Products] AS [p]
+ORDER BY [p].[Price]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-01-22 06:54:38.726 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto'.
+2024-01-22 06:54:38.745 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API) in 450.1085ms
+2024-01-22 06:54:38.749 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-01-22 06:54:38.752 +03:00 [INF] HTTP GET /api/Products/1/10 responded 200 in 471.9830 ms
+2024-01-22 06:54:38.758 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/10 - 200 null application/json; charset=utf-8 479.1281ms
+2024-01-22 06:54:54.737 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:54:54.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 14.6407ms
+2024-01-22 06:54:54.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:54:54.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:54:54.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 4.7336ms
+2024-01-22 06:54:54.949 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.0314ms
+2024-01-22 06:54:55.048 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:54:55.070 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.1246ms
+2024-01-22 06:55:07.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/10 - null null
+2024-01-22 06:55:07.904 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-01-22 06:55:07.906 +03:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto]]] GetAll(Int32, Int32) on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2024-01-22 06:55:07.966 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-01-22 06:55:08.222 +03:00 [INF] Executed DbCommand (234ms) [Parameters=[@__p_0='0', @__p_1='10'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId]
+FROM [Products] AS [p]
+ORDER BY [p].[Price]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-01-22 06:55:08.255 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto'.
+2024-01-22 06:55:08.260 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API) in 341.4587ms
+2024-01-22 06:55:08.264 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-01-22 06:55:08.268 +03:00 [INF] HTTP GET /api/Products/1/10 responded 200 in 363.6092 ms
+2024-01-22 06:55:08.272 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/10 - 200 null application/json; charset=utf-8 375.3971ms
+2024-01-22 06:55:13.180 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-22 06:55:13.182 +03:00 [INF] Server desktop-eni7p6d:7204:eb2e5204 caught stopping signal...
+2024-01-22 06:55:13.183 +03:00 [INF] Server desktop-eni7p6d:7204:eb2e5204 caught stopped signal...
+2024-01-22 06:55:13.184 +03:00 [WRN] Server desktop-eni7p6d:7204:eb2e5204 caught shutdown signal...
+2024-01-22 06:55:13.185 +03:00 [WRN] Server desktop-eni7p6d:7204:eb2e5204 stopped non-gracefully due to Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-22 06:55:13.251 +03:00 [INF] Server desktop-eni7p6d:7204:eb2e5204 successfully reported itself as stopped in 61.0006 ms
+2024-01-22 06:55:13.252 +03:00 [INF] Server desktop-eni7p6d:7204:eb2e5204 has been stopped in total 69.8898 ms
+2024-01-22 06:55:20.725 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 06:55:21.506 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 06:55:21.755 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 06:55:21.974 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 06:55:21.975 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 06:55:21.980 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 06:55:21.981 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 06:55:21.981 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 06:55:21.989 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 06:55:21.990 +03:00 [INF] Hosting environment: Development
+2024-01-22 06:55:21.992 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 06:55:22.091 +03:00 [INF] Server desktop-eni7p6d:20600:fcd001e5 successfully announced in 100.3738 ms
+2024-01-22 06:55:22.096 +03:00 [INF] Server desktop-eni7p6d:20600:fcd001e5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 06:55:22.124 +03:00 [INF] Server desktop-eni7p6d:20600:fcd001e5 all the dispatchers started
+2024-01-22 06:55:22.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:55:22.725 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 199.3908ms
+2024-01-22 06:55:22.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:55:22.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:55:22.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 8.9519ms
+2024-01-22 06:55:22.800 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.3667ms
+2024-01-22 06:55:22.958 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:55:23.058 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.0026ms
+2024-01-22 06:55:36.166 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:55:36.175 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 9.8247ms
+2024-01-22 06:55:36.272 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:55:36.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:55:36.280 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 3.7123ms
+2024-01-22 06:55:36.298 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.564ms
+2024-01-22 06:55:36.516 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:55:36.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.3582ms
+2024-01-22 06:56:00.700 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 06:56:01.716 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 06:56:01.904 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 06:56:02.211 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 06:56:02.212 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 06:56:02.221 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 06:56:02.222 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 06:56:02.224 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 06:56:02.255 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 06:56:02.259 +03:00 [INF] Hosting environment: Development
+2024-01-22 06:56:02.261 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 06:56:02.514 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 successfully announced in 259.4225 ms
+2024-01-22 06:56:02.521 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 06:56:02.855 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 all the dispatchers started
+2024-01-22 06:56:04.600 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 06:56:05.122 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 527.0674ms
+2024-01-22 06:56:05.156 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 06:56:05.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 06:56:05.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 40.5979ms
+2024-01-22 06:56:05.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 595.5547ms
+2024-01-22 06:56:05.844 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 06:56:06.062 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.0976ms
+2024-01-22 06:56:16.706 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/10 - null null
+2024-01-22 06:56:16.918 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:56:16.959 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:56:16.963 +03:00 [INF] HTTP GET /api/Products/1/10 responded 302 in 232.8243 ms
+2024-01-22 06:56:16.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/10 - 302 0 null 260.4278ms
+2024-01-22 06:56:16.975 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - null null
+2024-01-22 06:56:16.995 +03:00 [INF] HTTP GET /Account/Login responded 404 in 4.2275 ms
+2024-01-22 06:56:16.998 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - 404 0 null 24.3392ms
+2024-01-22 06:56:17.006 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:57:27.697 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 06:58:31.471 +03:00 [INF] CORS policy execution successful.
+2024-01-22 06:58:31.476 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:58:31.514 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 06:58:32.832 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 06:58:33.895 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 06:58:34.397 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 06:58:34.498 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 06:58:34.520 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 2998.5082ms
+2024-01-22 06:58:34.524 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 06:58:34.532 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 3068.5405 ms
+2024-01-22 06:58:34.553 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 66856.7858ms
+2024-01-22 06:59:12.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/10 - null null
+2024-01-22 06:59:12.482 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:59:12.486 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:59:12.487 +03:00 [INF] HTTP GET /api/Products/1/10 responded 302 in 8.6271 ms
+2024-01-22 06:59:12.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/10 - 302 0 null 24.7729ms
+2024-01-22 06:59:12.497 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - null null
+2024-01-22 06:59:12.517 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.8487 ms
+2024-01-22 06:59:12.520 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - 404 0 null 22.6878ms
+2024-01-22 06:59:12.526 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:59:23.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/10 - null null
+2024-01-22 06:59:23.475 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:59:23.480 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:59:23.481 +03:00 [INF] HTTP GET /api/Products/1/10 responded 302 in 8.4313 ms
+2024-01-22 06:59:23.483 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/10 - 302 0 null 14.0048ms
+2024-01-22 06:59:23.488 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - null null
+2024-01-22 06:59:23.498 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.1103 ms
+2024-01-22 06:59:23.500 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - 404 0 null 12.5768ms
+2024-01-22 06:59:23.511 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:59:24.311 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/10 - null null
+2024-01-22 06:59:24.316 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 06:59:24.319 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 06:59:24.322 +03:00 [INF] HTTP GET /api/Products/1/10 responded 302 in 6.1613 ms
+2024-01-22 06:59:24.330 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/10 - 302 0 null 17.8434ms
+2024-01-22 06:59:24.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - null null
+2024-01-22 06:59:24.350 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.0835 ms
+2024-01-22 06:59:24.352 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FProducts%2F1%2F10 - 404 0 null 16.1015ms
+2024-01-22 06:59:24.356 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 06:59:34.479 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-22 06:59:34.481 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 caught stopping signal...
+2024-01-22 06:59:34.495 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 caught stopped signal...
+2024-01-22 06:59:34.497 +03:00 [WRN] Server desktop-eni7p6d:17772:f3caf762 caught shutdown signal...
+2024-01-22 06:59:34.498 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 All dispatchers stopped
+2024-01-22 06:59:34.512 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 successfully reported itself as stopped in 8.8552 ms
+2024-01-22 06:59:34.513 +03:00 [INF] Server desktop-eni7p6d:17772:f3caf762 has been stopped in total 17.9225 ms
+2024-01-22 07:04:47.468 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 07:04:48.338 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 07:04:48.495 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 07:04:48.845 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 07:04:48.846 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 07:04:48.852 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 07:04:48.853 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 07:04:48.854 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 07:04:48.880 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 07:04:48.882 +03:00 [INF] Hosting environment: Development
+2024-01-22 07:04:48.891 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 07:04:49.091 +03:00 [INF] Server desktop-eni7p6d:16268:97d6a86e successfully announced in 212.0334 ms
+2024-01-22 07:04:49.101 +03:00 [INF] Server desktop-eni7p6d:16268:97d6a86e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 07:04:49.134 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-22 07:04:49.365 +03:00 [INF] Server desktop-eni7p6d:16268:97d6a86e all the dispatchers started
+2024-01-22 07:04:51.891 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 07:04:52.374 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 488.6716ms
+2024-01-22 07:04:52.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 07:04:52.455 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 07:04:52.503 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 50.4311ms
+2024-01-22 07:04:52.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 155.1999ms
+2024-01-22 07:04:52.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 07:04:52.923 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 204.9863ms
+2024-01-22 07:05:15.317 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:05:15.453 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 07:05:15.461 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 07:05:15.465 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 302 in 101.9867 ms
+2024-01-22 07:05:15.468 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 150.821ms
+2024-01-22 07:05:15.471 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:05:15.480 +03:00 [INF] HTTP GET /Account/Login responded 404 in 3.5589 ms
+2024-01-22 07:05:15.482 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 11.2123ms
+2024-01-22 07:05:15.489 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 07:05:47.636 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 07:10:36.116 +03:00 [INF] CORS policy execution successful.
+2024-01-22 07:10:36.155 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:10:36.380 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:10:43.641 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 07:10:49.100 +03:00 [INF] Executed DbCommand (274ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 07:10:50.884 +03:00 [INF] Executed DbCommand (368ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 07:10:51.438 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 07:10:51.564 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 14968.2668ms
+2024-01-22 07:10:51.707 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:10:51.753 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 15653.5243 ms
+2024-01-22 07:10:51.829 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 304193.3678ms
+2024-01-22 07:12:41.321 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7175/api/Users/Account/Login - application/json 92
+2024-01-22 07:12:41.342 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:12:41.353 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:12:41.769 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 07:12:42.184 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 07:12:42.240 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 07:12:42.257 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 888.6391ms
+2024-01-22 07:12:42.259 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:12:42.267 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 940.6595 ms
+2024-01-22 07:12:42.275 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 955.5059ms
+2024-01-22 07:13:16.791 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:13:16.830 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 07:13:16.835 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 07:13:16.836 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 302 in 10.8988 ms
+2024-01-22 07:13:16.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 48.1406ms
+2024-01-22 07:13:16.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:13:16.858 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.4672 ms
+2024-01-22 07:13:16.865 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 13.9049ms
+2024-01-22 07:13:16.886 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 07:14:05.493 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20%0A - null null
+2024-01-22 07:14:05.550 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 07:14:05.564 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 07:14:05.567 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 302 in 25.4425 ms
+2024-01-22 07:14:05.575 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20%0A - 302 0 null 81.7575ms
+2024-01-22 07:14:05.649 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20%250A - null null
+2024-01-22 07:14:05.657 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.1989 ms
+2024-01-22 07:14:05.660 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20%250A - 404 0 null 11.3ms
+2024-01-22 07:14:05.673 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 07:14:38.935 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20%0A - null null
+2024-01-22 07:14:38.973 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 07:14:39.022 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 07:14:39.026 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 302 in 52.9323 ms
+2024-01-22 07:14:39.042 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20%0A - 302 0 null 107.3886ms
+2024-01-22 07:14:39.056 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20%250A - null null
+2024-01-22 07:14:39.070 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.2797 ms
+2024-01-22 07:14:39.076 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20%250A - 404 0 null 20.5526ms
+2024-01-22 07:14:39.085 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 07:14:41.883 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20%0A - null null
+2024-01-22 07:14:41.970 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 07:14:41.977 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 07:14:41.982 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 302 in 12.9436 ms
+2024-01-22 07:14:41.989 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20%0A - 302 0 null 111.4878ms
+2024-01-22 07:14:42.004 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20%250A - null null
+2024-01-22 07:14:42.044 +03:00 [INF] HTTP GET /Account/Login responded 404 in 0.1841 ms
+2024-01-22 07:14:42.056 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20%250A - 404 0 null 52.2271ms
+2024-01-22 07:14:42.068 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 07:23:24.286 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 07:23:24.371 +03:00 [INF] CORS policy execution successful.
+2024-01-22 07:23:24.372 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:23:24.375 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:23:24.545 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 07:23:25.739 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 07:23:25.795 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 07:23:25.802 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 1423.3726ms
+2024-01-22 07:23:25.804 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:23:25.807 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 1436.2675 ms
+2024-01-22 07:23:25.812 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 1526.0814ms
+2024-01-22 07:24:09.292 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:24:10.108 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:24:10.294 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:24:44.236 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 33441.639ms
+2024-01-22 07:24:45.266 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:24:45.703 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:24:46.594 +03:00 [ERR] Exception Occurred :The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:24:46.943 +03:00 [ERR] HTTP GET /api/Users/Account/UserDetails responded 500 in 37452.3310 ms
+2024-01-22 07:24:48.675 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 500 null application/json; charset=utf-8 39383.4548ms
+2024-01-22 07:25:00.442 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:25:00.551 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:25:00.558 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:25:21.036 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 20448.4684ms
+2024-01-22 07:25:23.862 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:25:24.928 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:25:25.946 +03:00 [ERR] Exception Occurred :The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:25:26.554 +03:00 [ERR] HTTP GET /api/Users/Account/UserDetails responded 500 in 26009.7161 ms
+2024-01-22 07:25:26.720 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 500 null application/json; charset=utf-8 26278.7043ms
+2024-01-22 07:25:48.368 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:25:48.476 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:25:48.486 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:26:08.109 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 19606.8737ms
+2024-01-22 07:26:09.021 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:26:09.243 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:26:10.295 +03:00 [ERR] Exception Occurred :The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:26:15.940 +03:00 [ERR] HTTP GET /api/Users/Account/UserDetails responded 500 in 27465.5154 ms
+2024-01-22 07:26:16.196 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 500 null application/json; charset=utf-8 27830.1053ms
+2024-01-22 07:26:41.277 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:26:42.043 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:26:42.051 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:27:56.264 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 74194.7916ms
+2024-01-22 07:27:56.289 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:27:56.318 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:28:08.841 +03:00 [ERR] Exception Occurred :The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:28:23.735 +03:00 [ERR] HTTP GET /api/Users/Account/UserDetails responded 500 in 101693.8739 ms
+2024-01-22 07:28:31.751 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 500 null application/json; charset=utf-8 110474.0538ms
+2024-01-22 07:34:33.577 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:34:33.700 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:34:33.709 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:36:06.065 +03:00 [INF] Executed DbCommand (2,459ms) [Parameters=[@__p_0='00000000-0000-0000-0000-000000000000' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2024-01-22 07:36:16.597 +03:00 [INF] Execution DelayedJobScheduler recovered from the Faulted state after 00:00:22.7756603 and is in the Running state now
+2024-01-22 07:36:18.559 +03:00 [INF] Execution RecurringJobScheduler recovered from the Faulted state after 00:00:24.1655203 and is in the Running state now
+2024-01-22 07:36:20.509 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 106796.0032ms
+2024-01-22 07:37:10.257 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:37:15.497 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+SendGrid.Helpers.Errors.Model.NotFoundException: User Not Found
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 110
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:37:18.712 +03:00 [ERR] Exception Occurred :User Not Found
+SendGrid.Helpers.Errors.Model.NotFoundException: User Not Found
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 110
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:37:18.844 +03:00 [ERR] User Not Found
+2024-01-22 07:37:18.926 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 404 in 165228.0089 ms
+2024-01-22 07:37:19.260 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 null application/json; charset=utf-8 165682.8619ms
+2024-01-22 07:37:19.833 +03:00 [INF] Execution DelayedJobScheduler recovered from the Faulted state after 00:00:17.5522752 and is in the Running state now
+2024-01-22 07:48:32.732 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:48:34.428 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22‏‏/1‏‏/2024 4:33:25 ص', Current time (UTC): '22‏‏/1‏‏/2024 4:48:34 ص'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-22 07:48:34.846 +03:00 [INF] default was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22‏‏/1‏‏/2024 4:33:25 ص', Current time (UTC): '22‏‏/1‏‏/2024 4:48:34 ص'.
+2024-01-22 07:48:34.947 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 07:48:35.101 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 07:48:35.214 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 302 in 1036.6730 ms
+2024-01-22 07:48:35.424 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 2691.3877ms
+2024-01-22 07:48:35.475 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fi%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:48:35.745 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22‏‏/1‏‏/2024 4:33:25 ص', Current time (UTC): '22‏‏/1‏‏/2024 4:48:35 ص'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-22 07:48:35.845 +03:00 [INF] default was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22‏‏/1‏‏/2024 4:33:25 ص', Current time (UTC): '22‏‏/1‏‏/2024 4:48:35 ص'.
+2024-01-22 07:48:35.963 +03:00 [INF] HTTP GET /Account/Login responded 404 in 220.6124 ms
+2024-01-22 07:48:36.213 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fi%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 738.1427ms
+2024-01-22 07:48:36.225 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 07:48:47.146 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 07:48:47.228 +03:00 [INF] CORS policy execution successful.
+2024-01-22 07:48:47.243 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:48:47.292 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:48:47.621 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 07:48:48.157 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 07:48:48.209 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 07:48:48.235 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 793.4751ms
+2024-01-22 07:48:48.238 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:48:48.241 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 1026.8180 ms
+2024-01-22 07:48:48.246 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 1100.7864ms
+2024-01-22 07:49:05.948 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:49:05.995 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:49:06.030 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:49:22.749 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 16702.426ms
+2024-01-22 07:49:23.335 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:49:24.008 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'logger')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Logging.LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, Exception exception, String message, Object[] args)
+   at Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, String message, Object[] args)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid)
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method291(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:49:24.482 +03:00 [ERR] Exception Occurred :Value cannot be null. (Parameter 'logger')
+System.ArgumentNullException: Value cannot be null. (Parameter 'logger')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Logging.LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, Exception exception, String message, Object[] args)
+   at Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, String message, Object[] args)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid)
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method291(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:49:25.447 +03:00 [ERR] HTTP GET /api/Users/Account/UserDetails responded 500 in 19462.4587 ms
+2024-01-22 07:49:26.639 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 500 null application/json; charset=utf-8 20690.3526ms
+2024-01-22 07:55:17.370 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 07:55:26.046 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 07:55:26.476 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 07:55:27.379 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 07:55:27.509 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 07:55:27.549 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 07:55:27.552 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 07:55:27.556 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 07:55:27.651 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 07:55:27.660 +03:00 [INF] Hosting environment: Development
+2024-01-22 07:55:27.661 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 07:55:28.388 +03:00 [INF] Server desktop-eni7p6d:20252:209f179d successfully announced in 737.341 ms
+2024-01-22 07:55:28.548 +03:00 [INF] Server desktop-eni7p6d:20252:209f179d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 07:55:29.869 +03:00 [INF] Server desktop-eni7p6d:20252:209f179d all the dispatchers started
+2024-01-22 07:55:31.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 07:55:33.982 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 2886.1219ms
+2024-01-22 07:55:34.194 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 07:55:34.378 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 07:55:34.798 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 616.3497ms
+2024-01-22 07:55:36.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1913.0318ms
+2024-01-22 07:55:36.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 07:55:37.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 495.7827ms
+2024-01-22 07:57:34.133 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 07:57:34.910 +03:00 [INF] CORS policy execution successful.
+2024-01-22 07:57:34.940 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:57:35.032 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:57:39.100 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 07:57:41.935 +03:00 [INF] Executed DbCommand (225ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 07:57:43.009 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 07:57:43.281 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 07:57:43.310 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 8253.7508ms
+2024-01-22 07:57:43.325 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 07:57:43.362 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 9177.4833 ms
+2024-01-22 07:57:43.819 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 9685.6225ms
+2024-01-22 07:58:08.798 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 07:58:09.367 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:58:09.918 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 07:58:32.501 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 22559.7279ms
+2024-01-22 07:58:32.551 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 07:58:32.570 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:58:34.602 +03:00 [ERR] Exception Occurred :The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'Guid', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at E_CommerceSystemV2.DAL.Repos.Users.UserRepo.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.DAL\Repos\Users\UserRepo.cs:line 23
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 107
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 07:58:35.983 +03:00 [ERR] HTTP GET /api/Users/Account/UserDetails responded 500 in 27122.2253 ms
+2024-01-22 07:58:47.944 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 500 null application/json; charset=utf-8 39148.7807ms
+2024-01-22 08:01:52.067 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 08:02:02.455 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 08:02:03.204 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 08:02:06.959 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 08:02:06.972 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 08:02:07.015 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 08:02:07.016 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 08:02:07.017 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 08:02:07.163 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 08:02:07.180 +03:00 [INF] Hosting environment: Development
+2024-01-22 08:02:07.497 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 08:02:10.019 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 08:02:10.214 +03:00 [INF] Server desktop-eni7p6d:16796:3d018081 successfully announced in 3051.9589 ms
+2024-01-22 08:02:10.514 +03:00 [INF] Server desktop-eni7p6d:16796:3d018081 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 08:02:11.482 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-22 08:02:14.071 +03:00 [INF] Server desktop-eni7p6d:16796:3d018081 all the dispatchers started
+2024-01-22 08:02:14.583 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 4573.799ms
+2024-01-22 08:02:14.983 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 08:02:14.987 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 08:02:15.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 495.3888ms
+2024-01-22 08:02:16.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1223.0088ms
+2024-01-22 08:02:16.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 08:02:17.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 704.6229ms
+2024-01-22 08:02:59.874 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 08:03:15.383 +03:00 [INF] CORS policy execution successful.
+2024-01-22 08:03:15.392 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 08:03:15.468 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 08:03:21.222 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 08:03:25.261 +03:00 [INF] Executed DbCommand (438ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 08:03:27.045 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 08:03:27.907 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 08:03:27.952 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 12471.5772ms
+2024-01-22 08:03:27.959 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 08:03:27.966 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 28035.3183 ms
+2024-01-22 08:03:28.181 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 28306.4124ms
+2024-01-22 08:03:48.584 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 08:03:49.479 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 08:03:52.256 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.Guid) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 08:04:19.627 +03:00 [INF] Attempting to retrieve user with ID: 00000000-0000-0000-0000-000000000000
+2024-01-22 08:04:46.260 +03:00 [INF] Executed DbCommand (232ms) [Parameters=[@__p_0='00000000-0000-0000-0000-000000000000' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2024-01-22 08:04:46.284 +03:00 [INF] User found: False
+2024-01-22 08:04:46.733 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 53697.0177ms
+2024-01-22 08:04:46.737 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 08:04:46.743 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+SendGrid.Helpers.Errors.Model.NotFoundException: User Not Found
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 110
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 08:04:48.269 +03:00 [ERR] Exception Occurred :User Not Found
+SendGrid.Helpers.Errors.Model.NotFoundException: User Not Found
+   at E_CommerceSystemV2.BL.Managers.Identity.UserManager.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.BL\Managers\Identity\UserManager.cs:line 110
+   at E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById(Guid id) in C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API\Controllers\Users\UsersController.cs:line 47
+   at lambda_method273(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-01-22 08:04:48.488 +03:00 [ERR] User Not Found
+2024-01-22 08:04:48.539 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 404 in 59718.6035 ms
+2024-01-22 08:04:48.548 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?i=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 null application/json; charset=utf-8 59965.16ms
+2024-01-22 08:07:12.459 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-22 08:08:12.936 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-22 08:08:12.937 +03:00 [INF] Server desktop-eni7p6d:16796:3d018081 caught stopping signal...
+2024-01-22 08:08:12.943 +03:00 [INF] Server desktop-eni7p6d:16796:3d018081 caught stopped signal...
+2024-01-22 08:08:12.944 +03:00 [WRN] Server desktop-eni7p6d:16796:3d018081 caught shutdown signal...
+2024-01-22 08:08:12.948 +03:00 [WRN] Server desktop-eni7p6d:16796:3d018081 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-22 08:10:43.272 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-22 08:11:00.456 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-22 08:11:02.965 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-22 08:11:06.945 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-22 08:11:11.500 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-22 08:11:11.504 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-22 08:11:11.537 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-22 08:11:11.539 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-22 08:11:11.540 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-22 08:11:13.593 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 08:11:17.774 +03:00 [INF] Server desktop-eni7p6d:9536:618174f7 successfully announced in 4327.5181 ms
+2024-01-22 08:11:17.939 +03:00 [INF] Hosting environment: Development
+2024-01-22 08:11:18.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 7152.186ms
+2024-01-22 08:11:19.019 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-22 08:11:19.025 +03:00 [INF] Server desktop-eni7p6d:9536:618174f7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-22 08:11:21.334 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-22 08:11:23.049 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 1715.6141ms
+2024-01-22 08:11:23.061 +03:00 [INF] Server desktop-eni7p6d:9536:618174f7 all the dispatchers started
+2024-01-22 08:11:29.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-22 08:11:31.980 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2527.6991ms
+2024-01-22 08:11:37.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-22 08:11:38.199 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 595.1882ms
+2024-01-22 08:11:55.772 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 08:12:01.140 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-22 08:12:03.504 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-01-22 08:12:03.539 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 302 in 6797.6501 ms
+2024-01-22 08:12:04.057 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 302 0 null 8284.7931ms
+2024-01-22 08:12:04.067 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 08:12:04.085 +03:00 [INF] HTTP GET /Account/Login responded 404 in 4.8082 ms
+2024-01-22 08:12:04.088 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/Account/Login?ReturnUrl=%2Fapi%2FUsers%2FAccount%2FUserDetails%3Fid%3D8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 404 0 null 21.2553ms
+2024-01-22 08:12:04.101 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7175/Account/Login, Response status code: 404
+2024-01-22 08:12:47.406 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Account/Login - application/json 88
+2024-01-22 08:12:49.239 +03:00 [INF] CORS policy execution successful.
+2024-01-22 08:12:49.247 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 08:12:49.323 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 08:12:55.904 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-22 08:13:00.436 +03:00 [INF] Executed DbCommand (502ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-22 08:13:01.815 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-22 08:13:02.177 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-22 08:13:02.400 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 13055.4448ms
+2024-01-22 08:13:02.408 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-22 08:13:02.412 +03:00 [INF] HTTP POST /api/Users/Account/Login responded 200 in 13181.0897 ms
+2024-01-22 08:13:02.899 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Account/Login - 200 null application/json; charset=utf-8 15492.7407ms
+2024-01-22 08:14:45.517 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - null null
+2024-01-22 08:14:46.018 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 08:14:46.591 +03:00 [INF] Route matched with {action = "GetUserDetailsById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto]] GetUserDetailsById(System.String) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-22 08:14:59.669 +03:00 [INF] Attempting to retrieve user with ID: 8969e0ba-84a6-4a06-8e0f-f5eba204bb20
+2024-01-22 08:15:08.354 +03:00 [INF] Executed DbCommand (4,066ms) [Parameters=[@__p_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2024-01-22 08:15:14.313 +03:00 [INF] User found: True
+2024-01-22 08:15:47.922 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.UserReadDto'.
+2024-01-22 08:15:51.417 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API) in 62352.9395ms
+2024-01-22 08:15:56.784 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.GetUserDetailsById (E-CommerceSystemV2.API)'
+2024-01-22 08:15:56.798 +03:00 [INF] HTTP GET /api/Users/Account/UserDetails responded 200 in 71257.5448 ms
+2024-01-22 08:16:01.737 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7175/api/Users/Account/UserDetails?id=8969e0ba-84a6-4a06-8e0f-f5eba204bb20 - 200 null application/json; charset=utf-8 76220.1309ms
+2024-01-22 08:16:20.376 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-22 08:16:57.264 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-22 08:16:57.265 +03:00 [INF] Server desktop-eni7p6d:9536:618174f7 caught stopping signal...
+2024-01-22 08:16:57.269 +03:00 [INF] Server desktop-eni7p6d:9536:618174f7 caught stopped signal...
+2024-01-22 08:16:57.270 +03:00 [WRN] Server desktop-eni7p6d:9536:618174f7 caught shutdown signal...
+2024-01-22 08:16:57.281 +03:00 [WRN] Server desktop-eni7p6d:9536:618174f7 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-22 08:16:57.362 +03:00 [INF] Server desktop-eni7p6d:9536:618174f7 successfully reported itself as stopped in 29.4086 ms
+2024-01-22 08:16:57.363 +03:00 [INF] Server desktop-eni7p6d:9536:618174f7 has been stopped in total 95.2558 ms

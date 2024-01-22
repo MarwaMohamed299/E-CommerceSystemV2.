@@ -1,0 +1,547 @@
+2024-01-21 08:30:19.414 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-21 08:30:32.096 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-21 08:30:32.807 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-21 08:30:36.269 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-21 08:30:36.270 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-21 08:30:36.280 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-21 08:30:36.282 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-21 08:30:36.283 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-21 08:30:36.385 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-21 08:30:36.387 +03:00 [INF] Hosting environment: Development
+2024-01-21 08:30:36.389 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-21 08:30:38.119 +03:00 [INF] Server desktop-eni7p6d:15212:0630b1f7 successfully announced in 1735.0095 ms
+2024-01-21 08:30:38.129 +03:00 [INF] Server desktop-eni7p6d:15212:0630b1f7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-21 08:30:38.326 +03:00 [INF] Server desktop-eni7p6d:15212:0630b1f7 all the dispatchers started
+2024-01-21 08:30:38.651 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-21 08:31:04.885 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger - null null
+2024-01-21 08:31:06.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger - 301 0 null 1939.365ms
+2024-01-21 08:31:06.876 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-21 08:31:07.052 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 175.7852ms
+2024-01-21 08:31:07.407 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/swagger-ui.css - null null
+2024-01-21 08:31:07.449 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-01-21 08:31:07.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/swagger-ui.css - 200 144929 text/css 52.0205ms
+2024-01-21 08:31:08.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-21 08:31:08.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/swagger-ui-bundle.js - null null
+2024-01-21 08:31:08.121 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-21 08:31:08.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 62.3249ms
+2024-01-21 08:31:08.289 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/swagger-ui-standalone-preset.js - null null
+2024-01-21 08:31:08.289 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-21 08:31:08.309 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-21 08:31:08.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 20.9744ms
+2024-01-21 08:31:08.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 22.2446ms
+2024-01-21 08:31:08.731 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 705.3834ms
+2024-01-21 08:31:09.334 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-21 08:31:09.510 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 176.4003ms
+2024-01-21 08:58:42.883 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-21 08:59:25.448 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-21 08:59:26.863 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-21 08:59:29.384 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-21 08:59:30.196 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-21 08:59:31.239 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-21 08:59:31.253 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-21 08:59:31.269 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-21 08:59:31.507 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-21 08:59:33.200 +03:00 [INF] Hosting environment: Development
+2024-01-21 08:59:34.002 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-21 08:59:34.837 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-21 08:59:37.072 +03:00 [INF] Server desktop-eni7p6d:10348:c6768137 successfully announced in 5568.4661 ms
+2024-01-21 08:59:37.112 +03:00 [INF] Server desktop-eni7p6d:10348:c6768137 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-21 08:59:37.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 3519.453ms
+2024-01-21 08:59:37.652 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-21 08:59:37.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-21 08:59:38.730 +03:00 [INF] 1 servers were removed due to timeout
+2024-01-21 08:59:40.387 +03:00 [INF] Server desktop-eni7p6d:10348:c6768137 all the dispatchers started
+2024-01-21 08:59:41.205 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 3552.4905ms
+2024-01-21 08:59:41.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3720.3335ms
+2024-01-21 08:59:41.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-21 08:59:43.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1792.3596ms
+2024-01-21 09:00:30.581 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 88
+2024-01-21 09:00:43.353 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:00:45.714 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:00:47.595 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:00:53.502 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-21 09:00:59.968 +03:00 [INF] Executed DbCommand (1,264ms) [Parameters=[@__normalizedUserName_0='MARWA11' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:01:00.112 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:01:00.315 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 12558.5325ms
+2024-01-21 09:01:00.319 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:01:00.330 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 17506.8398 ms
+2024-01-21 09:01:00.361 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 400 null application/json; charset=utf-8 29779.7892ms
+2024-01-21 09:01:34.422 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 88
+2024-01-21 09:01:34.479 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:01:34.899 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:01:34.907 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:01:35.675 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:01:40.743 +03:00 [INF] Executed DbCommand (670ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 09:01:41.270 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:01:41.281 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 6352.9446ms
+2024-01-21 09:01:41.290 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:01:41.295 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 6827.6676 ms
+2024-01-21 09:01:41.312 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 6890.7154ms
+2024-01-21 09:02:18.820 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 09:02:27.017 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:02:28.939 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 1941.4520 ms
+2024-01-21 09:02:35.020 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 16199.9866ms
+2024-01-21 09:02:35.072 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 68
+2024-01-21 09:02:36.119 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:02:36.124 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:02:36.137 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:02:36.435 +03:00 [INF] Executed DbCommand (151ms) [Parameters=[@__normalizedUserName_0='' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:02:36.927 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:02:37.176 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 1034.6197ms
+2024-01-21 09:02:37.183 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:02:37.184 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 1065.4976 ms
+2024-01-21 09:02:37.187 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 400 null application/json; charset=utf-8 2114.3958ms
+2024-01-21 09:16:39.187 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-21 09:16:40.170 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-21 09:16:40.335 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-21 09:16:40.880 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-21 09:16:40.881 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-21 09:16:40.887 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-21 09:16:40.888 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-21 09:16:40.889 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-21 09:16:40.928 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-21 09:16:40.930 +03:00 [INF] Hosting environment: Development
+2024-01-21 09:16:40.931 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-21 09:16:41.123 +03:00 [INF] Server desktop-eni7p6d:5720:35579e3f successfully announced in 196.3519 ms
+2024-01-21 09:16:41.126 +03:00 [INF] Server desktop-eni7p6d:5720:35579e3f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-21 09:16:41.138 +03:00 [INF] Server desktop-eni7p6d:5720:35579e3f all the dispatchers started
+2024-01-21 09:17:07.026 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-21 09:17:10.190 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-21 09:17:11.956 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-21 09:17:16.324 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-21 09:17:17.611 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-21 09:17:17.785 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-21 09:17:17.986 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-21 09:17:18.018 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-21 09:17:18.181 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-21 09:17:18.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-21 09:17:18.351 +03:00 [INF] Hosting environment: Development
+2024-01-21 09:17:18.381 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-21 09:17:19.183 +03:00 [INF] Server desktop-eni7p6d:18320:78c4dec7 successfully announced in 1007.2917 ms
+2024-01-21 09:17:19.436 +03:00 [INF] Server desktop-eni7p6d:18320:78c4dec7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-21 09:17:19.794 +03:00 [INF] Server desktop-eni7p6d:18320:78c4dec7 all the dispatchers started
+2024-01-21 09:17:20.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 1879.6016ms
+2024-01-21 09:17:20.189 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-21 09:17:20.189 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-21 09:17:21.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 1248.0157ms
+2024-01-21 09:17:21.673 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1483.0943ms
+2024-01-21 09:17:27.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-21 09:17:27.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/favicon-32x32.png - null null
+2024-01-21 09:17:27.587 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-01-21 09:17:27.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/favicon-32x32.png - 200 628 image/png 55.6045ms
+2024-01-21 09:17:27.847 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 422.6287ms
+2024-01-21 09:17:37.446 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 88
+2024-01-21 09:17:37.518 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:17:37.525 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:17:37.575 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:17:39.558 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-21 09:17:41.368 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:17:42.100 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 09:17:42.235 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:17:42.272 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 4681.3608ms
+2024-01-21 09:17:42.282 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:17:42.294 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 4819.2962 ms
+2024-01-21 09:17:42.325 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 4879.6804ms
+2024-01-21 09:22:19.624 +03:00 [INF] 2 servers were removed due to timeout
+2024-01-21 09:37:32.500 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 09:37:32.516 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:37:32.523 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 16.8512 ms
+2024-01-21 09:37:32.525 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 25.5743ms
+2024-01-21 09:37:32.528 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 68
+2024-01-21 09:37:32.534 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:37:32.535 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:37:32.537 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:37:32.641 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:37:32.651 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:37:32.654 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 114.5884ms
+2024-01-21 09:37:32.655 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:37:32.656 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 125.2603 ms
+2024-01-21 09:37:32.663 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 400 null application/json; charset=utf-8 134.7938ms
+2024-01-21 09:38:57.508 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 09:38:57.511 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:38:57.511 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 0.9379 ms
+2024-01-21 09:38:57.513 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 5.4593ms
+2024-01-21 09:38:57.519 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 68
+2024-01-21 09:38:57.522 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:38:57.523 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:38:57.524 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:38:57.563 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:38:57.570 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:38:57.572 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 45.7027ms
+2024-01-21 09:38:57.576 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:38:57.577 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 55.6510 ms
+2024-01-21 09:38:57.583 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 400 null application/json; charset=utf-8 63.6168ms
+2024-01-21 09:39:28.032 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 09:39:28.035 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:39:28.046 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 10.9678 ms
+2024-01-21 09:39:28.049 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 16.9337ms
+2024-01-21 09:39:28.063 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 68
+2024-01-21 09:39:28.095 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:39:28.098 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:39:28.108 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:39:28.139 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedUserName_0='' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:39:28.302 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:39:28.305 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 194.8165ms
+2024-01-21 09:39:28.342 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:39:28.399 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 304.2691 ms
+2024-01-21 09:39:28.442 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 400 null application/json; charset=utf-8 379.2293ms
+2024-01-21 09:40:35.680 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 88
+2024-01-21 09:40:35.709 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:40:35.711 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:40:35.756 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:40:35.849 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:40:36.309 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 09:40:36.342 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:40:36.344 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 520.2291ms
+2024-01-21 09:40:36.346 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:40:36.350 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 640.5736 ms
+2024-01-21 09:40:36.361 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 680.5185ms
+2024-01-21 09:40:46.057 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 88
+2024-01-21 09:40:46.162 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:40:46.164 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:40:46.257 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:40:46.423 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:40:46.866 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 09:40:46.973 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:40:46.975 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 646.1374ms
+2024-01-21 09:40:46.978 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:40:46.979 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 817.0242 ms
+2024-01-21 09:40:46.988 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 931.3749ms
+2024-01-21 09:47:52.221 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 09:47:52.225 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:47:52.226 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 1.5200 ms
+2024-01-21 09:47:52.228 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 6.9353ms
+2024-01-21 09:47:52.233 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 09:47:52.240 +03:00 [INF] CORS policy execution successful.
+2024-01-21 09:47:52.241 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:47:52.242 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 09:47:52.269 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 09:47:52.430 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 09:47:52.439 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 09:47:52.441 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 196.3539ms
+2024-01-21 09:47:52.443 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 09:47:52.446 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 205.8138 ms
+2024-01-21 09:47:52.449 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 216.0317ms
+2024-01-21 10:07:38.291 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-21 10:07:38.296 +03:00 [INF] Server desktop-eni7p6d:18320:78c4dec7 caught stopping signal...
+2024-01-21 10:07:38.299 +03:00 [INF] Server desktop-eni7p6d:18320:78c4dec7 caught stopped signal...
+2024-01-21 10:07:38.302 +03:00 [WRN] Server desktop-eni7p6d:18320:78c4dec7 caught shutdown signal...
+2024-01-21 10:07:38.529 +03:00 [WRN] Server desktop-eni7p6d:18320:78c4dec7 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-21 10:07:38.624 +03:00 [INF] Server desktop-eni7p6d:18320:78c4dec7 successfully reported itself as stopped in 80.8062 ms
+2024-01-21 10:07:38.626 +03:00 [INF] Server desktop-eni7p6d:18320:78c4dec7 has been stopped in total 326.688 ms
+2024-01-21 11:20:03.714 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-21 11:20:05.353 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-21 11:20:05.496 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-21 11:20:05.748 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-21 11:20:05.760 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-21 11:20:05.769 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-21 11:20:05.771 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-21 11:20:05.772 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-21 11:20:05.788 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-21 11:20:05.790 +03:00 [INF] Hosting environment: Development
+2024-01-21 11:20:05.791 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-21 11:20:05.983 +03:00 [INF] Server desktop-eni7p6d:4256:d0f90c5c successfully announced in 189.074 ms
+2024-01-21 11:20:05.995 +03:00 [INF] Server desktop-eni7p6d:4256:d0f90c5c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-21 11:20:06.150 +03:00 [INF] Server desktop-eni7p6d:4256:d0f90c5c all the dispatchers started
+2024-01-21 11:20:06.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-21 11:20:06.612 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 268.3863ms
+2024-01-21 11:20:06.674 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-21 11:20:06.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-21 11:20:06.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 25.9609ms
+2024-01-21 11:20:06.804 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.74ms
+2024-01-21 11:20:06.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-21 11:20:07.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.5739ms
+2024-01-21 11:20:46.799 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 11:20:46.885 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:20:46.889 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 55.1767 ms
+2024-01-21 11:20:46.891 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 92.084ms
+2024-01-21 11:20:46.895 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 11:20:46.903 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:20:46.906 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:20:46.941 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 11:20:47.907 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-21 11:20:48.753 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 11:20:49.125 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 11:20:49.232 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 11:20:49.250 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 2303.015ms
+2024-01-21 11:20:49.253 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:20:49.256 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 2354.9638 ms
+2024-01-21 11:20:49.269 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 2374.1297ms
+2024-01-21 11:21:00.353 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 11:21:00.358 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:21:00.359 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 3.3975 ms
+2024-01-21 11:21:00.362 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 9.1637ms
+2024-01-21 11:21:00.364 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 11:21:00.368 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:21:00.370 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:00.371 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 11:21:00.435 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 11:21:00.597 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 11:21:00.609 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 11:21:00.611 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 237.4956ms
+2024-01-21 11:21:00.613 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:00.614 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 245.8692 ms
+2024-01-21 11:21:00.620 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 256.1263ms
+2024-01-21 11:21:03.350 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 11:21:03.353 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:21:03.354 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:03.356 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 11:21:03.395 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 11:21:03.557 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 11:21:03.568 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 11:21:03.571 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 212.3862ms
+2024-01-21 11:21:03.597 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:03.599 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 245.7031 ms
+2024-01-21 11:21:03.611 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 261.2512ms
+2024-01-21 11:21:20.825 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 11:21:20.827 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:21:20.828 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 0.8970 ms
+2024-01-21 11:21:20.829 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 4.1816ms
+2024-01-21 11:21:20.833 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 76
+2024-01-21 11:21:20.838 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:21:20.839 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:20.840 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 11:21:20.851 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 11:21:21.029 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 11:21:21.145 +03:00 [INF] Executed DbCommand (90ms) [Parameters=[@__normalizedEmail_0='MARWA299@GMAIL.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-01-21 11:21:21.411 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[@p15='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Nullable = false) (Size = 450), @p0='1', @p1='90ccaacc-b778-4b2b-8c8d-ba5769b10c03' (Size = 4000), @p16='11170d63-290e-4ace-974c-3d51fd3add62' (Size = 4000), @p2='2024-01-19T11:09:24.1090000', @p3='marwa299@gmail.com' (Size = 256), @p4='False', @p5='True', @p6=NULL (DbType = DateTimeOffset), @p7='MARWA299@GMAIL.COM' (Size = 256), @p8='MARWA22' (Size = 256), @p9='AQAAAAIAAYagAAAAEHXhs7M8CqFx41iZx/sGyDCC1WeFLNro7+Ad0jAMZZdRTxT2B9LFnufXu+Wm4VzvCg==' (Size = 4000), @p10=NULL (Size = 4000), @p11='False', @p12='66LCLZZUO3D4KZLZ4Y5GRJODSQDKAZ2Z' (Size = 4000), @p13='False', @p14='marwa22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [CreationDate] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [SecurityStamp] = @p12, [TwoFactorEnabled] = @p13, [UserName] = @p14
+OUTPUT 1
+WHERE [Id] = @p15 AND [ConcurrencyStamp] = @p16;
+2024-01-21 11:21:21.432 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 11:21:21.433 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 591.8151ms
+2024-01-21 11:21:21.436 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:21.438 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 599.7843 ms
+2024-01-21 11:21:21.441 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 400 null application/json; charset=utf-8 607.9268ms
+2024-01-21 11:21:39.855 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 11:21:39.859 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:21:39.860 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 1.4023 ms
+2024-01-21 11:21:39.867 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 12.439ms
+2024-01-21 11:21:39.873 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 11:21:39.882 +03:00 [INF] CORS policy execution successful.
+2024-01-21 11:21:39.883 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:39.884 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 11:21:39.930 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 11:21:40.092 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 11:21:40.112 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 11:21:40.118 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 230.9366ms
+2024-01-21 11:21:40.161 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 11:21:40.162 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 280.7231 ms
+2024-01-21 11:21:40.168 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 294.3211ms
+2024-01-21 11:24:30.372 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-21 11:24:30.376 +03:00 [INF] Server desktop-eni7p6d:4256:d0f90c5c caught stopping signal...
+2024-01-21 11:24:30.379 +03:00 [INF] Server desktop-eni7p6d:4256:d0f90c5c caught stopped signal...
+2024-01-21 11:24:30.383 +03:00 [WRN] Server desktop-eni7p6d:4256:d0f90c5c caught shutdown signal...
+2024-01-21 11:24:30.389 +03:00 [WRN] Server desktop-eni7p6d:4256:d0f90c5c stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-21 11:24:30.402 +03:00 [INF] Server desktop-eni7p6d:4256:d0f90c5c successfully reported itself as stopped in 6.8305 ms
+2024-01-21 11:24:30.404 +03:00 [INF] Server desktop-eni7p6d:4256:d0f90c5c has been stopped in total 24.875 ms
+2024-01-21 12:44:02.437 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-01-21 12:44:04.919 +03:00 [INF] Hangfire SQL objects installed.
+2024-01-21 12:44:05.143 +03:00 [INF] User profile is available. Using 'C:\Users\Desktop\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-21 12:44:05.522 +03:00 [INF] Now listening on: https://localhost:7175
+2024-01-21 12:44:05.523 +03:00 [INF] Now listening on: http://localhost:5117
+2024-01-21 12:44:05.529 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-01-21 12:44:05.531 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-01-21 12:44:05.533 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-01-21 12:44:05.548 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-21 12:44:05.551 +03:00 [INF] Hosting environment: Development
+2024-01-21 12:44:05.552 +03:00 [INF] Content root path: C:\Users\Desktop\Desktop\E-Commerce V2\E-CommerceSystemV2.API
+2024-01-21 12:44:05.789 +03:00 [INF] Server desktop-eni7p6d:18488:9b5faeab successfully announced in 238.9364 ms
+2024-01-21 12:44:05.794 +03:00 [INF] Server desktop-eni7p6d:18488:9b5faeab is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-01-21 12:44:05.962 +03:00 [INF] Server desktop-eni7p6d:18488:9b5faeab all the dispatchers started
+2024-01-21 12:44:06.616 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-01-21 12:44:06.922 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 306.9715ms
+2024-01-21 12:44:06.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-21 12:44:06.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-01-21 12:44:07.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 190.7482ms
+2024-01-21 12:44:07.277 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 282.0922ms
+2024-01-21 12:44:07.369 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-01-21 12:44:07.522 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 153.4002ms
+2024-01-21 12:56:14.985 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 12:56:15.062 +03:00 [INF] CORS policy execution successful.
+2024-01-21 12:56:15.066 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 55.8002 ms
+2024-01-21 12:56:15.068 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 83.1163ms
+2024-01-21 12:56:15.073 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 12:56:15.081 +03:00 [INF] CORS policy execution successful.
+2024-01-21 12:56:15.084 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:56:15.115 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 12:56:16.339 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-01-21 12:56:17.262 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 12:56:17.636 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 12:56:17.709 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 12:56:17.730 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 2606.0376ms
+2024-01-21 12:56:17.733 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:56:17.737 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 2657.7669 ms
+2024-01-21 12:56:17.755 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 2681.4615ms
+2024-01-21 12:56:18.097 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 12:56:18.102 +03:00 [INF] CORS policy execution successful.
+2024-01-21 12:56:18.104 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:56:18.105 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 12:56:18.177 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 12:56:18.344 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 12:56:18.357 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 12:56:18.359 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 251.2437ms
+2024-01-21 12:56:18.361 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:56:18.362 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 262.8107 ms
+2024-01-21 12:56:18.366 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 269.2462ms
+2024-01-21 12:59:21.276 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - null null
+2024-01-21 12:59:21.282 +03:00 [INF] CORS policy execution successful.
+2024-01-21 12:59:21.284 +03:00 [INF] HTTP OPTIONS /api/Users/Login responded 204 in 1.9314 ms
+2024-01-21 12:59:21.287 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7175/api/Users/Login - 204 null null 10.4951ms
+2024-01-21 12:59:21.291 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 12:59:21.297 +03:00 [INF] CORS policy execution successful.
+2024-01-21 12:59:21.297 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:59:21.299 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 12:59:21.331 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 12:59:21.422 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 12:59:21.429 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 12:59:21.432 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 130.9488ms
+2024-01-21 12:59:21.436 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:59:21.437 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 140.3180 ms
+2024-01-21 12:59:21.441 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 149.8284ms
+2024-01-21 12:59:25.934 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7175/api/Users/Login - application/json 75
+2024-01-21 12:59:25.939 +03:00 [INF] CORS policy execution successful.
+2024-01-21 12:59:25.940 +03:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:59:25.942 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto]] Login(E_CommerceSystemV2.BL.DTOs.Identity.LogInDto) on controller E_CommerceSystemV2.API.Controllers.Users.UsersController (E-CommerceSystemV2.API).
+2024-01-21 12:59:25.960 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='MARWA22' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreationDate], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-21 12:59:26.115 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='8969e0ba-84a6-4a06-8e0f-f5eba204bb20' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-01-21 12:59:26.129 +03:00 [INF] Executing ObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Identity.LogInResultDto'.
+2024-01-21 12:59:26.141 +03:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API) in 195.7509ms
+2024-01-21 12:59:26.149 +03:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Users.UsersController.Login (E-CommerceSystemV2.API)'
+2024-01-21 12:59:26.151 +03:00 [INF] HTTP POST /api/Users/Login responded 200 in 212.4324 ms
+2024-01-21 12:59:26.157 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7175/api/Users/Login - 200 null application/json; charset=utf-8 222.9391ms
+2024-01-21 13:34:17.322 +03:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-01-21 13:34:17.327 +03:00 [INF] Server desktop-eni7p6d:18488:9b5faeab caught stopping signal...
+2024-01-21 13:34:17.330 +03:00 [INF] Server desktop-eni7p6d:18488:9b5faeab caught stopped signal...
+2024-01-21 13:34:17.333 +03:00 [WRN] Server desktop-eni7p6d:18488:9b5faeab caught shutdown signal...
+2024-01-21 13:34:17.368 +03:00 [WRN] Server desktop-eni7p6d:18488:9b5faeab stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-01-21 13:34:17.386 +03:00 [INF] Server desktop-eni7p6d:18488:9b5faeab successfully reported itself as stopped in 11.9751 ms
+2024-01-21 13:34:17.390 +03:00 [INF] Server desktop-eni7p6d:18488:9b5faeab has been stopped in total 59.868 ms

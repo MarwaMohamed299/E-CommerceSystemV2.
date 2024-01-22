@@ -1,10 +1,15 @@
 # E-Commerce System
 
-Welcome to the E-Commerce System project! This .NET Core application provides a robust foundation for building an e-commerce platform with CRUD operations,
-user authentication using JWT, logging, pagination,  search functionality .
+Welcome to the E-Commerce System project! This .NET Core application provides a robust foundation for building an e-commerce platform with CRUD operations, user authentication using JWT, logging, pagination, search functionality, and multilingual support.
 
 ## Features
 
+- **Multilingual Support:**
+  - The application supports multiple languages, making it accessible to a global user base.
+
+- **SQL Localizer Provider:**
+  - Utilizes SQL Localizer for localizing resources in the application. This allows for dynamic localization and translation of the application's UI based on user preferences.
+  
 - **CRUD Operations:**
   - Manage products, categories, and orders.
 
@@ -12,7 +17,7 @@ user authentication using JWT, logging, pagination,  search functionality .
   - Implemented using Identity for secure access wit Json Web Token(JWT).
 
 - **Logging:**
-  - Utilizes Serilog for capturing application events and errors.
+  - Utilizes Serilog for capturing application events and errors With Serilog.
     
 - **LINQ Query Logging:**
   - Incorporates logging for LINQ queries to provide insights into data retrieval and manipulation processes.

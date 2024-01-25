@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceSystemV2.DAL.Repos.Users
+namespace E_CommerceSystemV2.DAL.Repos.Users;
+
+public interface IUserRepo
 {
-    public interface IUserRepo
-    {
-        Task <User?>GetUserDetailsById(string id);
-    }
+    Task <User?>GetUserDetailsById(string id);
 }

@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using E_CommerceSystemV2.BL.DTOs.CampaignCustomers;
 
-namespace E_CommerceSystemV2.BL.Managers.CampaignCustomer
+namespace E_CommerceSystemV2.BL.Managers.CampaignCustomer;
+
+public interface ICampaignCustomerManager
 {
-    public interface ICampaignCustomerManager
-    {
-        public  Task SendingEmailsForNewCustomers();
-    }
+    public  Task SendingEmailsForNewCustomers();
 }

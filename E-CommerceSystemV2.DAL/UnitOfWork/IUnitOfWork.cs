@@ -1,10 +1,9 @@
 ﻿using E_CommerceSystemV2.DAL.Repos.Products;
 
-namespace E_CommerceSystemV2.DAL.UnitOfWork
+namespace E_CommerceSystemV2.DAL.UnitOfWork;
+
+public interface IUnitOfWork
 {
-    public interface IUnitOfWork
-    {
-        public IProductRepo? ProductRepo { get; }
-        Task<int> saveChangesAsync();
-    }
+    public IProductRepo? ProductRepo { get; }
+    Task<int> saveChangesAsync();
 }

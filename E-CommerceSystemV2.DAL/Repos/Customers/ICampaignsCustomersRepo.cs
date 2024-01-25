@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommerceSystemV2.DAL.Repos.CampaignsCustomers
+namespace E_CommerceSystemV2.DAL.Repos.CampaignsCustomers;
+
+public interface ICampaignsCustomersRepo
 {
-    public interface ICampaignsCustomersRepo
-    {
-        Task<IEnumerable<CampaignCustomers>> GetCustomersEmails();
-    }
+    Task<IEnumerable<CampaignCustomers>> GetCustomersEmails();
 }

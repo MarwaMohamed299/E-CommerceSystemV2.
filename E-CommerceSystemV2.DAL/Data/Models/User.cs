@@ -10,8 +10,5 @@ namespace E_CommerceSystemV2.DAL.Data.Models
 
         public ICollection<Order> Orders = new HashSet<Order>();
 
-
-
-
     }
 }

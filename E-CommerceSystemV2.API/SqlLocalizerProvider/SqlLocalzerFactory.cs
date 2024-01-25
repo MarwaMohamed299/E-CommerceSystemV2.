@@ -1,36 +1,34 @@
 ﻿
 using Microsoft.Extensions.Localization;
 
-namespace E_CommerceSystemV2.API.SqlLocalizerProvider
+namespace E_CommerceSystemV2.API.SqlLocalizerProvider;
+
+/*Here there is a small problem as the context require a scoped service while ISringLocalizer
+ require a Singleton so to resolve this i needed to use IServiceScopeFactory to create a custom scope for the context 
+in bothe create method*/
+public class SqlLocalzerFactory : IStringLocalizerFactory
 {
-    /*Here there is a small problem as the context require a scoped service while ISringLocalizer
-     require a Singleton so to resolve this i needed to use IServiceScopeFactory to create a custom scope for the context 
-    in bothe create method*/
-    public class SqlLocalzerFactory : IStringLocalizerFactory
+    private readonly IServiceScopeFactory _serviceScoprFactory;
+
+    public SqlLocalzerFactory(IServiceScopeFactory serviceScopeFactory)
     {
-        private readonly IServiceScopeFactory _serviceScoprFactory;
+        _serviceScoprFactory = serviceScopeFactory;
+    }
 
-        public SqlLocalzerFactory(IServiceScopeFactory serviceScopeFactory)
+    public IStringLocalizer Create(Type resourcesSource)/*P.S Dependency Injection by a Function*/
+    {
+        var scope = _serviceScoprFactory.CreateScope();
         {
-            _serviceScoprFactory = serviceScopeFactory;
+            var context = scope.ServiceProvider.GetRequiredService<ECommerceContext>();
+            return new SqlLocalizer(context);
         }
-
-        public IStringLocalizer Create(Type resourcesSource)/*P.S Dependency Injection by a Function*/
+    }
+    public IStringLocalizer Create(string baseName, string location)
+    {
+        var scope = _serviceScoprFactory.CreateScope();
         {
-            var scope = _serviceScoprFactory.CreateScope();
-            {
-                var context = scope.ServiceProvider.GetRequiredService<ECommerceContext>();
-                return new SqlLocalizer(context);
-            }
-        }
-
-        public IStringLocalizer Create(string baseName, string location)
-        {
-            var scope = _serviceScoprFactory.CreateScope();
-            {
-                var context = scope.ServiceProvider.GetRequiredService<ECommerceContext>();
-                return new SqlLocalizer(context);
-            };
-        }
+            var context = scope.ServiceProvider.GetRequiredService<ECommerceContext>();
+            return new SqlLocalizer(context);
+        };
     }
 }

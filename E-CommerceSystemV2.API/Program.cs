@@ -17,164 +17,154 @@ using Microsoft.Extensions.Localization;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Globalization;
-using System.Security.Claims;
 using System.Text;
 
-namespace E_CommerceSystemV2.API
+namespace E_CommerceSystemV2.API;
+
+public class Program
 {
-    public class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
+        var builder = WebApplication.CreateBuilder(args);
+
+       #region ConnectionString
+        var ConnectionString = builder.Configuration.GetConnectionString("E-CommerceSystemV2");
+        builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(ConnectionString));
+        #endregion
+
+        #region Identity
+
+        builder.Services.AddIdentity<User, IdentityRole>(options =>
         {
-            var builder = WebApplication.CreateBuilder(args);
+            options.Password.RequireLowercase = false;
+            options.Password.RequireUppercase = false;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequiredLength = 5;
+            options.User.RequireUniqueEmail = true;
+            options.Lockout.MaxFailedAccessAttempts = 3;
+            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+        })
+            .AddEntityFrameworkStores<ECommerceContext>()
+            .AddDefaultTokenProviders();
 
-           #region ConnectionString
-            var ConnectionString = builder.Configuration.GetConnectionString("E-CommerceSystemV2");
-            builder.Services.AddDbContext<ECommerceContext>(options => options.UseSqlServer(ConnectionString));
-            #endregion
+        builder.Services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = "default";
+            options.DefaultScheme = "default";
+        })
 
-            #region Identity
+        .AddJwtBearer("default", options =>
+        {
+            //GenerateKey
 
-            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            var secretKey = builder.Configuration.GetValue<string>("SecretKey");
+            var secretKeyInBytes = Encoding.ASCII.GetBytes(secretKey!);
+            var Key = new SymmetricSecurityKey(secretKeyInBytes);
+
+            options.TokenValidationParameters = new TokenValidationParameters
             {
-                options.Password.RequireLowercase = false;
-                options.Password.RequireUppercase = false;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequiredLength = 5;
-                options.User.RequireUniqueEmail = true;
-                options.Lockout.MaxFailedAccessAttempts = 3;
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
-            })
-                .AddEntityFrameworkStores<ECommerceContext>()
-                .AddDefaultTokenProviders();
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                IssuerSigningKey = Key
 
-            builder.Services.AddAuthentication(options =>
+            };
+        });
+
+
+        #endregion
+
+        #region DefaultServices
+        builder.Services.AddControllers();
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
+
+
+        #endregion
+
+        #region SerilogConfig
+        Log.Logger = new LoggerConfiguration()
+            .ReadFrom.Configuration(builder.Configuration)
+            .CreateLogger();
+        builder.Host.UseSerilog();
+
+        #endregion
+
+        #region Hang Fire Config
+        builder.Services.AddHangfire(x => x.UseSqlServerStorage(ConnectionString));
+        builder.Services.AddHangfireServer();
+        #endregion
+
+        #region CORS Policy
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAllDomains", policy =>
             {
-                options.DefaultAuthenticateScheme = "default";
-                options.DefaultScheme = "default";
-            })
+                policy.AllowAnyOrigin()
+                      .AllowAnyHeader()
+                      .AllowAnyMethod();
+            });
+        });
+        #endregion
 
-            .AddJwtBearer("default", options =>
-            {
-                //GenerateKey
+        #region Custom Services
 
-                var secretKey = builder.Configuration.GetValue<string>("SecretKey");
-                var secretKeyInBytes = Encoding.ASCII.GetBytes(secretKey!);
-                var Key = new SymmetricSecurityKey(secretKeyInBytes);
+        builder.Services.AddTransient<MailingService>();
+        builder.Services.AddScoped<IProductRepo, ProductRepo>();
+        builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+        builder.Services.AddScoped<ICampaignsCustomersRepo, CampaignsCustomersRepo>();
+        builder.Services.AddScoped<IUserRepo, UserRepo>();
 
-                options.TokenValidationParameters = new TokenValidationParameters
+
+
+        builder.Services.AddScoped<IUserManager, UserManager>();
+        builder.Services.AddScoped<IProductsManager, ProductsManager>();
+        builder.Services.AddScoped<ICampaignCustomerManager, CampaignCustomersManager>();
+
+        builder.Services.AddExceptionHandler<GlobalErrorHandler>(); //Transient
+        builder.Services.AddProblemDetails();
+
+        #endregion
+
+        #region Custom Sql Provider
+        builder.Services.Configure<RequestLocalizationOptions>(options =>
+        {
+            var supportedCultures = new List<CultureInfo>
                 {
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
-                    IssuerSigningKey = Key
-
+                    new CultureInfo("en-Us"),
+                    new CultureInfo("ar-EG")
                 };
-            });
+            options.DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "Us");
+            options.SupportedCultures = supportedCultures;
+            options.SupportedUICultures = supportedCultures;
+        });
+        builder.Services.AddLocalization();
+        builder.Services.AddSingleton<IStringLocalizerFactory, SqlLocalzerFactory>();
 
+        #endregion
 
-            //builder.Services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("User", policy =>
-            //    {
-            //        policy.RequireClaim(ClaimTypes.Role, "User");
-            //    });
-            //});
+        var app = builder.Build();
 
-            #endregion
+        #region MiddleWares
 
-            #region DefaultServices
-            builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-
-            #endregion
-
-            #region SerilogConfig
-            Log.Logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(builder.Configuration)
-                .CreateLogger();
-            builder.Host.UseSerilog();
-
-            #endregion
-
-            #region Hang Fire Config
-            builder.Services.AddHangfire(x => x.UseSqlServerStorage(ConnectionString));
-            builder.Services.AddHangfireServer();
-            #endregion
-
-            #region CORS Policy
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAllDomains", policy =>
-                {
-                    policy.AllowAnyOrigin()
-                          .AllowAnyHeader()
-                          .AllowAnyMethod();
-                });
-            });
-            #endregion
-
-            #region Custom Services
-
-            builder.Services.AddTransient<MailingService>();
-            builder.Services.AddScoped<IProductRepo, ProductRepo>();
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<ICampaignsCustomersRepo, CampaignsCustomersRepo>();
-            builder.Services.AddScoped<IUserRepo, UserRepo>();
-
-
-
-            builder.Services.AddScoped<IUserManager, UserManager>();
-            builder.Services.AddScoped<IProductsManager, ProductsManager>();
-            builder.Services.AddScoped<ICampaignCustomerManager, CampaignCustomersManager>();
-
-            builder.Services.AddExceptionHandler<GlobalErrorHandler>(); //Transient
-            builder.Services.AddProblemDetails();
-
-            #endregion
-
-            #region Custom Sql Provider
-            builder.Services.Configure<RequestLocalizationOptions>(options =>
-            {
-                var supportedCultures = new List<CultureInfo>
-                    {
-                        new CultureInfo("en-Us"),
-                        new CultureInfo("ar-EG")
-                    };
-                options.DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "Us");
-                options.SupportedCultures = supportedCultures;
-                options.SupportedUICultures = supportedCultures;
-            });
-            builder.Services.AddLocalization();
-            builder.Services.AddSingleton<IStringLocalizerFactory, SqlLocalzerFactory>();
-
-            #endregion
-
-            var app = builder.Build();
-
-            #region MiddleWares
-
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-            app.UseRequestLocalization();
-            app.UseSerilogRequestLogging(); 
-            app.UseHttpsRedirection();
-            app.UseAuthentication();
-            
-            app.UseAuthorization();
-            app.UseExceptionHandler();
-            app.UseHangfireDashboard("/dashboard");
-            app.UseCors("AllowAllDomains");
-
-
-            app.MapControllers();
-            #endregion
-
-            app.Run();
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
         }
+        app.UseRequestLocalization();
+        app.UseSerilogRequestLogging(); 
+        app.UseHttpsRedirection();
+        app.UseAuthentication();
+        
+        app.UseAuthorization();
+        app.UseExceptionHandler();
+        app.UseHangfireDashboard("/dashboard");
+        app.UseCors("AllowAllDomains");
+
+
+        app.MapControllers();
+        #endregion
+
+        app.Run();
     }
 }

@@ -4,73 +4,72 @@ using Microsoft.Extensions.Localization;
 using Serilog;
 
 
-namespace E_CommerceSystemV2.API.SqlLocalizerProvider
+namespace E_CommerceSystemV2.API.SqlLocalizerProvider;
+
+public class SqlLocalizer : IStringLocalizer
 {
-    public class SqlLocalizer : IStringLocalizer
+    private readonly ECommerceContext _ecommerceContext;
+
+    public SqlLocalizer(ECommerceContext eCommerceContext)
     {
-        private readonly ECommerceContext _ecommerceContext;
+        _ecommerceContext = eCommerceContext;
+    }
 
-        public SqlLocalizer(ECommerceContext eCommerceContext)
+    public LocalizedString this[string name] =>  new LocalizedString(name,GetLocalizedString(name));
+
+
+    public IEnumerable<LocalizedString> GetAllStrings(bool includeParentCultures)
+    {
+        throw new NotImplementedException();
+    }
+
+    public string GetLocalizedString(string key)
+    {
+       var language = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+       var q1 = _ecommerceContext.Textsss
+            .Where(t => t.TextKey == key);
+        IQueryable<string> messages = language switch
         {
-            _ecommerceContext = eCommerceContext;
-        }
+            "ar" => q1.Select(a => a.ArabicText),
+            "en" => q1.Select(a => a.EnglishText),
+              _=>q1.Select(a=>a.EnglishText)
+        };
 
-        public LocalizedString this[string name] =>  new LocalizedString(name,GetLocalizedString(name));
+        var retrievedMessage = messages.FirstOrDefault();
+
+        Log.Error($"Key: {key}, Language: {language}, Retrieved Message: {retrievedMessage}");
+
+        return retrievedMessage ?? key;
+    }
 
 
-        public IEnumerable<LocalizedString> GetAllStrings(bool includeParentCultures)
+    public LocalizedString this[string name, params object[] arguments]
+    {
+        get
         {
-            throw new NotImplementedException();
-        }
+            string localizedMessage = GetLocalizedString(name);
 
-        public string GetLocalizedString(string key)
-        {
-           var language = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
-           var q1 = _ecommerceContext.Textsss
-                .Where(t => t.TextKey == key);
-            IQueryable<string> messages = language switch
+            if (arguments.Length > 0 && arguments[0] is string email)
             {
-                "ar" => q1.Select(a => a.ArabicText),
-                "en" => q1.Select(a => a.EnglishText),
-                  _=>q1.Select(a=>a.EnglishText)
-            };
+                var user = GetUserFromDatabase(email);
 
-            var retrievedMessage = messages.FirstOrDefault();
-
-            Log.Error($"Key: {key}, Language: {language}, Retrieved Message: {retrievedMessage}");
-
-            return retrievedMessage ?? key;
-        }
-
-
-        public LocalizedString this[string name, params object[] arguments]
-        {
-            get
-            {
-                string localizedMessage = GetLocalizedString(name);
-
-                if (arguments.Length > 0 && arguments[0] is string email)
+                if (user != null)
                 {
-                    var user = GetUserFromDatabase(email);
-
-                    if (user != null)
-                    {
-                        localizedMessage = string.Format(localizedMessage, user.UserName, user.PasswordHash);
-                        Log.Information($"Formatted Message: {localizedMessage}");
-                    }
-                    else
-                    {
-                        Log.Warning($"User not found for email: {email}");
-                    }
+                    localizedMessage = string.Format(localizedMessage, user.UserName, user.PasswordHash);
+                    Log.Information($"Formatted Message: {localizedMessage}");
                 }
-                return new LocalizedString(name, localizedMessage);
+                else
+                {
+                    Log.Warning($"User not found for email: {email}");
+                }
             }
+            return new LocalizedString(name, localizedMessage);
         }
-        public User? GetUserFromDatabase(string email)
-        {
-            return _ecommerceContext.Users
-                .Where(e => e.Email == email)
-                .SingleOrDefault();
-        }
+    }
+    public User? GetUserFromDatabase(string email)
+    {
+        return _ecommerceContext.Users
+            .Where(e => e.Email == email)
+            .SingleOrDefault();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using E_CommerceSystemV2.API;
 using E_CommerceSystemV2.DAL.Data.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -23,5 +24,7 @@ namespace E_CommerceSystemV2.DAL.Repos.Users
             var user = await _ecommerceContext.Users.FindAsync(id);
             return user;
         }
+
+      
     }
 }

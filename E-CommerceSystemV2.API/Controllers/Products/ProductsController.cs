@@ -87,9 +87,9 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult> Update([FromBody] ProductUpdateDto productDto)
+    public async Task<ActionResult> Update([FromBody] ProductUpdateDto productDto , Guid id)
     {
-        var result = await _productsManager.Update(productDto);
+        var result = await _productsManager.Update(productDto , id);
 
          if (result != null)
             return Ok("Product is Updated Successfully ");

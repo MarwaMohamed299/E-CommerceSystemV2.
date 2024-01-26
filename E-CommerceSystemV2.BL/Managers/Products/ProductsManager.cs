@@ -23,7 +23,7 @@ public class ProductsManager : IProductsManager
         var items = (await _productsRepo.GetAll(page, countPerPage)).Select(e => new ProductReadDto
         {
             ProductId = e.ProductId,
-            Name = e.Name,
+            Name = e.Name!,
             Price = e.Price
             
         }).ToList();
@@ -46,8 +46,8 @@ public class ProductsManager : IProductsManager
         return new ProductReadDto
         {
             ProductId = product.ProductId,
-            Name = product.Name,
-            Price = product.Price
+            Name = product.Name!,
+            Price = product!.Price
         };
     }
 
@@ -67,9 +67,9 @@ public class ProductsManager : IProductsManager
         return ("Product is added successfully");
 
     }
-    public async Task<string?> Update(ProductUpdateDto product)                       /*Update*/
+    public async Task<string?> Update(ProductUpdateDto product , Guid id)                       /*Update*/
     {
-       var existingProduct = await _productsRepo.GetById(product.ProductId);
+       var existingProduct = await _productsRepo.GetById(id);
 
          if (existingProduct == null)
          {
@@ -120,7 +120,7 @@ public class ProductsManager : IProductsManager
             var productReadDto = searchedProducts.Select(p => new ProductReadDto
             {
                 ProductId = p.ProductId,
-                Name = p.Name,
+                Name = p.Name!,
                 Price = p.Price,
             });
 
@@ -140,7 +140,7 @@ public class ProductsManager : IProductsManager
             var productReadDto = searchedProducts.Select(p => new ProductReadDto
             {
                 ProductId = p.ProductId,
-                Name = p.Name,
+                Name = p.Name!,
                 Price = p.Price,
             });
 

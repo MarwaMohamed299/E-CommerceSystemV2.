@@ -51,6 +51,7 @@ public class Program
         {
             options.DefaultAuthenticateScheme = "default";
             options.DefaultScheme = "default";
+            options.DefaultChallengeScheme = "default";
         })
 
         .AddJwtBearer("default", options =>

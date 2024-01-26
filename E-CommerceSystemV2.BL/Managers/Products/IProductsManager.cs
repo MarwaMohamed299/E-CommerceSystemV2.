@@ -11,7 +11,7 @@ public interface IProductsManager
     Task<ProductUpdateDto> UpdateProductTag(Guid productId,List<Guid>tagIds);
     Task<ProductReadDto?> GetById(Guid productId);
     Task<string> Add(ProductAddDto productAddDto);
-    Task<string?> Update(ProductUpdateDto productUpdateDto);
+    Task<string?> Update(ProductUpdateDto productUpdateDto , Guid id);
     Task<bool> Delete(Guid productId);
 
 }

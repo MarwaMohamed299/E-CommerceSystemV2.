@@ -16,6 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using StackExchange.Redis;
 using System.Globalization;
 using System.Text;
 
@@ -107,9 +108,18 @@ public class Program
         });
         #endregion
 
+        #region Redis Config
+        builder.Services.AddSingleton<IConnectionMultiplexer>(c =>
+        {
+            var options = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis")!);
+            return ConnectionMultiplexer.Connect(options);
+        });
+        #endregion
+
         #region Custom Services
 
         builder.Services.AddTransient<MailingService>();
+        builder.Services.AddScoped<IBasketRepo, BasketRepo>();
         builder.Services.AddScoped<IProductRepo, ProductRepo>();
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         builder.Services.AddScoped<ICampaignsCustomersRepo, CampaignsCustomersRepo>();

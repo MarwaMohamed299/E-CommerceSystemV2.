@@ -182,7 +182,7 @@ public class ProductsManagerTests
         #endregion
         #region Act
 
-        var result = await manager.Update(updatedProduct);
+        var result = await manager.Update(updatedProduct,productId);
 
         #endregion
 
@@ -223,7 +223,7 @@ public class ProductsManagerTests
         #endregion
 
         #region Assert
-        await Should.ThrowAsync<NotFoundException>(manager.Update(updatedProduct));
+        await Should.ThrowAsync<NotFoundException>(manager.Update(updatedProduct,productId));
         #endregion
     }
 

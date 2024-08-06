@@ -1,0 +1,879 @@
+2024-08-07 02:46:31.165 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-08-07 02:47:51.218 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-08-07 02:48:43.080 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-08-07 02:52:22.138 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-08-07 02:54:51.889 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-08-07 02:54:53.416 +03:00 [INF] Executed DbCommand (141ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-07 02:54:53.571 +03:00 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-07 02:54:53.680 +03:00 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-07 02:54:53.927 +03:00 [INF] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-08-07 02:54:54.053 +03:00 [INF] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-07 02:54:54.170 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-07 02:54:54.292 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-07 02:54:54.324 +03:00 [INF] Applying migration '20240105115149_Inital'.
+2024-08-07 02:54:54.664 +03:00 [INF] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-08-07 02:54:54.774 +03:00 [INF] Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [CreationDate] datetime2 NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-08-07 02:54:54.904 +03:00 [INF] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CampaignCustomers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_CampaignCustomers] PRIMARY KEY ([Id])
+);
+2024-08-07 02:54:55.015 +03:00 [INF] Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [CategoryId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([CategoryId])
+);
+2024-08-07 02:54:55.122 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Tags] (
+    [TagId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Tags] PRIMARY KEY ([TagId])
+);
+2024-08-07 02:54:55.230 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Textsss] (
+    [Id] uniqueidentifier NOT NULL,
+    [TextKey] nvarchar(max) NOT NULL,
+    [EnglishText] nvarchar(max) NOT NULL,
+    [ArabicText] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Textsss] PRIMARY KEY ([Id])
+);
+2024-08-07 02:54:55.340 +03:00 [INF] Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-08-07 02:54:55.622 +03:00 [INF] Executed DbCommand (278ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-07 02:54:55.827 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-07 02:54:55.958 +03:00 [INF] Executed DbCommand (124ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-07 02:54:56.071 +03:00 [INF] Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-07 02:54:56.188 +03:00 [INF] Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Orders] (
+    [OrderId] uniqueidentifier NOT NULL,
+    [OrderDate] datetime2 NOT NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Orders] PRIMARY KEY ([OrderId]),
+    CONSTRAINT [FK_Orders_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-07 02:54:56.338 +03:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NULL,
+    [CategoryType] int NOT NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [CategoryId] uniqueidentifier NULL,
+    [OrderId] uniqueidentifier NOT NULL,
+    [TagId] uniqueidentifier NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ProductId]),
+    CONSTRAINT [FK_Products_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([CategoryId]),
+    CONSTRAINT [FK_Products_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([OrderId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_Tags_TagId] FOREIGN KEY ([TagId]) REFERENCES [Tags] ([TagId])
+);
+2024-08-07 02:54:56.543 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [TagProducts] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [TagId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_TagProducts] PRIMARY KEY ([ProductId], [TagId]),
+    CONSTRAINT [FK_TagProducts_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([ProductId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_TagProducts_Tags_TagId] FOREIGN KEY ([TagId]) REFERENCES [Tags] ([TagId])
+);
+2024-08-07 02:54:56.774 +03:00 [INF] Executed DbCommand (224ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-08-07 02:54:56.953 +03:00 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-08-07 02:54:57.057 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-08-07 02:54:57.276 +03:00 [INF] Executed DbCommand (214ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-08-07 02:54:57.567 +03:00 [INF] Executed DbCommand (286ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-08-07 02:54:57.772 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-08-07 02:54:58.007 +03:00 [INF] Executed DbCommand (232ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-08-07 02:54:58.147 +03:00 [INF] Executed DbCommand (136ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_UserId] ON [Orders] ([UserId]);
+2024-08-07 02:54:58.287 +03:00 [INF] Executed DbCommand (135ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_CategoryId] ON [Products] ([CategoryId]);
+2024-08-07 02:54:58.591 +03:00 [INF] Executed DbCommand (302ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_OrderId] ON [Products] ([OrderId]);
+2024-08-07 02:54:58.795 +03:00 [INF] Executed DbCommand (199ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_TagId] ON [Products] ([TagId]);
+2024-08-07 02:54:58.917 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_TagProducts_TagId] ON [TagProducts] ([TagId]);
+2024-08-07 02:54:59.024 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240105115149_Inital', N'8.0.0');
+2024-08-07 02:54:59.213 +03:00 [INF] Applying migration '20240105115657_AddingSeeeding'.
+2024-08-07 02:54:59.615 +03:00 [INF] Executed DbCommand (182ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] DROP CONSTRAINT [FK_Products_Orders_OrderId];
+2024-08-07 02:54:59.857 +03:00 [INF] Executed DbCommand (240ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (N'331564f6-3281-4a64-b903-feb3d97fe146', 0, N'690e1610-c9fb-4db0-b2fc-f674c88194cb', '2024-01-05T14:56:56.6067389+02:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'2ad7844c-481e-4f2e-9b65-4a279f01ce97', CAST(0 AS bit), N'john doe'),
+(N'49003d27-37d3-4a86-93ce-5b2221318114', 0, N'd9bf1c11-9dcc-4476-bcac-a51f326c7e60', '2024-01-05T14:56:56.6067417+02:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'4bde03dc-0640-4d5e-81f4-18c843a94620', CAST(0 AS bit), N'Sara doe'),
+(N'914f96f1-b243-4b96-a43c-c0043dff9715', 0, N'1e6e2b92-5498-40ea-9425-7319de224489', '2024-01-05T14:56:56.6067397+02:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'c7c4311e-e338-40a8-86e0-266b064b14a1', CAST(0 AS bit), N'jane doe'),
+(N'cd418a76-6602-473d-bfea-8ca934e30b56', 0, N'0312a912-34ca-4987-915c-fc94b30f07a4', '2024-01-05T14:56:56.6067422+02:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'722e3c5c-f4f2-4213-ac37-a4b7c4c48ce7', CAST(0 AS bit), N'Sandy Jakson');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] OFF;
+2024-08-07 02:55:00.024 +03:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] ON;
+INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+VALUES ('449673be-c237-4dfd-8f83-c80768e9ef44', N'marwaghonem29@gmail.com', N'Marwa'),
+('6023ed86-cf89-4c14-9a87-ea26ae24f460', N'Jamal_Ali@outlook.com', N'Jamal');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] OFF;
+2024-08-07 02:55:00.150 +03:00 [INF] Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] ON;
+INSERT INTO [Categories] ([CategoryId], [Name])
+VALUES ('20f70b3d-708a-4ba8-9128-4615a3464fd3', N'Appliances'),
+('45cefe16-9fe9-4028-9464-802cc92219c6', N'Tablets'),
+('509ab127-35e7-4aea-a7f6-9e0def6ccd96', N'SmartDevices'),
+('618b02db-d1cf-4b2b-9fbf-320d08377b42', N'Clothing'),
+('77370d0b-070f-4153-a544-8f57604d6a14', N'Fashion'),
+('aa86afc3-e0d5-4741-b047-343f1885376a', N'Gaming'),
+('ba0ff918-546c-4478-bc90-e74ab59f3cff', N'Electronics'),
+('bf643b98-64fc-46c1-8c31-552111eb74f5', N'Mobiles');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] OFF;
+2024-08-07 02:55:00.331 +03:00 [INF] Executed DbCommand (178ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] ON;
+INSERT INTO [Tags] ([TagId], [Name])
+VALUES ('6d89fe93-505b-4032-a51d-32278ff391bd', N'Tech'),
+('7236c9dc-d594-4f04-a7ea-442b9c7ce9f6', N'FlagShip Mobiles'),
+('e126b7b4-d6fe-4b6e-9b0f-d865b3871827', N'Fashion 2024');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] OFF;
+2024-08-07 02:55:00.536 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] ON;
+INSERT INTO [Textsss] ([Id], [ArabicText], [EnglishText], [TextKey])
+VALUES ('8a8fa707-cd35-4050-9763-7abb813bf3c6', N'مرحبا', N'Welcome', N'WelcomeMessage');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] OFF;
+2024-08-07 02:55:00.660 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] ON;
+INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+VALUES ('1a5635e0-8a4d-4f11-879f-4c06bd69be8d', '2024-01-05T14:56:56.6067444+02:00', N'49003d27-37d3-4a86-93ce-5b2221318114'),
+('55a3d7fe-43ef-4ca1-93e5-ecfab416766b', '2024-01-05T14:56:56.6067446+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715'),
+('60eea5da-f2cd-4fdc-b3f5-794894b1ab21', '2024-01-05T14:56:56.6067442+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715'),
+('61432ee8-c136-4459-b69c-c4957801355d', '2024-01-05T14:56:56.6067437+02:00', N'331564f6-3281-4a64-b903-feb3d97fe146'),
+('90a81f1c-1c00-4a0e-8f56-21f3b53cba00', '2024-01-05T14:56:56.6067450+02:00', N'cd418a76-6602-473d-bfea-8ca934e30b56'),
+('d04ab8fd-047f-426b-a775-a5c022ce660b', '2024-01-05T14:56:56.6067454+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715'),
+('da6032a1-ff08-45d0-aa1a-47d702bccdb2', '2024-01-05T14:56:56.6067452+02:00', N'49003d27-37d3-4a86-93ce-5b2221318114'),
+('f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', '2024-01-05T14:56:56.6067429+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] OFF;
+2024-08-07 02:55:00.785 +03:00 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] ON;
+INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+VALUES ('333ed7b8-90c6-4522-9fde-43f57b5b89e1', NULL, 3, N'Calvin Klein Watch', '61432ee8-c136-4459-b69c-c4957801355d', 199.99, NULL),
+('33427392-3d61-428b-bb74-b27358dae2f6', NULL, 1, N'HP Printer', '61432ee8-c136-4459-b69c-c4957801355d', 149.99, NULL),
+('75ecfe62-c1fc-4466-83e7-451999543342', NULL, 6, N'Razer Gaming Mouse', '61432ee8-c136-4459-b69c-c4957801355d', 69.99, NULL),
+('871b5405-6dc5-47a6-b02e-f80c6ebee9e2', NULL, 1, N'Bose Noise-Canceling Headphones', '61432ee8-c136-4459-b69c-c4957801355d', 299.99, NULL),
+('8d227ecc-04a6-4817-a5a4-6201cf76dd40', NULL, 5, N'Amazon Echo Dot', '61432ee8-c136-4459-b69c-c4957801355d', 39.99, NULL),
+('97f2567f-0d57-4a10-aab9-43f66393afd1', NULL, 3, N'Fossil Smartwatch', 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', 149.99, NULL),
+('b24c1794-db69-4d84-b448-5ac708f458a4', NULL, 1, N'Canon EOS Rebel T7', '60eea5da-f2cd-4fdc-b3f5-794894b1ab21', 499.99, NULL),
+('ca4d1ded-7d4d-41f6-9ee0-41715085f598', NULL, 4, N'Cuisinart Coffee Maker', 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', 79.99, NULL),
+('d1027440-6b13-4fd2-bfba-340214f09c37', NULL, 3, N'Levi''s Jeans', '61432ee8-c136-4459-b69c-c4957801355d', 59.99, NULL),
+('df32db8b-15c3-44af-aff1-a2440dc7f523', NULL, 6, N'Fitbit Charge 5', '61432ee8-c136-4459-b69c-c4957801355d', 149.99, NULL),
+('e4278ee9-549f-4e3a-bb40-5771e6de00aa', NULL, 1, N'Sony Smart TV', '61432ee8-c136-4459-b69c-c4957801355d', 1299.99, NULL),
+('e57b0fdf-ab7b-498b-964a-9e983526540b', NULL, 4, N'KitchenAid Stand Mixer', '1a5635e0-8a4d-4f11-879f-4c06bd69be8d', 349.99, NULL),
+('f2f71960-3867-4b42-bd30-f4b8802f747c', NULL, 2, N'Samsung Galaxy S21', 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', 799.99, NULL),
+('f42865db-b358-4151-a681-f95b7e2a541a', NULL, 3, N'Adidas Running Shoes', '60eea5da-f2cd-4fdc-b3f5-794894b1ab21', 109.99, NULL),
+('ff60d97f-a5fe-4585-a207-0b499a22a82c', NULL, 3, N'Nike Running Shoes', '61432ee8-c136-4459-b69c-c4957801355d', 89.99, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] OFF;
+2024-08-07 02:55:00.946 +03:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] ON;
+INSERT INTO [TagProducts] ([ProductId], [TagId])
+VALUES ('33427392-3d61-428b-bb74-b27358dae2f6', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('871b5405-6dc5-47a6-b02e-f80c6ebee9e2', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('b24c1794-db69-4d84-b448-5ac708f458a4', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('d1027440-6b13-4fd2-bfba-340214f09c37', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('e4278ee9-549f-4e3a-bb40-5771e6de00aa', '7236c9dc-d594-4f04-a7ea-442b9c7ce9f6'),
+('e57b0fdf-ab7b-498b-964a-9e983526540b', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('ff60d97f-a5fe-4585-a207-0b499a22a82c', '6d89fe93-505b-4032-a51d-32278ff391bd');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] OFF;
+2024-08-07 02:55:01.181 +03:00 [INF] Executed DbCommand (230ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] ADD CONSTRAINT [FK_Products_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([OrderId]);
+2024-08-07 02:55:01.355 +03:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240105115657_AddingSeeeding', N'8.0.0');
+2024-08-07 02:55:01.563 +03:00 [INF] Applying migration '20240105121920_AddingTest'.
+2024-08-07 02:55:02.072 +03:00 [INF] Executed DbCommand (303ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = '449673be-c237-4dfd-8f83-c80768e9ef44';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:02.395 +03:00 [INF] Executed DbCommand (317ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = '6023ed86-cf89-4c14-9a87-ea26ae24f460';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:02.584 +03:00 [INF] Executed DbCommand (185ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '20f70b3d-708a-4ba8-9128-4615a3464fd3';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:02.789 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '45cefe16-9fe9-4028-9464-802cc92219c6';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:02.994 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '509ab127-35e7-4aea-a7f6-9e0def6ccd96';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:03.110 +03:00 [INF] Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '618b02db-d1cf-4b2b-9fbf-320d08377b42';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:03.286 +03:00 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '77370d0b-070f-4153-a544-8f57604d6a14';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:03.498 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'aa86afc3-e0d5-4741-b047-343f1885376a';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:03.638 +03:00 [INF] Executed DbCommand (132ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'ba0ff918-546c-4478-bc90-e74ab59f3cff';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:03.822 +03:00 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'bf643b98-64fc-46c1-8c31-552111eb74f5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.018 +03:00 [INF] Executed DbCommand (191ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '55a3d7fe-43ef-4ca1-93e5-ecfab416766b';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.222 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '90a81f1c-1c00-4a0e-8f56-21f3b53cba00';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.328 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'd04ab8fd-047f-426b-a775-a5c022ce660b';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.435 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'da6032a1-ff08-45d0-aa1a-47d702bccdb2';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.550 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '333ed7b8-90c6-4522-9fde-43f57b5b89e1';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.687 +03:00 [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '75ecfe62-c1fc-4466-83e7-451999543342';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.790 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '8d227ecc-04a6-4817-a5a4-6201cf76dd40';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:04.935 +03:00 [INF] Executed DbCommand (141ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '97f2567f-0d57-4a10-aab9-43f66393afd1';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:05.144 +03:00 [INF] Executed DbCommand (196ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ca4d1ded-7d4d-41f6-9ee0-41715085f598';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:05.349 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'df32db8b-15c3-44af-aff1-a2440dc7f523';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:05.473 +03:00 [INF] Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'f2f71960-3867-4b42-bd30-f4b8802f747c';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:05.656 +03:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'f42865db-b358-4151-a681-f95b7e2a541a';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:05.861 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '33427392-3d61-428b-bb74-b27358dae2f6' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:06.066 +03:00 [INF] Executed DbCommand (198ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '871b5405-6dc5-47a6-b02e-f80c6ebee9e2' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:06.271 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'b24c1794-db69-4d84-b448-5ac708f458a4' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:06.373 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'd1027440-6b13-4fd2-bfba-340214f09c37' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:06.578 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'e4278ee9-549f-4e3a-bb40-5771e6de00aa' AND [TagId] = '7236c9dc-d594-4f04-a7ea-442b9c7ce9f6';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:06.688 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'e57b0fdf-ab7b-498b-964a-9e983526540b' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:06.794 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'ff60d97f-a5fe-4585-a207-0b499a22a82c' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:06.987 +03:00 [INF] Executed DbCommand (190ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = 'e126b7b4-d6fe-4b6e-9b0f-d865b3871827';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:07.091 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Textsss]
+WHERE [Id] = '8a8fa707-cd35-4050-9763-7abb813bf3c6';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:07.294 +03:00 [INF] Executed DbCommand (193ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'cd418a76-6602-473d-bfea-8ca934e30b56';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:07.408 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:07.525 +03:00 [INF] Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '33427392-3d61-428b-bb74-b27358dae2f6';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:07.704 +03:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '871b5405-6dc5-47a6-b02e-f80c6ebee9e2';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:07.909 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'b24c1794-db69-4d84-b448-5ac708f458a4';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:08.014 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'd1027440-6b13-4fd2-bfba-340214f09c37';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:08.220 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'e4278ee9-549f-4e3a-bb40-5771e6de00aa';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:08.373 +03:00 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'e57b0fdf-ab7b-498b-964a-9e983526540b';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:08.626 +03:00 [INF] Executed DbCommand (235ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ff60d97f-a5fe-4585-a207-0b499a22a82c';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:08.731 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:08.832 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = '7236c9dc-d594-4f04-a7ea-442b9c7ce9f6';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:08.933 +03:00 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '1a5635e0-8a4d-4f11-879f-4c06bd69be8d';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:09.036 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '60eea5da-f2cd-4fdc-b3f5-794894b1ab21';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:09.343 +03:00 [INF] Executed DbCommand (304ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '61432ee8-c136-4459-b69c-c4957801355d';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:09.548 +03:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'331564f6-3281-4a64-b903-feb3d97fe146';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:09.752 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'49003d27-37d3-4a86-93ce-5b2221318114';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:09.957 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'914f96f1-b243-4b96-a43c-c0043dff9715';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:10.177 +03:00 [INF] Executed DbCommand (217ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Test] (
+    [Id] uniqueidentifier NOT NULL,
+    [TextKey] nvarchar(max) NOT NULL,
+    [EnglishText] nvarchar(max) NOT NULL,
+    [ArabicText] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Test] PRIMARY KEY ([Id])
+);
+2024-08-07 02:55:10.303 +03:00 [INF] Executed DbCommand (122ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f', 0, N'56998682-5f04-41ed-bac4-9bc7ba620957', '2024-01-05T15:19:18.8364790+02:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'37721efa-3ce7-4328-b46e-97da54848926', CAST(0 AS bit), N'Sara doe'),
+(N'4d70a68d-01db-4318-b23b-078714ced347', 0, N'ba224085-322c-44ec-9e47-8f4d50bde428', '2024-01-05T15:19:18.8364773+02:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'b0f83cac-0838-4636-8df9-6ca8a73a42b9', CAST(0 AS bit), N'jane doe'),
+(N'7ecb5903-a3a8-4d6c-8bcf-bac712fd1d86', 0, N'97edc9d4-c5c2-4290-b4de-709cbd118051', '2024-01-05T15:19:18.8364746+02:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'4fe27054-3661-44d8-b7d8-0afcedaec787', CAST(0 AS bit), N'john doe'),
+(N'd2db1857-d4ea-4c1b-8c73-f6fa6affdfb1', 0, N'4ff0797f-432b-4248-8d2f-6b9edbf4a0fb', '2024-01-05T15:19:18.8364814+02:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'98d95edf-558e-4f3e-aa14-78fc3d5476ed', CAST(0 AS bit), N'Sandy Jakson');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] OFF;
+2024-08-07 02:55:10.470 +03:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] ON;
+INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+VALUES ('50dacaaf-093f-4260-aa72-712086df41b0', N'marwaghonem29@gmail.com', N'Marwa'),
+('b4f65567-55cb-4672-a903-ef8a5bb8269b', N'Jamal_Ali@outlook.com', N'Jamal');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] OFF;
+2024-08-07 02:55:10.589 +03:00 [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] ON;
+INSERT INTO [Categories] ([CategoryId], [Name])
+VALUES ('30ad1a3f-4476-493a-a1b0-c2b56366e3b9', N'Tablets'),
+('44c7ef0f-8cbd-47a3-b077-d6c116a8394a', N'Electronics'),
+('692dec8f-e9bd-420e-8513-f1132a1360fa', N'Fashion'),
+('6e552106-ec11-45d4-b8db-8b0929b0d192', N'SmartDevices'),
+('843191b0-7023-4e60-a532-be409f2240fd', N'Clothing'),
+('a7b4a669-22d8-486c-9432-294e5c4f3c95', N'Appliances'),
+('d34c7a34-4a51-4fd3-8c10-a5566cddb518', N'Mobiles'),
+('e56d3b03-105f-40da-9055-e3ba4dbbe954', N'Gaming');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] OFF;
+2024-08-07 02:55:10.776 +03:00 [INF] Executed DbCommand (182ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] ON;
+INSERT INTO [Tags] ([TagId], [Name])
+VALUES ('97e104e5-8f88-4d77-8871-c1a42e6bebc4', N'FlagShip Mobiles'),
+('e38a559d-a6ec-4c8f-8545-e9aacbba0fe5', N'Tech'),
+('e8cbf26c-66e6-48a8-8326-3f2a775dedb0', N'Fashion 2024');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] OFF;
+2024-08-07 02:55:10.899 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] ON;
+INSERT INTO [Textsss] ([Id], [ArabicText], [EnglishText], [TextKey])
+VALUES ('85d98fe6-8f34-466f-9326-e008ad4acf8b', N'مرحبا', N'Welcome', N'WelcomeMessage');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] OFF;
+2024-08-07 02:55:11.018 +03:00 [INF] Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] ON;
+INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+VALUES ('1254d8bf-ca94-405b-8e2d-07f7cb466cd0', '2024-01-05T15:19:18.8364920+02:00', N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f'),
+('1ad6b2e4-6083-46c9-891c-be3d290710bd', '2024-01-05T15:19:18.8364950+02:00', N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f'),
+('36b50542-d788-44c9-8125-2913d89b0f9b', '2024-01-05T15:19:18.8364895+02:00', N'4d70a68d-01db-4318-b23b-078714ced347'),
+('6cef3c2f-c313-47f4-8a43-7ca4eb5dd69f', '2024-01-05T15:19:18.8364958+02:00', N'4d70a68d-01db-4318-b23b-078714ced347'),
+('7ab3db9c-f063-43ee-8923-a96b462c23b3', '2024-01-05T15:19:18.8364906+02:00', N'7ecb5903-a3a8-4d6c-8bcf-bac712fd1d86'),
+('c304455e-ba11-44e2-9198-b290dec7a3ec', '2024-01-05T15:19:18.8364943+02:00', N'd2db1857-d4ea-4c1b-8c73-f6fa6affdfb1'),
+('dc2eb7d0-e008-48f1-a171-5b9f03391526', '2024-01-05T15:19:18.8364913+02:00', N'4d70a68d-01db-4318-b23b-078714ced347'),
+('dca411e5-f593-4feb-932e-846dac4bc9ec', '2024-01-05T15:19:18.8364927+02:00', N'4d70a68d-01db-4318-b23b-078714ced347');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] OFF;
+2024-08-07 02:55:11.145 +03:00 [INF] Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] ON;
+INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+VALUES ('1153a908-18f5-402d-bbce-a73b2a9ae894', NULL, 3, N'Calvin Klein Watch', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 199.99, NULL),
+('1e13ad8e-34d9-47b7-ab91-ff1305b54a39', NULL, 4, N'KitchenAid Stand Mixer', '1254d8bf-ca94-405b-8e2d-07f7cb466cd0', 349.99, NULL),
+('5fa5e5c4-f93c-4cfa-bda0-e05dd1e04ff2', NULL, 3, N'Adidas Running Shoes', 'dc2eb7d0-e008-48f1-a171-5b9f03391526', 109.99, NULL),
+('6c93eaba-60c7-4cd5-a3a9-a2a0b99e9c05', NULL, 3, N'Fossil Smartwatch', '36b50542-d788-44c9-8125-2913d89b0f9b', 149.99, NULL),
+('6f472250-bf50-44b0-ac91-289c27457755', NULL, 2, N'Samsung Galaxy S21', '36b50542-d788-44c9-8125-2913d89b0f9b', 799.99, NULL),
+('81d28b43-fb4d-40c3-80fc-926b555887ed', NULL, 4, N'Cuisinart Coffee Maker', '36b50542-d788-44c9-8125-2913d89b0f9b', 79.99, NULL),
+('8ed6a215-9304-4b34-9f03-15ec95acf7e0', NULL, 3, N'Levi''s Jeans', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 59.99, NULL),
+('983a6355-b6dd-4b37-b912-40614853099e', NULL, 1, N'Sony Smart TV', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 1299.99, NULL),
+('ab8caa48-4203-405f-9291-8e0a8c1b81ce', NULL, 1, N'Canon EOS Rebel T7', 'dc2eb7d0-e008-48f1-a171-5b9f03391526', 499.99, NULL),
+('ae721a5e-1aed-49ea-bbe5-b052532e9b5f', NULL, 1, N'Bose Noise-Canceling Headphones', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 299.99, NULL),
+('c286eb51-c8d9-4049-bb96-0a8fda24e61e', NULL, 6, N'Razer Gaming Mouse', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 69.99, NULL),
+('c3ceb045-4019-40c3-9a78-9275bc1f59ff', NULL, 5, N'Amazon Echo Dot', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 39.99, NULL),
+('cf9ee6d2-3d82-4f66-8092-d0fe941097de', NULL, 3, N'Nike Running Shoes', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 89.99, NULL),
+('df5ccde3-d90d-4b31-a76d-66f09becb349', NULL, 6, N'Fitbit Charge 5', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 149.99, NULL),
+('f95100c3-1026-4a22-aeea-91bbbd6a0f95', NULL, 1, N'HP Printer', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 149.99, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] OFF;
+2024-08-07 02:55:11.264 +03:00 [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] ON;
+INSERT INTO [TagProducts] ([ProductId], [TagId])
+VALUES ('1e13ad8e-34d9-47b7-ab91-ff1305b54a39', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('8ed6a215-9304-4b34-9f03-15ec95acf7e0', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('983a6355-b6dd-4b37-b912-40614853099e', '97e104e5-8f88-4d77-8871-c1a42e6bebc4'),
+('ab8caa48-4203-405f-9291-8e0a8c1b81ce', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('ae721a5e-1aed-49ea-bbe5-b052532e9b5f', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('cf9ee6d2-3d82-4f66-8092-d0fe941097de', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('f95100c3-1026-4a22-aeea-91bbbd6a0f95', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] OFF;
+2024-08-07 02:55:11.583 +03:00 [INF] Executed DbCommand (314ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240105121920_AddingTest', N'8.0.0');
+2024-08-07 02:55:11.804 +03:00 [INF] Applying migration '20240110054232_AddingSeeding'.
+2024-08-07 02:55:12.107 +03:00 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = '50dacaaf-093f-4260-aa72-712086df41b0';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:12.211 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = 'b4f65567-55cb-4672-a903-ef8a5bb8269b';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:12.517 +03:00 [INF] Executed DbCommand (301ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '30ad1a3f-4476-493a-a1b0-c2b56366e3b9';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:12.722 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '44c7ef0f-8cbd-47a3-b077-d6c116a8394a';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:12.837 +03:00 [INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '692dec8f-e9bd-420e-8513-f1132a1360fa';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:13.029 +03:00 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '6e552106-ec11-45d4-b8db-8b0929b0d192';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:13.143 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '843191b0-7023-4e60-a532-be409f2240fd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:13.336 +03:00 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'a7b4a669-22d8-486c-9432-294e5c4f3c95';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:13.444 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'd34c7a34-4a51-4fd3-8c10-a5566cddb518';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:13.643 +03:00 [INF] Executed DbCommand (193ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'e56d3b03-105f-40da-9055-e3ba4dbbe954';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:13.745 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '1ad6b2e4-6083-46c9-891c-be3d290710bd';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:13.950 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '6cef3c2f-c313-47f4-8a43-7ca4eb5dd69f';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:14.053 +03:00 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'c304455e-ba11-44e2-9198-b290dec7a3ec';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:14.192 +03:00 [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'dca411e5-f593-4feb-932e-846dac4bc9ec';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:14.360 +03:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '1153a908-18f5-402d-bbce-a73b2a9ae894';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:14.565 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '5fa5e5c4-f93c-4cfa-bda0-e05dd1e04ff2';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:14.770 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '6c93eaba-60c7-4cd5-a3a9-a2a0b99e9c05';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:14.974 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '6f472250-bf50-44b0-ac91-289c27457755';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:15.179 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '81d28b43-fb4d-40c3-80fc-926b555887ed';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:15.384 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'c286eb51-c8d9-4049-bb96-0a8fda24e61e';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:15.487 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'c3ceb045-4019-40c3-9a78-9275bc1f59ff';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:15.605 +03:00 [INF] Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'df5ccde3-d90d-4b31-a76d-66f09becb349';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:15.820 +03:00 [INF] Executed DbCommand (211ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '1e13ad8e-34d9-47b7-ab91-ff1305b54a39' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:15.929 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '8ed6a215-9304-4b34-9f03-15ec95acf7e0' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:16.038 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '983a6355-b6dd-4b37-b912-40614853099e' AND [TagId] = '97e104e5-8f88-4d77-8871-c1a42e6bebc4';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:16.204 +03:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'ab8caa48-4203-405f-9291-8e0a8c1b81ce' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:16.319 +03:00 [INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'ae721a5e-1aed-49ea-bbe5-b052532e9b5f' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:16.510 +03:00 [INF] Executed DbCommand (188ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'cf9ee6d2-3d82-4f66-8092-d0fe941097de' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:16.615 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'f95100c3-1026-4a22-aeea-91bbbd6a0f95' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:16.818 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = 'e8cbf26c-66e6-48a8-8326-3f2a775dedb0';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:16.919 +03:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Textsss]
+WHERE [Id] = '85d98fe6-8f34-466f-9326-e008ad4acf8b';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:17.132 +03:00 [INF] Executed DbCommand (208ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'd2db1857-d4ea-4c1b-8c73-f6fa6affdfb1';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:17.330 +03:00 [INF] Executed DbCommand (192ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '36b50542-d788-44c9-8125-2913d89b0f9b';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:17.535 +03:00 [INF] Executed DbCommand (199ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '1e13ad8e-34d9-47b7-ab91-ff1305b54a39';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:17.843 +03:00 [INF] Executed DbCommand (306ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '8ed6a215-9304-4b34-9f03-15ec95acf7e0';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:18.046 +03:00 [INF] Executed DbCommand (197ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '983a6355-b6dd-4b37-b912-40614853099e';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:18.252 +03:00 [INF] Executed DbCommand (203ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ab8caa48-4203-405f-9291-8e0a8c1b81ce';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:18.456 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ae721a5e-1aed-49ea-bbe5-b052532e9b5f';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:18.661 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'cf9ee6d2-3d82-4f66-8092-d0fe941097de';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:18.865 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'f95100c3-1026-4a22-aeea-91bbbd6a0f95';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:19.071 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = '97e104e5-8f88-4d77-8871-c1a42e6bebc4';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:19.379 +03:00 [INF] Executed DbCommand (299ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:19.583 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '1254d8bf-ca94-405b-8e2d-07f7cb466cd0';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:19.787 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '7ab3db9c-f063-43ee-8923-a96b462c23b3';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:19.992 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'dc2eb7d0-e008-48f1-a171-5b9f03391526';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:20.197 +03:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:20.401 +03:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'4d70a68d-01db-4318-b23b-078714ced347';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:20.607 +03:00 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'7ecb5903-a3a8-4d6c-8bcf-bac712fd1d86';
+SELECT @@ROWCOUNT;
+2024-08-07 02:55:20.736 +03:00 [INF] Executed DbCommand (125ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (N'126f9b91-0660-4d35-b66e-c00893477c16', 0, N'dd1ca627-e2c3-472d-b68d-a3e64e9a172a', '2024-01-10T08:42:30.3670017+02:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'ec0265b0-3a75-4e9a-8623-dc62a75eb36b', CAST(0 AS bit), N'Sandy Jakson'),
+(N'79889c8e-d151-44bf-92bc-e811a2b03cf8', 0, N'2ca84058-a984-420b-bd95-2db5d7dc4256', '2024-01-10T08:42:30.3669938+02:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'ab9ef759-c6b9-43a1-a07b-f6a32b01ba82', CAST(0 AS bit), N'john doe'),
+(N'9797bc68-71b8-49de-aa9d-1953616f2366', 0, N'e7933f18-085e-4120-9049-e9b20aa241e0', '2024-01-10T08:42:30.3669996+02:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'3e4f878f-ca7d-4326-bf9f-5b98d1218df1', CAST(0 AS bit), N'Sara doe'),
+(N'ecce009f-c6b2-48ef-bf80-99363d4cd53a', 0, N'031587d4-f431-4a45-8425-ca3cec400a5d', '2024-01-10T08:42:30.3669964+02:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'54388261-c387-4e4b-a2ac-89b98efec038', CAST(0 AS bit), N'jane doe');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] OFF;
+2024-08-07 02:55:20.913 +03:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] ON;
+INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+VALUES ('777c6bd7-29d8-4a00-92d0-cbf34460e860', N'Jamal_Ali@outlook.com', N'Jamal'),
+('7e7154a6-3183-42fb-8911-a572316731cf', N'marwaghonem29@gmail.com', N'Marwa');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] OFF;
+2024-08-07 02:55:21.036 +03:00 [INF] Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] ON;
+INSERT INTO [Categories] ([CategoryId], [Name])
+VALUES ('3c9734be-cf73-42c9-bfd4-0396e89fe6f8', N'Appliances'),
+('4428caba-e423-4438-9c10-096ef781e58f', N'Fashion'),
+('6eb52884-9be7-497d-8dfe-ce8275963d65', N'Mobiles'),
+('78747418-3cde-421c-a789-8ed80ad1b7d5', N'Electronics'),
+('8319c5a3-a526-41a9-b527-6c7ad7e94aa7', N'Gaming'),
+('876a50b5-ebc1-4be6-88dd-3dc7f70d748a', N'SmartDevices'),
+('e6d518b7-72ee-49d7-9500-0b9ebee8443e', N'Clothing'),
+('ebb9e988-5ab1-4b26-867e-d440a8ae996e', N'Tablets');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] OFF;
+2024-08-07 02:55:21.221 +03:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] ON;
+INSERT INTO [Tags] ([TagId], [Name])
+VALUES ('363c132c-1c56-4cf7-bc2a-2bd681c6be51', N'FlagShip Mobiles'),
+('b6109b6d-bcfc-45c6-b35c-cab9079f5637', N'Fashion 2024'),
+('e88056e3-0b4b-44b4-87b5-b52f4d46556f', N'Tech');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] OFF;
+2024-08-07 02:55:21.554 +03:00 [INF] Executed DbCommand (329ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] ON;
+INSERT INTO [Textsss] ([Id], [ArabicText], [EnglishText], [TextKey])
+VALUES ('1181958f-63fd-4172-9f08-65e6892aed56', N'مرحبا', N'Welcome', N'WelcomeMessage'),
+('c3d4261a-0f29-4f18-8e14-d2357e0cfe10', N'مرحبا {0} كلمة المرور الخاصة بك هي {1}', N'Hello {0}, your Password Is {1}.', N'PasswordRetrievalMessage');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] OFF;
+2024-08-07 02:55:21.709 +03:00 [INF] Executed DbCommand (149ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] ON;
+INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+VALUES ('0023148a-a3b6-4903-b73a-7fd3be268cb8', '2024-01-10T08:42:30.3670073+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('1cb44ee7-6105-418d-8ce9-189c2d053416', '2024-01-10T08:42:30.3670102+02:00', N'126f9b91-0660-4d35-b66e-c00893477c16'),
+('3b80e265-ef3b-4bd5-addc-b2a3627d980b', '2024-01-10T08:42:30.3670117+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('6e068562-f13e-47f9-9639-f8b250dc61ef', '2024-01-10T08:42:30.3670052+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('ad6bd523-a194-4235-892e-62f765cb51b2', '2024-01-10T08:42:30.3670032+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('c1aa224f-7262-4e72-a3c7-efb58bd0b1dc', '2024-01-10T08:42:30.3670110+02:00', N'9797bc68-71b8-49de-aa9d-1953616f2366'),
+('d1f887eb-70bf-4f71-aeea-d667ae6eb566', '2024-01-10T08:42:30.3670068+02:00', N'9797bc68-71b8-49de-aa9d-1953616f2366'),
+('e7e89f06-a384-4df6-9466-5d33a5dcbea3', '2024-01-10T08:42:30.3670045+02:00', N'79889c8e-d151-44bf-92bc-e811a2b03cf8');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] OFF;
+2024-08-07 02:55:21.885 +03:00 [INF] Executed DbCommand (170ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] ON;
+INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+VALUES ('069fa4b5-df42-450a-b5c0-81f227340814', NULL, 3, N'Fossil Smartwatch', 'ad6bd523-a194-4235-892e-62f765cb51b2', 149.99, NULL),
+('3a8bc47f-fe1f-44a4-8adc-4398a06622ae', NULL, 1, N'HP Printer', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 149.99, NULL),
+('54ac2598-5c9b-4d7c-a457-6964e22f24c6', NULL, 4, N'KitchenAid Stand Mixer', 'd1f887eb-70bf-4f71-aeea-d667ae6eb566', 349.99, NULL),
+('5b843000-0c07-4bed-8c88-b6b3715ee759', NULL, 2, N'Samsung Galaxy S21', 'ad6bd523-a194-4235-892e-62f765cb51b2', 799.99, NULL),
+('6929afd3-c996-42ac-84fb-82c0c0bf943e', NULL, 6, N'Razer Gaming Mouse', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 69.99, NULL),
+('97477696-21db-4a8b-9d24-15f46ec71cc9', NULL, 3, N'Adidas Running Shoes', '6e068562-f13e-47f9-9639-f8b250dc61ef', 109.99, NULL),
+('a107453b-7703-4f67-ab62-a94776e458bc', NULL, 4, N'Cuisinart Coffee Maker', 'ad6bd523-a194-4235-892e-62f765cb51b2', 79.99, NULL),
+('a32ef41f-0745-4b0b-bd78-e9a813c80626', NULL, 1, N'Sony Smart TV', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 1299.99, NULL),
+('bda98f8a-6444-4a75-86b1-cfdb0a34d332', NULL, 1, N'Canon EOS Rebel T7', '6e068562-f13e-47f9-9639-f8b250dc61ef', 499.99, NULL),
+('cdf3295b-3d9e-4395-b41b-281d6ac6d691', NULL, 6, N'Fitbit Charge 5', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 149.99, NULL),
+('d494c082-4db3-4550-8279-431a50a4923c', NULL, 3, N'Calvin Klein Watch', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 199.99, NULL),
+('dea0d956-c9d2-490f-9048-4bf9f7e00e3b', NULL, 3, N'Nike Running Shoes', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 89.99, NULL),
+('f2845201-7964-4b21-b7c0-0828f37358c4', NULL, 1, N'Bose Noise-Canceling Headphones', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 299.99, NULL),
+('f40c0dcc-5003-4b80-ad3e-ba3f10e2c8df', NULL, 5, N'Amazon Echo Dot', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 39.99, NULL),
+('fbce8595-093d-41d2-8a23-da7907cee36d', NULL, 3, N'Levi''s Jeans', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 59.99, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] OFF;
+2024-08-07 02:55:22.006 +03:00 [INF] Executed DbCommand (118ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] ON;
+INSERT INTO [TagProducts] ([ProductId], [TagId])
+VALUES ('3a8bc47f-fe1f-44a4-8adc-4398a06622ae', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('54ac2598-5c9b-4d7c-a457-6964e22f24c6', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('a32ef41f-0745-4b0b-bd78-e9a813c80626', '363c132c-1c56-4cf7-bc2a-2bd681c6be51'),
+('bda98f8a-6444-4a75-86b1-cfdb0a34d332', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('dea0d956-c9d2-490f-9048-4bf9f7e00e3b', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('f2845201-7964-4b21-b7c0-0828f37358c4', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('fbce8595-093d-41d2-8a23-da7907cee36d', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] OFF;
+2024-08-07 02:55:22.111 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240110054232_AddingSeeding', N'8.0.0');

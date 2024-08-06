@@ -1,0 +1,9 @@
+2024-04-22 15:14:05.407 +02:00 [INF] 1 servers were removed due to timeout
+2024-04-22 15:14:06.460 +02:00 [WRN] Server desktop-ed51fau:8236:de6039dc was considered dead by other servers, restarting...
+2024-04-22 15:14:06.462 +02:00 [INF] Server desktop-ed51fau:8236:de6039dc caught restart signal...
+2024-04-22 15:14:06.475 +02:00 [WRN] Server desktop-ed51fau:8236:de6039dc stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-04-22 15:14:06.495 +02:00 [INF] Server desktop-ed51fau:8236:de6039dc successfully reported itself as stopped in 8.1256 ms
+2024-04-22 15:14:06.497 +02:00 [INF] Server desktop-ed51fau:8236:de6039dc has been stopped in total 31.7768 ms
+2024-04-22 15:14:06.517 +02:00 [INF] Server desktop-ed51fau:8236:faffc3ae successfully announced in 16.188 ms
+2024-04-22 15:14:06.522 +02:00 [INF] Server desktop-ed51fau:8236:faffc3ae is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-04-22 15:14:06.568 +02:00 [INF] Server desktop-ed51fau:8236:faffc3ae all the dispatchers started

@@ -1,0 +1,1520 @@
+2024-03-31 00:59:34.084 +02:00 [INF] Start installing Hangfire SQL objects...
+2024-03-31 00:59:47.361 +02:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:878b5c8b-3bd0-4439-bb47-4f2b1c54241a
+Error Number:4060,State:1,Class:11
+2024-03-31 00:59:47.663 +02:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:878b5c8b-3bd0-4439-bb47-4f2b1c54241a
+Error Number:4060,State:1,Class:11
+2024-03-31 00:59:47.681 +02:00 [WRN] An exception occurred while trying to perform the migration.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:878b5c8b-3bd0-4439-bb47-4f2b1c54241a
+Error Number:4060,State:1,Class:11
+2024-03-31 00:59:47.698 +02:00 [WRN] Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:878b5c8b-3bd0-4439-bb47-4f2b1c54241a
+Error Number:4060,State:1,Class:11
+2024-03-31 00:59:47.715 +02:00 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:878b5c8b-3bd0-4439-bb47-4f2b1c54241a
+Error Number:4060,State:1,Class:11
+2024-03-31 00:59:48.189 +02:00 [INF] User profile is available. Using 'C:\Users\Marwa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-31 00:59:48.240 +02:00 [INF] Creating key {530199ea-c943-4427-842b-51cba24d7f9f} with creation date 2024-03-30 22:59:48Z, activation date 2024-03-30 22:59:48Z, and expiration date 2024-06-28 22:59:48Z.
+2024-03-31 00:59:48.296 +02:00 [INF] Writing data to file 'C:\Users\Marwa\AppData\Local\ASP.NET\DataProtection-Keys\key-530199ea-c943-4427-842b-51cba24d7f9f.xml'.
+2024-03-31 00:59:49.509 +02:00 [INF] Now listening on: https://localhost:7175
+2024-03-31 00:59:49.515 +02:00 [INF] Now listening on: http://localhost:5117
+2024-03-31 00:59:49.529 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-03-31 00:59:49.531 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-31 00:59:49.532 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-31 00:59:49.606 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-31 00:59:49.609 +02:00 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:878b5c8b-3bd0-4439-bb47-4f2b1c54241a
+Error Number:4060,State:1,Class:11
+2024-03-31 00:59:49.609 +02:00 [INF] Hosting environment: Development
+2024-03-31 00:59:49.656 +02:00 [INF] Content root path: C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.API
+2024-03-31 01:00:01.383 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger - null null
+2024-03-31 01:00:02.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger - 301 0 null 1181.5123ms
+2024-03-31 01:00:02.564 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-03-31 01:00:02.749 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 184.3214ms
+2024-03-31 01:00:02.779 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/swagger-ui.css - null null
+2024-03-31 01:00:02.779 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/swagger-ui-bundle.js - null null
+2024-03-31 01:00:02.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/swagger-ui-standalone-preset.js - null null
+2024-03-31 01:00:02.791 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-31 01:00:02.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 17.4665ms
+2024-03-31 01:00:02.851 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-31 01:00:02.852 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-03-31 01:00:02.858 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-31 01:00:02.866 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/swagger-ui.css - 200 144929 text/css 87.1612ms
+2024-03-31 01:00:02.897 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 115.1744ms
+2024-03-31 01:00:02.912 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-31 01:00:02.923 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 143.8161ms
+2024-03-31 01:00:03.162 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 310.2577ms
+2024-03-31 01:00:03.288 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-03-31 01:00:03.418 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/favicon-32x32.png - null null
+2024-03-31 01:00:03.447 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-31 01:00:03.463 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/favicon-32x32.png - 200 628 image/png 45.6183ms
+2024-03-31 01:00:03.594 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 305.2711ms
+2024-03-31 01:00:14.767 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.1051815 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3dc4083e-8c86-469d-8154-ec5e8c17e447
+Error Number:4060,State:1,Class:11
+2024-03-31 01:00:39.958 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:50.3020840 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:f4a12aa0-5491-47d6-9de5-ce641e49e917
+Error Number:4060,State:1,Class:11
+2024-03-31 01:00:55.061 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:05.4053054 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:f4a12aa0-5491-47d6-9de5-ce641e49e917
+Error Number:4060,State:1,Class:11
+2024-03-31 01:01:02.562 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/1/2 - null null
+2024-03-31 01:01:02.901 +02:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-03-31 01:01:03.002 +02:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto]]] GetAll(Int32, Int32) on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2024-03-31 01:01:04.634 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-03-31 01:01:07.843 +02:00 [ERR] An error occurred using the connection to database 'E-Commerce' on server '.'.
+2024-03-31 01:01:07.931 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'E_CommerceSystemV2.API.ECommerceContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:2bba6851-1806-472b-83dc-95ad6ea26f53
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:2bba6851-1806-472b-83dc-95ad6ea26f53
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-03-31 01:01:08.164 +02:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API) in 5144.195ms
+2024-03-31 01:01:08.174 +02:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-03-31 01:01:08.187 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:2bba6851-1806-472b-83dc-95ad6ea26f53
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at E_CommerceSystemV2.DAL.Repos.Products.ProductRepo.GetCount() in C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.DAL\Repos\Products\ProductRepo.cs:line 27
+   at E_CommerceSystemV2.BL.Managers.Products.ProductsManager.GetAll(Int32 page, Int32 countPerPage) in C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.BL\Managers\Products\ProductsManager.cs:line 22
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll(Int32 page, Int32 countPerPage) in C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 62
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-03-31 01:01:09.361 +02:00 [ERR] Exception Occurred :An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:2bba6851-1806-472b-83dc-95ad6ea26f53
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at E_CommerceSystemV2.DAL.Repos.Products.ProductRepo.GetCount() in C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.DAL\Repos\Products\ProductRepo.cs:line 27
+   at E_CommerceSystemV2.BL.Managers.Products.ProductsManager.GetAll(Int32 page, Int32 countPerPage) in C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.BL\Managers\Products\ProductsManager.cs:line 22
+   at E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll(Int32 page, Int32 countPerPage) in C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.API\Controllers\Products\ProductsController.cs:line 62
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-03-31 01:01:09.777 +02:00 [ERR] HTTP GET /api/Products/1/2 responded 500 in 7181.8862 ms
+2024-03-31 01:01:09.819 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/1/2 - 500 null application/json; charset=utf-8 7256.4075ms
+2024-03-31 01:01:10.123 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:20.4673570 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:2bba6851-1806-472b-83dc-95ad6ea26f53
+Error Number:4060,State:1,Class:11
+2024-03-31 01:01:25.295 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:35.6386857 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:2bba6851-1806-472b-83dc-95ad6ea26f53
+Error Number:4060,State:1,Class:11
+2024-03-31 01:02:18.991 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:29.3321691 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3d395a01-2fcf-4864-8483-aa91884ed1c0
+Error Number:4060,State:1,Class:11
+2024-03-31 01:02:34.131 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:44.4747020 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3d395a01-2fcf-4864-8483-aa91884ed1c0
+Error Number:4060,State:1,Class:11
+2024-03-31 01:02:49.229 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:59.5733408 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3d395a01-2fcf-4864-8483-aa91884ed1c0
+Error Number:4060,State:1,Class:11
+2024-03-31 01:03:04.353 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:03:14.6965819 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3d395a01-2fcf-4864-8483-aa91884ed1c0
+Error Number:4060,State:1,Class:11
+2024-03-31 01:03:29.670 +02:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:03:40.0142021 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "E-Commerce" requested by the login. The login failed.
+Login failed for user 'DESKTOP-ED51FAU\Marwa'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:23ebc246-baf8-4cbd-b933-65def61086f4
+Error Number:4060,State:1,Class:11
+2024-03-31 01:03:31.201 +02:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-03-31 01:03:31.214 +02:00 [FTL] Execution loop BackgroundServerProcess:90cd0e89 was unable to wait for '00:00:15' delay due to an exception. Execution will be stopped.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Hangfire.Processing.TaskExtensions.WaitOne(WaitHandle waitHandle, TimeSpan timeout, CancellationToken token)
+   at Hangfire.Processing.BackgroundExecution.HandleDelay(Guid executionId, TimeSpan delay)
+2024-03-31 01:05:35.819 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-03-31 01:05:39.663 +02:00 [INF] Executed DbCommand (1,089ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [E-Commerce];
+2024-03-31 01:05:40.224 +02:00 [INF] Executed DbCommand (546ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [E-Commerce] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2024-03-31 01:05:40.327 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-03-31 01:05:40.494 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-03-31 01:05:40.503 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-03-31 01:05:40.545 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-03-31 01:05:40.664 +02:00 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-03-31 01:05:40.694 +02:00 [INF] Applying migration '20240105115149_Inital'.
+2024-03-31 01:05:40.804 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-03-31 01:05:40.818 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [CreationDate] datetime2 NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-03-31 01:05:40.828 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CampaignCustomers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_CampaignCustomers] PRIMARY KEY ([Id])
+);
+2024-03-31 01:05:40.842 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [CategoryId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([CategoryId])
+);
+2024-03-31 01:05:40.851 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Tags] (
+    [TagId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Tags] PRIMARY KEY ([TagId])
+);
+2024-03-31 01:05:40.861 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Textsss] (
+    [Id] uniqueidentifier NOT NULL,
+    [TextKey] nvarchar(max) NOT NULL,
+    [EnglishText] nvarchar(max) NOT NULL,
+    [ArabicText] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Textsss] PRIMARY KEY ([Id])
+);
+2024-03-31 01:05:40.877 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-03-31 01:05:40.886 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-03-31 01:05:40.905 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-03-31 01:05:40.916 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-03-31 01:05:40.933 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-03-31 01:05:40.947 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Orders] (
+    [OrderId] uniqueidentifier NOT NULL,
+    [OrderDate] datetime2 NOT NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Orders] PRIMARY KEY ([OrderId]),
+    CONSTRAINT [FK_Orders_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-03-31 01:05:40.956 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NULL,
+    [CategoryType] int NOT NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [CategoryId] uniqueidentifier NULL,
+    [OrderId] uniqueidentifier NOT NULL,
+    [TagId] uniqueidentifier NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ProductId]),
+    CONSTRAINT [FK_Products_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([CategoryId]),
+    CONSTRAINT [FK_Products_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([OrderId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_Tags_TagId] FOREIGN KEY ([TagId]) REFERENCES [Tags] ([TagId])
+);
+2024-03-31 01:05:40.966 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [TagProducts] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [TagId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_TagProducts] PRIMARY KEY ([ProductId], [TagId]),
+    CONSTRAINT [FK_TagProducts_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([ProductId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_TagProducts_Tags_TagId] FOREIGN KEY ([TagId]) REFERENCES [Tags] ([TagId])
+);
+2024-03-31 01:05:40.983 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-03-31 01:05:40.995 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-03-31 01:05:41.001 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-03-31 01:05:41.006 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-03-31 01:05:41.011 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-03-31 01:05:44.266 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-03-31 01:05:44.271 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-03-31 01:05:44.277 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_UserId] ON [Orders] ([UserId]);
+2024-03-31 01:05:44.281 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_CategoryId] ON [Products] ([CategoryId]);
+2024-03-31 01:05:44.285 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_OrderId] ON [Products] ([OrderId]);
+2024-03-31 01:05:44.294 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_TagId] ON [Products] ([TagId]);
+2024-03-31 01:05:44.298 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_TagProducts_TagId] ON [TagProducts] ([TagId]);
+2024-03-31 01:05:44.516 +02:00 [INF] Executed DbCommand (216ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240105115149_Inital', N'8.0.0');
+2024-03-31 01:05:44.532 +02:00 [INF] Applying migration '20240105115657_AddingSeeeding'.
+2024-03-31 01:05:44.658 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] DROP CONSTRAINT [FK_Products_Orders_OrderId];
+2024-03-31 01:05:45.011 +02:00 [INF] Executed DbCommand (346ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (N'331564f6-3281-4a64-b903-feb3d97fe146', 0, N'690e1610-c9fb-4db0-b2fc-f674c88194cb', '2024-01-05T14:56:56.6067389+02:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'2ad7844c-481e-4f2e-9b65-4a279f01ce97', CAST(0 AS bit), N'john doe'),
+(N'49003d27-37d3-4a86-93ce-5b2221318114', 0, N'd9bf1c11-9dcc-4476-bcac-a51f326c7e60', '2024-01-05T14:56:56.6067417+02:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'4bde03dc-0640-4d5e-81f4-18c843a94620', CAST(0 AS bit), N'Sara doe'),
+(N'914f96f1-b243-4b96-a43c-c0043dff9715', 0, N'1e6e2b92-5498-40ea-9425-7319de224489', '2024-01-05T14:56:56.6067397+02:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'c7c4311e-e338-40a8-86e0-266b064b14a1', CAST(0 AS bit), N'jane doe'),
+(N'cd418a76-6602-473d-bfea-8ca934e30b56', 0, N'0312a912-34ca-4987-915c-fc94b30f07a4', '2024-01-05T14:56:56.6067422+02:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'722e3c5c-f4f2-4213-ac37-a4b7c4c48ce7', CAST(0 AS bit), N'Sandy Jakson');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] OFF;
+2024-03-31 01:05:47.422 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] ON;
+INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+VALUES ('449673be-c237-4dfd-8f83-c80768e9ef44', N'marwaghonem29@gmail.com', N'Marwa'),
+('6023ed86-cf89-4c14-9a87-ea26ae24f460', N'Jamal_Ali@outlook.com', N'Jamal');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] OFF;
+2024-03-31 01:05:47.449 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] ON;
+INSERT INTO [Categories] ([CategoryId], [Name])
+VALUES ('20f70b3d-708a-4ba8-9128-4615a3464fd3', N'Appliances'),
+('45cefe16-9fe9-4028-9464-802cc92219c6', N'Tablets'),
+('509ab127-35e7-4aea-a7f6-9e0def6ccd96', N'SmartDevices'),
+('618b02db-d1cf-4b2b-9fbf-320d08377b42', N'Clothing'),
+('77370d0b-070f-4153-a544-8f57604d6a14', N'Fashion'),
+('aa86afc3-e0d5-4741-b047-343f1885376a', N'Gaming'),
+('ba0ff918-546c-4478-bc90-e74ab59f3cff', N'Electronics'),
+('bf643b98-64fc-46c1-8c31-552111eb74f5', N'Mobiles');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] OFF;
+2024-03-31 01:05:47.470 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] ON;
+INSERT INTO [Tags] ([TagId], [Name])
+VALUES ('6d89fe93-505b-4032-a51d-32278ff391bd', N'Tech'),
+('7236c9dc-d594-4f04-a7ea-442b9c7ce9f6', N'FlagShip Mobiles'),
+('e126b7b4-d6fe-4b6e-9b0f-d865b3871827', N'Fashion 2024');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] OFF;
+2024-03-31 01:05:47.491 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] ON;
+INSERT INTO [Textsss] ([Id], [ArabicText], [EnglishText], [TextKey])
+VALUES ('8a8fa707-cd35-4050-9763-7abb813bf3c6', N'مرحبا', N'Welcome', N'WelcomeMessage');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] OFF;
+2024-03-31 01:05:47.537 +02:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] ON;
+INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+VALUES ('1a5635e0-8a4d-4f11-879f-4c06bd69be8d', '2024-01-05T14:56:56.6067444+02:00', N'49003d27-37d3-4a86-93ce-5b2221318114'),
+('55a3d7fe-43ef-4ca1-93e5-ecfab416766b', '2024-01-05T14:56:56.6067446+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715'),
+('60eea5da-f2cd-4fdc-b3f5-794894b1ab21', '2024-01-05T14:56:56.6067442+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715'),
+('61432ee8-c136-4459-b69c-c4957801355d', '2024-01-05T14:56:56.6067437+02:00', N'331564f6-3281-4a64-b903-feb3d97fe146'),
+('90a81f1c-1c00-4a0e-8f56-21f3b53cba00', '2024-01-05T14:56:56.6067450+02:00', N'cd418a76-6602-473d-bfea-8ca934e30b56'),
+('d04ab8fd-047f-426b-a775-a5c022ce660b', '2024-01-05T14:56:56.6067454+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715'),
+('da6032a1-ff08-45d0-aa1a-47d702bccdb2', '2024-01-05T14:56:56.6067452+02:00', N'49003d27-37d3-4a86-93ce-5b2221318114'),
+('f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', '2024-01-05T14:56:56.6067429+02:00', N'914f96f1-b243-4b96-a43c-c0043dff9715');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] OFF;
+2024-03-31 01:05:48.437 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] ON;
+INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+VALUES ('333ed7b8-90c6-4522-9fde-43f57b5b89e1', NULL, 3, N'Calvin Klein Watch', '61432ee8-c136-4459-b69c-c4957801355d', 199.99, NULL),
+('33427392-3d61-428b-bb74-b27358dae2f6', NULL, 1, N'HP Printer', '61432ee8-c136-4459-b69c-c4957801355d', 149.99, NULL),
+('75ecfe62-c1fc-4466-83e7-451999543342', NULL, 6, N'Razer Gaming Mouse', '61432ee8-c136-4459-b69c-c4957801355d', 69.99, NULL),
+('871b5405-6dc5-47a6-b02e-f80c6ebee9e2', NULL, 1, N'Bose Noise-Canceling Headphones', '61432ee8-c136-4459-b69c-c4957801355d', 299.99, NULL),
+('8d227ecc-04a6-4817-a5a4-6201cf76dd40', NULL, 5, N'Amazon Echo Dot', '61432ee8-c136-4459-b69c-c4957801355d', 39.99, NULL),
+('97f2567f-0d57-4a10-aab9-43f66393afd1', NULL, 3, N'Fossil Smartwatch', 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', 149.99, NULL),
+('b24c1794-db69-4d84-b448-5ac708f458a4', NULL, 1, N'Canon EOS Rebel T7', '60eea5da-f2cd-4fdc-b3f5-794894b1ab21', 499.99, NULL),
+('ca4d1ded-7d4d-41f6-9ee0-41715085f598', NULL, 4, N'Cuisinart Coffee Maker', 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', 79.99, NULL),
+('d1027440-6b13-4fd2-bfba-340214f09c37', NULL, 3, N'Levi''s Jeans', '61432ee8-c136-4459-b69c-c4957801355d', 59.99, NULL),
+('df32db8b-15c3-44af-aff1-a2440dc7f523', NULL, 6, N'Fitbit Charge 5', '61432ee8-c136-4459-b69c-c4957801355d', 149.99, NULL),
+('e4278ee9-549f-4e3a-bb40-5771e6de00aa', NULL, 1, N'Sony Smart TV', '61432ee8-c136-4459-b69c-c4957801355d', 1299.99, NULL),
+('e57b0fdf-ab7b-498b-964a-9e983526540b', NULL, 4, N'KitchenAid Stand Mixer', '1a5635e0-8a4d-4f11-879f-4c06bd69be8d', 349.99, NULL),
+('f2f71960-3867-4b42-bd30-f4b8802f747c', NULL, 2, N'Samsung Galaxy S21', 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad', 799.99, NULL),
+('f42865db-b358-4151-a681-f95b7e2a541a', NULL, 3, N'Adidas Running Shoes', '60eea5da-f2cd-4fdc-b3f5-794894b1ab21', 109.99, NULL),
+('ff60d97f-a5fe-4585-a207-0b499a22a82c', NULL, 3, N'Nike Running Shoes', '61432ee8-c136-4459-b69c-c4957801355d', 89.99, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] OFF;
+2024-03-31 01:05:48.467 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] ON;
+INSERT INTO [TagProducts] ([ProductId], [TagId])
+VALUES ('33427392-3d61-428b-bb74-b27358dae2f6', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('871b5405-6dc5-47a6-b02e-f80c6ebee9e2', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('b24c1794-db69-4d84-b448-5ac708f458a4', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('d1027440-6b13-4fd2-bfba-340214f09c37', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('e4278ee9-549f-4e3a-bb40-5771e6de00aa', '7236c9dc-d594-4f04-a7ea-442b9c7ce9f6'),
+('e57b0fdf-ab7b-498b-964a-9e983526540b', '6d89fe93-505b-4032-a51d-32278ff391bd'),
+('ff60d97f-a5fe-4585-a207-0b499a22a82c', '6d89fe93-505b-4032-a51d-32278ff391bd');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] OFF;
+2024-03-31 01:05:50.099 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] ADD CONSTRAINT [FK_Products_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([OrderId]);
+2024-03-31 01:05:50.109 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240105115657_AddingSeeeding', N'8.0.0');
+2024-03-31 01:05:50.114 +02:00 [INF] Applying migration '20240105121920_AddingTest'.
+2024-03-31 01:05:50.201 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = '449673be-c237-4dfd-8f83-c80768e9ef44';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.215 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = '6023ed86-cf89-4c14-9a87-ea26ae24f460';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.258 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '20f70b3d-708a-4ba8-9128-4615a3464fd3';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.286 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '45cefe16-9fe9-4028-9464-802cc92219c6';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.300 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '509ab127-35e7-4aea-a7f6-9e0def6ccd96';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.306 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '618b02db-d1cf-4b2b-9fbf-320d08377b42';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.312 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '77370d0b-070f-4153-a544-8f57604d6a14';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.317 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'aa86afc3-e0d5-4741-b047-343f1885376a';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.321 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'ba0ff918-546c-4478-bc90-e74ab59f3cff';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.327 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'bf643b98-64fc-46c1-8c31-552111eb74f5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.339 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '55a3d7fe-43ef-4ca1-93e5-ecfab416766b';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.349 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '90a81f1c-1c00-4a0e-8f56-21f3b53cba00';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.353 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'd04ab8fd-047f-426b-a775-a5c022ce660b';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.361 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'da6032a1-ff08-45d0-aa1a-47d702bccdb2';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.402 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '333ed7b8-90c6-4522-9fde-43f57b5b89e1';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.414 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '75ecfe62-c1fc-4466-83e7-451999543342';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:50.422 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '8d227ecc-04a6-4817-a5a4-6201cf76dd40';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.354 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '97f2567f-0d57-4a10-aab9-43f66393afd1';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.368 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ca4d1ded-7d4d-41f6-9ee0-41715085f598';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.383 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'df32db8b-15c3-44af-aff1-a2440dc7f523';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.397 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'f2f71960-3867-4b42-bd30-f4b8802f747c';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.412 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'f42865db-b358-4151-a681-f95b7e2a541a';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.422 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '33427392-3d61-428b-bb74-b27358dae2f6' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.428 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '871b5405-6dc5-47a6-b02e-f80c6ebee9e2' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.434 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'b24c1794-db69-4d84-b448-5ac708f458a4' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.442 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'd1027440-6b13-4fd2-bfba-340214f09c37' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.447 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'e4278ee9-549f-4e3a-bb40-5771e6de00aa' AND [TagId] = '7236c9dc-d594-4f04-a7ea-442b9c7ce9f6';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.454 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'e57b0fdf-ab7b-498b-964a-9e983526540b' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.462 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'ff60d97f-a5fe-4585-a207-0b499a22a82c' AND [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.504 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = 'e126b7b4-d6fe-4b6e-9b0f-d865b3871827';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.517 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Textsss]
+WHERE [Id] = '8a8fa707-cd35-4050-9763-7abb813bf3c6';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.555 +02:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'cd418a76-6602-473d-bfea-8ca934e30b56';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.563 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'f7a110d0-7cc3-4988-be3b-4f3f0f5932ad';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.570 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '33427392-3d61-428b-bb74-b27358dae2f6';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.579 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '871b5405-6dc5-47a6-b02e-f80c6ebee9e2';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:51.585 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'b24c1794-db69-4d84-b448-5ac708f458a4';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.265 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'd1027440-6b13-4fd2-bfba-340214f09c37';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.287 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'e4278ee9-549f-4e3a-bb40-5771e6de00aa';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.365 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'e57b0fdf-ab7b-498b-964a-9e983526540b';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.385 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ff60d97f-a5fe-4585-a207-0b499a22a82c';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.393 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = '6d89fe93-505b-4032-a51d-32278ff391bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.396 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = '7236c9dc-d594-4f04-a7ea-442b9c7ce9f6';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.437 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '1a5635e0-8a4d-4f11-879f-4c06bd69be8d';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.466 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '60eea5da-f2cd-4fdc-b3f5-794894b1ab21';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.475 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '61432ee8-c136-4459-b69c-c4957801355d';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.492 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'331564f6-3281-4a64-b903-feb3d97fe146';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.514 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'49003d27-37d3-4a86-93ce-5b2221318114';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.530 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'914f96f1-b243-4b96-a43c-c0043dff9715';
+SELECT @@ROWCOUNT;
+2024-03-31 01:05:54.565 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Test] (
+    [Id] uniqueidentifier NOT NULL,
+    [TextKey] nvarchar(max) NOT NULL,
+    [EnglishText] nvarchar(max) NOT NULL,
+    [ArabicText] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Test] PRIMARY KEY ([Id])
+);
+2024-03-31 01:05:54.612 +02:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f', 0, N'56998682-5f04-41ed-bac4-9bc7ba620957', '2024-01-05T15:19:18.8364790+02:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'37721efa-3ce7-4328-b46e-97da54848926', CAST(0 AS bit), N'Sara doe'),
+(N'4d70a68d-01db-4318-b23b-078714ced347', 0, N'ba224085-322c-44ec-9e47-8f4d50bde428', '2024-01-05T15:19:18.8364773+02:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'b0f83cac-0838-4636-8df9-6ca8a73a42b9', CAST(0 AS bit), N'jane doe'),
+(N'7ecb5903-a3a8-4d6c-8bcf-bac712fd1d86', 0, N'97edc9d4-c5c2-4290-b4de-709cbd118051', '2024-01-05T15:19:18.8364746+02:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'4fe27054-3661-44d8-b7d8-0afcedaec787', CAST(0 AS bit), N'john doe'),
+(N'd2db1857-d4ea-4c1b-8c73-f6fa6affdfb1', 0, N'4ff0797f-432b-4248-8d2f-6b9edbf4a0fb', '2024-01-05T15:19:18.8364814+02:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'98d95edf-558e-4f3e-aa14-78fc3d5476ed', CAST(0 AS bit), N'Sandy Jakson');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] OFF;
+2024-03-31 01:05:57.255 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] ON;
+INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+VALUES ('50dacaaf-093f-4260-aa72-712086df41b0', N'marwaghonem29@gmail.com', N'Marwa'),
+('b4f65567-55cb-4672-a903-ef8a5bb8269b', N'Jamal_Ali@outlook.com', N'Jamal');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] OFF;
+2024-03-31 01:05:57.291 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] ON;
+INSERT INTO [Categories] ([CategoryId], [Name])
+VALUES ('30ad1a3f-4476-493a-a1b0-c2b56366e3b9', N'Tablets'),
+('44c7ef0f-8cbd-47a3-b077-d6c116a8394a', N'Electronics'),
+('692dec8f-e9bd-420e-8513-f1132a1360fa', N'Fashion'),
+('6e552106-ec11-45d4-b8db-8b0929b0d192', N'SmartDevices'),
+('843191b0-7023-4e60-a532-be409f2240fd', N'Clothing'),
+('a7b4a669-22d8-486c-9432-294e5c4f3c95', N'Appliances'),
+('d34c7a34-4a51-4fd3-8c10-a5566cddb518', N'Mobiles'),
+('e56d3b03-105f-40da-9055-e3ba4dbbe954', N'Gaming');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] OFF;
+2024-03-31 01:05:57.312 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] ON;
+INSERT INTO [Tags] ([TagId], [Name])
+VALUES ('97e104e5-8f88-4d77-8871-c1a42e6bebc4', N'FlagShip Mobiles'),
+('e38a559d-a6ec-4c8f-8545-e9aacbba0fe5', N'Tech'),
+('e8cbf26c-66e6-48a8-8326-3f2a775dedb0', N'Fashion 2024');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] OFF;
+2024-03-31 01:05:57.330 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] ON;
+INSERT INTO [Textsss] ([Id], [ArabicText], [EnglishText], [TextKey])
+VALUES ('85d98fe6-8f34-466f-9326-e008ad4acf8b', N'مرحبا', N'Welcome', N'WelcomeMessage');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] OFF;
+2024-03-31 01:05:59.423 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] ON;
+INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+VALUES ('1254d8bf-ca94-405b-8e2d-07f7cb466cd0', '2024-01-05T15:19:18.8364920+02:00', N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f'),
+('1ad6b2e4-6083-46c9-891c-be3d290710bd', '2024-01-05T15:19:18.8364950+02:00', N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f'),
+('36b50542-d788-44c9-8125-2913d89b0f9b', '2024-01-05T15:19:18.8364895+02:00', N'4d70a68d-01db-4318-b23b-078714ced347'),
+('6cef3c2f-c313-47f4-8a43-7ca4eb5dd69f', '2024-01-05T15:19:18.8364958+02:00', N'4d70a68d-01db-4318-b23b-078714ced347'),
+('7ab3db9c-f063-43ee-8923-a96b462c23b3', '2024-01-05T15:19:18.8364906+02:00', N'7ecb5903-a3a8-4d6c-8bcf-bac712fd1d86'),
+('c304455e-ba11-44e2-9198-b290dec7a3ec', '2024-01-05T15:19:18.8364943+02:00', N'd2db1857-d4ea-4c1b-8c73-f6fa6affdfb1'),
+('dc2eb7d0-e008-48f1-a171-5b9f03391526', '2024-01-05T15:19:18.8364913+02:00', N'4d70a68d-01db-4318-b23b-078714ced347'),
+('dca411e5-f593-4feb-932e-846dac4bc9ec', '2024-01-05T15:19:18.8364927+02:00', N'4d70a68d-01db-4318-b23b-078714ced347');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] OFF;
+2024-03-31 01:05:59.459 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] ON;
+INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+VALUES ('1153a908-18f5-402d-bbce-a73b2a9ae894', NULL, 3, N'Calvin Klein Watch', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 199.99, NULL),
+('1e13ad8e-34d9-47b7-ab91-ff1305b54a39', NULL, 4, N'KitchenAid Stand Mixer', '1254d8bf-ca94-405b-8e2d-07f7cb466cd0', 349.99, NULL),
+('5fa5e5c4-f93c-4cfa-bda0-e05dd1e04ff2', NULL, 3, N'Adidas Running Shoes', 'dc2eb7d0-e008-48f1-a171-5b9f03391526', 109.99, NULL),
+('6c93eaba-60c7-4cd5-a3a9-a2a0b99e9c05', NULL, 3, N'Fossil Smartwatch', '36b50542-d788-44c9-8125-2913d89b0f9b', 149.99, NULL),
+('6f472250-bf50-44b0-ac91-289c27457755', NULL, 2, N'Samsung Galaxy S21', '36b50542-d788-44c9-8125-2913d89b0f9b', 799.99, NULL),
+('81d28b43-fb4d-40c3-80fc-926b555887ed', NULL, 4, N'Cuisinart Coffee Maker', '36b50542-d788-44c9-8125-2913d89b0f9b', 79.99, NULL),
+('8ed6a215-9304-4b34-9f03-15ec95acf7e0', NULL, 3, N'Levi''s Jeans', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 59.99, NULL),
+('983a6355-b6dd-4b37-b912-40614853099e', NULL, 1, N'Sony Smart TV', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 1299.99, NULL),
+('ab8caa48-4203-405f-9291-8e0a8c1b81ce', NULL, 1, N'Canon EOS Rebel T7', 'dc2eb7d0-e008-48f1-a171-5b9f03391526', 499.99, NULL),
+('ae721a5e-1aed-49ea-bbe5-b052532e9b5f', NULL, 1, N'Bose Noise-Canceling Headphones', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 299.99, NULL),
+('c286eb51-c8d9-4049-bb96-0a8fda24e61e', NULL, 6, N'Razer Gaming Mouse', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 69.99, NULL),
+('c3ceb045-4019-40c3-9a78-9275bc1f59ff', NULL, 5, N'Amazon Echo Dot', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 39.99, NULL),
+('cf9ee6d2-3d82-4f66-8092-d0fe941097de', NULL, 3, N'Nike Running Shoes', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 89.99, NULL),
+('df5ccde3-d90d-4b31-a76d-66f09becb349', NULL, 6, N'Fitbit Charge 5', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 149.99, NULL),
+('f95100c3-1026-4a22-aeea-91bbbd6a0f95', NULL, 1, N'HP Printer', '7ab3db9c-f063-43ee-8923-a96b462c23b3', 149.99, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] OFF;
+2024-03-31 01:06:00.714 +02:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] ON;
+INSERT INTO [TagProducts] ([ProductId], [TagId])
+VALUES ('1e13ad8e-34d9-47b7-ab91-ff1305b54a39', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('8ed6a215-9304-4b34-9f03-15ec95acf7e0', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('983a6355-b6dd-4b37-b912-40614853099e', '97e104e5-8f88-4d77-8871-c1a42e6bebc4'),
+('ab8caa48-4203-405f-9291-8e0a8c1b81ce', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('ae721a5e-1aed-49ea-bbe5-b052532e9b5f', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('cf9ee6d2-3d82-4f66-8092-d0fe941097de', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5'),
+('f95100c3-1026-4a22-aeea-91bbbd6a0f95', 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] OFF;
+2024-03-31 01:06:00.723 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240105121920_AddingTest', N'8.0.0');
+2024-03-31 01:06:00.728 +02:00 [INF] Applying migration '20240110054232_AddingSeeding'.
+2024-03-31 01:06:00.784 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = '50dacaaf-093f-4260-aa72-712086df41b0';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.787 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [CampaignCustomers]
+WHERE [Id] = 'b4f65567-55cb-4672-a903-ef8a5bb8269b';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.793 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '30ad1a3f-4476-493a-a1b0-c2b56366e3b9';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.798 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '44c7ef0f-8cbd-47a3-b077-d6c116a8394a';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.802 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '692dec8f-e9bd-420e-8513-f1132a1360fa';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.806 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '6e552106-ec11-45d4-b8db-8b0929b0d192';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.811 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = '843191b0-7023-4e60-a532-be409f2240fd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.814 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'a7b4a669-22d8-486c-9432-294e5c4f3c95';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.818 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'd34c7a34-4a51-4fd3-8c10-a5566cddb518';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.822 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Categories]
+WHERE [CategoryId] = 'e56d3b03-105f-40da-9055-e3ba4dbbe954';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.828 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '1ad6b2e4-6083-46c9-891c-be3d290710bd';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:00.831 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '6cef3c2f-c313-47f4-8a43-7ca4eb5dd69f';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.870 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'c304455e-ba11-44e2-9198-b290dec7a3ec';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.874 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'dca411e5-f593-4feb-932e-846dac4bc9ec';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.884 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '1153a908-18f5-402d-bbce-a73b2a9ae894';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.890 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '5fa5e5c4-f93c-4cfa-bda0-e05dd1e04ff2';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.898 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '6c93eaba-60c7-4cd5-a3a9-a2a0b99e9c05';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.906 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '6f472250-bf50-44b0-ac91-289c27457755';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.913 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '81d28b43-fb4d-40c3-80fc-926b555887ed';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.920 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'c286eb51-c8d9-4049-bb96-0a8fda24e61e';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.928 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'c3ceb045-4019-40c3-9a78-9275bc1f59ff';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.935 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'df5ccde3-d90d-4b31-a76d-66f09becb349';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.939 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '1e13ad8e-34d9-47b7-ab91-ff1305b54a39' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.943 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '8ed6a215-9304-4b34-9f03-15ec95acf7e0' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.946 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = '983a6355-b6dd-4b37-b912-40614853099e' AND [TagId] = '97e104e5-8f88-4d77-8871-c1a42e6bebc4';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.949 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'ab8caa48-4203-405f-9291-8e0a8c1b81ce' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.955 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'ae721a5e-1aed-49ea-bbe5-b052532e9b5f' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.960 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'cf9ee6d2-3d82-4f66-8092-d0fe941097de' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.965 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [TagProducts]
+WHERE [ProductId] = 'f95100c3-1026-4a22-aeea-91bbbd6a0f95' AND [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.973 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = 'e8cbf26c-66e6-48a8-8326-3f2a775dedb0';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:01.980 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Textsss]
+WHERE [Id] = '85d98fe6-8f34-466f-9326-e008ad4acf8b';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.714 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'd2db1857-d4ea-4c1b-8c73-f6fa6affdfb1';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.724 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '36b50542-d788-44c9-8125-2913d89b0f9b';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.737 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '1e13ad8e-34d9-47b7-ab91-ff1305b54a39';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.746 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '8ed6a215-9304-4b34-9f03-15ec95acf7e0';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.752 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = '983a6355-b6dd-4b37-b912-40614853099e';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.760 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ab8caa48-4203-405f-9291-8e0a8c1b81ce';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.766 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'ae721a5e-1aed-49ea-bbe5-b052532e9b5f';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.771 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'cf9ee6d2-3d82-4f66-8092-d0fe941097de';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.779 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Products]
+WHERE [ProductId] = 'f95100c3-1026-4a22-aeea-91bbbd6a0f95';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.784 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = '97e104e5-8f88-4d77-8871-c1a42e6bebc4';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.788 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Tags]
+WHERE [TagId] = 'e38a559d-a6ec-4c8f-8545-e9aacbba0fe5';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.794 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '1254d8bf-ca94-405b-8e2d-07f7cb466cd0';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.797 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = '7ab3db9c-f063-43ee-8923-a96b462c23b3';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.800 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Orders]
+WHERE [OrderId] = 'dc2eb7d0-e008-48f1-a171-5b9f03391526';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.810 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'45bb0a73-7ed7-4d4c-9b5b-10a2ff66180f';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.820 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'4d70a68d-01db-4318-b23b-078714ced347';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.834 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [AspNetUsers]
+WHERE [Id] = N'7ecb5903-a3a8-4d6c-8bcf-bac712fd1d86';
+SELECT @@ROWCOUNT;
+2024-03-31 01:06:04.873 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreationDate], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (N'126f9b91-0660-4d35-b66e-c00893477c16', 0, N'dd1ca627-e2c3-472d-b68d-a3e64e9a172a', '2024-01-10T08:42:30.3670017+02:00', N'Sandy.Jakson@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'ec0265b0-3a75-4e9a-8623-dc62a75eb36b', CAST(0 AS bit), N'Sandy Jakson'),
+(N'79889c8e-d151-44bf-92bc-e811a2b03cf8', 0, N'2ca84058-a984-420b-bd95-2db5d7dc4256', '2024-01-10T08:42:30.3669938+02:00', N'john.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'ab9ef759-c6b9-43a1-a07b-f6a32b01ba82', CAST(0 AS bit), N'john doe'),
+(N'9797bc68-71b8-49de-aa9d-1953616f2366', 0, N'e7933f18-085e-4120-9049-e9b20aa241e0', '2024-01-10T08:42:30.3669996+02:00', N'Sara.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'3e4f878f-ca7d-4326-bf9f-5b98d1218df1', CAST(0 AS bit), N'Sara doe'),
+(N'ecce009f-c6b2-48ef-bf80-99363d4cd53a', 0, N'031587d4-f431-4a45-8425-ca3cec400a5d', '2024-01-10T08:42:30.3669964+02:00', N'jane.doe@example.com', CAST(0 AS bit), CAST(0 AS bit), NULL, NULL, NULL, N'password123', NULL, CAST(0 AS bit), N'54388261-c387-4e4b-a2ac-89b98efec038', CAST(0 AS bit), N'jane doe');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'CreationDate', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] OFF;
+2024-03-31 01:06:08.047 +02:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] ON;
+INSERT INTO [CampaignCustomers] ([Id], [Email], [Name])
+VALUES ('777c6bd7-29d8-4a00-92d0-cbf34460e860', N'Jamal_Ali@outlook.com', N'Jamal'),
+('7e7154a6-3183-42fb-8911-a572316731cf', N'marwaghonem29@gmail.com', N'Marwa');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[CampaignCustomers]'))
+    SET IDENTITY_INSERT [CampaignCustomers] OFF;
+2024-03-31 01:06:08.095 +02:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] ON;
+INSERT INTO [Categories] ([CategoryId], [Name])
+VALUES ('3c9734be-cf73-42c9-bfd4-0396e89fe6f8', N'Appliances'),
+('4428caba-e423-4438-9c10-096ef781e58f', N'Fashion'),
+('6eb52884-9be7-497d-8dfe-ce8275963d65', N'Mobiles'),
+('78747418-3cde-421c-a789-8ed80ad1b7d5', N'Electronics'),
+('8319c5a3-a526-41a9-b527-6c7ad7e94aa7', N'Gaming'),
+('876a50b5-ebc1-4be6-88dd-3dc7f70d748a', N'SmartDevices'),
+('e6d518b7-72ee-49d7-9500-0b9ebee8443e', N'Clothing'),
+('ebb9e988-5ab1-4b26-867e-d440a8ae996e', N'Tablets');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'Name') AND [object_id] = OBJECT_ID(N'[Categories]'))
+    SET IDENTITY_INSERT [Categories] OFF;
+2024-03-31 01:06:08.134 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] ON;
+INSERT INTO [Tags] ([TagId], [Name])
+VALUES ('363c132c-1c56-4cf7-bc2a-2bd681c6be51', N'FlagShip Mobiles'),
+('b6109b6d-bcfc-45c6-b35c-cab9079f5637', N'Fashion 2024'),
+('e88056e3-0b4b-44b4-87b5-b52f4d46556f', N'Tech');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'TagId', N'Name') AND [object_id] = OBJECT_ID(N'[Tags]'))
+    SET IDENTITY_INSERT [Tags] OFF;
+2024-03-31 01:06:11.311 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] ON;
+INSERT INTO [Textsss] ([Id], [ArabicText], [EnglishText], [TextKey])
+VALUES ('1181958f-63fd-4172-9f08-65e6892aed56', N'مرحبا', N'Welcome', N'WelcomeMessage'),
+('c3d4261a-0f29-4f18-8e14-d2357e0cfe10', N'مرحبا {0} كلمة المرور الخاصة بك هي {1}', N'Hello {0}, your Password Is {1}.', N'PasswordRetrievalMessage');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ArabicText', N'EnglishText', N'TextKey') AND [object_id] = OBJECT_ID(N'[Textsss]'))
+    SET IDENTITY_INSERT [Textsss] OFF;
+2024-03-31 01:06:11.353 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] ON;
+INSERT INTO [Orders] ([OrderId], [OrderDate], [UserId])
+VALUES ('0023148a-a3b6-4903-b73a-7fd3be268cb8', '2024-01-10T08:42:30.3670073+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('1cb44ee7-6105-418d-8ce9-189c2d053416', '2024-01-10T08:42:30.3670102+02:00', N'126f9b91-0660-4d35-b66e-c00893477c16'),
+('3b80e265-ef3b-4bd5-addc-b2a3627d980b', '2024-01-10T08:42:30.3670117+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('6e068562-f13e-47f9-9639-f8b250dc61ef', '2024-01-10T08:42:30.3670052+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('ad6bd523-a194-4235-892e-62f765cb51b2', '2024-01-10T08:42:30.3670032+02:00', N'ecce009f-c6b2-48ef-bf80-99363d4cd53a'),
+('c1aa224f-7262-4e72-a3c7-efb58bd0b1dc', '2024-01-10T08:42:30.3670110+02:00', N'9797bc68-71b8-49de-aa9d-1953616f2366'),
+('d1f887eb-70bf-4f71-aeea-d667ae6eb566', '2024-01-10T08:42:30.3670068+02:00', N'9797bc68-71b8-49de-aa9d-1953616f2366'),
+('e7e89f06-a384-4df6-9466-5d33a5dcbea3', '2024-01-10T08:42:30.3670045+02:00', N'79889c8e-d151-44bf-92bc-e811a2b03cf8');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'OrderId', N'OrderDate', N'UserId') AND [object_id] = OBJECT_ID(N'[Orders]'))
+    SET IDENTITY_INSERT [Orders] OFF;
+2024-03-31 01:06:11.397 +02:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] ON;
+INSERT INTO [Products] ([ProductId], [CategoryId], [CategoryType], [Name], [OrderId], [Price], [TagId])
+VALUES ('069fa4b5-df42-450a-b5c0-81f227340814', NULL, 3, N'Fossil Smartwatch', 'ad6bd523-a194-4235-892e-62f765cb51b2', 149.99, NULL),
+('3a8bc47f-fe1f-44a4-8adc-4398a06622ae', NULL, 1, N'HP Printer', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 149.99, NULL),
+('54ac2598-5c9b-4d7c-a457-6964e22f24c6', NULL, 4, N'KitchenAid Stand Mixer', 'd1f887eb-70bf-4f71-aeea-d667ae6eb566', 349.99, NULL),
+('5b843000-0c07-4bed-8c88-b6b3715ee759', NULL, 2, N'Samsung Galaxy S21', 'ad6bd523-a194-4235-892e-62f765cb51b2', 799.99, NULL),
+('6929afd3-c996-42ac-84fb-82c0c0bf943e', NULL, 6, N'Razer Gaming Mouse', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 69.99, NULL),
+('97477696-21db-4a8b-9d24-15f46ec71cc9', NULL, 3, N'Adidas Running Shoes', '6e068562-f13e-47f9-9639-f8b250dc61ef', 109.99, NULL),
+('a107453b-7703-4f67-ab62-a94776e458bc', NULL, 4, N'Cuisinart Coffee Maker', 'ad6bd523-a194-4235-892e-62f765cb51b2', 79.99, NULL),
+('a32ef41f-0745-4b0b-bd78-e9a813c80626', NULL, 1, N'Sony Smart TV', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 1299.99, NULL),
+('bda98f8a-6444-4a75-86b1-cfdb0a34d332', NULL, 1, N'Canon EOS Rebel T7', '6e068562-f13e-47f9-9639-f8b250dc61ef', 499.99, NULL),
+('cdf3295b-3d9e-4395-b41b-281d6ac6d691', NULL, 6, N'Fitbit Charge 5', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 149.99, NULL),
+('d494c082-4db3-4550-8279-431a50a4923c', NULL, 3, N'Calvin Klein Watch', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 199.99, NULL),
+('dea0d956-c9d2-490f-9048-4bf9f7e00e3b', NULL, 3, N'Nike Running Shoes', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 89.99, NULL),
+('f2845201-7964-4b21-b7c0-0828f37358c4', NULL, 1, N'Bose Noise-Canceling Headphones', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 299.99, NULL),
+('f40c0dcc-5003-4b80-ad3e-ba3f10e2c8df', NULL, 5, N'Amazon Echo Dot', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 39.99, NULL),
+('fbce8595-093d-41d2-8a23-da7907cee36d', NULL, 3, N'Levi''s Jeans', 'e7e89f06-a384-4df6-9466-5d33a5dcbea3', 59.99, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'CategoryType', N'Name', N'OrderId', N'Price', N'TagId') AND [object_id] = OBJECT_ID(N'[Products]'))
+    SET IDENTITY_INSERT [Products] OFF;
+2024-03-31 01:06:12.595 +02:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] ON;
+INSERT INTO [TagProducts] ([ProductId], [TagId])
+VALUES ('3a8bc47f-fe1f-44a4-8adc-4398a06622ae', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('54ac2598-5c9b-4d7c-a457-6964e22f24c6', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('a32ef41f-0745-4b0b-bd78-e9a813c80626', '363c132c-1c56-4cf7-bc2a-2bd681c6be51'),
+('bda98f8a-6444-4a75-86b1-cfdb0a34d332', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('dea0d956-c9d2-490f-9048-4bf9f7e00e3b', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('f2845201-7964-4b21-b7c0-0828f37358c4', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f'),
+('fbce8595-093d-41d2-8a23-da7907cee36d', 'e88056e3-0b4b-44b4-87b5-b52f4d46556f');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'TagId') AND [object_id] = OBJECT_ID(N'[TagProducts]'))
+    SET IDENTITY_INSERT [TagProducts] OFF;
+2024-03-31 01:06:12.601 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240110054232_AddingSeeding', N'8.0.0');
+2024-03-31 01:07:03.374 +02:00 [INF] Start installing Hangfire SQL objects...
+2024-03-31 01:07:04.776 +02:00 [INF] Hangfire SQL objects installed.
+2024-03-31 01:07:04.943 +02:00 [INF] User profile is available. Using 'C:\Users\Marwa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-31 01:07:05.265 +02:00 [INF] Now listening on: https://localhost:7175
+2024-03-31 01:07:05.269 +02:00 [INF] Now listening on: http://localhost:5117
+2024-03-31 01:07:05.279 +02:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: .@E-Commerce'
+2024-03-31 01:07:05.281 +02:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-31 01:07:05.283 +02:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-31 01:07:05.300 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-31 01:07:05.301 +02:00 [INF] Hosting environment: Development
+2024-03-31 01:07:05.303 +02:00 [INF] Content root path: C:\Users\Marwa\Desktop\ECommerce V2\E-CommerceSystemV2.API
+2024-03-31 01:07:05.770 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/index.html - null null
+2024-03-31 01:07:05.842 +02:00 [INF] Server desktop-ed51fau:9604:183f315c successfully announced in 541.05 ms
+2024-03-31 01:07:05.847 +02:00 [INF] Server desktop-ed51fau:9604:183f315c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-31 01:07:05.868 +02:00 [INF] Server desktop-ed51fau:9604:183f315c all the dispatchers started
+2024-03-31 01:07:06.178 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/index.html - 200 null text/html;charset=utf-8 408.88ms
+2024-03-31 01:07:06.253 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-31 01:07:06.257 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/_vs/browserLink - null null
+2024-03-31 01:07:06.273 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 19.5724ms
+2024-03-31 01:07:06.356 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.4719ms
+2024-03-31 01:07:06.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - null null
+2024-03-31 01:07:06.679 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.8328ms
+2024-03-31 01:07:28.001 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7175/api/Products/2/3 - null null
+2024-03-31 01:07:28.070 +02:00 [INF] Executing endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-03-31 01:07:28.105 +02:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto]]] GetAll(Int32, Int32) on controller E_CommerceSystemV2.API.Controllers.Products.ProductsController (E-CommerceSystemV2.API).
+2024-03-31 01:07:29.116 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-03-31 01:07:30.067 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-03-31 01:07:30.216 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CategoryType], [p].[Name], [p].[OrderId], [p].[Price], [p].[TagId]
+FROM [Products] AS [p]
+ORDER BY [p].[Price]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-03-31 01:07:30.345 +02:00 [INF] Executing OkObjectResult, writing value of type 'E_CommerceSystemV2.BL.DTOs.Products.ProductPagintationDto'.
+2024-03-31 01:07:30.375 +02:00 [INF] Executed action E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API) in 2260.4418ms
+2024-03-31 01:07:30.378 +02:00 [INF] Executed endpoint 'E_CommerceSystemV2.API.Controllers.Products.ProductsController.GetAll (E-CommerceSystemV2.API)'
+2024-03-31 01:07:30.383 +02:00 [INF] HTTP GET /api/Products/2/3 responded 200 in 2354.4680 ms
+2024-03-31 01:07:30.410 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7175/api/Products/2/3 - 200 null application/json; charset=utf-8 2408.5612ms
+2024-03-31 01:13:15.439 +02:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-03-31 01:13:15.479 +02:00 [INF] Server desktop-ed51fau:9604:183f315c caught stopping signal...
+2024-03-31 01:13:15.489 +02:00 [INF] Server desktop-ed51fau:9604:183f315c caught stopped signal...
+2024-03-31 01:13:15.495 +02:00 [WRN] Server desktop-ed51fau:9604:183f315c caught shutdown signal...
+2024-03-31 01:13:15.542 +02:00 [WRN] Server desktop-ed51fau:9604:183f315c stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-03-31 01:13:15.620 +02:00 [INF] Server desktop-ed51fau:9604:183f315c successfully reported itself as stopped in 50.5266 ms
+2024-03-31 01:13:15.621 +02:00 [INF] Server desktop-ed51fau:9604:183f315c has been stopped in total 132.4404 ms
